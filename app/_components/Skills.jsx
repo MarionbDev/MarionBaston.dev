@@ -11,43 +11,73 @@ export default function Skills() {
           <div className="flex justify-center items-center bg-white rounded-full w-40 h-40">
             <Image
               src="/logos/react.png"
-              alt="react"
-              width={600}
-              height={600}
+              alt="logo react"
+              width={120}
+              height={120}
             />
           </div>
           <div className="flex justify-center items-center  bg-white rounded-full w-40 h-40 ">
             <Image
               src="/logos/javascript.png"
-              alt="javascript"
+              alt="logo javascript"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="flex justify-center items-center  bg-white rounded-full w-40 h-40">
+            <Image
+              src="/logos/node.png"
+              alt="logo node"
+              width={130}
+              height={130}
+            />
+          </div>
+          <div className="flex justify-center items-center bg-white rounded-full w-40 h-40">
+            <Image
+              src="/logos/express1.png"
+              alt="logo express"
+              width={140}
+              height={140}
+            />
+          </div>
+          <div className="flex justify-center items-center  bg-white rounded-full w-40 h-40 pb-5">
+            <Image
+              src="/logos/mysql.png"
+              alt="log mySql"
               width={600}
               height={600}
             />
           </div>
-          {/* <div className="flex justify-center items-center  bg-white rounded-full w-40 h-40">
-            <Image src={node} alt="node" className="w-32 h-32" />
-          </div>
-          <div className="flex justify-center items-center bg-white rounded-full w-40 h-40">
-            <Image src={express} alt="express" className="w-36 h-36 p-1" />
-          </div>
-          <div className="flex justify-center items-center  bg-white rounded-full w-40 h-40 pb-5">
-            <Image src={sql} alt="sql" />
-          </div>
           <div className="flex justify-center items-center col-start-1 col-span-2 ">
             <div className=" flex justify-center items-center bg-white rounded-full w-40 h-40">
-              <Image src={git} alt="git" className="w-32 h-32 " />
+              <Image
+                src="/logos/git.png"
+                alt="logo git"
+                width={140}
+                height={140}
+              />
             </div>
           </div>
           <div className="flex justify-center items-center col-start-3 row-start-2">
             <div className=" flex justify-center items-center bg-white rounded-full w-40 h-40">
-              <Image src={github} alt="react" className="w-40 h-40 " />
+              <Image
+                src="/logos/github1.png"
+                alt="logo github"
+                width={180}
+                height={180}
+              />
             </div>
           </div>
           <div className="flex justify-center items-center col-start-4 col-span-2 row-start-2">
             <div className=" flex justify-center items-center bg-white rounded-full w-40 h-40">
-              <Image src={tailwind} alt="taimwind" className="w-24 h-24" />
+              <Image
+                src="/logos/tailwind.png"
+                alt="logo taimwind"
+                width={120}
+                height={120}
+              />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

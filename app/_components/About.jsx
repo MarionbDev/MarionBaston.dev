@@ -28,8 +28,6 @@ export default function About() {
             sites internet qui offrent une excellente expérience utilisateur
             pour tous, tout en veillant à ce qu'ils soient bien positionnés sur
             les moteurs de recherche pour atteindre un public plus large.
-          </p>
-          <p>
             J'apprécie le travail en équipe, le souci du détail et la qualité du
             code.
           </p>
