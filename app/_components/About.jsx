@@ -17,11 +17,9 @@ export default function About() {
               "Développeur web et web mobile"
             </span>{" "}
             à la Wild Code School, en Juillet 2023. Formation validée par
-            l'obtention du titre en Septembre 2023.
-            <p>
-              Je suis résolument engagée dans une démarche d'amélioration
-              continue, cherchant toujours à progresser davantage.
-            </p>
+            l'obtention du titre en Septembre 2023. Je suis résolument engagée
+            dans une démarche d'amélioration continue, cherchant toujours à
+            progresser davantage.
           </p>
           <p className="mt-5">
             Mes objectifs de développement sont orientés vers l'accessibilité et
