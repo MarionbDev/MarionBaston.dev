@@ -12,6 +12,12 @@ export default function Projects() {
             <div className=" absolute  text-sm font-medium p-1 bg-[#a990aa] rounded-sm shadow-sm shadow-[#756276] hover:scale-110 duration-100 ">
               <p> + d'infos</p>
             </div>
+            <Image src="" alt="projet drawing and co" className="rounded-sm" />
+          </div>
+          <div className="relative flex justify-center items-center bg-pale_purple/20 rounded-lg p-3">
+            <div className=" absolute  text-sm font-medium p-1 bg-[#a990aa] rounded-sm shadow-sm shadow-[#756276] hover:scale-110 duration-100 ">
+              <p> + d'infos</p>
+            </div>
             <Image
               src="/images/miniature_serenity.png"
               alt="projet serenity"
