@@ -1,4 +1,8 @@
 import Image from "next/image";
+import serenity from "../../public/images/miniature_serenity.png";
+import universe from "../../public/images/miniature_universe.png";
+import hack1 from "../../public/images/hack1.png";
+import hack2 from "../../public/images/hack2.png";
 
 export default function Projects() {
   return (
@@ -19,7 +23,7 @@ export default function Projects() {
               <p> + d'infos</p>
             </div>
             <Image
-              src="/images/miniature_serenity.png"
+              src={serenity}
               alt="projet serenity"
               width={600}
               height={600}
@@ -31,7 +35,7 @@ export default function Projects() {
               <p> + d'infos</p>
             </div>
             <Image
-              src="/images/miniature_universe.png"
+              src={universe}
               alt="projet universe"
               width={500}
               height={200}
@@ -43,7 +47,7 @@ export default function Projects() {
               <p> + d'infos</p>
             </div>
             <Image
-              src="/images/hack1.png"
+              src={hack1}
               alt="projet hackathon 1"
               width={500}
               height={200}
@@ -55,7 +59,7 @@ export default function Projects() {
               <p> + d'infos</p>
             </div>
             <Image
-              src="/images/hack2.png"
+              src={hack2}
               alt="projet hackathon 2"
               width={500}
               height={200}
