@@ -1,6 +1,6 @@
 export default function WhoIsMarion() {
   return (
-    <div className="text mt-10 sm:mt-44 flex justify-center">
+    <div className="text flex justify-center">
       <div className="w-3/4">
         <p className="text-xl font-bold text-center sm:text-3xl w-36 mb-10 border-b-2 pb-2 border-purple">
           A propos
