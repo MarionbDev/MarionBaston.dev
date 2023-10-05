@@ -1,10 +1,11 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import PropTypes from "prop-types";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Marion Baston",
+  title: "Portfolio Marion Baston",
   description: "A passionate web developer",
 };
 
@@ -15,3 +16,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.string,
+};
