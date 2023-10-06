@@ -1,60 +1,72 @@
 import Image from "next/image";
-import react from "../../public/logos/react.png";
-import javascript from "../../public/logos/javascript.png";
-import node from "../../public/logos/node.png";
-import express from "../../public/logos/express1.png";
-import mysql from "../../public/logos/mysql.png";
-import git from "../../public/logos/git.png";
-import github from "../../public/logos/gitHub1.png";
-import tailwind from "../../public/logos/tailwind.png";
+import javascriptPng from "../../public/logos/javascript.png";
+import gitPng from "../../public/logos/git.png";
+import reactPng from "../../public/logos/react.png";
+import tailwindPng from "../../public/logos/tailwind.png";
+import scrumPng from "../../public/logos/agileScrum.png";
+import nodePng from "../../public/logos/node.png";
+import expressPng from "../../public/logos/express.png";
+import mysqlPng from "../../public/logos/mysql.png";
+import figmaPng from "../../public/logos/figma.png";
+import githubPng from "../../public/logos/github.png";
 
 export default function Skills() {
   return (
-    <div className="text flex flex-col items-center justify-center py-6 bg-gradient-to-t from-[#FFFFFF] via-[#e9cfe9c0] to-[#FFFFFF]">
+    <div className="text flex flex-col items-center justify-center py-20 bg-gradient-to-t from-[#FFFFFF] via-[#e9cfe9c0] to-[#FFFFFF]">
       {" "}
       <div className="w-3/4">
-        <p className="text-xl font-bold text-center sm:text-3xl w-72 mb-12 border-b-2 pb-2 border-purple ">
+        <p className="text-xl font-bold text-center sm:text-3xl w-72 mb-20 border-b-2 pb-2 border-purple ">
           Mes compétences
         </p>
         <div className="grid grid-cols-5 gap-y-10 gap-x-10  ">
           <div className="flex justify-center items-center ">
-            <Image src={react} alt="logo react" width={120} height={120} />
+            <Image src={reactPng} alt="logo react" width={80} height={80} />
           </div>
           <div className="flex justify-center items-center   ">
             <Image
-              src={javascript}
+              src={javascriptPng}
               alt="logo javascript"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
             />
           </div>
           <div className="flex justify-center items-center  ">
-            <Image src={node} alt="logo node" width={130} height={130} />
+            <Image src={nodePng} alt="logo node" width={80} height={80} />
           </div>
           <div className="flex justify-center items-center ">
-            <Image src={express} alt="logo express" width={140} height={140} />
+            <Image src={expressPng} alt="logo express" width={80} height={80} />
           </div>
           <div className="flex justify-center items-center   pb-5">
-            <Image src={mysql} alt="log mySql" width={600} height={600} />
+            <Image src={mysqlPng} alt="log mySql" width={80} height={80} />
           </div>
-          <div className="flex justify-center items-center col-start-1 col-span-2 ">
+          <div className="flex justify-center items-center col-start-1 ">
             <div className=" flex justify-center items-center ">
-              <Image src={git} alt="logo git" width={140} height={140} />
+              <Image src={gitPng} alt="logo git" width={80} height={80} />
             </div>
           </div>
-          <div className="flex justify-center items-center col-start-3 row-start-2">
+          <div className="flex justify-center items-center col-start-2">
             <div className=" flex justify-center items-center ">
-              <Image src={github} alt="logo github" width={180} height={180} />
+              <Image src={githubPng} alt="logo github" width={80} height={80} />
             </div>
           </div>
-          <div className="flex justify-center items-center col-start-4 col-span-2 row-start-2">
+          <div className="flex justify-center items-center col-start-3">
             <div className=" flex justify-center items-center ">
               <Image
-                src={tailwind}
+                src={tailwindPng}
                 alt="logo taimwind"
-                width={120}
-                height={120}
+                width={80}
+                height={80}
               />
+            </div>
+          </div>
+          <div className="flex justify-center items-center col-start-4">
+            <div className=" flex justify-center items-center ">
+              <Image src={scrumPng} alt="logo scrum" width={80} height={80} />
+            </div>
+          </div>
+          <div className="flex justify-center items-center col-start-5">
+            <div className=" flex justify-center items-center ">
+              <Image src={figmaPng} alt="logo figma" width={80} height={80} />
             </div>
           </div>
         </div>

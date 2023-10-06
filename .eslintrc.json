@@ -1,37 +1,15 @@
-// {
-//   "plugins": [" jsx-a11y "],
-//   "extends": ["next/core-web-vitals", " plugin:jsx-a11y/recommended "],
-//   "rules": {
-//     "jsx-a11y/rule-name": 2,
-//     "react/no-unescaped-entities": [
-//       "error",
-//       {
-//         "forbid": [
-//           {
-//             "char": ">",
-//             "alternatives": ["&gt;"]
-//           },
-//           {
-//             "char": "}",
-//             "alternatives": ["&#125;"]
-//           }
-//         ]
-//       }
-//     ]
-//   }
-// }
-
 {
   "plugins": ["react", "jsx-a11y", "react-hooks", "next"],
   "overrides": [
     {
       "files": ["**/*.js", "**/*.jsx"],
       "extends": [
-        "next",
         "prettier",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
-        "plugin:jsx-a11y/recommended"
+        "plugin:jsx-a11y/recommended",
+        "plugin:next/recommended",
+        "next/core-web-vitals"
         // "plugin:prettier/recommended"
       ],
       "rules": {

@@ -7,7 +7,9 @@ import myPhoto from "../../public/images/myPicture.png";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
-import FormationProject from "./Projects/FormationProject";
+import ProfessionalProject from "./Projects/ProfessionalProject";
+import SideProject from "./Projects/SideProject";
+import TrainingProject from "./Projects/TrainingProject";
 
 export default function About() {
   return (
@@ -83,21 +85,30 @@ export default function About() {
               Mes projets
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ut!
+              Plongez dans mon portfolio pour découvrir la diversité de mes
+              expériences en développement web !
             </p>
           </div>
-          <Tabs defaultValue="formation">
-            <TabsList className="grid grid-cols-3 mb-8 w-fit mx-auto gap-6">
-              <TabsTrigger value="formation">Réalisé en formation</TabsTrigger>
+          <Tabs defaultValue="side-project">
+            <TabsList className="grid grid-cols-4 mb-8 w-fit mx-auto gap-6">
+              <TabsTrigger value="side-project">Side Project</TabsTrigger>
+              <TabsTrigger value="training">Training</TabsTrigger>
               <TabsTrigger value="professional">Professional</TabsTrigger>
               <TabsTrigger value="other">Other</TabsTrigger>
             </TabsList>
-            <TabsContent value="professional"></TabsContent>
-            <TabsContent value="formation">
-              <FormationProject />
-            </TabsContent>
-            <TabsContent value="other"></TabsContent>
-          </Tabs>{" "}
+            <div className="w-3/4 mx-auto">
+              <TabsContent value="side-project">
+                <SideProject />
+              </TabsContent>
+              <TabsContent value="training">
+                <TrainingProject />
+              </TabsContent>
+              <TabsContent value="professional">
+                <ProfessionalProject />
+              </TabsContent>
+              <TabsContent value="other"></TabsContent>
+            </div>
+          </Tabs>
         </div>
       </div>
     </>
