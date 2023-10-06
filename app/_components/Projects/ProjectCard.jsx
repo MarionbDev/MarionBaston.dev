@@ -1,6 +1,6 @@
 import {
   Card,
-  // CardContent,
+  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
@@ -19,21 +20,47 @@ export default function ProjectCard({ project }) {
         <CardDescription>{project.description}</CardDescription>
         <div className="flex gap-3">
           <Badge variant="secondary">{project.time}</Badge>
-          <Badge variant="secondary">{project.soloTeam}</Badge>
+          {project.soloTeam ? (
+            <Badge variant="secondary">{project.soloTeam}</Badge>
+          ) : null}
         </div>
       </CardHeader>
 
+      <CardContent>
+        <div className="flex gap-3">
+          {project.technos &&
+            project.technos.map((techno) => (
+              <Image
+                key={techno.title}
+                width="24"
+                height="24"
+                src={techno.photo_url}
+                title={techno.title}
+                alt={techno.title}
+              />
+            ))}
+        </div>
+      </CardContent>
+
       <CardFooter className="flex justify-end gap-5">
-        {project.github_url ? (
+        {project.website_url ? (
           <Button asChild>
-            <Link href={project.github_url} target="_blank">
-              View GitHub <ExternalLink size="16" />
+            <Link
+              href={project.website_url}
+              target="_blank"
+              className=" bg-[#2a193dc0]/90 hover:bg-[#7b517cc0] text-white"
+            >
+              View website <ExternalLink size="16" />
             </Link>
           </Button>
         ) : null}
-        {project.website_url ? (
+        {project.github_url ? (
           <Button asChild>
-            <Link href={project.website_url} target="_blank">
+            <Link
+              href={project.github_url}
+              target="_blank"
+              className=" bg-[#2a193dc0]/90 hover:bg-[#7b517cc0] text-white"
+            >
               View GitHub <ExternalLink size="16" />
             </Link>
           </Button>
