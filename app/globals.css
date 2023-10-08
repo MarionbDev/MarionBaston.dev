@@ -119,7 +119,7 @@ section > label {
   font-weight: 200;
 }
 
-input[type="submit"],
+/* input[type="submit"],
 .button {
   position: relative;
   background: #400e41c0;
@@ -138,10 +138,10 @@ input[type="submit"],
   font-weight: 400;
   letter-spacing: 0.5rem;
   transition: 0.3s all;
-}
+} */
 
-input[type="submit"]:hover,
+/* input[type="submit"]:hover,
 button[type="button"]:hover {
   background: #922394e4;
   color: #ede6e6f6;
-}
+} */

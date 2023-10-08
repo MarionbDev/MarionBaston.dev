@@ -12,8 +12,10 @@ import githubPng from "../../public/logos/github.png";
 
 export default function Skills() {
   return (
-    <div className="text flex flex-col items-center justify-center py-20 bg-gradient-to-t from-[#FFFFFF] via-[#e9cfe9c0] to-[#FFFFFF]">
-      {" "}
+    <div
+      className="text flex flex-col items-center justify-center  "
+      id="skills"
+    >
       <div className="w-3/4">
         <p className="text-xl font-bold text-center sm:text-3xl w-72 mb-20 border-b-2 pb-2 border-purple ">
           Mes compétences
