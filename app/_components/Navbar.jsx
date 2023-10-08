@@ -6,35 +6,46 @@ import github from "../../public/logos/github.png";
 export default function Navbar() {
   return (
     <div className="nav text-purple flex justify-end items-center  w-full pr-8  h-20 ">
-      <nav className=" flex justify-between">
+      <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className=" flex gap-6 items-center">
-          <Link href="#aboutme">
-            <li>Qui suis-je</li>
-          </Link>
-          <Link href="#projects">
-            <li>Projets</li>
-          </Link>
-          <Link href="#skills">
-            <li>Compétences</li>
-          </Link>
+          <li>
+            <Link href="#aboutme" aria-label="Qui suis-je ?">
+              Qui suis-je ?
+            </Link>
+          </li>
+          <li>
+            <Link href="#projects" aria-label="mes projets">
+              Projets
+            </Link>
+          </li>
+          <li>
+            <Link href="#skills" aria-label="mes compétences">
+              Compétences
+            </Link>
+          </li>
           <div className="flex gap-2">
             <li>
-              <a
+              <Link
                 href="https://www.linkedin.com/in/marion-baston/"
                 target="_blank"
               >
                 <Image
                   src={linkedin}
-                  alt="link linkedin"
+                  alt="lien vers ma page linkedin"
                   width={42}
                   height={42}
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://github.com/MarionbDev" target="_blank">
-                <Image src={github} alt="link github" width={36} height={36} />
-              </a>
+              <Link href="https://github.com/MarionbDev" target="_blank">
+                <Image
+                  src={github}
+                  alt="lien vers ma page github"
+                  width={36}
+                  height={36}
+                />
+              </Link>
             </li>
           </div>
         </ul>

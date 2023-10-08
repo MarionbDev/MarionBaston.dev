@@ -55,7 +55,7 @@ export default function Skills() {
             <div className=" flex justify-center items-center ">
               <Image
                 src={tailwindPng}
-                alt="logo taimwind"
+                alt="logo tailwind"
                 width={80}
                 height={80}
               />
@@ -63,7 +63,12 @@ export default function Skills() {
           </div>
           <div className="flex justify-center items-center col-start-4">
             <div className=" flex justify-center items-center ">
-              <Image src={scrumPng} alt="logo scrum" width={80} height={80} />
+              <Image
+                src={scrumPng}
+                alt="logo agile-scrum"
+                width={80}
+                height={80}
+              />
             </div>
           </div>
           <div className="flex justify-center items-center col-start-5">

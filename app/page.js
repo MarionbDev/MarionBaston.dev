@@ -1,13 +1,12 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "./_components/Navbar";
 import AboutMe from "./_components/AboutMe";
 import Skills from "./_components/Skills";
 import Footer from "./_components/Footer";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProfessionalProject from "./_components/Projects/ProfessionalProject";
 import SideProject from "./_components/Projects/SideProject";
 import TrainingProject from "./_components/Projects/TrainingProject";
-// import WhoIsMarion from "./_components/WhoIsMarion";
-// import Contact from "./_components/Contact";
+import OtherProject from "./_components/Projects/OtherProject";
 
 export default function Home() {
   return (
@@ -31,28 +30,57 @@ export default function Home() {
             </p>
           </div>
           <Tabs defaultValue="side-project">
-            <TabsList className="grid grid-cols-4  mb-8 w-fit mx-auto gap-6">
-              <TabsTrigger value="side-project">Side Project</TabsTrigger>
-              <TabsTrigger value="training">Training</TabsTrigger>
-              <TabsTrigger value="professional">Professional</TabsTrigger>
-              <TabsTrigger value="other">Other</TabsTrigger>
+            <TabsList
+              aria-label="naviguez entre les onglets avec les flèches"
+              className="grid grid-cols-4  mb-8 w-fit mx-auto gap-6"
+            >
+              <TabsTrigger
+                value="side-project"
+                aria-controls="projets-personnels"
+                tabIndex="0"
+              >
+                Personnels
+              </TabsTrigger>
+
+              <TabsTrigger
+                value="training"
+                aria-controls="projets-formations"
+                tabIndex="1"
+              >
+                Formations
+              </TabsTrigger>
+              <TabsTrigger
+                value="professional"
+                aria-controls="projets-professionnels"
+                tabIndex="2"
+              >
+                Professionnels
+              </TabsTrigger>
+              <TabsTrigger
+                value="other"
+                aria-controls="projets-autres"
+                tabIndex="3"
+              >
+                Autres
+              </TabsTrigger>
             </TabsList>
             <div className="w-3/4 mx-auto">
-              <TabsContent value="side-project">
+              <TabsContent value="side-project" id="projets-personnels">
                 <SideProject />
               </TabsContent>
-              <TabsContent value="training">
+              <TabsContent value="training" id="projets-formations">
                 <TrainingProject />
               </TabsContent>
-              <TabsContent value="professional">
+              <TabsContent value="professional" id="projets-professionnels">
                 <ProfessionalProject />
               </TabsContent>
-              <TabsContent value="other"></TabsContent>
+              <TabsContent value="other" id="projets-autres">
+                <OtherProject />
+              </TabsContent>
             </div>
           </Tabs>
         </div>
       </div>
-
       <div className="mt-12 pb-36">
         <Skills />
       </div>
