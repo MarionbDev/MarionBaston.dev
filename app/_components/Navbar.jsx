@@ -8,6 +8,7 @@ export default function Navbar() {
     <div className="nav text-purple flex justify-end items-center  w-full pr-8  h-20 ">
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className=" flex gap-6 items-center">
+          <p>coucou</p>
           <li>
             <Link href="#aboutme" aria-label="Qui suis-je ?">
               Qui suis-je ?
