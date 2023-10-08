@@ -55,32 +55,34 @@ export default function AboutMe() {
               <Image
                 className=" rounded-full w-48 2xl:w-60 shadow-2xl "
                 src={myPhoto}
-                alt="my photo"
+                alt="ma photo de profil"
                 width={300}
               />
             </div>
           </div>
           <div className="mt-8 flex gap-6">
-            <Button className="gap-2" type="button" asChild>
+            <Button className="gap-2" type="button" asChild id="download-cv">
               <Link
                 href="/MarionBaston.pdf"
                 target="_blank"
                 className="flex gap-2"
+                aria-labelledby="download-cv"
               >
                 <Download size="16" />
                 Télécharger mon CV
               </Link>
             </Button>
-            <a href={`mailto:${emailAddress}`}>
+            <Link href={`mailto:${emailAddress}`} aria-labelledby="contact-me">
               <Button
                 className="gap-2 hover:bg-[#d18fcd]/60"
                 type="button"
                 variant="secondary"
+                id="contact-me"
               >
                 <MessagesSquare size="16" />
                 Contactez-moi
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ const projects = [
   {
     id: 2,
     title: "Marion Baston",
-    description: "My portfolio",
+    description: "Mon portfolio",
     time: "3 semaines",
     soloTeam: null,
     technos: [

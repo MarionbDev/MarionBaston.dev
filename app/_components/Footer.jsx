@@ -9,49 +9,79 @@ export default function Footer() {
       <footer className="px-2 w-full lg:container lg:m-auto lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 py-4">
           <div className="lg:col-start-1 lg:col-span-6 flex flex-col justify-between items-start">
-            <Link className="flex items-center gap-4 ml-10" href="/">
+            <Link
+              href="/"
+              className="flex items-center gap-4 ml-10"
+              aria-labelledby="my-name"
+            >
               <span className="flex flex-col">
-                <span className="text-xl font-semibold">Marion Baston</span>
+                <span id="my-name" className="text-xl font-semibold">
+                  Marion Baston
+                </span>
                 <span className="text-md">© {currentYear}</span>
               </span>
             </Link>
-            <Button variant="link" asChild className="ml-6">
-              <Link href="/legal-notice">Mentions légales</Link>
+            <Button
+              variant="link"
+              asChild
+              className="ml-6"
+              aria-labelledby="legal-notice"
+            >
+              <Link href="/legal-notice" id="legal-notice">
+                Mentions légales
+              </Link>
             </Button>
           </div>
-          <nav className="hidden lg:block lg:col-start-7 lg:col-span-3">
+          <nav
+            aria-labelledby="footer-navigation-link"
+            className="hidden lg:block lg:col-start-7 lg:col-span-3"
+          >
             <ul>
               <li>
-                <Button variant="link" asChild>
-                  <Link href="#aboutme">Qui suis-je</Link>
+                <Button variant="link" asChild aria-labelleby="about-me">
+                  <Link href="#aboutme" id="about-me">
+                    Qui suis-je
+                  </Link>
                 </Button>
               </li>
               <li>
-                <Button variant="link" asChild>
-                  <Link href="#projects">Projets</Link>
+                <Button variant="link" asChild aria-labelleby="projects">
+                  <Link href="#projects" id="projects">
+                    Projets
+                  </Link>
                 </Button>
               </li>
               <li>
-                <Button variant="link" asChild>
-                  <Link href="#skills">Compétences</Link>
+                <Button variant="link" asChild aria-labelleby="skills">
+                  <Link href="#skills" id="skills">
+                    Compétences
+                  </Link>
                 </Button>
               </li>
             </ul>
           </nav>
-          <nav className="lg:col-start-10 lg:col-span-3">
+          <nav
+            aria-labelledby="footer-navigation-externalLink"
+            className="lg:col-start-10 lg:col-span-3"
+          >
             <ul>
               <li>
-                <Button variant="link" asChild>
-                  <Link href="https://github.com/MarionbDev" target="_blank">
+                <Button variant="link" asChild aria-labelleby="github">
+                  <Link
+                    href="https://github.com/MarionbDev"
+                    target="_blank"
+                    id="github"
+                  >
                     GitHub
                   </Link>
                 </Button>
               </li>
               <li>
-                <Button variant="link" asChild>
+                <Button variant="link" asChild aria-labelleby="linkedin">
                   <Link
                     href="https://www.linkedin.com/in/marion-baston/"
                     target="_blank"
+                    id="linkedin"
                   >
                     LinkedIn
                   </Link>
