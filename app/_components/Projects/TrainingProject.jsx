@@ -16,7 +16,7 @@ const projects = [
     id: 1,
     title: "To-Do-List",
     description:
-      "Permettre de mieux anticiper les tâches prioritaires ou secondaires",
+      "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires",
     time: "3 semaines",
     soloTeam: "En groupe",
     technos: [
@@ -78,7 +78,8 @@ const projects = [
   {
     id: 3,
     title: "HoliTrip (hackathon)",
-    description: "Application web proposant différents itinéraires de RoadTrip",
+    description:
+      "Application web proposant divers itinéraires pour des road trips",
     time: "24 heures",
     soloTeam: "En groupe",
     technos: [
@@ -106,9 +107,9 @@ const projects = [
     id: 4,
     title: "R-AMazing-Phone-Pricer (hackathon)",
     description:
-      "Application web permettant d'accompagner les patients dans leur prise en charge à l'hôpital",
+      "Outil de classification des smartphones selon différents critères",
     time: "48 heures",
-    soloTeam: "En groupe",
+    soloTeam: "En groupe (Finaliste)",
     technos: [
       {
         title: "javascript",
@@ -151,7 +152,7 @@ const projects = [
     id: 5,
     title: "SERENITY",
     description:
-      "Application web permettant d'accompagner les patients dans leur prise en charge à l'hôpital",
+      "Application web accompagnant les patients dans leurs prises en charge à l’hôpital  / développement d’un dashbord “Praticien”",
     time: "2 mois",
     soloTeam: "En groupe",
     technos: [

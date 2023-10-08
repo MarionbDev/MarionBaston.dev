@@ -13,9 +13,9 @@ const projects = [
   {
     id: 1,
     title: "Drawing And Co",
+    time: "1 mois, en évolution",
     description:
-      "Site web qui présente une galerie de dessins, avec une fonction de connexion permettant aux utilisateurs d'interagir en laissant des commentaires.",
-    time: "Opérationnel, évolution constante",
+      "Plateforme de gestion d'une galerie de dessins avec des fonctionnalités interactives pour les utilisateurs",
     soloTeam: null,
     technos: [
       {

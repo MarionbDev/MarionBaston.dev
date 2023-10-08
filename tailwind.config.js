@@ -7,6 +7,7 @@ module.exports = {
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
   ],
+
   theme: {
     container: {
       center: true,
@@ -15,6 +16,7 @@ module.exports = {
         "2xl": "1536px",
       },
     },
+
     colors: {
       purple: "#862e88c0",
       white: "#ffffff",

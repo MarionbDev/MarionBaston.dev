@@ -44,23 +44,15 @@ export default function ProjectCard({ project }) {
 
       <CardFooter className="flex justify-end gap-5">
         {project.website_url ? (
-          <Button asChild>
-            <Link
-              href={project.website_url}
-              target="_blank"
-              className=" bg-[#2a193dc0]/90 hover:bg-[#7b517cc0] text-white"
-            >
+          <Button asChild className=" bg-[#9e689a] hover:bg-[#b370ae]/60">
+            <Link href={project.website_url} target="_blank">
               View website <ExternalLink size="16" />
             </Link>
           </Button>
         ) : null}
         {project.github_url ? (
-          <Button asChild>
-            <Link
-              href={project.github_url}
-              target="_blank"
-              className=" bg-[#2a193dc0]/90 hover:bg-[#7b517cc0] text-white"
-            >
+          <Button asChild className=" bg-[#9e689a] hover:bg-[#b370ae]/60">
+            <Link href={project.github_url} target="_blank">
               View GitHub <ExternalLink size="16" />
             </Link>
           </Button>
