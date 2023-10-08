@@ -32,12 +32,13 @@ export default function Home() {
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
+              tabIndex="0"
               className="grid grid-cols-4  mb-8 w-fit mx-auto gap-6"
             >
               <TabsTrigger
                 value="side-project"
                 aria-controls="projets-personnels"
-                tabIndex="0"
+                tabIndex="-1"
               >
                 Personnels
               </TabsTrigger>
@@ -45,21 +46,21 @@ export default function Home() {
               <TabsTrigger
                 value="training"
                 aria-controls="projets-formations"
-                tabIndex="1"
+                tabIndex="-1"
               >
                 Formations
               </TabsTrigger>
               <TabsTrigger
                 value="professional"
                 aria-controls="projets-professionnels"
-                tabIndex="2"
+                tabIndex="-1"
               >
                 Professionnels
               </TabsTrigger>
               <TabsTrigger
                 value="other"
                 aria-controls="projets-autres"
-                tabIndex="3"
+                tabIndex="-1"
               >
                 Autres
               </TabsTrigger>

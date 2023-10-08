@@ -61,28 +61,36 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="mt-8 flex gap-6">
-            <Button className="gap-2" type="button" asChild id="download-cv">
+            <Button
+              type="button"
+              asChild
+              aria-label="appuyez sur le bouton pour télécharger mon cv"
+            >
               <Link
                 href="/MarionBaston.pdf"
                 target="_blank"
-                className="flex gap-2"
                 aria-labelledby="download-cv"
+                className="flex gap-2"
               >
-                <Download size="16" />
+                <Download size="16" id="download-cv" />
                 Télécharger mon CV
               </Link>
             </Button>
-            <Link href={`mailto:${emailAddress}`} aria-labelledby="contact-me">
-              <Button
-                className="gap-2 hover:bg-[#d18fcd]/60"
-                type="button"
-                variant="secondary"
-                id="contact-me"
+            <Button
+              className=" hover:bg-[#d18fcd]/60"
+              type="button"
+              variant="secondary"
+              aria-label="Appuyez sur le bouton pour me contacter"
+            >
+              <Link
+                href={`mailto:${emailAddress}`}
+                aria-labelledby="contact-me"
+                className="flex gap-2"
               >
-                <MessagesSquare size="16" />
+                <MessagesSquare size="16" id="contact-me" />
                 Contactez-moi
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

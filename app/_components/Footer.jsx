@@ -14,12 +14,12 @@ export default function Footer() {
               className="flex items-center gap-4 ml-10"
               aria-labelledby="my-name"
             >
-              <span className="flex flex-col">
+              <div className="flex flex-col">
                 <span id="my-name" className="text-xl font-semibold">
                   Marion Baston
                 </span>
                 <span className="text-md">© {currentYear}</span>
-              </span>
+              </div>
             </Link>
             <Button
               variant="link"
@@ -38,22 +38,30 @@ export default function Footer() {
           >
             <ul>
               <li>
-                <Button variant="link" asChild aria-labelleby="about-me">
-                  <Link href="#aboutme" id="about-me">
+                <Button
+                  variant="link"
+                  asChild
+                  aria-labelledby="footer-about-me"
+                >
+                  <Link href="#aboutme" id="footer-about-me">
                     Qui suis-je
                   </Link>
                 </Button>
               </li>
               <li>
-                <Button variant="link" asChild aria-labelleby="projects">
-                  <Link href="#projects" id="projects">
+                <Button
+                  variant="link"
+                  asChild
+                  aria-labelledby="footer-projects"
+                >
+                  <Link href="#projects" id="footer-projects">
                     Projets
                   </Link>
                 </Button>
               </li>
               <li>
-                <Button variant="link" asChild aria-labelleby="skills">
-                  <Link href="#skills" id="skills">
+                <Button variant="link" asChild aria-labelledby="footer-skills">
+                  <Link href="#skills" id="footer-skills">
                     Compétences
                   </Link>
                 </Button>
@@ -66,22 +74,26 @@ export default function Footer() {
           >
             <ul>
               <li>
-                <Button variant="link" asChild aria-labelleby="github">
+                <Button variant="link" asChild aria-labelledby="footer-github">
                   <Link
                     href="https://github.com/MarionbDev"
                     target="_blank"
-                    id="github"
+                    id="footer-github"
                   >
                     GitHub
                   </Link>
                 </Button>
               </li>
               <li>
-                <Button variant="link" asChild aria-labelleby="linkedin">
+                <Button
+                  variant="link"
+                  asChild
+                  aria-labelledby="footer-linkedin"
+                >
                   <Link
                     href="https://www.linkedin.com/in/marion-baston/"
                     target="_blank"
-                    id="linkedin"
+                    id="footer-linkedin"
                   >
                     LinkedIn
                   </Link>
