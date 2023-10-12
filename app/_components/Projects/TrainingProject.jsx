@@ -44,6 +44,15 @@ const projects = [
     id: 2,
     title: "UNIVERSE",
     description: "Moteur de recherche musicale et écoute de la radio",
+    project_steps: [
+      {
+        step_description:
+          "Conception et maquettage d’une interface utilisateur web dynamique",
+      },
+      {
+        step_description: "Intégration de deux API externe",
+      },
+    ],
     time: "1 mois",
     soloTeam: "En groupe",
     technos: [
@@ -74,6 +83,7 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Pojet-2_UniVerse",
     website_url: "https://universe.laloupe-1.wilders.dev/",
+    video_url: "https://www.youtube.com/embed/ejvyu_qcY-I?si=uLxe2-_7YtkAX961",
   },
   {
     id: 3,

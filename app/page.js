@@ -33,12 +33,13 @@ export default function Home() {
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
               tabIndex="0"
-              className="grid grid-cols-4  mb-8 w-fit mx-auto gap-6"
+              className="grid grid-cols-4  mb-8 w-fit mx-auto gap-6 "
             >
               <TabsTrigger
                 value="side-project"
                 aria-controls="projets-personnels"
                 tabIndex="-1"
+                className=" hover:bg-white"
               >
                 Personnels
               </TabsTrigger>
@@ -47,6 +48,7 @@ export default function Home() {
                 value="training"
                 aria-controls="projets-formations"
                 tabIndex="-1"
+                className=" hover:bg-white"
               >
                 Formations
               </TabsTrigger>
@@ -54,6 +56,7 @@ export default function Home() {
                 value="professional"
                 aria-controls="projets-professionnels"
                 tabIndex="-1"
+                className=" hover:bg-white"
               >
                 Professionnels
               </TabsTrigger>
@@ -61,6 +64,7 @@ export default function Home() {
                 value="other"
                 aria-controls="projets-autres"
                 tabIndex="-1"
+                className=" hover:bg-white"
               >
                 Autres
               </TabsTrigger>
