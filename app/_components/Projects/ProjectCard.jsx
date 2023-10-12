@@ -26,32 +26,55 @@ export default function ProjectCard({ project }) {
         </div>
       </CardHeader>
 
-      <CardContent>
-        <div className="flex gap-3">
-          {project.technos &&
-            project.technos.map((techno) => (
-              <Image
-                key={techno.title}
-                width="24"
-                height="24"
-                src={techno.photo_url}
-                title={techno.title}
-                alt={techno.title}
-              />
-            ))}
+      <CardContent className="flex justify-between ">
+        <div className="flex flex-col">
+          <div className="flex items-start gap-3 ">
+            {project.technos &&
+              project.technos.map((techno) => (
+                <Image
+                  key={techno.title}
+                  width="24"
+                  height="24"
+                  src={techno.photo_url}
+                  title={techno.title}
+                  alt={techno.title}
+                />
+              ))}
+          </div>
+          <ul className=" text-sm pt-6 pl-4 list-disc ">
+            {project.project_steps &&
+              project.project_steps.map((step) => (
+                <li key={step.step_description}>{step.step_description}</li>
+              ))}
+          </ul>
+        </div>
+        <div>
+          {project.video_url ? (
+            <Link href={project.video_url}>
+              <iframe
+                width="360"
+                height="215"
+                src={project.video_url}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </Link>
+          ) : null}
         </div>
       </CardContent>
 
       <CardFooter className="flex justify-end gap-5">
         {project.website_url ? (
-          <Button asChild className=" bg-[#9e689a] hover:bg-[#b370ae]/60">
+          <Button asChild>
             <Link href={project.website_url} target="_blank">
               View website <ExternalLink size="16" />
             </Link>
           </Button>
         ) : null}
         {project.github_url ? (
-          <Button asChild className=" bg-[#9e689a] hover:bg-[#b370ae]/60">
+          <Button asChild>
             <Link href={project.github_url} target="_blank">
               View GitHub <ExternalLink size="16" />
             </Link>

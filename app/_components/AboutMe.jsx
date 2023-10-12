@@ -12,20 +12,20 @@ export default function AboutMe() {
   return (
     <>
       <div
-        className="text flex flex-col items-center justify-center py-6 to-[#f3def3c0] bg-gradient-to-t from-[#FFFFFF] to-transparent"
+        className="text flex flex-col items-center justify-center py-6 to-[#e2d0e2c0] bg-gradient-to-t from-[#FFFFFF] to-transparent "
         id="aboutme"
       >
         <div className="w-3/4 ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 row-span-6 ">
               <h3 className="text-base sm:text-2xl mb-3 ">Bonjour, je suis</h3>
-              <h2 className="text-purple font-semibold text-2xl sm:text-6xl mb-2">
+              <h1 className="text-purple font-semibold text-2xl sm:text-6xl mb-2">
                 Marion Baston
-              </h2>
+              </h1>
               <p className="text-xl font-semibold sm:text-4xl mb-6">
                 Développeuse Web Junior
               </p>
-              <div className="text-base md:text-md p-8 border bg-white/50 backdrop-blur-lg drop-shadow-sm rounded-2xl relative ">
+              <div className="text-base md:text-md p-8 border bg-white/70 backdrop-blur-lg drop-shadow-md rounded-2xl relative ">
                 <p>
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
@@ -53,10 +53,10 @@ export default function AboutMe() {
             </div>
             <div className=" col-start-10 col-span-4 row-start-1 row-span-6 ">
               <Image
-                className=" rounded-full w-48 2xl:w-60 shadow-2xl "
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
+                className=" rounded-full w-48 2xl:w-60 shadow-2xl border-2 border-stone-500"
               />
             </div>
           </div>
