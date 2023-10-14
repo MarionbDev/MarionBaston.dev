@@ -14,11 +14,27 @@ import figmaPng from "./assets/logos/figma.png";
 const projects = [
   {
     id: 1,
-    title: "To-Do-List",
+    title: "TodoList",
     description:
       "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires",
     time: "3 semaines",
     soloTeam: "En groupe",
+    project_steps: [
+      {
+        step_description: "Conception et maquettage de l'application web",
+      },
+      {
+        step_description: "Creation d'un timer d'échéance personnalisé",
+      },
+      {
+        step_description:
+          "Déplacement d'une tâche en fonction de son avancement",
+      },
+      {
+        step_description:
+          "Suppression d'une/d'un ensemble de tâche à tout moment",
+      },
+    ],
     technos: [
       {
         title: "javascript",
@@ -38,12 +54,13 @@ const projects = [
       },
     ],
     github_url: "https://github.com/MarionbDev/Projet-1_TodoList",
-    website_url: null,
+    website_url: "https://marionbdev.github.io/Projet-1_TodoList/",
+    video_url: "https://www.youtube.com/embed/Csi9pC6GqOk?si=FUWK4xFy9GHKDrQL",
   },
   {
     id: 2,
     title: "UNIVERSE",
-    description: "Moteur de recherche musicale et écoute de la radio",
+    description: "Moteur de recherche musicale / Radio",
     project_steps: [
       {
         step_description:
@@ -83,15 +100,23 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Pojet-2_UniVerse",
     website_url: "https://universe.laloupe-1.wilders.dev/",
-    video_url: "https://www.youtube.com/embed/ejvyu_qcY-I?si=uLxe2-_7YtkAX961",
+    video_url: "https://www.youtube.com/embed/yUwg8c1jHKY?si=gPwaA4SfyVVUoMoI",
   },
   {
     id: 3,
     title: "HoliTrip (hackathon)",
-    description:
-      "Application web proposant divers itinéraires pour des road trips",
+    description: "Plateforme proposant divers itinéraires de road trips",
     time: "24 heures",
     soloTeam: "En groupe",
+    project_steps: [
+      {
+        step_description:
+          "Conception et maquettage d’une interface utilisateur web dynamique",
+      },
+      {
+        step_description: "Intégration de deux API externe",
+      },
+    ],
     technos: [
       {
         title: "javascript",
@@ -112,6 +137,7 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Hackathon-HoliTrip",
     website_url: null,
+    video_url: "https://www.youtube.com/embed/tDhZ-Yu5P7k?si=2LpzdN7ONtLxAOZK",
   },
   {
     id: 4,
@@ -120,6 +146,19 @@ const projects = [
       "Outil de classification des smartphones selon différents critères",
     time: "48 heures",
     soloTeam: "En groupe (Finaliste)",
+    project_steps: [
+      {
+        step_description:
+          "Conception et maquettage d’une interface utilisateur web dynamique",
+      },
+      {
+        step_description: "Intégration du Back-end",
+      },
+      {
+        step_description:
+          "Paramètres : Connexion / inscription pour User et Admin. Gestion des utilisateurs, des smartphones (CRUD), Chat ...",
+      },
+    ],
     technos: [
       {
         title: "javascript",
@@ -157,6 +196,7 @@ const projects = [
     github_url:
       "https://github.com/MarionbDev/Hackathon-R-AMazing-Phone-Pricer-Ding-Dong-",
     website_url: null,
+    video_url: "https://www.youtube.com/embed/H0U_xoGYP5c?si=v1nHy642Hr6nI7eo",
   },
   {
     id: 5,
@@ -165,6 +205,19 @@ const projects = [
       "Application web accompagnant les patients dans leurs prises en charge à l’hôpital  / développement d’un dashbord “Praticien”",
     time: "2 mois",
     soloTeam: "En groupe",
+    project_steps: [
+      {
+        step_description:
+          "Conception d’une interface utilisateur web dynamique",
+      },
+      {
+        step_description: "Intégration du Back-end",
+      },
+      {
+        step_description:
+          "Paramètres : Connexion / inscription pour Patient, Praticien et Admin. Gestion des utilisateurs, interventions, spécialités... (CRUD)",
+      },
+    ],
     technos: [
       {
         title: "javascript",

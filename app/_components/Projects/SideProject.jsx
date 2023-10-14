@@ -8,6 +8,7 @@ import expressPng from "./assets/logos/express.png";
 import mysqlPng from "./assets/logos/mysql.png";
 import figmaPng from "./assets/logos/figma.png";
 import nextPng from "./assets/logos/next.png";
+import picturePortfolio from "./assets/portfolio_miniature.png";
 
 const projects = [
   {
@@ -17,6 +18,22 @@ const projects = [
     description:
       "Plateforme de gestion d'une galerie de dessins avec des fonctionnalités interactives pour les utilisateurs",
     soloTeam: null,
+    project_steps: [
+      {
+        step_description: "Projet présenté au Titre Professionnel",
+      },
+      {
+        step_description:
+          "Conception et maquettage d’une interface utilisateur web dynamique, responsive",
+      },
+      {
+        step_description: "Intégration du Back-end",
+      },
+      {
+        step_description:
+          "Paramètres : Connexion / inscription pour User et Admin, sécurisation des formulaires, gestion de la galerie, des utilisateurs et des commentaires (CRUD)",
+      },
+    ],
     technos: [
       {
         title: "javascript",
@@ -60,6 +77,15 @@ const projects = [
     description: "Mon portfolio",
     time: "3 semaines",
     soloTeam: null,
+    project_steps: [
+      {
+        step_description: "Mes premiers pas avec Next.js",
+      },
+      {
+        step_description:
+          "Conception et maquettage d’une interface utilisateur web dynamique, responsive",
+      },
+    ],
     technos: [
       {
         title: "javascript",
@@ -79,7 +105,8 @@ const projects = [
       },
     ],
     github_url: "https://github.com/MarionbDev/Portfolio",
-    website_url: null,
+    website_url: "https://marionbaston.vercel.app/",
+    picture_portfolio: picturePortfolio,
   },
 ];
 

@@ -11,10 +11,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div
-        className="text flex flex-col items-center justify-center py-6 to-[#e2d0e2c0] bg-gradient-to-t from-[#FFFFFF] to-transparent "
-        id="aboutme"
-      >
+      <div className=" flex flex-col items-center justify-center py-6 to-[#f0f9ff] bg-gradient-to-t from-[#fae8ff] to-transparent shadow-md">
         <div className="w-3/4 ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 row-span-6 ">
@@ -25,7 +22,7 @@ export default function AboutMe() {
               <p className="text-xl font-semibold sm:text-4xl mb-6">
                 Développeuse Web Junior
               </p>
-              <div className="text-base md:text-md p-8 border bg-white/70 backdrop-blur-lg drop-shadow-md rounded-2xl relative ">
+              <div className="text-base md:text-md p-8 border bg-white/30 backdrop-blur-lg drop-shadow-md rounded-2xl relative ">
                 <p>
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
@@ -61,11 +58,7 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="mt-8 flex gap-6">
-            <Button
-              type="button"
-              asChild
-              aria-label="appuyez sur le bouton pour télécharger mon cv"
-            >
+            <Button type="button" asChild>
               <Link
                 href="/MarionBaston.pdf"
                 target="_blank"
@@ -77,10 +70,8 @@ export default function AboutMe() {
               </Link>
             </Button>
             <Button
-              className=" hover:bg-[#d18fcd]/60"
               type="button"
-              variant="secondary"
-              aria-label="Appuyez sur le bouton pour me contacter"
+              className=" hover:bg-[#3b0764]/60  bg-[#3b0764]/70"
             >
               <Link
                 href={`mailto:${emailAddress}`}

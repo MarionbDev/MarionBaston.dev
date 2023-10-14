@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card>
+    <Card className=" shadow-[#3b0764]/10 shadow-md">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
@@ -28,20 +28,28 @@ export default function ProjectCard({ project }) {
 
       <CardContent className="flex justify-between ">
         <div className="flex flex-col">
-          <div className="flex items-start gap-3 ">
+          <ul
+            aria-label="liste des technologies utilisées"
+            className="flex items-start gap-3 "
+          >
             {project.technos &&
               project.technos.map((techno) => (
-                <Image
-                  key={techno.title}
-                  width="24"
-                  height="24"
-                  src={techno.photo_url}
-                  title={techno.title}
-                  alt={techno.title}
-                />
+                <li key={techno.title}>
+                  <Image
+                    key={techno.title}
+                    width="24"
+                    height="24"
+                    src={techno.photo_url}
+                    title={techno.title}
+                    alt={techno.title}
+                  />
+                </li>
               ))}
-          </div>
-          <ul className=" text-sm pt-6 pl-4 list-disc ">
+          </ul>
+          <ul
+            aria-label="les étapes du projets"
+            className=" text-sm pt-6 pl-4 list-disc "
+          >
             {project.project_steps &&
               project.project_steps.map((step) => (
                 <li key={step.step_description}>{step.step_description}</li>
@@ -63,6 +71,18 @@ export default function ProjectCard({ project }) {
             </Link>
           ) : null}
         </div>
+
+        {project.picture_portfolio ? (
+          <div className=" border-purple/10 border-2">
+            <Image
+              width="420"
+              height="375"
+              src={project.picture_portfolio}
+              title={project.picture_portfolio}
+              alt={project.picture_portfolio}
+            />
+          </div>
+        ) : null}
       </CardContent>
 
       <CardFooter className="flex justify-end gap-5">
