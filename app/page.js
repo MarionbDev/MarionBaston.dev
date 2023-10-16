@@ -16,15 +16,15 @@ export default function Home() {
         <AboutMe />
       </div>
       <div
-        className="text flex flex-col items-center justify-center pt-20  pb-20"
         id="projects"
+        className="text flex flex-col items-center justify-center pt-16 pb-72"
       >
         <div className="w-3/4 ">
-          <div className="flex flex-col gap-3 mb-16 ">
-            <h2 className="text-xl font-bold sm:text-3xl w-full text-start  border-b-2 pb-2 border-[#3b0764]/50">
+          <div className="flex flex-col gap-3 mb-20 ">
+            <h2 className="text-xl font-bold sm:text-3xl w-full text-start  border-b-2 pb-2  border-[#3b0764]/50">
               Mes projets
             </h2>
-            <p>
+            <p className="pt-4">
               Plongez dans mon portfolio pour découvrir la diversité de mes
               expériences en développement web !
             </p>
@@ -37,7 +37,7 @@ export default function Home() {
               <TabsTrigger
                 value="side-project"
                 aria-controls="projets-personnels"
-                className=" hover:bg-white hover:text-[#3b0764]/70 hover:font-bold "
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
               >
                 Personnels
               </TabsTrigger>
@@ -45,21 +45,21 @@ export default function Home() {
               <TabsTrigger
                 value="training"
                 aria-controls="projets-formations"
-                className=" hover:bg-white hover:text-[#3b0764]/70 hover:font-bold"
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full "
               >
                 Formations
               </TabsTrigger>
               <TabsTrigger
                 value="professional"
                 aria-controls="projets-professionnels"
-                className=" hover:bg-white hover:text-[#3b0764]/70 hover:font-bold "
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full"
               >
                 Professionnels
               </TabsTrigger>
               <TabsTrigger
                 value="other"
                 aria-controls="projets-autres"
-                className=" hover:bg-white hover:text-[#3b0764]/70 hover:font-bold"
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full "
               >
                 Autres
               </TabsTrigger>
@@ -81,7 +81,7 @@ export default function Home() {
           </Tabs>
         </div>
       </div>
-      <div className=" pb-96">
+      <div id="skills" className=" pt-16 pb-[80rem]">
         <Skills />
       </div>
       <Footer />
