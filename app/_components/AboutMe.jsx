@@ -3,7 +3,7 @@
 import { Download, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import myPhoto from "../../public/images/myPicture.png";
+import myPhoto from "../../public/images/photo4.png";
 
 import Link from "next/link";
 export default function AboutMe() {
@@ -11,7 +11,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className=" flex flex-col items-center justify-center py-6 to-[#f0f9ff] bg-gradient-to-t from-[#fae8ff] to-transparent shadow-md">
+      <div className="  flex flex-col items-center justify-center py-20 to-[#f0f9ff] bg-gradient-to-t from-[#fae8ff] to-transparent shadow-md">
         <div className="w-3/4 ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 row-span-6 ">
@@ -53,7 +53,7 @@ export default function AboutMe() {
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
-                className=" rounded-full w-48 2xl:w-60 shadow-2xl border-2 border-stone-500"
+                className=" rounded-full w-48 2xl:w-60 shadow-2xl border-4 border-[#ffffff] bg-[#c173d6]/70"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function AboutMe() {
             </Button>
             <Button
               type="button"
-              className=" hover:bg-[#3b0764]/60  bg-[#3b0764]/70"
+              className=" hover:bg-[#ad4cf7]  bg-[#c173d6]/70 hover:text-[#ffffff] text-[#000000] hover:rotate-[10deg]    "
             >
               <Link
                 href={`mailto:${emailAddress}`}

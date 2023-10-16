@@ -5,25 +5,25 @@ import github from "../../public/logos/github.png";
 
 export default function Navbar() {
   return (
-    <div className=" flex text-base justify-end items-center  w-full pr-8  h-14 bg-[#ffff] fixed z-50 border-b-1 shadow-sm">
+    <div className=" flex text-base justify-end items-center  w-full pr-8  h-14 bg-[#ffff] fixed z-50 border-b-1 shadow-sm ">
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
-        <ul className=" flex gap-8 items-center font-semibold ">
-          <li className="transition hover:scale-110 duration-300">
+        <ul className=" flex gap-10 items-center font-semibold ">
+          <li className="transition hover:scale-110 duration-300 hover:rotate-[360deg] ">
             <Link href="#aboutme" aria-label="Qui suis-je ?">
               Qui suis-je ?
             </Link>
           </li>
-          <li className="transition hover:scale-110 duration-300">
+          <li className="transition hover:scale-110 duration-300 hover:rotate-[360deg]">
             <Link href="#projects" aria-label="mes projets">
               Projets
             </Link>
           </li>
-          <li className="transition hover:scale-110 duration-300">
+          <li className="transition hover:scale-110 duration-300 hover:rotate-[360deg] ">
             <Link href="#skills" aria-label="mes compétences">
               Compétences
             </Link>
           </li>
-          <li className="transition hover:scale-110 duration-300">
+          <li className="transition hover:scale-110 duration-300 hover:rotate-[360deg]">
             <Link
               href="https://www.linkedin.com/in/marion-baston/"
               target="_blank"
@@ -36,7 +36,7 @@ export default function Navbar() {
               />
             </Link>
           </li>
-          <li className="transition hover:scale-110 duration-300">
+          <li className="transition hover:scale-110 duration-300 hover:rotate-[360deg]">
             <Link href="https://github.com/MarionbDev" target="_blank">
               <Image
                 src={github}
