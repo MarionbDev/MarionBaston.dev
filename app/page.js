@@ -37,7 +37,7 @@ export default function Home() {
               <TabsTrigger
                 value="side-project"
                 aria-controls="projets-personnels"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full "
               >
                 Personnels
               </TabsTrigger>

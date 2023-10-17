@@ -48,12 +48,12 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className=" col-start-10 col-span-4 row-start-1 row-span-6 ">
+            <div className="  col-start-10 col-span-4 row-start-1 row-span-6 ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
-                className=" rounded-full w-48 2xl:w-60 shadow-2xl border-4 border-[#ffffff] bg-[#c173d6]/70"
+                className=" rounded-full w-48 2xl:w-60 shadow-2xl border-4 border-[#ffffff] bg-[#c173d6]/70 "
               />
             </div>
           </div>

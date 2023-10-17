@@ -12,10 +12,10 @@ export default function Footer() {
             <Link
               href="/"
               className="flex items-center gap-4 ml-10"
-              aria-labelledby="my-name"
+              aria-labelledby="marion-baston "
             >
               <div className="flex flex-col ">
-                <span id="my-name" className="text-xl font-semibold">
+                <span id="marion-baston" className="text-xl font-semibold">
                   Marion Baston
                 </span>
                 <span className="text-md">© {currentYear}</span>
