@@ -71,7 +71,7 @@ export default function AboutMe() {
             </Button>
             <Button
               type="button"
-              className=" hover:bg-[#ad4cf7]  bg-[#c173d6]/70 hover:text-[#ffffff] text-[#000000] hover:rotate-[10deg]    "
+              className=" hover:bg-purple bg-[#efc0f0c0] hover:text-[#ffffff] text-[#000000]"
             >
               <Link
                 href={`mailto:${emailAddress}`}
