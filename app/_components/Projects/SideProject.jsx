@@ -105,7 +105,7 @@ const projects = [
       },
     ],
     github_url: "https://github.com/MarionbDev/Portfolio",
-    website_url: "https://marionbaston.vercel.app/",
+    website_url: "https://marionbaston.fr",
     picture_portfolio: picturePortfolio,
   },
 ];
