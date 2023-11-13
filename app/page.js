@@ -29,6 +29,9 @@ export default function Home() {
               expériences en développement web !
             </p>
           </div>
+
+          <div classname=""></div>
+
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
@@ -37,7 +40,7 @@ export default function Home() {
               <TabsTrigger
                 value="side-project"
                 aria-controls="projets-personnels"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full "
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
               >
                 Personnels
               </TabsTrigger>
@@ -45,21 +48,21 @@ export default function Home() {
               <TabsTrigger
                 value="training"
                 aria-controls="projets-formations"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full "
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
               >
                 Formations
               </TabsTrigger>
               <TabsTrigger
                 value="professional"
                 aria-controls="projets-professionnels"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full"
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full"
               >
                 Professionnels
               </TabsTrigger>
               <TabsTrigger
                 value="other"
                 aria-controls="projets-autres"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple hover:rotate-[-10deg] hover:rounded-full "
+                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
               >
                 Autres
               </TabsTrigger>
