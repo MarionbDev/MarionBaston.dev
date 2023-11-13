@@ -1,6 +1,8 @@
 "use client";
 
+import { signInUser } from "@/services/auth.services";
 import { Button } from "@/components/ui/button";
+import { LogIn, Loader2 } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -18,9 +20,11 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
 
 const loginFormSchema = yup.object().shape({
   email: yup
@@ -37,15 +41,37 @@ const loginFormSchema = yup.object().shape({
 });
 
 export default function LoginPage() {
+  const [isLoading, setIsLoading] = useState(false);
+
   const form = useForm({ resolver: yupResolver(loginFormSchema) });
+
+  const handleLoginFormSubmit = async (values) => {
+    try {
+      setIsLoading(true);
+      await signInUser(values);
+    } catch (error) {
+      console.error(error);
+      toast.error(error.message);
+      if (error.error_description) {
+        toast.error(error.description);
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <Form {...form}>
-      <form className="h-screen w-screen flex justify-center items-center">
+      <form
+        onSubmit={form.handleSubmit(handleLoginFormSubmit)}
+        className="h-screen w-screen flex justify-center items-center"
+      >
         <Card>
           <CardHeader>
-            <CardTitle>Login</CardTitle>
-            <CardDescription>Login to the administration space</CardDescription>
+            <CardTitle>Connexion</CardTitle>
+            <CardDescription>
+              Se connecter à l'espace d'administration
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <FormField
@@ -55,7 +81,11 @@ export default function LoginPage() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="example@example.com" {...field} />
+                    <Input
+                      placeholder="example@example.com"
+                      type="email"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -66,17 +96,24 @@ export default function LoginPage() {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>Mot de passe</FormLabel>
                   <FormControl>
-                    <Input placeholder="********" {...field} />
+                    <Input placeholder="********" type="password" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
           </CardContent>
-          <CardFooter>
-            <Button type="submit">Login</Button>
+          <CardFooter className="justify-center">
+            <Button disabled={isLoading} className="gap-3">
+              {isLoading ? (
+                <Loader2 className="animate-spin" size="16" />
+              ) : (
+                <LogIn size="16" />
+              )}
+              Login
+            </Button>
           </CardFooter>
         </Card>
       </form>
