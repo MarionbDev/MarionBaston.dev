@@ -7,12 +7,16 @@ import ProfessionalProject from "./_components/Projects/ProfessionalProject";
 import SideProject from "./_components/Projects/SideProject";
 import TrainingProject from "./_components/Projects/TrainingProject";
 import OtherProject from "./_components/Projects/OtherProject";
+import Image from "next/image";
+import portfolio from "../app/_components/Projects/assets/portfolio_miniature.png";
+import serenity from "../app/_components/Projects/assets/serenity_miniature.png";
+import drawingandco from "../app/_components/Projects/assets/drawingandco_miniature.png";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <div id="aboutme" className=" pt-14 pb-24">
+      <div id="aboutme" className=" pb-24">
         <AboutMe />
       </div>
       <div
@@ -29,9 +33,22 @@ export default function Home() {
               expériences en développement web !
             </p>
           </div>
-
-          <div classname=""></div>
-
+          <div className="mb-28 flex items-center flex-col">
+            <p className="mb-6 font-semibold text-xl">
+              Top 3 Projets Fullstacks
+            </p>
+            <ul className="flex gap-4 justify-center">
+              <li>
+                <Image src={drawingandco} width={400} />
+              </li>
+              <li>
+                <Image src={portfolio} width={400} />
+              </li>
+              <li>
+                <Image src={serenity} width={400} />
+              </li>
+            </ul>
+          </div>
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"

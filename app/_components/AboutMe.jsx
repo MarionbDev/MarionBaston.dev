@@ -3,7 +3,7 @@
 import { Download, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import myPhoto from "../../public/images/photo4.png";
+import myPhoto from "../../public/images/photo1.png";
 
 import Link from "next/link";
 export default function AboutMe() {
@@ -48,12 +48,12 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className="  col-start-10 col-span-4 row-start-1 row-span-6 ">
+            <div className="picture mt-8 py-3 px-6 col-start-10 col-span-4 row-start-1 row-span-4  to-[#fae8ff] bg-gradient-to-t from-[#c173d6] to-transparent ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
-                className=" rounded-full w-48 2xl:w-60 shadow-2xl border-4 border-[#ffffff] bg-[#c173d6]/70 "
+                className="  w-48 2xl:w-60  mb-9  rounded-r-full rounded-l-3xl ml-4 "
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function AboutMe() {
             </Button>
             <Button
               type="button"
-              className=" hover:bg-purple bg-[#efc0f0c0] hover:text-[#ffffff] text-[#000000]"
+              className=" hover:bg-[#efc0f0c0] bg-[#efc0f0c0]  text-[#000000] transition hover:scale-110 duration-300"
             >
               <Link
                 href={`mailto:${emailAddress}`}

@@ -9,6 +9,7 @@ import mysqlPng from "./assets/logos/mysql.png";
 import figmaPng from "./assets/logos/figma.png";
 import nextPng from "./assets/logos/next.png";
 import picturePortfolio from "./assets/portfolio_miniature.png";
+import pictureDrawingandco from "./assets/drawingandco_miniature.png";
 
 const projects = [
   {
@@ -70,6 +71,7 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Drawing_And_Co",
     website_url: null,
+    picture_website: pictureDrawingandco,
   },
   {
     id: 2,
@@ -106,7 +108,7 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Portfolio",
     website_url: "https://marionbaston.fr",
-    picture_portfolio: picturePortfolio,
+    picture_website: picturePortfolio,
   },
 ];
 
