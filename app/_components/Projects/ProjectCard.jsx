@@ -26,7 +26,7 @@ export default function ProjectCard({ project }) {
         </div>
       </CardHeader>
 
-      <CardContent className="flex justify-between ">
+      <CardContent className="flex  justify-between">
         <div className="flex flex-col">
           <ul
             aria-label="liste des technologies utilisées"
@@ -72,14 +72,15 @@ export default function ProjectCard({ project }) {
           ) : null}
         </div>
 
-        {project.picture_portfolio ? (
-          <div className=" border-purple/10 border-2">
+        {project.picture_website ? (
+          <div className=" border-purple/10 border-2 ">
             <Image
               width="420"
               height="375"
-              src={project.picture_portfolio}
-              title={project.picture_portfolio}
-              alt={project.picture_portfolio}
+              src={project.picture_website}
+              title={project.picture_website}
+              alt={project.picture_website}
+              className=" max-w-fit "
             />
           </div>
         ) : null}

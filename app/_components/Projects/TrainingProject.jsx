@@ -5,7 +5,7 @@ import htmlPng from "./assets/logos/html.png";
 import gitPng from "./assets/logos/git.png";
 import reactPng from "./assets/logos/react.png";
 import tailwindPng from "./assets/logos/tailwind.png";
-import scrumPng from "./assets/logos/agileScrum.png";
+// import scrumPng from "./assets/logos/agileScrum.png";
 import nodePng from "./assets/logos/node.png";
 import expressPng from "./assets/logos/express.png";
 import mysqlPng from "./assets/logos/mysql.png";
@@ -89,10 +89,10 @@ const projects = [
         title: "gitPng",
         photo_url: gitPng,
       },
-      {
-        title: "scrumPng",
-        photo_url: scrumPng,
-      },
+      // {
+      //   title: "scrumPng",
+      //   photo_url: scrumPng,
+      // },
       {
         title: "figmaPng",
         photo_url: figmaPng,
@@ -247,13 +247,14 @@ const projects = [
         title: "gitPng",
         photo_url: gitPng,
       },
-      {
-        title: "scrumPng",
-        photo_url: scrumPng,
-      },
+      // {
+      //   title: "scrumPng",
+      //   photo_url: scrumPng,
+      // },
     ],
     github_url: "https://github.com/MarionbDev/Projet-3_Serenity",
-    website_url: null,
+    website_url: "https://serenity.laloupe-1.wilders.dev/",
+    video_url: "https://www.youtube.com/embed/hkXG27X0awo?si=8rrnQmRJbKX54qI1",
   },
 ];
 
