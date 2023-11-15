@@ -11,6 +11,7 @@ import Image from "next/image";
 import portfolio from "../app/_components/Projects/assets/portfolio_miniature.png";
 import serenity from "../app/_components/Projects/assets/serenity_miniature.png";
 import drawingandco from "../app/_components/Projects/assets/drawingandco_miniature.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         className="text flex flex-col items-center justify-center pt-16 pb-72"
       >
         <div className="w-3/4 ">
-          <div className="flex flex-col gap-3 mb-20 ">
+          <div className="flex flex-col gap-3 mb-12 ">
             <h2 className="text-xl font-bold sm:text-3xl w-full text-start  border-b-2 pb-2  border-[#3b0764]/50">
               Mes projets
             </h2>
@@ -34,55 +35,70 @@ export default function Home() {
             </p>
           </div>
           <div className="mb-28 flex items-center flex-col">
-            <p className="mb-6 font-semibold text-xl">
+            <p className="mb-12 font-semibold text-xl">
               Top 3 Projets Fullstacks
             </p>
             <ul className="flex gap-4 justify-center">
-              <li>
-                <Image src={drawingandco} width={400} />
+              <li className="transition  hover:scale-150 hover:translate-x-100">
+                <Link href="#top_perso">
+                  <Image src={drawingandco} width={400} />
+                </Link>
               </li>
-              <li>
-                <Image src={portfolio} width={400} />
+              <li className="transition  hover:scale-150 ">
+                <Link href="#top_perso">
+                  <Image src={portfolio} width={400} />
+                </Link>
               </li>
-              <li>
-                <Image src={serenity} width={400} />
+              <li className="transition  hover:scale-150 hover:translate-x-100">
+                <Link href="#top_training">
+                  <Image src={serenity} width={400} />
+                </Link>
               </li>
             </ul>
           </div>
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
-              className="grid grid-cols-4  mb-8 w-2/4 mx-auto gap-2 text-[#0f0505]/70 "
+              className="flex  mb-8 w-fit  mx-auto gap-2 text-[#0f0505]/70 "
             >
-              <TabsTrigger
-                value="side-project"
-                aria-controls="projets-personnels"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
-              >
-                Personnels
-              </TabsTrigger>
-
-              <TabsTrigger
-                value="training"
-                aria-controls="projets-formations"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
-              >
-                Formations
-              </TabsTrigger>
-              <TabsTrigger
-                value="professional"
-                aria-controls="projets-professionnels"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full"
-              >
-                Professionnels
-              </TabsTrigger>
-              <TabsTrigger
-                value="other"
-                aria-controls="projets-autres"
-                className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
-              >
-                Autres
-              </TabsTrigger>
+              {SideProject && SideProject().length > 0 ? (
+                <TabsTrigger
+                  id="top_perso"
+                  value="side-project"
+                  aria-controls="projets-personnels"
+                  className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
+                >
+                  Side-project
+                </TabsTrigger>
+              ) : null}
+              {TrainingProject && TrainingProject().length > 0 ? (
+                <TabsTrigger
+                  id="top_training"
+                  value="training"
+                  aria-controls="projets-formations"
+                  className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
+                >
+                  Formations
+                </TabsTrigger>
+              ) : null}
+              {ProfessionalProject && ProfessionalProject().length > 0 ? (
+                <TabsTrigger
+                  value="professional"
+                  aria-controls="projets-professionnels"
+                  className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full"
+                >
+                  Professionnels
+                </TabsTrigger>
+              ) : null}
+              {OtherProject && OtherProject().length > 0 ? (
+                <TabsTrigger
+                  value="other"
+                  aria-controls="projets-autres"
+                  className=" hover:bg-white hover:text-[#ffffff]  hover:font-bold hover:bg-purple  hover:rounded-full "
+                >
+                  Autres
+                </TabsTrigger>
+              ) : null}
             </TabsList>
             <div className="w-3/4 mx-auto">
               <TabsContent value="side-project" id="projets-personnels">

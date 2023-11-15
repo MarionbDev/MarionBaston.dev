@@ -12,18 +12,31 @@ export default function AboutMe() {
   return (
     <>
       <div className="  flex flex-col items-center justify-center py-20 to-[#f0f9ff] bg-gradient-to-t from-[#fae8ff] to-transparent shadow-md">
-        <div className="w-3/4 ">
+        <div className="slideContainer w-3/4 ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 row-span-6 ">
-              <h3 className="text-base sm:text-2xl mb-3 ">Bonjour, je suis</h3>
-              <h1 className="text-purple font-semibold text-2xl sm:text-6xl mb-2">
-                Marion Baston
+              <h3 className="slide-hello text-base sm:text-2xl mb-3  ">
+                Bonjour, je suis
+              </h3>
+              <h1 className="slide-name text-purple font-semibold text-2xl sm:text-6xl mb-2 ">
+                <span>M</span>
+                <span>a</span>
+                <span>r</span>
+                <span>i</span>
+                <span>o</span>
+                <span>n</span>&nbsp;
+                <span>B</span>
+                <span>a</span>
+                <span>s</span>
+                <span>t</span>
+                <span>o</span>
+                <span>n</span>
               </h1>
-              <p className="text-xl font-semibold sm:text-4xl mb-6">
+              <p className=" slide-name-dev text-xl font-semibold sm:text-4xl mb-6">
                 Développeuse Web Junior
               </p>
-              <div className="text-base md:text-md p-8 border bg-white/30 backdrop-blur-lg drop-shadow-md rounded-2xl relative ">
-                <p>
+              <div className="slide-para z-50  text-base md:text-md p-8 border bg-white/30 backdrop-blur-lg drop-shadow-md rounded-2xl relative ">
+                <p className="">
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
                   School, en Juillet 2023. Formation validée par l'obtention du
@@ -48,7 +61,7 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className="picture mt-8 py-3 px-6 col-start-10 col-span-4 row-start-1 row-span-4  to-[#fae8ff] bg-gradient-to-t from-[#c173d6] to-transparent ">
+            <div className=" slide-picture picture z-0 mt-8 py-3 px-6 col-start-10 col-span-4 row-start-1 row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-[#c173d6]/60 to-transparent ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
@@ -57,21 +70,21 @@ export default function AboutMe() {
               />
             </div>
           </div>
-          <div className="mt-8 flex gap-6">
-            <Button type="button" asChild>
+          <div className=" slideLink-1 mt-8 flex gap-6 ">
+            <Button type="button" asChild className="slideLink">
               <Link
                 href="/MarionBaston.pdf"
                 target="_blank"
                 aria-labelledby="download-cv"
-                className="flex gap-2"
+                className="flex gap-2 "
               >
-                <Download size="16" id="download-cv" />
+                <Download size="16" id="download-cv " />
                 Télécharger mon CV
               </Link>
             </Button>
             <Button
               type="button"
-              className=" hover:bg-[#efc0f0c0] bg-[#efc0f0c0]  text-[#000000] transition hover:scale-110 duration-300"
+              className="slideLink-2 hover:bg-[#efc0f0c0] bg-[#efc0f0c0]  text-[#000000] transition hover:scale-110 duration-300"
             >
               <Link
                 href={`mailto:${emailAddress}`}
