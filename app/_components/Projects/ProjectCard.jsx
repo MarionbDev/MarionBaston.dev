@@ -14,23 +14,29 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card className=" shadow-[#3b0764]/10 shadow-md">
+    <Card className=" shadow-[#3b0764]/10 shadow-md ">
       <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
+        <CardTitle className=" text-base">{project.title}</CardTitle>
+        <CardDescription className=" text-xs">
+          {project.description}
+        </CardDescription>
         <div className="flex gap-3">
-          <Badge variant="secondary">{project.time}</Badge>
+          <Badge variant="secondary" className="text-[9px]">
+            {project.time}
+          </Badge>
           {project.soloTeam ? (
-            <Badge variant="secondary">{project.soloTeam}</Badge>
+            <Badge variant="secondary" className="text-[9px]">
+              {project.soloTeam}
+            </Badge>
           ) : null}
         </div>
       </CardHeader>
 
-      <CardContent className="flex  justify-between">
+      <CardContent className="flex flex-col-reverse xl:flex-row md:justify-between">
         <div className="flex flex-col">
           <ul
             aria-label="liste des technologies utilisées"
-            className="flex items-start gap-3 "
+            className="flex items-start gap-3  "
           >
             {project.technos &&
               project.technos.map((techno) => (
@@ -48,7 +54,7 @@ export default function ProjectCard({ project }) {
           </ul>
           <ul
             aria-label="les étapes du projets"
-            className=" text-sm pt-6 pl-4 list-disc "
+            className=" text-xs md:text-sm pt-6 pl-4 list-disc "
           >
             {project.project_steps &&
               project.project_steps.map((step) => (
@@ -56,7 +62,7 @@ export default function ProjectCard({ project }) {
               ))}
           </ul>
         </div>
-        <div>
+        <div className="mb-4">
           {project.video_url ? (
             <Link href={project.video_url}>
               <iframe
@@ -73,14 +79,14 @@ export default function ProjectCard({ project }) {
         </div>
 
         {project.picture_website ? (
-          <div className=" border-purple/10 border-2 ">
+          <div className=" border-purple/10 flex justify-center ">
             <Image
               width="420"
               height="375"
               src={project.picture_website}
               title={project.picture_website}
               alt={project.picture_website}
-              className=" max-w-fit "
+              className="  xl:max-w-fit  "
             />
           </div>
         ) : null}
@@ -88,14 +94,20 @@ export default function ProjectCard({ project }) {
 
       <CardFooter className="flex justify-end gap-5">
         {project.website_url ? (
-          <Button asChild>
+          <Button
+            asChild
+            className=" bg-[#000] rounded-xl text-white hover:bg-[#000] transition hover:scale-110 duration-300"
+          >
             <Link href={project.website_url} target="_blank">
               View website <ExternalLink size="16" />
             </Link>
           </Button>
         ) : null}
         {project.github_url ? (
-          <Button asChild>
+          <Button
+            asChild
+            className=" bg-[#000] rounded-xl text-white hover:bg-[#000] transition hover:scale-110 duration-300"
+          >
             <Link href={project.github_url} target="_blank">
               View GitHub <ExternalLink size="16" />
             </Link>
