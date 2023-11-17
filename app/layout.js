@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import PropTypes from "prop-types";
 import Providers from "./_components/Providers";
+import { ScrollProvider } from "./_components/ScrollContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,9 +14,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className=" min-w-min">
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <ScrollProvider>
+          <Providers>{children}</Providers>
+        </ScrollProvider>
       </body>
     </html>
   );
