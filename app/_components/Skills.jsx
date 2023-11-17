@@ -15,10 +15,11 @@ import { useState } from "react";
 
 export default function Skills() {
   const [showLabel, setShowLabel] = useState(false);
+
   return (
     <div className="flex flex-col items-center justify-centers ">
       <div className="w-3/4">
-        <p className="text-xl font-bold  sm:text-3xl w-full text-start mb-20 border-b-2 pb-2 border-[#3b0764]/50 ">
+        <p className=" text-xl font-bold  sm:text-3xl w-full text-start mb-20 border-b-2 pb-2 border-[#3b0764]/50 ">
           Mes compétences
         </p>
         <div className="grid grid-cols-5 gap-y-12 gap-x-2  ">

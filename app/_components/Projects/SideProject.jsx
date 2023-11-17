@@ -15,7 +15,7 @@ const projects = [
   {
     id: 1,
     title: "Drawing And Co",
-    time: "1 mois, en évolution",
+    time: "1 mois, évolutif",
     description:
       "Plateforme de gestion d'une galerie de dessins avec des fonctionnalités interactives pour les utilisateurs",
     soloTeam: null,
@@ -77,7 +77,7 @@ const projects = [
     id: 2,
     title: "Marion Baston",
     description: "Mon portfolio",
-    time: "3 semaines",
+    time: "3 semaines, évolutif",
     soloTeam: null,
     project_steps: [
       {
