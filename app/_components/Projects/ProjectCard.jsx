@@ -14,10 +14,12 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card className=" shadow-[#3b0764]/10 shadow-md ">
+    <Card className=" shadow-purple/40 shadow-md rounded-xl border-none ">
       <CardHeader>
-        <CardTitle className=" text-base">{project.title}</CardTitle>
-        <CardDescription className=" text-xs">
+        <CardTitle className=" text-base lg:text-2xl text-purple font-semibold">
+          {project.title}
+        </CardTitle>
+        <CardDescription className=" text-xs lg:text-base">
           {project.description}
         </CardDescription>
         <div className="flex gap-3">
@@ -96,7 +98,7 @@ export default function ProjectCard({ project }) {
         {project.website_url ? (
           <Button
             asChild
-            className=" bg-[#000] rounded-xl text-white hover:bg-[#000] transition hover:scale-110 duration-300"
+            className=" bg-purple/80 rounded-xl text-white  hover:bg-[#baa8bbc0]  "
           >
             <Link href={project.website_url} target="_blank">
               View website <ExternalLink size="16" />
@@ -106,7 +108,7 @@ export default function ProjectCard({ project }) {
         {project.github_url ? (
           <Button
             asChild
-            className=" bg-[#000] rounded-xl text-white hover:bg-[#000] transition hover:scale-110 duration-300"
+            className=" bg-purple/80  rounded-xl text-white hover:bg-[#baa8bbc0] "
           >
             <Link href={project.github_url} target="_blank">
               View GitHub <ExternalLink size="16" />

@@ -4,14 +4,14 @@ import { Download, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import myPhoto from "../../public/images/photo1.png";
-
 import Link from "next/link";
+
 export default function AboutMe() {
   const emailAddress = "marionbaston84@gmail.com";
 
   return (
     <div className=" ">
-      <div className="  flex flex-col items-center justify-center pt-20 pb-8 xl:py-20 to-[#f0f9ff] bg-gradient-to-t from-[#fae8ff] to-transparent shadow-md">
+      <div className="  flex flex-col items-center justify-center pt-20 pb-8 xl:py-20 bg-[#ffffff]">
         <div className="slideContainer  md:w-3/4 flex flex-col  ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 row-span-6 mx-6">
@@ -61,7 +61,7 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className=" slide-picture picture z-0 lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-8 col-span-3 row-start-1 row-span-3 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  lg:to-[#fae8ff]/20 lg:bg-gradient-to-t lg:from-[#c173d6]/60 to-transparent">
+            <div className=" slide-picture picture z-0 lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-8 col-span-3 row-start-1 row-span-3 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  lg:to-[#fae8ff]/20 lg:bg-gradient-to-t lg:from-purple to-transparent">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
@@ -70,15 +70,16 @@ export default function AboutMe() {
               />
             </div>
           </div>
-          <div className=" slideLink-1 mt-8 flex justify-center lg:justify-start gap-3 md:gap-6 ">
+          <div className=" slideLink-1 mt-8 flex justify-center lg:justify-start lg:mx-6 gap-3 md:gap-6 ">
             <Button
               type="button"
               asChild
-              className="slideLink bg-[#000] rounded-xl text-white hover:bg-[#000] transition hover:scale-110 duration-300 p-2"
+              className="slideLink bg-purple/80  rounded-xl text-white hover:bg-purple hover:bg-[#baa8bbc0]   p-2"
             >
               <Link
                 href="/MarionBaston.pdf"
                 target="_blank"
+                rel=" noopener noreferrer"
                 aria-labelledby="download-cv"
                 className="flex gap-1 md:gap-2 text-[10px]  sm:text-sm text-center "
               >
@@ -88,12 +89,12 @@ export default function AboutMe() {
             </Button>
             <Button
               type="button"
-              className="slideLink-2 bg-[#efc0f0c0] hover:bg-[#baa8bbc0] rounded-xl p-2 "
+              className="slideLink-2 bg-purple/30 hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff]  "
             >
               <Link
                 href={`mailto:${emailAddress}`}
                 aria-labelledby="contact-me"
-                className="flex gap-1 md:gap-2 text-[10px] text-center sm:text-sm  "
+                className="flex gap-1 md:gap-2 text-[10px] text-center sm:text-sm "
               >
                 <MessagesSquare size="16" id="contact-me" />
                 Contactez-moi
