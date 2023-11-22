@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="to-[#fae8ff] bg-gradient-to-t from-[#f0f9ff] to-transparent  ">
+    <div className="to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  ">
       <footer className="px-2 w-full lg:container lg:m-auto lg:px-8 ">
         <div className="grid grid-cols-1 lg:grid-cols-12 py-2">
-          <div className="lg:col-start-1 lg:col-span-6 flex flex-col justify-between items-start ">
+          <div className="lg:col-start-1 lg:col-span-3 flex flex-col justify-between items-start ">
             <Link
               href="/"
               className="flex items-center gap-4 ml-10"
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
           <nav
             aria-labelledby="footer-navigation-link "
-            className="hidden lg:block lg:col-start-7 lg:col-span-3"
+            className="hidden lg:block lg:col-start-7 lg:col-span-2"
           >
             <ul>
               <li>
@@ -61,6 +61,13 @@ export default function Footer() {
                   </Link>
                 </Button>
               </li>
+            </ul>
+          </nav>
+          <nav
+            aria-labelledby="footer-navigation-link "
+            className="hidden lg:block lg:col-start-9 lg:col-span-2"
+          >
+            <ul>
               <li>
                 <Button
                   variant="link"
@@ -73,11 +80,23 @@ export default function Footer() {
                   </Link>
                 </Button>
               </li>
+              <li>
+                <Button
+                  variant="link"
+                  asChild
+                  aria-labelledby="footer-skills"
+                  className=""
+                >
+                  <Link href="#myservices" id="footer-skills">
+                    Mes services
+                  </Link>
+                </Button>
+              </li>
             </ul>
           </nav>
           <nav
             aria-labelledby="footer-navigation-externalLink"
-            className="lg:col-start-10 lg:col-span-3"
+            className="lg:col-start-11 lg:col-span-2"
           >
             <ul>
               <li>
