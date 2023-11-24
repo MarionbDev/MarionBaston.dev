@@ -16,7 +16,7 @@ export default function Skills() {
         <div className="flex justify-around ">
           <div className=" shadow-purple/40 shadow-md  w-64 px-6 py-4 gap-8 flex flex-col ">
             <div className="flex flex-col items-center  gap-4 ">
-              <h2 className="  lg:text-lg text-center mb-7">FrontEnd</h2>
+              <h2 className="  lg:text-lg text-center mb-4">FRONTEND</h2>
               <Image src={splash} width={150} alt="image" />
             </div>
             <ul className=" lg:text-base mt-7">
@@ -30,7 +30,7 @@ export default function Skills() {
           </div>
           <div className=" shadow-purple/40 shadow-md w-64  px-6 py-4 gap-8 flex flex-col ">
             <div className="flex flex-col items-center gap-4">
-              <h2 className="lg:text-lg text-center ">BackEnd</h2>
+              <h2 className="lg:text-lg text-center ">BACKEND</h2>
               <Image src={roue} width={150} height={150} alt="image" />
             </div>
 
@@ -42,14 +42,14 @@ export default function Skills() {
           </div>
           <div className=" shadow-purple/40 shadow-md w-64 px-6 py-4 gap-8 flex flex-col ">
             <div className="flex flex-col items-center gap-4">
-              <h2 className="lg:text-lg text-center ">Outils</h2>
+              <h2 className="lg:text-lg text-center ">OUTILS</h2>
               <Image src={tools} width={150} height={150} alt="image" />
             </div>
-
             <ul className=" lg:text-base ">
               <li>Git, GitHub</li>
               <li>VS Code</li>
               <li>Figma</li>
+              <li>VERCEL</li>
             </ul>
           </div>
         </div>

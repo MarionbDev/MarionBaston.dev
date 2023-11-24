@@ -11,24 +11,30 @@ import TrainingProject from "./_components/Projects/TrainingProject";
 import OtherProject from "./_components/Projects/OtherProject";
 import { useScroll } from "./_components/ScrollContext";
 import MyServices from "./_components/MyServices";
+import NavbarMobile from "./_components/NavbarMobile";
 
 export default function Home() {
   const { isVisible } = useScroll();
-  console.log("isVisible", isVisible);
+
   return (
-    <div className=" mx-auto ">
-      <Navbar />
-      <div id="aboutme" className=" md:pb-24 ">
+    <div className="  sm:mx-auto ">
+      <div className="flex">
+        <Navbar className="navbar" />
+      </div>
+      <div>
+        <NavbarMobile className="navbar-mobile" />
+      </div>
+      <div id="aboutme" className=" md:pb-14 ">
         <AboutMe />
       </div>
       <div
         id="projects"
-        className="text flex flex-col items-center justify-center pt-16 md:pb-20 "
+        className=" flex flex-col items-center justify-center pt-16 px-20 md:px-0 md:pb-20 "
       >
         <div className=" mx-5 md:w-3/4  ">
           <div className="flex flex-col gap-3 mb-6 md:mb-12 ">
             <h2
-              className={`text-md font-bold md:text-3xl w-full text-start  border-b-2 sm:pb-2  border-purple ${
+              className={`text-4xl  font-bold md:text-3xl w-full text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{ transitionDuration: isVisible ? "1s" : "0s" }}
@@ -36,7 +42,7 @@ export default function Home() {
               Mes projets
             </h2>
             <p
-              className={`pt-0 md:pt-4 text-sm sm:text-base ${
+              className={`pt-0 md:pt-4 text-2xl sm:text-base ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
@@ -51,7 +57,7 @@ export default function Home() {
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
-              className={` flex  mb-8 w-fit  mx-auto gap-2 text-[#0f0505]/70 shadow-xl px-4 py-6 rounded-xl ${
+              className={` flex mb-8  h-22 w-fit   md:h-14    mx-auto gap-2 text-[#0f0505]/70 shadow-xl px-4 py-4 md:py-10 rounded-xl ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
@@ -64,7 +70,7 @@ export default function Home() {
                   id="top_perso"
                   value="side-project"
                   aria-controls="projets-personnels"
-                  className="   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg   "
+                  className=" text-2xl md:text-sm w-40 h-14 md:w-30 md:h-12 hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
                 >
                   <p>Side-project</p>
                 </TabsTrigger>
@@ -75,7 +81,7 @@ export default function Home() {
                   id="top_training"
                   value="training"
                   aria-controls="projets-formations"
-                  className="  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg  "
+                  className="  text-2xl md:text-base w-40 h-14  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
                 >
                   Formations
                 </TabsTrigger>
@@ -129,7 +135,7 @@ export default function Home() {
       <div id="skills" className=" pt-16 pb-[10rem]">
         <Skills />
       </div>
-      <div id="myservices" className=" pt-16 pb-[15rem]">
+      <div id="myservices" className=" pt-16 pb-[10rem]">
         <MyServices />
       </div>
       <Footer />

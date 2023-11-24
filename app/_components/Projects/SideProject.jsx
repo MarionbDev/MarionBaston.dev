@@ -8,7 +8,7 @@ import expressPng from "./assets/logos/express.png";
 import mysqlPng from "./assets/logos/mysql.png";
 import figmaPng from "./assets/logos/figma.png";
 import nextPng from "./assets/logos/next.png";
-import picturePortfolio from "./assets/portfolio_miniature.png";
+import picturePortfolio from "./assets/portfolio.png";
 import pictureDrawingandco from "./assets/drawingandco_miniature.png";
 
 const projects = [

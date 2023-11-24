@@ -5,7 +5,7 @@ import githubb from "../../public/logos/github.png";
 
 export default function Navbar() {
   return (
-    <div className="navbar flex text-base justify-end items-center  w-full pr-8  h-14 fixed z-50  shadow-purple/10 shadow-md ">
+    <div className="navbar  flex text-base justify-end items-center  w-full pr-8  h-14 fixed z-50  shadow-purple/10 shadow-md ">
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className=" flex gap-10 items-center font-semibold  ">
           <li className="transition hover:scale-110 duration-300 ">
