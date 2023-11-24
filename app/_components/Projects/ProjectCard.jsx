@@ -64,7 +64,7 @@ export default function ProjectCard({ project }) {
               ))}
           </ul>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 ">
           {project.video_url ? (
             <Link href={project.video_url}>
               <iframe
@@ -75,20 +75,21 @@ export default function ProjectCard({ project }) {
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
+                className="shadow-md shadow-[#3f2f5565] "
               ></iframe>
             </Link>
           ) : null}
         </div>
 
         {project.picture_website ? (
-          <div className=" border-purple/10 flex justify-center ">
+          <div className=" flex justify-center ">
             <Image
               width="420"
               height="375"
               src={project.picture_website}
               title={project.picture_website}
               alt={project.picture_website}
-              className="  xl:max-w-fit  "
+              className="  shadow-md shadow-[#3f2f5565]  xl:max-w-fit  "
             />
           </div>
         ) : null}

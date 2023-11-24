@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <div className="to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  ">
-      <footer className="px-2 w-full lg:container lg:m-auto lg:px-8 ">
+      <footer className="px-2 w-full lg:container lg:m-auto lg:px-8 text-[#4f3670] ">
         <div className="grid grid-cols-1 lg:grid-cols-12 py-2">
           <div className="lg:col-start-1 lg:col-span-3 flex flex-col justify-between items-start ">
             <Link
@@ -25,7 +25,7 @@ export default function Footer() {
               variant="link"
               asChild
               aria-labelledby="legal-notice"
-              className="ml-6 "
+              className="ml-6 shadow-none "
             >
               <Link href="/legal-notice" id="legal-notice">
                 Mentions légales
@@ -42,7 +42,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-about-me"
-                  className=""
+                  className=" shadow-none"
                 >
                   <Link href="#aboutme" id="footer-about-me">
                     Qui suis-je
@@ -54,7 +54,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-projects"
-                  className=""
+                  className="shadow-none"
                 >
                   <Link href="#projects" id="footer-projects">
                     Projets
@@ -73,7 +73,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-skills"
-                  className=""
+                  className="shadow-none"
                 >
                   <Link href="#skills" id="footer-skills">
                     Compétences
@@ -85,7 +85,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-skills"
-                  className=""
+                  className="shadow-none"
                 >
                   <Link href="#myservices" id="footer-skills">
                     Mes services
@@ -104,7 +104,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-github"
-                  className=""
+                  className="shadow-none"
                 >
                   <Link
                     href="https://github.com/MarionbDev"
@@ -120,7 +120,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-linkedin"
-                  className=""
+                  className="shadow-none"
                 >
                   <Link
                     href="https://www.linkedin.com/in/marion-baston/"
