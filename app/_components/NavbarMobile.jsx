@@ -22,36 +22,36 @@ import gmailLogo from "../../public/images/gmail.svg";
 
 export default function NavbarMobile(emailAddress) {
   return (
-    <div className=" navSupp mr-8 mt-8 flex justify-end ">
+    <div className=" navSupp mr-2 mt-2  fixed right-0 z-50  ">
       <Menubar className="border-none">
         <MenubarMenu>
           <MenubarTrigger>
-            <Menu className="w-12 h-12 " />
+            <Menu className="w-6 h-6 " />
           </MenubarTrigger>
           <MenubarContent
             align="start"
-            sideOffset={5}
-            className="bg-white border-none px-4 shadow-md shadow-[#3f2f5565] rounded-lg"
+            sideOffset={1}
+            className=" bg-white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
           >
             <Link href="#aboutme" aria-label="Qui suis-je ?">
-              <MenubarItem>Qui suis-je ?</MenubarItem>{" "}
+              <MenubarItem className="text-xs ">Qui suis-je ?</MenubarItem>{" "}
             </Link>
             <Link href="#projects" aria-label="mes projets">
-              <MenubarItem>Projets</MenubarItem>
+              <MenubarItem className="text-xs ">Projets</MenubarItem>
             </Link>
             <Link href="#skills" aria-label="mes compétences">
-              <MenubarItem>Compétences</MenubarItem>
+              <MenubarItem className="text-xs ">Compétences</MenubarItem>
             </Link>
             <Link href="#myservices" aria-label="mes services">
-              <MenubarItem>Mes services</MenubarItem>
+              <MenubarItem className="text-xs ">Mes services</MenubarItem>
             </Link>
             <MenubarSeparator className="  bg-purple" />
             <MenubarSub className=" ">
-              <MenubarSubTrigger className="flex ">
-                <ChevronRight className=" w-5 rotate-180" /> Contact
+              <MenubarSubTrigger className="flex text-sm items-center ">
+                <ChevronRight className="  w-5 rotate-180" /> Contact
               </MenubarSubTrigger>
               <MenubarSubContent
-                sideOffset={14}
+                sideOffset={1}
                 className=" bg-white shadow-[#3f2f5565] shadow-md "
               >
                 <MenubarItem>
@@ -61,8 +61,8 @@ export default function NavbarMobile(emailAddress) {
                       <Image
                         src={gmailLogo}
                         alt="logo Gmail"
-                        width={36}
-                        height={36}
+                        width={30}
+                        height={30}
                       />
                     }
                   />
@@ -75,8 +75,8 @@ export default function NavbarMobile(emailAddress) {
                     <Image
                       src={linkedinColor}
                       alt="lien vers ma page linkedin"
-                      width={36}
-                      height={36}
+                      width={30}
+                      height={30}
                     />
                   </Link>
                 </MenubarItem>
@@ -85,8 +85,8 @@ export default function NavbarMobile(emailAddress) {
                     <Image
                       src={githubb}
                       alt="lien vers ma page github"
-                      width={32}
-                      height={32}
+                      width={28}
+                      height={28}
                       className=" logo-filter"
                     />
                   </Link>

@@ -22,36 +22,40 @@ export default function MyServices() {
 
   return (
     <div className="flex flex-col items-center justify-center ">
-      <div className="w-3/4 ">
-        <h2 className=" text-xl font-bold  sm:text-3xl w-full text-start border-b-2 mb-10 pb-2 border-purple ">
+      <div className="w-3/4 sm:w-10/12 ">
+        <h2 className=" text-xl font-bold  sm:text-3xl w-full text-center lg:text-start border-b-2 mb-10 pb-2 border-purple ">
           Mes services
         </h2>
-
         <div className="flex flex-col items-center mt-2 ">
-          <div className="flex justify-around gap-10">
-            <div className=" shadow-purple/40 shadow-md  w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
-              <h2 className="  lg:text-lg text-center">
+          <div className="flex flex-col md:flex-row items-center justify-around gap-10">
+            <div className=" shadow-purple/40 shadow-md w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
+              <h2 className="  text-sm lg:text-lg text-center">
                 DEVELOPPEMENT WEB FRONTEND
               </h2>
-              <Image src={logoCode} alt="logo-code" width={90} />
-              <HoverCard className="flex flex-col items-center justify-centers ">
+              <Image
+                src={logoCode}
+                alt="logo-code"
+                width={90}
+                className="w-14 xl:w-32"
+              />
+              <HoverCard className=" flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
                   <Button variant="link" className=" shadow-lg gap-4 w-full ">
-                    <p>Voir plus</p>
-                    <Image src={arrow} alt="arrow" width={24} />
+                    <p className=" text-sm">Voir plus</p>
+                    <Image src={arrow} alt="arrow" width={24} className="w-5" />
                   </Button>
                 </HoverCardTrigger>
-                <HoverCardContent className="w-[30rem] h-44 overflow-y-scroll translate-x-[21rem] -translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-sm drop-shadow-lg rounded-lg ">
+                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg  ">
                   <div className="flex justify-between space-x-4">
                     <div className="space-y-1 ">
-                      <h4 className="lg:text-base  font-semibold">
+                      <h4 className=" text-sm lg:text-base  font-semibold">
                         Developpement Web FrontEnd
                       </h4>
-                      <p className="lg:text-sm mt-8">
+                      <p className=" text-sm mt-8">
                         Je développe l'interface visible de votre site web à
                         partir d'une maquette.
                       </p>
-                      <ul className=" lg:text-sm mt-8 list-disc pl-4 gap-1 flex flex-col">
+                      <ul className=" text-sm mt-8 list-disc pl-4 gap-1 flex flex-col">
                         <li>Interfaces utilisateurs interactives</li>
                         <li>
                           Accessibilité et amélioration de l'expérience
@@ -68,25 +72,31 @@ export default function MyServices() {
                 </HoverCardContent>
               </HoverCard>
             </div>
-            <div className=" shadow-purple/40 shadow-md  w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
-              <h2 className="  lg:text-lg text-center">
+            <div className=" shadow-purple/40 shadow-md  w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
+              <h2 className="text-sm  lg:text-lg text-center">
                 DEVELOPPEMENT WEB BACKEND
               </h2>
-              <Image src={logoCode} alt="logo-code" width={90} />
+              <Image
+                src={logoCode}
+                alt="logo-code"
+                width={90}
+                className="w-14 xl:w-32"
+              />
               <HoverCard className="flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
                   <Button variant="link" className=" shadow-lg gap-4 w-full ">
-                    <p>Voir plus</p>
-                    <Image src={arrow} alt="arrow" width={24} />
+                    <p className=" text-sm">Voir plus</p>
+
+                    <Image src={arrow} alt="arrow" width={24} className="w-5" />
                   </Button>
                 </HoverCardTrigger>
-                <HoverCardContent className="w-[30rem] h-44 overflow-y-scroll translate-x-[21rem] -translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg ">
+                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg ">
                   <div className="flex justify-between space-x-4">
                     <div className="space-y-1">
-                      <h4 className="lg:text-base  font-semibold">
+                      <h4 className="text-sm lg:text-base  font-semibold">
                         Developpement Web BackEnd
                       </h4>
-                      <div className=" lg:text-sm mt-8">
+                      <div className="text-sm mt-8 ">
                         <p>
                           Je réponds au cahier des charges en développant toutes
                           les fonctionnalités invisibles à l'utilisateur et
@@ -99,18 +109,18 @@ export default function MyServices() {
               </HoverCard>
             </div>
           </div>
-          <div className="  mt-20 xl:w-3/5  ">
+          <div className=" mt-10 sm:mt-20 xl:w-3/5  ">
             <Card className="shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
               <CardHeader>
-                <CardTitle>
+                <CardTitle className=" text-lg sm:text-xl md:text-2xl text-center">
                   Prêt à démarrer un projet ou à discuter d'opportunités ?
                 </CardTitle>
-                <CardDescription className=" text-base py-3">
+                <CardDescription className=" text-base py-3 text-center">
                   Contactez-moi dès maintenant pour discuter de vos idées et
                   besoins.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className=" flex justify-center">
                 <Button
                   type="button"
                   className="bg-[#ffffff]  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff]   shadow-xl"
