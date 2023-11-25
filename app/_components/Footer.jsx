@@ -6,35 +6,39 @@ export default function Footer() {
 
   return (
     <div className="to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  ">
-      <footer className="px-2 w-full lg:container lg:m-auto lg:px-8 text-[#4f3670] ">
-        <div className="grid grid-cols-1 lg:grid-cols-12 py-2">
-          <div className="lg:col-start-1 lg:col-span-3 flex flex-col justify-between items-start ">
+      <footer className=" px-2 w-full lg:container lg:m-auto lg:px-8 text-[#4f3670] ">
+        <div className="grid grid-cols-2 lg:grid-cols-12 py-2">
+          <div className=" lg:col-start-1 lg:col-span-3 flex sm:flex-col justify-between items-start ">
             <Link
               href="/"
-              className="flex items-center gap-4 ml-10"
+              className="flex items-center gap-4 sm:ml-10"
               aria-labelledby="marion-baston "
             >
               <div className="flex flex-col ">
-                <span id="marion-baston" className="text-xl font-semibold">
+                <span
+                  id="marion-baston"
+                  className="text-xs sm:text-xl font-semibold"
+                >
                   Marion Baston
                 </span>
-                <span className="text-md">© {currentYear}</span>
+                <span className="text-xs sm:text-sm">© {currentYear}</span>
               </div>
             </Link>
             <Button
               variant="link"
               asChild
               aria-labelledby="legal-notice"
-              className="ml-6 shadow-none "
+              className="  text-xs sm:text-sm sm:ml-6 shadow-none "
             >
               <Link href="/legal-notice" id="legal-notice">
                 Mentions légales
               </Link>
             </Button>
           </div>
+          <div></div>
           <nav
             aria-labelledby="footer-navigation-link "
-            className="hidden lg:block lg:col-start-7 lg:col-span-2"
+            className=" hidden lg:block lg:col-start-7 lg:col-span-2"
           >
             <ul>
               <li>
@@ -96,15 +100,15 @@ export default function Footer() {
           </nav>
           <nav
             aria-labelledby="footer-navigation-externalLink"
-            className="lg:col-start-11 lg:col-span-2"
+            className=" col-start-2 row-start-1 lg:col-start-11 lg:col-span-2"
           >
-            <ul>
+            <ul className="flex md:flex-col">
               <li>
                 <Button
                   variant="link"
                   asChild
                   aria-labelledby="footer-github"
-                  className="shadow-none"
+                  className="shadow-none text-xs sm:text-sm"
                 >
                   <Link
                     href="https://github.com/MarionbDev"
@@ -120,7 +124,7 @@ export default function Footer() {
                   variant="link"
                   asChild
                   aria-labelledby="footer-linkedin"
-                  className="shadow-none"
+                  className="shadow-none text-xs sm:text-sm"
                 >
                   <Link
                     href="https://www.linkedin.com/in/marion-baston/"

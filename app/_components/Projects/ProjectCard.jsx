@@ -14,12 +14,12 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card className=" shadow-purple/40 shadow-md rounded-xl border-none ">
+    <Card className=" shadow-purple/40 shadow-md rounded-xl border-none mx-4  ">
       <CardHeader>
-        <CardTitle className=" text-base lg:text-2xl text-purple font-semibold">
+        <CardTitle className=" text-lg lg:text-2xl text-purple font-semibold">
           {project.title}
         </CardTitle>
-        <CardDescription className=" text-xs lg:text-base">
+        <CardDescription className=" text-sm lg:text-base">
           {project.description}
         </CardDescription>
         <div className="flex gap-3">
@@ -56,7 +56,7 @@ export default function ProjectCard({ project }) {
           </ul>
           <ul
             aria-label="les étapes du projets"
-            className=" text-xs md:text-sm pt-6 pl-4 list-disc "
+            className=" text-sm md:text-sm pt-6 pl-4 list-disc "
           >
             {project.project_steps &&
               project.project_steps.map((step) => (
@@ -66,7 +66,7 @@ export default function ProjectCard({ project }) {
         </div>
         <div className="mb-4 ">
           {project.video_url ? (
-            <Link href={project.video_url}>
+            <Link href={project.video_url} className="flex justify-center">
               <iframe
                 width="360"
                 height="215"
@@ -75,7 +75,7 @@ export default function ProjectCard({ project }) {
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                className="shadow-md shadow-[#3f2f5565] "
+                className=" w-10/12 h-fit md:w-auto md:h-auto shadow-md shadow-[#3f2f5565] "
               ></iframe>
             </Link>
           ) : null}
@@ -95,11 +95,11 @@ export default function ProjectCard({ project }) {
         ) : null}
       </CardContent>
 
-      <CardFooter className="flex justify-end gap-5">
+      <CardFooter className="flex justify-end gap-2">
         {project.website_url ? (
           <Button
             asChild
-            className=" bg-purple/80 rounded-xl text-white  hover:bg-[#baa8bbc0]  "
+            className=" bg-purple/80 rounded-xl text-xs sm:text-sm text-white  hover:bg-[#baa8bbc0]  "
           >
             <Link href={project.website_url} target="_blank">
               View website <ExternalLink size="16" />
@@ -109,10 +109,10 @@ export default function ProjectCard({ project }) {
         {project.github_url ? (
           <Button
             asChild
-            className=" bg-purple/80  rounded-xl text-white hover:bg-[#baa8bbc0] "
+            className=" bg-purple/80  rounded-xl text-xs sm:text-sm text-white hover:bg-[#baa8bbc0] "
           >
             <Link href={project.github_url} target="_blank">
-              View GitHub <ExternalLink size="16" />
+              View GitHub <ExternalLink size="16" className="ml-2" />
             </Link>
           </Button>
         ) : null}
