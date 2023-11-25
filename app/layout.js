@@ -8,10 +8,10 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio Marion Baston | Développeuse Web Junior",
+  title: "Portfolio Marion Baston | Développeuse Web",
   description:
     "Je suis Marion, développeuse web et web mobile passionnée par les nouvelles technologies, j'aime expérimenter, découvrir et apprendre. Spécialisée dans les frameworks REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
-  keyboards: "web, developer, react, next, javascript",
+  keywords: "web, developer, react, next, javascript",
   creator: "Marion Baston",
   authors: {
     name: "Marion Baston",
@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className=" min-w-min">
       <Head>
-        <title>Marion Baston</title>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description}></meta>
+        <meta name="keywords" content={metadata.keywords}></meta>
       </Head>
       <body className={inter.className}>
         <ScrollProvider>
