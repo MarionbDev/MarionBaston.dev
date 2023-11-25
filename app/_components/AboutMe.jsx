@@ -9,15 +9,15 @@ import Email from "./Email";
 
 export default function AboutMe() {
   return (
-    <div className=" ">
-      <div className=" text-font flex flex-col items-center justify-center pt-10 md:pt-20  pb-8 px-20 md:px-0 xl:py-20 bg-[#ffffff]">
+    <div className="flex mt-14 sm:mt-0 ">
+      <div className=" text-font flex flex-col items-center justify-center pt-4 md:pt-20 xl:pt-12  pb-8  md:px-0 xl:py-20 bg-[#ffffff]">
         <div className="slideContainer  md:w-3/4 flex flex-col items-center lg:items-start ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 lg:row-start-2 row-span-6 mx-6">
-              <h3 className="slide-hello text-4xl md:text-3xl  sm:mb-3  ">
+              <h3 className="slide-hello text-lg md:text-3xl  sm:mb-3   ">
                 Bonjour, je suis
               </h3>
-              <h1 className="slide-name text-purple font-semibold text-5xl lg:text-6xl mt-14 md:mt-0 ">
+              <h1 className="slide-name text-purple font-semibold text-2xl sm:text-5xl lg:text-6xl mt-3 md:mt-0 ">
                 <span>M</span>
                 <span>a</span>
                 <span>r</span>
@@ -31,10 +31,10 @@ export default function AboutMe() {
                 <span>o</span>
                 <span>n</span>
               </h1>
-              <p className=" slide-name-dev font-semibold text-4xl lg:text-4xl mt-10 md:mt-10 lg:mt-0 mb-16 sm:mb-6 ">
+              <p className=" slide-name-dev font-semibold text-xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-4 sm:mb-6 ">
                 Développeuse Web Junior
               </p>
-              <div className="  slide-para z-30 text-2xl md:text-base p-8 bg-white/30 backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+              <div className="  slide-para z-30 text-sm sm:text-2xl md:text-base p-4 sm:p-8 bg-white/30 backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
                 <p className="">
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
@@ -60,16 +60,16 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className=" slide-picture picture  shadow-[#ad75c7da] shadow-md z-0 mt-10 md:mt-0  lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-8 col-span-4 row-start-1 row-span-3 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent">
+            <div className=" slide-picture picture  shadow-[#ad75c7da] shadow-md z-0 mt-0 ml-10 md:mt-0 h-24 md:h-full lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
-                className="  w-48 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4 "
+                className="  w-20 md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4 "
               />
             </div>
           </div>
-          <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4 md:w-auto lg:mx-6 gap-10 md:gap-6 ">
+          <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4 md:w-auto lg:mx-6 gap-4 md:gap-6 ">
             <Button
               type="button"
               asChild
@@ -80,7 +80,7 @@ export default function AboutMe() {
                 target="_blank"
                 rel=" noopener noreferrer"
                 aria-labelledby="download-cv"
-                className="flex gap-1 md:gap-2 text-xl md:text-sm text-center "
+                className="flex gap-1 md:gap-2 text-sm  text-center "
               >
                 <Download size="16" id="download-cv" />
                 Télécharger mon CV
@@ -88,7 +88,7 @@ export default function AboutMe() {
             </Button>
             <Button
               type="button"
-              className="slideLink-2 bg-purple/30 hover:bg-[#baa8bbc0] rounded-xl p-2 text-xl md:text-sm text-[#313030] hover:text-[#ffff]   "
+              className="slideLink-2 bg-purple/30 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  text-[#313030] hover:text-[#ffff]   "
             >
               <MessagesSquare size="16" id="contact-me" className="mr-2" />
               <Email text="Contactez - moi" />

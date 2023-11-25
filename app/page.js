@@ -17,7 +17,7 @@ export default function Home() {
   const { isVisible } = useScroll();
 
   return (
-    <div className="  sm:mx-auto ">
+    <div className="sm:mx-auto ">
       <div className="flex">
         <Navbar className="navbar" />
       </div>
@@ -29,12 +29,12 @@ export default function Home() {
       </div>
       <div
         id="projects"
-        className=" flex flex-col items-center justify-center pt-16 px-20 md:px-0 md:pb-20 "
+        className=" flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 "
       >
-        <div className=" mx-5 md:w-3/4  ">
-          <div className="flex flex-col gap-3 mb-6 md:mb-12 ">
+        <div className="sm:w-10/12 ">
+          <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
             <h2
-              className={`text-4xl  font-bold md:text-3xl w-full text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
+              className={`text-xl  font-bold md:text-3xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{ transitionDuration: isVisible ? "1s" : "0s" }}
@@ -42,7 +42,7 @@ export default function Home() {
               Mes projets
             </h2>
             <p
-              className={`pt-0 md:pt-4 text-2xl sm:text-base ${
+              className={`pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-base ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
@@ -57,7 +57,7 @@ export default function Home() {
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
-              className={` flex mb-8  h-22 w-fit   md:h-14    mx-auto gap-2 text-[#0f0505]/70 shadow-xl px-4 py-4 md:py-10 rounded-xl ${
+              className={` flex mb-8  h-8 w-fit      mx-auto gap-2 text-[#0f0505]/70 shadow-xl px-4 py-4 md:py-6 rounded-xl ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
@@ -70,7 +70,7 @@ export default function Home() {
                   id="top_perso"
                   value="side-project"
                   aria-controls="projets-personnels"
-                  className=" text-2xl md:text-sm w-40 h-14 md:w-30 md:h-12 hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
+                  className=" text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
                 >
                   <p>Side-project</p>
                 </TabsTrigger>
@@ -81,7 +81,7 @@ export default function Home() {
                   id="top_training"
                   value="training"
                   aria-controls="projets-formations"
-                  className="  text-2xl md:text-base w-40 h-14  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
+                  className="  text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
                 >
                   Formations
                 </TabsTrigger>
@@ -132,10 +132,10 @@ export default function Home() {
           </Tabs>
         </div>
       </div>
-      <div id="skills" className=" pt-16 pb-[10rem]">
+      <div id="skills" className=" pt-16 md:pb-[4rem]">
         <Skills />
       </div>
-      <div id="myservices" className=" pt-16 pb-[10rem]">
+      <div id="myservices" className=" pt-16 pb-10 md:pb-[10rem]">
         <MyServices />
       </div>
       <Footer />
