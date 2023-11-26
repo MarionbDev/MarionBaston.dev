@@ -12,9 +12,16 @@ import OtherProject from "./_components/Projects/OtherProject";
 import { useScroll } from "./_components/ScrollContext";
 import MyServices from "./_components/MyServices";
 import NavbarMobile from "./_components/NavbarMobile";
+import { useEffect } from "react";
 
 export default function Home() {
   const { isVisible } = useScroll();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scroll(0, 0);
+    }
+  }, []);
 
   return (
     <div className="sm:mx-auto ">
@@ -34,7 +41,7 @@ export default function Home() {
         <div className="sm:w-10/12 ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
             <h2
-              className={`text-xl  font-bold md:text-3xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
+              className={`font-roboto text-xl font-semibold md:text-4xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{ transitionDuration: isVisible ? "1s" : "0s" }}
@@ -42,12 +49,12 @@ export default function Home() {
               Mes projets
             </h2>
             <p
-              className={`pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-base ${
+              className={`font-lato pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-base ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
                 transitionDuration: isVisible ? "1s" : "0s",
-                transitionDelay: isVisible ? "1s" : "0s",
+                transitionDelay: isVisible ? "0.6s" : "0s",
               }}
             >
               Plongez dans mon portfolio pour découvrir la diversité de mes
@@ -62,7 +69,7 @@ export default function Home() {
               }`}
               style={{
                 transitionDuration: isVisible ? "1s" : "0s",
-                transitionDelay: isVisible ? "2s" : "0s",
+                transitionDelay: isVisible ? "1.5s" : "0s",
               }}
             >
               {SideProject && SideProject().length > 0 ? (
@@ -70,7 +77,7 @@ export default function Home() {
                   id="top_perso"
                   value="side-project"
                   aria-controls="projets-personnels"
-                  className=" text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
+                  className="font-lato text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
                 >
                   <p>Side-project</p>
                 </TabsTrigger>
@@ -81,7 +88,7 @@ export default function Home() {
                   id="top_training"
                   value="training"
                   aria-controls="projets-formations"
-                  className="  text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
+                  className="font-lato  text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
                 >
                   Formations
                 </TabsTrigger>
@@ -91,7 +98,7 @@ export default function Home() {
                 <TabsTrigger
                   value="professional"
                   aria-controls="projets-professionnels"
-                  className="  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg"
+                  className="font-lato  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg"
                 >
                   Professionnels
                 </TabsTrigger>
@@ -101,7 +108,7 @@ export default function Home() {
                 <TabsTrigger
                   value="other"
                   aria-controls="projets-autres"
-                  className="  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg "
+                  className="font-lato  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg "
                 >
                   Autres
                 </TabsTrigger>
@@ -113,7 +120,7 @@ export default function Home() {
               }`}
               style={{
                 transitionDuration: isVisible ? "1.2s" : "0s",
-                transitionDelay: isVisible ? "3s" : "0s",
+                transitionDelay: isVisible ? "2s" : "0s",
               }}
             >
               <TabsContent value="side-project" id="projets-personnels">

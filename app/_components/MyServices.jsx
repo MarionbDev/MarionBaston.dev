@@ -23,20 +23,20 @@ export default function MyServices() {
   return (
     <div className="flex flex-col items-center justify-center ">
       <div className="w-3/4 sm:w-10/12 ">
-        <h2 className=" text-xl font-bold  sm:text-3xl w-full text-center lg:text-start border-b-2 mb-10 pb-2 border-purple ">
+        <h2 className="font-roboto text-xl font-semibold  sm:text-3xl w-full text-center lg:text-start border-b-2 mb-10 pb-2 border-purple ">
           Mes services
         </h2>
         <div className="flex flex-col items-center mt-2 ">
-          <div className="flex flex-col md:flex-row items-center justify-around gap-10">
+          <div className="font-lato flex flex-col md:flex-row items-center justify-around gap-10">
             <div className=" shadow-purple/40 shadow-md w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
-              <h2 className="  text-sm lg:text-lg text-center">
+              <h2 className=" text-sm lg:text-lg text-center">
                 DEVELOPPEMENT WEB FRONTEND
               </h2>
               <Image
                 src={logoCode}
                 alt="logo-code"
                 width={90}
-                className="w-14 xl:w-32"
+                className="w-14 xl:w-28"
               />
               <HoverCard className=" flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
@@ -47,7 +47,7 @@ export default function MyServices() {
                 </HoverCardTrigger>
                 <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg  ">
                   <div className="flex justify-between space-x-4">
-                    <div className="space-y-1 ">
+                    <div className=" space-y-1 ">
                       <h4 className=" text-sm lg:text-base  font-semibold">
                         Developpement Web FrontEnd
                       </h4>
@@ -72,7 +72,7 @@ export default function MyServices() {
                 </HoverCardContent>
               </HoverCard>
             </div>
-            <div className=" shadow-purple/40 shadow-md  w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
+            <div className="font-lato shadow-purple/40 shadow-md  w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
               <h2 className="text-sm  lg:text-lg text-center">
                 DEVELOPPEMENT WEB BACKEND
               </h2>
@@ -80,7 +80,7 @@ export default function MyServices() {
                 src={logoCode}
                 alt="logo-code"
                 width={90}
-                className="w-14 xl:w-32"
+                className="w-14 xl:w-28"
               />
               <HoverCard className="flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
@@ -109,7 +109,7 @@ export default function MyServices() {
               </HoverCard>
             </div>
           </div>
-          <div className=" mt-10 sm:mt-20 xl:w-3/5  ">
+          <div className="font-lato mt-10 sm:mt-20 xl:w-3/5  ">
             <Card className="shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
               <CardHeader>
                 <CardTitle className=" text-lg sm:text-xl md:text-2xl text-center">

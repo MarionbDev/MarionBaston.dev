@@ -14,10 +14,10 @@ export default function AboutMe() {
         <div className="slideContainer  md:w-3/4 flex flex-col items-center lg:items-start ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 lg:row-start-2 row-span-6 mx-6">
-              <h3 className="slide-hello text-lg md:text-3xl  sm:mb-3   ">
+              <h3 className="slide-hello font-roboto text-lg md:text-2xl  sm:mb-3   ">
                 Bonjour, je suis
               </h3>
-              <h1 className="slide-name text-purple font-semibold text-2xl sm:text-5xl lg:text-6xl mt-3 md:mt-0 ">
+              <h1 className="slide-name font-alice text-purple  text-2xl sm:text-5xl lg:text-6xl mt-3 md:mt-0 ">
                 <span>M</span>
                 <span>a</span>
                 <span>r</span>
@@ -31,10 +31,10 @@ export default function AboutMe() {
                 <span>o</span>
                 <span>n</span>
               </h1>
-              <p className=" slide-name-dev font-semibold text-xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-4 sm:mb-6 ">
+              <p className=" slide-name-dev font-roboto font-medium  text-xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-4 sm:mb-6 ">
                 Développeuse Web Junior
               </p>
-              <div className="  slide-para z-30 text-sm sm:text-2xl md:text-base p-4 sm:p-8 bg-white/30 backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+              <div className="  slide-para font-lato z-30 text-sm sm:text-2xl md:text-base p-4 sm:p-8 bg-white/30 backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
                 <p className="">
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
@@ -73,7 +73,7 @@ export default function AboutMe() {
             <Button
               type="button"
               asChild
-              className="slideLink bg-purple/80   rounded-xl  text-white hover:bg-purple hover:bg-[#baa8bbc0]   p-2"
+              className="slideLink font-lato bg-purple/80   rounded-xl  text-white hover:bg-purple hover:bg-[#baa8bbc0]   p-2"
             >
               <Link
                 href="/MarionBaston.pdf"
@@ -88,7 +88,7 @@ export default function AboutMe() {
             </Button>
             <Button
               type="button"
-              className="slideLink-2 bg-purple/30 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  text-[#313030] hover:text-[#ffff]   "
+              className="slideLink-2 font-lato bg-purple/30 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  text-[#313030] hover:text-[#ffff]   "
             >
               <MessagesSquare size="16" id="contact-me" className="mr-2" />
               <Email text="Contactez - moi" />

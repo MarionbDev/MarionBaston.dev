@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <div className="to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  ">
-      <footer className=" px-2 w-full lg:container lg:m-auto lg:px-8 text-[#4f3670] ">
+      <footer className="font-lato px-2 w-full lg:container lg:m-auto lg:px-8 text-[#4f3670] ">
         <div className="grid grid-cols-2 lg:grid-cols-12 py-2">
           <div className=" lg:col-start-1 lg:col-span-3 flex sm:flex-col justify-between items-start ">
             <Link
@@ -17,7 +17,7 @@ export default function Footer() {
               <div className="flex flex-col ">
                 <span
                   id="marion-baston"
-                  className="text-xs sm:text-xl font-semibold"
+                  className=" font-alice text-xs sm:text-xl font-semibold"
                 >
                   Marion Baston
                 </span>
