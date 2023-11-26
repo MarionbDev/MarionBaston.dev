@@ -16,10 +16,10 @@ export default function ProjectCard({ project }) {
   return (
     <Card className=" shadow-purple/40 shadow-md rounded-xl border-none mx-4  ">
       <CardHeader>
-        <CardTitle className=" text-lg lg:text-2xl text-purple font-semibold">
+        <CardTitle className="font-roboto text-lg lg:text-2xl text-purple font-semibold">
           {project.title}
         </CardTitle>
-        <CardDescription className=" text-sm lg:text-base">
+        <CardDescription className="font-lato text-sm lg:text-base">
           {project.description}
         </CardDescription>
         <div className="flex gap-3">
