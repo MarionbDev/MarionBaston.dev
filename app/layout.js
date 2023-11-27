@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className=" min-w-min">
+    <html lang="fr" className=" min-w-min">
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description}></meta>

@@ -60,12 +60,12 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0 mt-0 ml-10 md:mt-0 h-24 md:h-full lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent  ">
+            <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0 mt-0 ml-10 md:mt-0 h-24 md:h-full lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
-                className=" w-20 md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4   "
+                className=" w-20 md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4  dark:brightness-75 "
               />
             </div>
           </div>
