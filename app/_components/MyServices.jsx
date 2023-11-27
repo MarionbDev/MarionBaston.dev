@@ -28,7 +28,7 @@ export default function MyServices() {
         </h2>
         <div className="flex flex-col items-center mt-2 ">
           <div className="font-lato flex flex-col md:flex-row items-center justify-around gap-10">
-            <div className=" shadow-purple/40 shadow-md w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
+            <div className="dark:bg-purple/10  shadow-purple/40 shadow-md w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
               <h2 className=" text-sm lg:text-lg text-center">
                 DEVELOPPEMENT WEB FRONTEND
               </h2>
@@ -40,12 +40,15 @@ export default function MyServices() {
               />
               <HoverCard className=" flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
-                  <Button variant="link" className=" shadow-lg gap-4 w-full ">
+                  <Button
+                    variant="link"
+                    className="dark:bg-purple/10 dark:shadow-purple/30 dark:shadow-inner  shadow-lg gap-4 w-full "
+                  >
                     <p className=" text-sm">Voir plus</p>
                     <Image src={arrow} alt="arrow" width={24} className="w-5" />
                   </Button>
                 </HoverCardTrigger>
-                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg  ">
+                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg  ">
                   <div className="flex justify-between space-x-4">
                     <div className=" space-y-1 ">
                       <h4 className=" text-sm lg:text-base  font-semibold">
@@ -72,7 +75,7 @@ export default function MyServices() {
                 </HoverCardContent>
               </HoverCard>
             </div>
-            <div className="font-lato shadow-purple/40 shadow-md  w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
+            <div className="font-lato  dark:bg-purple/10 shadow-purple/40 shadow-md  w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
               <h2 className="text-sm  lg:text-lg text-center">
                 DEVELOPPEMENT WEB BACKEND
               </h2>
@@ -84,13 +87,16 @@ export default function MyServices() {
               />
               <HoverCard className="flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
-                  <Button variant="link" className=" shadow-lg gap-4 w-full ">
+                  <Button
+                    variant="link"
+                    className="dark:bg-purple/10  dark:shadow-purple/30 dark:shadow-inner shadow-lg gap-4 w-full "
+                  >
                     <p className=" text-sm">Voir plus</p>
 
                     <Image src={arrow} alt="arrow" width={24} className="w-5" />
                   </Button>
                 </HoverCardTrigger>
-                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg ">
+                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg ">
                   <div className="flex justify-between space-x-4">
                     <div className="space-y-1">
                       <h4 className="text-sm lg:text-base  font-semibold">
@@ -109,8 +115,8 @@ export default function MyServices() {
               </HoverCard>
             </div>
           </div>
-          <div className="font-lato mt-10 sm:mt-20 xl:w-3/5  ">
-            <Card className="shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
+          <div className="font-lato mt-10 sm:mt-28 xl:w-3/5  ">
+            <Card className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
               <CardHeader>
                 <CardTitle className=" text-lg sm:text-xl md:text-2xl text-center">
                   Prêt à démarrer un projet ou à discuter d'opportunités ?
@@ -123,12 +129,12 @@ export default function MyServices() {
               <CardContent className=" flex justify-center">
                 <Button
                   type="button"
-                  className="bg-[#ffffff]  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff]   shadow-xl"
+                  className=" dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 bg-[#ffffff] dark:hover:bg-pale_pink/20  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff]   shadow-xl"
                 >
                   <Link
                     href={`mailto:${emailAddress}`}
                     aria-labelledby="contact-me"
-                    className="flex gap-1 md:gap-2 text-[10px] text-center sm:text-sm text-purple "
+                    className="flex gap-1 md:gap-2 text-[10px] text-center sm:text-sm dark:text-white text-purple "
                   >
                     <MessagesSquare size="16" id="contact-me" />
                     Contactez-moi
