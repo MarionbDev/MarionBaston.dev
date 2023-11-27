@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Providers from "./_components/Providers";
 import { ScrollProvider } from "./_components/ScrollContext";
 import Head from "next/head";
+import { ThemeProvider } from "./_components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,16 +22,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className=" min-w-min">
+    <html lang="fr" className=" min-w-min">
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description}></meta>
         <meta name="keywords" content={metadata.keywords}></meta>
       </Head>
       <body className={inter.className}>
-        <ScrollProvider>
-          <Providers>{children}</Providers>
-        </ScrollProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ScrollProvider>
+            <Providers>{children}</Providers>
+          </ScrollProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

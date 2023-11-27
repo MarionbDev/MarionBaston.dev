@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="sm:mx-auto ">
+    <div className="dark:bg-dark_black  sm:mx-auto ">
       <div className="flex">
         <Navbar className="navbar" />
       </div>
@@ -36,12 +36,12 @@ export default function Home() {
       </div>
       <div
         id="projects"
-        className=" flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 "
+        className="flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 "
       >
         <div className="sm:w-10/12 ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
             <h2
-              className={`font-roboto text-xl font-semibold md:text-4xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
+              className={`font-roboto  text-xl font-semibold md:text-4xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{ transitionDuration: isVisible ? "1s" : "0s" }}
@@ -49,7 +49,7 @@ export default function Home() {
               Mes projets
             </h2>
             <p
-              className={`font-lato pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-base ${
+              className={`font-lato pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-lg ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
@@ -64,7 +64,7 @@ export default function Home() {
           <Tabs defaultValue="side-project">
             <TabsList
               aria-label="naviguez entre les onglets avec les flèches"
-              className={` flex mb-8  h-8 w-fit      mx-auto gap-2 text-[#0f0505]/70 shadow-xl px-4 py-4 md:py-6 rounded-xl ${
+              className={` flex mb-8 h-8 w-fit mx-auto gap-2 text-[#0f0505]/70 shadow-xl px-4 py-4 md:py-6 rounded-xl dark:bg-purple/10 dark:shadow-purple/30 dark:shadow-inner ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
@@ -77,9 +77,9 @@ export default function Home() {
                   id="top_perso"
                   value="side-project"
                   aria-controls="projets-personnels"
-                  className="font-lato text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
+                  className="font-lato text-xs md:text-base dark:text-white   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
                 >
-                  <p>Side-project</p>
+                  <p>Side-projects</p>
                 </TabsTrigger>
               ) : null}
 
@@ -88,7 +88,7 @@ export default function Home() {
                   id="top_training"
                   value="training"
                   aria-controls="projets-formations"
-                  className="font-lato  text-xs md:text-base   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
+                  className="font-lato  text-xs md:text-base  dark:text-white   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
                 >
                   Formations
                 </TabsTrigger>
@@ -98,7 +98,7 @@ export default function Home() {
                 <TabsTrigger
                   value="professional"
                   aria-controls="projets-professionnels"
-                  className="font-lato  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg"
+                  className="font-lato text-xs md:text-base  dark:text-white   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg"
                 >
                   Professionnels
                 </TabsTrigger>
@@ -108,7 +108,7 @@ export default function Home() {
                 <TabsTrigger
                   value="other"
                   aria-controls="projets-autres"
-                  className="font-lato  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg "
+                  className="font-lato text-xs md:text-base  dark:text-white  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg "
                 >
                   Autres
                 </TabsTrigger>

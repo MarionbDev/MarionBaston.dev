@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card className=" shadow-purple/40 shadow-md rounded-xl border-none mx-4  ">
+    <Card className=" dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none mx-4  ">
       <CardHeader>
         <CardTitle className="font-roboto text-lg lg:text-2xl text-purple font-semibold">
           {project.title}
@@ -34,11 +34,11 @@ export default function ProjectCard({ project }) {
         </div>
       </CardHeader>
 
-      <CardContent className="flex flex-col-reverse xl:flex-row md:justify-between">
+      <CardContent className="flex flex-col-reverse  xl:flex-row md:justify-between">
         <div className="flex flex-col">
           <ul
             aria-label="liste des technologies utilisées"
-            className="flex items-start gap-3  "
+            className="dark:bg-purple/20 py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
           >
             {project.technos &&
               project.technos.map((techno) => (
@@ -50,6 +50,7 @@ export default function ProjectCard({ project }) {
                     src={techno.photo_url}
                     title={techno.title}
                     alt={techno.title}
+                    className="w-5 sm:w-6"
                   />
                 </li>
               ))}
@@ -99,7 +100,7 @@ export default function ProjectCard({ project }) {
         {project.website_url ? (
           <Button
             asChild
-            className=" bg-purple/80 rounded-xl text-xs sm:text-sm text-white  hover:bg-[#baa8bbc0]  "
+            className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80 rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0]  "
           >
             <Link href={project.website_url} target="_blank">
               View website <ExternalLink size="16" />
@@ -109,7 +110,7 @@ export default function ProjectCard({ project }) {
         {project.github_url ? (
           <Button
             asChild
-            className=" bg-purple/80  rounded-xl text-xs sm:text-sm text-white hover:bg-[#baa8bbc0] "
+            className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] "
           >
             <Link href={project.github_url} target="_blank">
               View GitHub <ExternalLink size="16" className="ml-2" />
