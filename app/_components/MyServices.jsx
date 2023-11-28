@@ -23,20 +23,20 @@ export default function MyServices() {
   return (
     <div className="flex flex-col items-center justify-center ">
       <div className="w-3/4 sm:w-10/12 ">
-        <h2 className="font-roboto text-xl font-semibold  sm:text-3xl w-full text-center lg:text-start border-b-2 mb-10 pb-2 border-purple ">
+        <h2 className="font-roboto text-2xl font-semibold  sm:text-3xl w-full text-center lg:text-start border-b-2 mb-10 pb-2 border-purple ">
           Mes services
         </h2>
         <div className="flex flex-col items-center mt-2 ">
           <div className="font-lato flex flex-col md:flex-row items-center justify-around gap-10">
-            <div className="dark:bg-purple/10  shadow-purple/40 shadow-md w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
-              <h2 className=" text-sm lg:text-lg text-center">
+            <div className="dark:bg-purple/10  shadow-purple/40 shadow-md w-64 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
+              <h2 className=" text-base lg:text-lg text-center">
                 DEVELOPPEMENT WEB FRONTEND
               </h2>
               <Image
                 src={logoCode}
                 alt="logo-code"
                 width={90}
-                className="w-14 xl:w-28"
+                className="w-20 xl:w-28"
               />
               <HoverCard className=" flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
@@ -75,15 +75,15 @@ export default function MyServices() {
                 </HoverCardContent>
               </HoverCard>
             </div>
-            <div className="font-lato  dark:bg-purple/10 shadow-purple/40 shadow-md  w-56 sm:w-64 px-6 py-4 gap-6 flex flex-col items-center justify-center">
-              <h2 className="text-sm  lg:text-lg text-center">
+            <div className="font-lato  dark:bg-purple/10 shadow-purple/40 shadow-md  w-64 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
+              <h2 className="text-base  lg:text-lg text-center">
                 DEVELOPPEMENT WEB BACKEND
               </h2>
               <Image
                 src={logoCode}
                 alt="logo-code"
                 width={90}
-                className="w-14 xl:w-28"
+                className="w-20 xl:w-28"
               />
               <HoverCard className="flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
@@ -134,7 +134,7 @@ export default function MyServices() {
                   <Link
                     href={`mailto:${emailAddress}`}
                     aria-labelledby="contact-me"
-                    className="flex gap-1 md:gap-2 text-[10px] text-center sm:text-sm dark:text-white text-purple "
+                    className="flex gap-1 md:gap-2 text-sm text-center sm:text-sm dark:text-white text-purple "
                   >
                     <MessagesSquare size="16" id="contact-me" />
                     Contactez-moi

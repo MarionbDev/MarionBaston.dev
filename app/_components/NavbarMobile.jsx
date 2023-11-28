@@ -24,14 +24,14 @@ import { ModeToggle } from "./ModeToggle";
 export default function NavbarMobile(emailAddress) {
   return (
     <div className="  flex navSupp">
-      <div className=" ml-2 mt-2 ">
+      <div className=" ml-2 mt-3 ">
         <ModeToggle />
       </div>
       <div className="  mr-2 mt-2  fixed right-0 z-50  ">
         <Menubar className="border-none">
           <MenubarMenu>
             <MenubarTrigger>
-              <Menu className="w-6 h-6 " />
+              <Menu className="w-10 h-10 " />
             </MenubarTrigger>
             <MenubarContent
               align="start"
@@ -39,16 +39,16 @@ export default function NavbarMobile(emailAddress) {
               className=" dark:bg-[#39294f]   bg-white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
             >
               <Link href="#aboutme" aria-label="Qui suis-je ?">
-                <MenubarItem className="text-xs ">Qui suis-je ?</MenubarItem>{" "}
+                <MenubarItem className="text-sm ">Qui suis-je ?</MenubarItem>{" "}
               </Link>
               <Link href="#projects" aria-label="mes projets">
-                <MenubarItem className="text-xs ">Projets</MenubarItem>
+                <MenubarItem className="text-sm ">Projets</MenubarItem>
               </Link>
               <Link href="#skills" aria-label="mes compétences">
-                <MenubarItem className="text-xs ">Compétences</MenubarItem>
+                <MenubarItem className="text-sm ">Compétences</MenubarItem>
               </Link>
               <Link href="#myservices" aria-label="mes services">
-                <MenubarItem className="text-xs ">Mes services</MenubarItem>
+                <MenubarItem className="text-sm ">Mes services</MenubarItem>
               </Link>
               <MenubarSeparator className="  bg-purple" />
               <MenubarSub className=" ">
