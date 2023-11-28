@@ -14,10 +14,10 @@ export default function AboutMe() {
         <div className="slideContainer  md:w-3/4 flex flex-col items-center lg:items-start ">
           <div className="grid grid-cols-14 grid-rows-">
             <div className=" col-start-1 col-span-11 row-start-2 lg:row-start-2 row-span-6 mx-6">
-              <h3 className="slide-hello font-roboto text-lg md:text-2xl  sm:mb-3   ">
+              <h3 className="slide-hello font-roboto text-xl md:text-2xl  sm:mb-3   ">
                 Bonjour, je suis
               </h3>
-              <h1 className="slide-name font-alice text-purple  text-2xl sm:text-5xl lg:text-6xl mt-3 md:mt-0 ">
+              <h1 className="slide-name font-alice text-purple  text-3xl sm:text-5xl lg:text-6xl mt-3 md:mt-0 ">
                 <span>M</span>
                 <span>a</span>
                 <span>r</span>
@@ -31,16 +31,16 @@ export default function AboutMe() {
                 <span>o</span>
                 <span>n</span>
               </h1>
-              <p className=" slide-name-dev font-roboto font-medium  text-xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-4 sm:mb-6 ">
+              <p className=" slide-name-dev font-roboto font-medium  text-2xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-10 sm:mb-6 ">
                 Développeuse Web Junior
               </p>
-              <div className="  slide-para font-lato z-30 text-sm sm:text-2xl md:text-base p-4 sm:p-8 dark:bg-white/20 bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+              <div className="dark:bg-purple/20   slide-para font-lato z-30 text-base text-justify sm:text-2xl md:text-base p-6 sm:p-8  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
                 <p className="">
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
                   School, en Juillet 2023. Formation validée par l'obtention du
                   titre de{" "}
-                  <span className="  text-purple sm:text-xl  font-medium">
+                  <span className="  text-purple text-lg sm:text-xl  font-semibold sm:font-medium">
                     "Développeur web et web mobile"
                   </span>{" "}
                   de niveau 5 reconnu par le RNCP, en Septembre 2023. Je suis
@@ -60,20 +60,20 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0 mt-0 ml-10 md:mt-0 h-24 md:h-full lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
+            <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0  mb-10 ml-10 md:mt-0  lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={300}
-                className=" w-20 md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4  dark:brightness-75 "
+                className="  md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4  dark:brightness-75 "
               />
             </div>
           </div>
-          <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4 md:w-auto lg:mx-6 gap-4 md:gap-6 ">
+          <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4  md:w-auto lg:mx-6 gap-4 md:gap-6 ">
             <Button
               type="button"
               asChild
-              className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  text-white  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0]  p-2"
+              className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  text-white  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 "
             >
               <Link
                 href="/MarionBaston.pdf"

@@ -14,20 +14,20 @@ import Image from "next/image";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card className=" dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none mx-4  ">
-      <CardHeader>
-        <CardTitle className="font-roboto text-lg lg:text-2xl text-purple font-semibold">
+    <Card className=" dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none mx-4 ">
+      <CardHeader className=" mb-2 sm:mb-0">
+        <CardTitle className="font-roboto text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
           {project.title}
         </CardTitle>
-        <CardDescription className="font-lato text-sm lg:text-base">
+        <CardDescription className="font-lato text-base">
           {project.description}
         </CardDescription>
         <div className="flex gap-3">
-          <Badge variant="secondary" className="text-[9px]">
+          <Badge variant="secondary" className=" text-xs sm:text-[9px]">
             {project.time}
           </Badge>
           {project.soloTeam ? (
-            <Badge variant="secondary" className="text-[9px]">
+            <Badge variant="secondary" className="text-xs sm:text-[9px]">
               {project.soloTeam}
             </Badge>
           ) : null}
@@ -38,7 +38,7 @@ export default function ProjectCard({ project }) {
         <div className="flex flex-col">
           <ul
             aria-label="liste des technologies utilisées"
-            className="dark:bg-purple/20 py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
+            className="dark:bg-purple/20  py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
           >
             {project.technos &&
               project.technos.map((techno) => (
@@ -65,7 +65,7 @@ export default function ProjectCard({ project }) {
               ))}
           </ul>
         </div>
-        <div className="mb-4 ">
+        <div className="mb-6 ">
           {project.video_url ? (
             <Link href={project.video_url} className="flex justify-center">
               <iframe
