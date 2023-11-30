@@ -16,7 +16,7 @@ export const ScrollProvider = ({ children }) => {
         const scrollingTextPosition = scrollingText.getBoundingClientRect().top;
         console.log("scrollingTextPosition:", scrollingTextPosition);
         console.log("window.innerHeight:", window.innerHeight);
-        setIsVisible(scrollingTextPosition < window.innerHeight / 1);
+        setIsVisible(scrollingTextPosition < window.innerHeight / 1.2);
       }
     };
 

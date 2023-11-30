@@ -8,8 +8,20 @@ import expressPng from "./assets/logos/express.png";
 import mysqlPng from "./assets/logos/mysql.png";
 import figmaPng from "./assets/logos/figma.png";
 import nextPng from "./assets/logos/next.png";
-import picturePortfolio from "./assets/portfolio.png";
-import pictureDrawingandco from "./assets/drawingandco_miniature.png";
+import auth_admin_admin from "./assets/drawing_and_co/auth_admin_admin.png";
+import auth_admin_navbar from "./assets/drawing_and_co/auth_admin_navbar.png";
+import auth_admin_drawing from "./assets/drawing_and_co/auth_admin_drawing.png";
+import auth_gallery from "./assets/drawing_and_co/auth_gallery.png";
+import auth_password_update from "./assets/drawing_and_co/auth_password_update.png";
+import auth_profile_update from "./assets/drawing_and_co/auth_profile_update.png";
+import auth_profile from "./assets/drawing_and_co/auth_profile.png";
+import auth from "./assets/drawing_and_co/auth.png";
+import faq from "./assets/drawing_and_co/faq.png";
+import gallery from "./assets/drawing_and_co/gallery.png";
+import navbar from "./assets/drawing_and_co/navbar.png";
+import new_auth from "./assets/drawing_and_co/new_auth.png";
+import auth_navbar from "./assets/drawing_and_co/auth_navbar.png";
+import auth_drawing from "./assets/drawing_and_co/auth_drawing.png";
 
 const projects = [
   {
@@ -71,7 +83,68 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Drawing_And_Co",
     website_url: null,
-    picture_website: pictureDrawingandco,
+    video_url: null,
+    picture_website: [
+      {
+        title: "Interface public : Accueil",
+        image: gallery,
+      },
+      {
+        title: "Interface public : Barre de navigation",
+        image: navbar,
+      },
+      {
+        title: "Inscription utilisateur",
+        image: new_auth,
+      },
+      {
+        title: "Connexion utilisateur/administrateur",
+        image: auth,
+      },
+      {
+        title: "Interface  utilisateur : Menu de navigation",
+        image: auth_navbar,
+      },
+      {
+        title: "Interface utilisateur/administrateur : Accueil",
+        image: auth_gallery,
+      },
+      {
+        title:
+          "Interface utilisateur : Ajouter/supprimer un commentaire pour un dessin ",
+        image: auth_drawing,
+      },
+      {
+        title: "Interface utilisateur/administrateur : Gestion du profil ",
+        image: auth_profile,
+      },
+      {
+        title: "Interface utilisateur/administrateur : Mise à jour du profil",
+        image: auth_profile_update,
+      },
+      {
+        title: "Interface utilisateur/administrateur : Gestion du mot de passe",
+        image: auth_password_update,
+      },
+      {
+        title: "Interface administrateur : Menu de navigation",
+        image: auth_admin_navbar,
+      },
+      {
+        title:
+          "Interface administrateur : Gestion des utilisateurs et de la galerie",
+        image: auth_admin_admin,
+      },
+      {
+        title:
+          "Interface administrateur : Gestion des commentaires d'un dessin ",
+        image: auth_admin_drawing,
+      },
+      {
+        title: "FAQ",
+        image: faq,
+      },
+    ],
   },
   {
     id: 2,
@@ -108,7 +181,7 @@ const projects = [
     ],
     github_url: "https://github.com/MarionbDev/Portfolio",
     website_url: "https://marionbaston.fr",
-    picture_website: picturePortfolio,
+    video_url: null,
   },
 ];
 
