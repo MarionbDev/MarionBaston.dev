@@ -8,11 +8,11 @@ import tools from "../../public/images/tools.jpg";
 export default function Skills() {
   return (
     <div className="flex  justify-center ">
-      <div className="w-3/4 sm:w-10/12">
+      <div className="w-4/5 sm:w-10/12">
         <h2 className="font-roboto text-2xl font-semibold  md:text-3xl sm:w-full text-center lg:text-start mb-10 sm:mb-20 border-b-2 pb-4 sm:pb-2 border-purple ">
           Mes compétences
         </h2>
-        <div className="flex flex-col items-center  mt-2 ">
+        <div className="flex flex-col items-center mt-2 ">
           <div className="flex flex-col md:flex-row  md:flex-wrap justify-center  lg:flex-nowrap lg:flex-row gap-6 lg:gap-20 xl:justify-around  ">
             <div className="font-lato dark:bg-purple/10  shadow-purple/40 shadow-md w-64 xl:w-72 px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-8 flex flex-col ">
               <div className="flex flex-col items-center  gap-4 ">

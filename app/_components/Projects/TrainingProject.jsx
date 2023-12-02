@@ -10,6 +10,26 @@ import expressPng from "./assets/logos/express.png";
 import mysqlPng from "./assets/logos/mysql.png";
 import figmaPng from "./assets/logos/figma.png";
 
+//import TodoList
+import pc_form from "./assets/todoList/pc_form.png";
+import pc_home_todo from "./assets/todoList/pc_home.png";
+import pc_tasks from "./assets/todoList/pc_tasks.png";
+import responsive_home from "./assets/todoList/responsive_home.png";
+
+// import UNIVERSE
+import pc_artist_album from "./assets/universe/pc_artist_album.png";
+import pc_home_2 from "./assets/universe/pc_home_2.png";
+import pc_home_light from "./assets/universe/pc_home_light.png";
+import pc_home from "./assets/universe/pc_home.png";
+import pc_radio from "./assets/universe/pc_radio.png";
+import pc_recommandation from "./assets/universe/pc_recommandation.png";
+import pc_search_album from "./assets/universe/pc_search_album.png";
+import pc_search_artist from "./assets/universe/pc_search_artist.png";
+import pc_search_title from "./assets/universe/pc_search_titre.png";
+import pc_search from "./assets/universe/pc_search.png";
+import pc_title from "./assets/universe/pc_titre.png";
+import mobile_universe from "./assets/universe/mobile.png";
+
 const projects = [
   {
     id: 1,
@@ -55,6 +75,24 @@ const projects = [
     github_url: "https://github.com/MarionbDev/Projet-1_TodoList",
     website_url: "https://marionbdev.github.io/Projet-1_TodoList/",
     video_url: "https://www.youtube.com/embed/Csi9pC6GqOk?si=FUWK4xFy9GHKDrQL",
+    picture_website: [
+      {
+        title: "Interface principale",
+        image: pc_home_todo,
+      },
+      {
+        title: "Formulaire d'enregistrement des tâches",
+        image: pc_form,
+      },
+      {
+        title: "Interface avec toutes les tâches enregistrées",
+        image: pc_tasks,
+      },
+      {
+        title: "Interface mobile et tablette",
+        image: responsive_home,
+      },
+    ],
   },
   {
     id: 2,
@@ -67,6 +105,13 @@ const projects = [
       },
       {
         step_description: "Intégration de deux API externe",
+      },
+      {
+        step_description: "Recherche par artiste / titre / album",
+      },
+      {
+        step_description:
+          "Liste de recommandations par artiste / album / titre ",
       },
     ],
     time: "1 mois",
@@ -97,6 +142,56 @@ const projects = [
     github_url: "https://github.com/MarionbDev/Pojet-2_UniVerse",
     website_url: "https://universe.laloupe-1.wilders.dev/",
     video_url: "https://www.youtube.com/embed/yUwg8c1jHKY?si=gPwaA4SfyVVUoMoI",
+    picture_website: [
+      {
+        title: "Interface principale",
+        image: pc_home,
+      },
+      {
+        title: "Interface principale, suite",
+        image: pc_home_2,
+      },
+      {
+        title: "Interface principale 'Light Mode' ",
+        image: pc_home_light,
+      },
+      {
+        title: "Interface de recherche",
+        image: pc_search,
+      },
+      {
+        title: "Recherche par artiste",
+        image: pc_search_artist,
+      },
+      {
+        title: "Recherche par album",
+        image: pc_search_album,
+      },
+      {
+        title: "Recherche par titre",
+        image: pc_search_title,
+      },
+      {
+        title: "Interface d'un artiste",
+        image: pc_artist_album,
+      },
+      {
+        title: "Interface d'un artiste, suite",
+        image: pc_recommandation,
+      },
+      {
+        title: "Interface d'un titre pour un artiste",
+        image: pc_title,
+      },
+      {
+        title: "Interface de recherche de radio",
+        image: pc_radio,
+      },
+      {
+        title: "Interface mobile",
+        image: mobile_universe,
+      },
+    ],
   },
   {
     id: 3,

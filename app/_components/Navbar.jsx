@@ -6,7 +6,10 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   return (
-    <div className="navbar flex text-base justify-end items-center  w-full pr-8  h-14 fixed z-50  shadow-purple/10 shadow-md ">
+    <div className="navbar flex text-base justify-between items-center  w-full pr-8  h-14 fixed z-50  shadow-purple/10 shadow-md ">
+      <div className="  ml-4">
+        <ModeToggle />
+      </div>
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className="font-lato flex gap-10 items-center font-medium  ">
           <li className="transition hover:scale-110 duration-300 ">
@@ -53,9 +56,6 @@ export default function Navbar() {
                 className=" logo-filter dark:filter-none dark:bg-white rounded-full"
               />
             </Link>
-          </li>
-          <li>
-            <ModeToggle />
           </li>
         </ul>
       </nav>
