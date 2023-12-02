@@ -93,32 +93,34 @@ export default function ProjectCard({ project }) {
           </ul>
         </div>
         {project.picture_website ? (
-          <ScrollArea className="w-[17rem] h-72  md:w-full md:h-full md:whitespace-nowrap rounded-lg md:rounded-t-xl border-purple/10 border-2 py-2 md:px-2 bg-purple/10 mb-6">
-            <div className="flex flex-col md:flex-row md:w-max p-2 md:space-x-4 md:p-4">
+          <ScrollArea className="w-[17rem] h-72  md:w-full md:h-full md:whitespace-nowrap rounded-lg md:rounded-t-xl border-purple/10 border-2 py-2 md:px-2 dark:bg-purple/10 mb-6">
+            <ul className="flex flex-col md:flex-row md:w-max p-2 md:space-x-4 md:p-4 gap-2 md:gap-0 ">
               {project.picture_website
                 ? project.picture_website.map((picture) => (
-                    <figure
+                    <li
                       key={picture.title}
-                      className="shrink-0 flex flex-col items-center md:items-start"
+                      className=" flex flex-col justify-center  items-center md:items-start border-2 p-2"
                     >
-                      <div className=" flex justify-center   rounded-md ">
-                        <Image
-                          src={picture.image}
-                          alt={picture.image}
-                          className="md:w-full "
-                          width={500}
-                          height={600}
-                        />
-                      </div>
-                      <figcaption className="pt-2 mb-4 md:mb-0 text-[8px] md:text-xs text-muted-foreground">
-                        <span className="font-semibold text-foreground">
-                          {picture.title}
-                        </span>
-                      </figcaption>
-                    </figure>
+                      <figure className="shrink-0 ">
+                        <div className=" flex justify-center   rounded-md ">
+                          <Image
+                            src={picture.image}
+                            alt={picture.image}
+                            className=" md:w-full   "
+                            width={500}
+                            height={600}
+                          />
+                        </div>
+                        <figcaption className="pt-2 mb-4 md:mb-0 text-[8px] md:text-xs text-muted-foreground">
+                          <span className="font-semibold text-foreground">
+                            {picture.title}
+                          </span>
+                        </figcaption>
+                      </figure>
+                    </li>
                   ))
                 : null}
-            </div>
+            </ul>
             <ScrollBar
               orientation={isMobile ? "vertical" : "horizontal"}
               className="  dark:bg-purple/30  bg-purple/80 border-none h-3"
