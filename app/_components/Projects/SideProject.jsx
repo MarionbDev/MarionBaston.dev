@@ -8,6 +8,7 @@ import expressPng from "./assets/logos/express.png";
 import mysqlPng from "./assets/logos/mysql.png";
 import figmaPng from "./assets/logos/figma.png";
 import nextPng from "./assets/logos/next.png";
+// import drawing_and_co
 import auth_admin_admin from "./assets/drawing_and_co/auth_admin_admin.png";
 import auth_admin_navbar from "./assets/drawing_and_co/auth_admin_navbar.png";
 import auth_admin_drawing from "./assets/drawing_and_co/auth_admin_drawing.png";
@@ -22,6 +23,11 @@ import navbar from "./assets/drawing_and_co/navbar.png";
 import new_auth from "./assets/drawing_and_co/new_auth.png";
 import auth_navbar from "./assets/drawing_and_co/auth_navbar.png";
 import auth_drawing from "./assets/drawing_and_co/auth_drawing.png";
+import mobile_1 from "./assets/drawing_and_co/responsive/mobile.png";
+import tablette from "./assets/drawing_and_co/responsive/tablette.png";
+import mobile_2 from "./assets/drawing_and_co/responsive/mobile_1.png";
+//import portfolio
+import portfolio from "./assets/portfolio_2.png";
 
 const projects = [
   {
@@ -144,6 +150,18 @@ const projects = [
         title: "FAQ",
         image: faq,
       },
+      {
+        title: "Responsive mobile",
+        image: mobile_1,
+      },
+      {
+        title: "Responsive mobile",
+        image: mobile_2,
+      },
+      {
+        title: "Responsive tablette",
+        image: tablette,
+      },
     ],
   },
   {
@@ -182,6 +200,12 @@ const projects = [
     github_url: "https://github.com/MarionbDev/Portfolio",
     website_url: "https://marionbaston.fr",
     video_url: null,
+    picture_website: [
+      {
+        title: null,
+        image: portfolio,
+      },
+    ],
   },
 ];
 
