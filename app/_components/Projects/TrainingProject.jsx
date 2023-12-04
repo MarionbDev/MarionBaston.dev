@@ -30,6 +30,27 @@ import pc_search from "./assets/universe/pc_search.png";
 import pc_title from "./assets/universe/pc_titre.png";
 import mobile_universe from "./assets/universe/mobile.png";
 
+// import SERENITY
+import ser_add_doc_2 from "./assets/serenity/ser_add_doc_2.png";
+import ser_add_doc from "./assets/serenity/ser_add_doc.png";
+import ser_add_doctor from "./assets/serenity/ser_add_doctor.png";
+import ser_add_patient from "./assets/serenity/ser_add_patient.png";
+import ser_all_pro from "./assets/serenity/ser_all_pro.png";
+import ser_doc_patient from "./assets/serenity/ser_doc_patient.png";
+import ser_home_2 from "./assets/serenity/ser_home_2.png";
+import ser_home_doctor from "./assets/serenity/ser_home_doctor.png";
+import ser_home_patient from "./assets/serenity/ser_home_patient.png";
+import ser_home from "./assets/serenity/ser_home.png";
+import ser_intervention from "./assets/serenity/ser_intervention.png";
+import ser_list_doctor from "./assets/serenity/ser_list_doctor.png";
+import ser_list_pro from "./assets/serenity/ser_list_pro.png";
+import ser_pro from "./assets/serenity/ser_pro.png";
+import ser_profil_patient_patient from "./assets/serenity/ser_profil_patient_patient.png";
+import ser_profil_patient from "./assets/serenity/ser_profil_patient.png";
+import ser_relax_patient from "./assets/serenity/ser_relax_patient.png";
+import ser_todolist from "./assets/serenity/ser_todolist.png";
+import ser_profil_doc from "./assets/serenity/ser_profil_doc.png";
+
 const projects = [
   {
     id: 1,
@@ -342,6 +363,87 @@ const projects = [
     github_url: "https://github.com/MarionbDev/Projet-3_Serenity",
     website_url: "https://serenity.laloupe-1.wilders.dev/",
     video_url: "https://www.youtube.com/embed/hkXG27X0awo?si=8rrnQmRJbKX54qI1",
+    picture_website: [
+      {
+        title: "Interface principale",
+        image: ser_home_2,
+      },
+      {
+        title: "Interface de connexion",
+        image: ser_home,
+      },
+      {
+        title: "Interface principale : Praticien",
+        image: ser_home_doctor,
+      },
+      {
+        title:
+          "Praticien : Liste de tous les praticiens excerçant au sein de la structure",
+        image: ser_list_doctor,
+      },
+      {
+        title: "Praticien : Profil d'un praticien",
+        image: ser_profil_doc,
+      },
+      {
+        title:
+          "Praticien : Ajout d'un praticien (seul l'administrateur y est autorisé)",
+        image: ser_add_doctor,
+      },
+      {
+        title: "Praticien : Ajout d'un patient",
+        image: ser_add_patient,
+      },
+      {
+        title: "Praticien : Profil d'un patient",
+        image: ser_profil_patient,
+      },
+      {
+        title: "Praticien : Ajout d'une intervention",
+        image: ser_intervention,
+      },
+      {
+        title: "Praticien : Ajout d'un document à transmettre au patient",
+        image: ser_add_doc,
+      },
+      {
+        title:
+          "Praticien : Ajout d'un document à transmettre au patient, suite",
+        image: ser_add_doc_2,
+      },
+      {
+        title: "  Praticien : Liste des professionnelles de santé",
+        image: ser_pro,
+      },
+      {
+        title: "Interface principale : Patient",
+        image: ser_home_patient,
+      },
+      {
+        title: "Patient : Documents envoyés par le praticien",
+        image: ser_doc_patient,
+      },
+      {
+        title: "Patient : Profil du patient",
+        image: ser_profil_patient_patient,
+      },
+      {
+        title: "Patient : Vidéo de relaxation",
+        image: ser_relax_patient,
+      },
+      {
+        title: "  Patient : Liste des professionnelles de santé",
+        image: ser_list_pro,
+      },
+      {
+        title: "Patient : Liste des professionnelles de santé, suite",
+        image: ser_all_pro,
+      },
+      {
+        title: "Patient : Checklist",
+        image: ser_todolist,
+      },
+    ],
   },
 ];
 
