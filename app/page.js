@@ -77,7 +77,7 @@ export default function Home() {
                   id="top_perso"
                   value="side-project"
                   aria-controls="projets-personnels"
-                  className="font-lato text-sm md:text-base dark:text-white   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl   "
+                  className="font-lato text-sm md:text-base dark:text-white   hover:text-[#ffffff]   hover:bg-[#baa8bbc0] rounded-xl   "
                 >
                   <p>Side-projects</p>
                 </TabsTrigger>
@@ -88,7 +88,7 @@ export default function Home() {
                   id="top_training"
                   value="training"
                   aria-controls="projets-formations"
-                  className="font-lato  text-sm md:text-base  dark:text-white   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-xl  "
+                  className="font-lato  text-sm md:text-base  dark:text-white   hover:text-[#ffffff]  hover:bg-[#baa8bbc0] rounded-xl  "
                 >
                   Formations
                 </TabsTrigger>
@@ -98,7 +98,7 @@ export default function Home() {
                 <TabsTrigger
                   value="professional"
                   aria-controls="projets-professionnels"
-                  className="font-lato text-sm md:text-base  dark:text-white   hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg"
+                  className="font-lato text-sm md:text-base  dark:text-white   hover:text-[#ffffff]  hover:bg-[#baa8bbc0] rounded-lg"
                 >
                   Professionnels
                 </TabsTrigger>
@@ -108,7 +108,7 @@ export default function Home() {
                 <TabsTrigger
                   value="other"
                   aria-controls="projets-autres"
-                  className="font-lato text-sm md:text-base  dark:text-white  hover:text-[#ffffff]  hover:font-bold hover:bg-[#baa8bbc0] rounded-lg "
+                  className="font-lato text-sm md:text-base  dark:text-white  hover:text-[#ffffff]  hover:bg-[#baa8bbc0] rounded-lg "
                 >
                   Autres
                 </TabsTrigger>
