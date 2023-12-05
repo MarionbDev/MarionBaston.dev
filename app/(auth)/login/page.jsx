@@ -74,7 +74,7 @@ export default function LoginPage() {
           <CardHeader>
             <CardTitle>Connexion</CardTitle>
             <CardDescription>
-              Se connecter à l'espace d'administration
+              Se connecter à l'espace d'administration.
             </CardDescription>
           </CardHeader>
           <CardContent>

@@ -1,5 +1,7 @@
 "use client";
 
+import { useScroll } from "./_components/ScrollContext";
+import { useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "./_components/Navbar";
 import AboutMe from "./_components/AboutMe";
@@ -9,10 +11,8 @@ import ProfessionalProject from "./_components/Projects/ProfessionalProject";
 import SideProject from "./_components/Projects/SideProject";
 import TrainingProject from "./_components/Projects/TrainingProject";
 import OtherProject from "./_components/Projects/OtherProject";
-import { useScroll } from "./_components/ScrollContext";
 import MyServices from "./_components/MyServices";
 import NavbarMobile from "./_components/NavbarMobile";
-import { useEffect } from "react";
 
 export default function Home() {
   const { isVisible } = useScroll();
@@ -44,7 +44,7 @@ export default function Home() {
               className={`font-roboto  text-2xl font-semibold md:text-4xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
-              style={{ transitionDuration: isVisible ? "1s" : "0s" }}
+              style={{ transitionDuration: isVisible ? "0.5s" : "0s" }}
             >
               Mes projets
             </h2>
@@ -53,7 +53,7 @@ export default function Home() {
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
-                transitionDuration: isVisible ? "1s" : "0s",
+                transitionDuration: isVisible ? "0.5s" : "0s",
                 transitionDelay: isVisible ? "0.6s" : "0s",
               }}
             >
@@ -68,8 +68,8 @@ export default function Home() {
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
-                transitionDuration: isVisible ? "1s" : "0s",
-                transitionDelay: isVisible ? "1.5s" : "0s",
+                transitionDuration: isVisible ? "0.7s" : "0s",
+                transitionDelay: isVisible ? "0.6s" : "0s",
               }}
             >
               {SideProject && SideProject().length > 0 ? (
@@ -120,7 +120,7 @@ export default function Home() {
               }`}
               style={{
                 transitionDuration: isVisible ? "1.2s" : "0s",
-                transitionDelay: isVisible ? "2s" : "0s",
+                transitionDelay: isVisible ? "1s" : "0s",
               }}
             >
               <TabsContent value="side-project" id="projets-personnels">
