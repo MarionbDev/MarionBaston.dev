@@ -11,7 +11,6 @@ export const ScrollProvider = ({ children }) => {
     const handleScroll = () => {
       const scrollingText = document.querySelector(".scrollingText");
 
-      // Vérifier si l'élément existe avant d'accéder à getBoundingClientRect
       if (scrollingText) {
         const scrollingTextPosition = scrollingText.getBoundingClientRect().top;
         console.log("scrollingTextPosition:", scrollingTextPosition);

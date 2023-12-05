@@ -14,12 +14,12 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar flex text-base justify-between items-center  w-full pr-8  h-14 fixed z-50  shadow-purple/10 shadow-md ">
+    <div className="navbar flex text-base justify-between items-center  w-full pr-7  h-14 fixed z-50  shadow-purple/10 shadow-md ">
       <div className="  ml-4">
         <ModeToggle />
       </div>
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
-        <ul className="font-lato flex gap-10 items-center font-medium  ">
+        <ul className="font-lato flex gap-8 items-center font-medium  ">
           <li className="transition hover:scale-110 duration-300 ">
             <Link href="#aboutme" aria-label="Qui suis-je ?">
               Qui suis-je ?
@@ -65,10 +65,10 @@ export default function Navbar() {
               />
             </Link>
           </li>
-          <button onClick={handleButtonClick}>
-            <LogIn size="18" />
-          </button>
         </ul>
+        <button onClick={handleButtonClick} className="ml-5 pl-4 border-l ">
+          <LogIn size="18" className="hover:scale-125 duration-300 " />
+        </button>
       </nav>
     </div>
   );

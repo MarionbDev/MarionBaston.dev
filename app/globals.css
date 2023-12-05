@@ -176,12 +176,12 @@ html {
 
 @keyframes slidepicture {
   0% {
-    transform: translateX(270%);
+    transform: translateX(270%) rotate(1000deg);
 
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0);
 
     opacity: 1;
   }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import { LogIn, Menu } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 import {
   Menubar,
@@ -20,8 +20,15 @@ import githubb from "../../public/logos/github.png";
 import Email from "./Email";
 import gmailLogo from "../../public/images/gmail.svg";
 import { ModeToggle } from "./ModeToggle";
+import { useRouter } from "next-nprogress-bar";
 
 export default function NavbarMobile(emailAddress) {
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push("/login");
+  };
+
   return (
     <div className="  flex navSupp">
       <div className=" ml-2 mt-3 ">
@@ -57,9 +64,9 @@ export default function NavbarMobile(emailAddress) {
                 </MenubarSubTrigger>
                 <MenubarSubContent
                   sideOffset={1}
-                  className=" bg-white dark:bg-[#39294f]   shadow-[#3f2f5565] shadow-md "
+                  className=" bg-white dark:bg-[#39294f] w-32    shadow-[#3f2f5565] shadow-md  "
                 >
-                  <MenubarItem>
+                  <MenubarItem className="flex gap-2 italic text-sm">
                     <Email
                       emailAddress={emailAddress}
                       logo={
@@ -71,33 +78,50 @@ export default function NavbarMobile(emailAddress) {
                         />
                       }
                     />
+                    Gmail
                   </MenubarItem>
                   <MenubarItem>
                     <Link
                       href="https://www.linkedin.com/in/marion-baston/"
                       target="_blank"
                     >
-                      <Image
-                        src={linkedinColor}
-                        alt="lien vers ma page linkedin"
-                        width={30}
-                        height={30}
-                      />
+                      <div className="flex items-center gap-2 italic text-sm">
+                        <Image
+                          src={linkedinColor}
+                          alt="lien vers ma page linkedin"
+                          width={30}
+                          height={30}
+                        />{" "}
+                        Linkedin
+                      </div>
                     </Link>
                   </MenubarItem>
                   <MenubarItem>
                     <Link href="https://github.com/MarionbDev" target="_blank">
-                      <Image
-                        src={githubb}
-                        alt="lien vers ma page github"
-                        width={28}
-                        height={28}
-                        className=" logo-filter bg-white rounded-full"
-                      />
+                      <div className="flex items-center gap-2 italic text-sm">
+                        <Image
+                          src={githubb}
+                          alt="lien vers ma page github"
+                          width={28}
+                          height={28}
+                          className=" logo-filter bg-white rounded-full"
+                        />
+                        GitHub{" "}
+                      </div>
                     </Link>
                   </MenubarItem>
                 </MenubarSubContent>
               </MenubarSub>
+              <MenubarSeparator className="  bg-purple" />
+              <MenubarItem className="text-sm  px-0 ">
+                <button
+                  onClick={handleButtonClick}
+                  className=" italic flex gap-2 "
+                >
+                  <LogIn size="18" className="hover:scale-125 duration-300 " />
+                  Se connecter
+                </button>
+              </MenubarItem>
             </MenubarContent>
           </MenubarMenu>
         </Menubar>
