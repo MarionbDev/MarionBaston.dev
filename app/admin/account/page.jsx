@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { UpdateEmailButton } from "./_components/UpdateEmailButton";
 import ButtonItem from "@/components/ui/buttonList/ButtonItem";
+import { UpdatePasswordButton } from "./_components/UpdatePasswordButton";
 
 export default function AccountPage() {
   const { user } = useSession();
@@ -30,7 +31,7 @@ export default function AccountPage() {
             <ButtonItem>Username</ButtonItem>
             <ButtonItem>Bio</ButtonItem>
             <UpdateEmailButton />
-            <ButtonItem>Password</ButtonItem>
+            <UpdatePasswordButton />
           </ButtonList>
         </CardContent>
       </Card>

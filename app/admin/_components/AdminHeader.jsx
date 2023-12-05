@@ -8,17 +8,17 @@ export default function AdminHeader() {
     <nav className="p-4 border-b border-purple flex justify-between">
       <ul className="font-lato flex gap-10 items-center font-medium  ">
         <li className="transition hover:scale-110 duration-300 ">
-          <Link href="#dashboard" aria-label="dashboard">
+          <Link href="/admin" aria-label="dashboard">
             Dashboard
           </Link>
         </li>
         <li className="transition hover:scale-110 duration-300 ">
-          <Link href="#projects" aria-label="mes projets">
+          <Link href="/admin" aria-label="mes projets">
             Projets
           </Link>
         </li>
         <li className="transition hover:scale-110 duration-300 ">
-          <Link href="#cv" aria-label="CV">
+          <Link href="/admin" aria-label="CV">
             CV
           </Link>
         </li>

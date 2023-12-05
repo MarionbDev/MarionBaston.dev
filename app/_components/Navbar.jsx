@@ -3,8 +3,16 @@ import Link from "next/link";
 import linkedin from "../../public/logos/linkedin.png";
 import githubb from "../../public/logos/github.png";
 import { ModeToggle } from "./ModeToggle";
+import { LogIn } from "lucide-react";
+import { useRouter } from "next-nprogress-bar";
 
 export default function Navbar() {
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push("/login");
+  };
+
   return (
     <div className="navbar flex text-base justify-between items-center  w-full pr-8  h-14 fixed z-50  shadow-purple/10 shadow-md ">
       <div className="  ml-4">
@@ -57,6 +65,9 @@ export default function Navbar() {
               />
             </Link>
           </li>
+          <button onClick={handleButtonClick}>
+            <LogIn size="18" />
+          </button>
         </ul>
       </nav>
     </div>
