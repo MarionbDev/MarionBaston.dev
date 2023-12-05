@@ -1,4 +1,10 @@
+import useSession from "@/app/hooks/useSession";
+import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { useState } from "react";
+import { updateUserPassword } from "@/services/auth.services";
 import {
   Dialog,
   DialogContent,
@@ -9,8 +15,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import useSession from "@/app/hooks/useSession";
-import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
@@ -19,18 +23,10 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import ButtonItem from "@/components/ui/buttonList/ButtonItem";
-import { useState } from "react";
-import { updateUserEmail } from "@/services/auth.services";
 import { Loader2, Save } from "lucide-react";
 
-const UpdateEmailFormSchema = yup.object().shape({
-  email: yup
-    .string("Vous devez renseigner un email")
-    .email("Un email valide est requis")
-    .required("Un email valide est requis"),
+const UpdatePasswordFormSchema = yup.object().shape({
   password: yup
     .string("Vous devez renseigner un mot de passe")
     .matches(
@@ -38,23 +34,41 @@ const UpdateEmailFormSchema = yup.object().shape({
       "Le mot de passe doit comporter au moins 8 caractères, une majuscule, une minuscule et un chiffre."
     )
     .required("Un mot de passe est requis"),
+  newPassword: yup
+    .string("Vous devez renseigner un mot de passe")
+    .matches(
+      /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
+      "Le mot de passe doit comporter au moins 8 caractères, une majuscule, une minuscule et un chiffre."
+    )
+    .required("Un mot de passe est requis"),
+  confirmNewPassword: yup
+    .string("Vous devez renseigner un mot de passe")
+    .matches(
+      /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
+      "Le mot de passe doit comporter au moins 8 caractères, une majuscule, une minuscule et un chiffre."
+    )
+    .oneOf(
+      [yup.ref("newPassword"), null],
+      "Les mots de passe doivent correspondre"
+    )
+    .required("Confirmer le mot de passe est requis"),
 });
 
-export function UpdateEmailButton() {
+export function UpdatePasswordButton() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { user, loading, refreshSession } = useSession();
 
-  const form = useForm({ resolver: yupResolver(UpdateEmailFormSchema) });
+  const form = useForm({ resolver: yupResolver(UpdatePasswordFormSchema) });
 
   console.log("data user:", user);
 
-  const handleSubmit = async (updateEmailFormValues) => {
+  const handleSubmit = async (updatePasswordFormValues) => {
     try {
       setIsLoading(true);
-      await updateUserEmail(updateEmailFormValues.email, {
+      await updateUserPassword(updatePasswordFormValues.newPassword, {
         email: user?.email,
-        password: updateEmailFormValues.password,
+        password: updatePasswordFormValues.password,
       });
       setIsDialogOpen(false);
     } catch (error) {
@@ -77,30 +91,32 @@ export function UpdateEmailButton() {
         <ButtonItem
           onClick={handleOpen}
           isLoading={loading}
-          value={user?.email}
+          //   value={user?.email}
           className="shadow-none border border-t-0"
         >
-          Email
+          Mot de passe
         </ButtonItem>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-white">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(handleSubmit)}>
             <DialogHeader>
-              <DialogTitle>Mise à jour de l'email</DialogTitle>
-              <DialogDescription></DialogDescription>
+              <DialogTitle>Mise à jour du mot de passe</DialogTitle>
+              <DialogDescription>
+                Mise à jour de votre mot de passe
+              </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
               <FormField
                 control={form.control}
-                name="email"
+                name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel>Mot de passe initial</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="example@example.com"
-                        type="email"
+                        placeholder="********"
+                        type="password"
                         {...field}
                       />
                     </FormControl>
@@ -110,10 +126,27 @@ export function UpdateEmailButton() {
               />
               <FormField
                 control={form.control}
-                name="password"
+                name="newPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Mot de passe</FormLabel>
+                    <FormLabel>Nouveau mot de passe</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="********"
+                        type="password"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="confirmNewPassword"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Confirmer le nouveau mot de passe</FormLabel>
                     <FormControl>
                       <Input
                         placeholder="********"
