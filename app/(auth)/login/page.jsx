@@ -25,6 +25,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { useRouter } from "next-nprogress-bar";
 
 const loginFormSchema = yup.object().shape({
   email: yup
@@ -43,12 +44,15 @@ const loginFormSchema = yup.object().shape({
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
 
+  const router = useRouter();
+
   const form = useForm({ resolver: yupResolver(loginFormSchema) });
 
   const handleLoginFormSubmit = async (values) => {
     try {
       setIsLoading(true);
       await signInUser(values);
+      router.push("/admin");
     } catch (error) {
       console.error(error);
       toast.error(error.message);
@@ -70,7 +74,7 @@ export default function LoginPage() {
           <CardHeader>
             <CardTitle>Connexion</CardTitle>
             <CardDescription>
-              Se connecter à l'espace d'administration
+              Se connecter à l'espace d'administration.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -106,7 +110,10 @@ export default function LoginPage() {
             />
           </CardContent>
           <CardFooter className="justify-center">
-            <Button disabled={isLoading} className="gap-3">
+            <Button
+              disabled={isLoading}
+              className="gap-3 bg-dark_black text-white"
+            >
               {isLoading ? (
                 <Loader2 className="animate-spin" size="16" />
               ) : (

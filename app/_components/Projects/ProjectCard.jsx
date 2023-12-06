@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
   }, []);
 
   return (
-    <Card className=" dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none mx-4 ">
+    <Card className="  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none mx-4 ">
       <CardHeader className=" mb-2 sm:mb-0">
         <CardTitle className="font-roboto text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
           {project.title}
@@ -94,12 +94,12 @@ export default function ProjectCard({ project }) {
         </div>
         {project.picture_website ? (
           <ScrollArea className="w-[17rem] h-72  md:w-full md:h-full md:whitespace-nowrap rounded-lg md:rounded-t-xl border-purple/10 border-2 py-2 md:px-2 dark:bg-purple/10 mb-6">
-            <ul className="flex flex-col md:flex-row md:w-max p-2 md:space-x-4 md:p-4 gap-2 md:gap-0 ">
+            <ul className=" max-h-[26rem] flex flex-col md:flex-row md:w-max p-2 md:space-x-4 md:p-4 gap-2 md:gap-0 ">
               {project.picture_website
                 ? project.picture_website.map((picture) => (
                     <li
                       key={picture.title}
-                      className=" flex flex-col justify-center  items-center md:items-start border-2 p-2"
+                      className=" flex flex-col justify-center  items-center md:items-start border-2 p-4"
                     >
                       <figure className="shrink-0 ">
                         <div className=" flex justify-center   rounded-md ">
