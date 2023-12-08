@@ -88,21 +88,23 @@ export default function ProjectCard({ project }) {
           >
             {project.project_steps &&
               project.project_steps.map((step) => (
-                <li key={step.step_description}>{step.step_description}</li>
+                <li className="mb-2" key={step.step_description}>
+                  {step.step_description}
+                </li>
               ))}
           </ul>
         </div>
         {project.picture_website ? (
-          <ScrollArea className="w-[17rem] h-72  md:w-full md:h-full md:whitespace-nowrap rounded-lg md:rounded-t-xl border-purple/10 border-2 py-2 md:px-2 dark:bg-purple/10 mb-6">
-            <ul className=" max-h-[26rem] flex flex-col md:flex-row md:w-max p-2 md:space-x-4 md:p-4 gap-2 md:gap-0 ">
+          <ScrollArea className="w-[17rem] h-72  md:w-full md:h-[28rem] py-2 md:whitespace-nowrap rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 mb-6">
+            <ul className="h-[26rem] flex flex-col md:flex-row md:w-max p-2 md:space-x-4  gap-2 md:gap-0  ">
               {project.picture_website
                 ? project.picture_website.map((picture) => (
                     <li
                       key={picture.title}
-                      className=" flex flex-col justify-center  items-center md:items-start border-2 p-4"
+                      className=" flex flex-col justify-center items-center md:items-start border-2 px-4 py-0"
                     >
                       <figure className="shrink-0 ">
-                        <div className=" flex justify-center   rounded-md ">
+                        <div className=" flex justify-center rounded-md ">
                           <Image
                             src={picture.image}
                             alt={picture.image}
@@ -111,10 +113,8 @@ export default function ProjectCard({ project }) {
                             height={600}
                           />
                         </div>
-                        <figcaption className="pt-2 mb-4 md:mb-0 text-[8px] md:text-xs text-muted-foreground">
-                          <span className="font-semibold text-foreground">
-                            {picture.title}
-                          </span>
+                        <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs">
+                          <span className="font-semibold">{picture.title}</span>
                         </figcaption>
                       </figure>
                     </li>
