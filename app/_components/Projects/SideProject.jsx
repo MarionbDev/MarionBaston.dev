@@ -43,14 +43,19 @@ const projects = [
       },
       {
         step_description:
-          "Conception et maquettage d’une interface utilisateur web dynamique, responsive",
-      },
-      {
-        step_description: "Intégration du Back-end",
+          "Création et conception d'une maquette pour une interface utilisateur web dynamique et responsive",
       },
       {
         step_description:
-          "Paramètres : Connexion / inscription pour User et Admin, sécurisation des formulaires, gestion de la galerie, des utilisateurs et des commentaires (CRUD)",
+          "Mise en place de la connexion à la base de données MySQL pour stocker de manière persistante les données relatives aux utilisateurs, aux dessins, aux commentaires...",
+      },
+      {
+        step_description:
+          "Mise en place d'une logique serveur robuste pour garantir le bon fonctionnement des différentes fonctionnalités telles que la gestion des utilisateurs, la gestion de la galerie de dessins, et la gestion des commentaires avec les opérations CRUD (Create, Read, Update, Delete). Les utilisateurs, qu'ils soient simples utilisateurs ou administrateurs, peuvent se connecter ou s'inscrire. Les formulaires sont sécurisés pour assurer la protection des données.",
+      },
+      {
+        step_description:
+          "Fonctionnalités : Connexion / inscription d'un utilisateur, naviguer à travers la galerie de dessins, les utilisateurs peuvent ajouter ou supprimer des commentaires sur les dessins. L'administrateur à des fonctions supplémentaires : la gestion des utilisateurs et de la galerie. Un système de FAQ est intégré pour fournir des informations utiles aux utilisateurs. L'application est conçue pour être responsive.",
       },
     ],
     technos: [
