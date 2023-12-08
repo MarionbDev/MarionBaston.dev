@@ -50,13 +50,44 @@ import ser_profil_patient from "./assets/serenity/ser_profil_patient.png";
 import ser_relax_patient from "./assets/serenity/ser_relax_patient.png";
 import ser_todolist from "./assets/serenity/ser_todolist.png";
 import ser_profil_doc from "./assets/serenity/ser_profil_doc.png";
+import ser_change_password from "./assets/serenity/ser_change_pass.png";
+
+// import R_Amazing
+import ram_add from "./assets/r_amazing/r_am_add.png";
+import ram_chat from "./assets/r_amazing/r_am_chat.png";
+import ram_chat_1 from "./assets/r_amazing/r_am_chat_1.png";
+import ram_chat_2 from "./assets/r_amazing/r_am_chat_2.png";
+import ram_connect from "./assets/r_amazing/r_am_connect.png";
+import ram_details from "./assets/r_amazing/r_am_details_mobile.png";
+import ram_faq from "./assets/r_amazing/r_am_faq.png";
+import ram_mobile from "./assets/r_amazing/r_am_mobile.png";
+import ram_newUser from "./assets/r_amazing/r_am_new_user.png";
+import ram_notValid from "./assets/r_amazing/r_am_not_valid.png";
+import ram_valid from "./assets/r_amazing/r_am_valid.png";
+import ram_search_marq from "./assets/r_amazing/r_am_search_marque.png";
+import ram_search_model from "./assets/r_amazing/r_am_search_model.png";
+import ram_search from "./assets/r_amazing/r_am_search.png";
+
+// import Holitrip
+import holi_contact from "./assets/holitrip/holitrip_contact.png";
+import holi_home_2 from "./assets/holitrip/holitrip_home_2.png";
+import holi_home from "./assets/holitrip/holitrip_home.png";
+import holi_moonboard_2 from "./assets/holitrip/holitrip_moonboard_2.png";
+import holi_moonboard from "./assets/holitrip/holitrip_moonboard.png";
+import holi_radio from "./assets/holitrip/holitrip_radio.png";
+import holi_responsive from "./assets/holitrip/holitrip_responsive.png";
+import holi_roadtirp from "./assets/holitrip/holitrip_roadtrip.png";
+import holi_roadtirp_2 from "./assets/holitrip/holitrip_roadtrip_2.png";
+import holi_search_city_2 from "./assets/holitrip/holitrip_search_city_2.png";
+import holi_search_city from "./assets/holitrip/holitrip_search_city.png";
+import holi_search from "./assets/holitrip/holitrip_search.png";
 
 const projects = [
   {
     id: 1,
     title: "TodoList",
     description:
-      "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires",
+      "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires en fournissant un moyen simple de gérer les listes de tâches.",
     time: "3 semaines",
     soloTeam: "En groupe",
     project_steps: [
@@ -68,11 +99,10 @@ const projects = [
       },
       {
         step_description:
-          "Déplacement d'une tâche en fonction de son avancement",
+          "Déplacement des tâches en fonction de leur avancement",
       },
       {
-        step_description:
-          "Suppression d'une/d'un ensemble de tâche à tout moment",
+        step_description: "Possibilité de supprimer des tâches à tout moment",
       },
     ],
     technos: [
@@ -118,14 +148,16 @@ const projects = [
   {
     id: 2,
     title: "UNIVERSE",
-    description: "Moteur de recherche musicale / Radio",
+    description:
+      "Moteur de recherche musicale et radio en ligne. Le projet comprend une interface dynamique pour la recherche d'artistes, d'albums et de titres, ainsi qu'une liste de recommandations.",
     project_steps: [
       {
         step_description:
-          "Conception et maquettage d’une interface utilisateur web dynamique",
+          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
       },
       {
-        step_description: "Intégration de deux API externe",
+        step_description:
+          "Intégration de deux API externes pour récupérer les métadonnées et obtenir des recommandations. ",
       },
       {
         step_description: "Recherche par artiste / titre / album",
@@ -216,17 +248,22 @@ const projects = [
   },
   {
     id: 3,
-    title: "HoliTrip (hackathon)",
-    description: "Plateforme proposant divers itinéraires de road trips",
+    title: "HoliTrip",
+    description:
+      "Plateforme proposant divers itinéraires de road trips avec la possibilité de rechercher des centres d'intérêt par ville (monuments, parcs, jardins, etc.). Le projet a été développé lors d'un hackathon.",
     time: "24 heures",
     soloTeam: "En groupe",
     project_steps: [
       {
         step_description:
-          "Conception et maquettage d’une interface utilisateur web dynamique",
+          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
       },
       {
-        step_description: "Intégration de deux API externe",
+        step_description:
+          "Intégration de deux API externes pour récupérer les métadonnées",
+      },
+      {
+        step_description: "Recherche par ville",
       },
     ],
     technos: [
@@ -250,25 +287,84 @@ const projects = [
     github_url: "https://github.com/MarionbDev/Hackathon-HoliTrip",
     website_url: null,
     video_url: "https://www.youtube.com/embed/tDhZ-Yu5P7k?si=2LpzdN7ONtLxAOZK",
+    picture_website: [
+      {
+        title: "Interface principale",
+        image: holi_home,
+      },
+      {
+        title: "Interface principale, suite",
+        image: holi_home_2,
+      },
+      {
+        title: "Itinéraires proposés pour une semaine, pour un pays ",
+        image: holi_moonboard,
+      },
+      {
+        title: "Itinéraires proposés pour une semaine, pour un pays, suite",
+        image: holi_moonboard_2,
+      },
+      {
+        title: "Visites proposées pour un itinéraire",
+        image: holi_roadtirp,
+      },
+      {
+        title: "Visites proposées pour un itinéraire, suite",
+        image: holi_roadtirp_2,
+      },
+      {
+        title: "Interface de recherche",
+        image: holi_search,
+      },
+      {
+        title:
+          "Recherche des centres d'intérêt par ville (monuments, parcs, jardins...)",
+        image: holi_search_city,
+      },
+      {
+        title: "Détails d'un centre d'intérêt",
+        image: holi_search_city_2,
+      },
+      {
+        title: "Interface de recherche de radio",
+        image: holi_radio,
+      },
+      {
+        title: "Interface de contact",
+        image: holi_contact,
+      },
+      {
+        title: "Interface mobile et tablette",
+        image: holi_responsive,
+      },
+    ],
   },
   {
     id: 4,
-    title: "R-AMazing-Phone-Pricer (hackathon)",
+    title: "R-AMazing-Phone-Pricer, prototype pour Emmaüs Connect. ",
     description:
-      "Outil de classification des smartphones selon différents critères",
+      "Outil de classification des smartphones selon différents critères. Le projet a été développé lors d'un hackathon",
     time: "48 heures",
     soloTeam: "En groupe (Finaliste)",
     project_steps: [
       {
         step_description:
-          "Conception et maquettage d’une interface utilisateur web dynamique",
+          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
       },
       {
-        step_description: "Intégration du Back-end",
+        step_description: "Création et gestion des API avec Express.js",
       },
       {
         step_description:
-          "Paramètres : Connexion / inscription pour User et Admin. Gestion des utilisateurs, des smartphones (CRUD), Chat ...",
+          "Mise en place de la connexion à la base de données MySQL pour stocker de manière persistante les données relatives aux smartphones, aux utilisateurs et au Chat.",
+      },
+      {
+        step_description:
+          "Mise en place d'une logique serveur robuste pour garantir le bon fonctionnement des différentes fonctionnalités.",
+      },
+      {
+        step_description:
+          "Fonctionnalités : Connexion / inscription (utilisateur, administrateur). Gestion des utilisateurs, des smartphones, du Chat ...",
       },
     ],
     technos: [
@@ -309,25 +405,91 @@ const projects = [
       "https://github.com/MarionbDev/Hackathon-R-AMazing-Phone-Pricer-Ding-Dong-",
     website_url: null,
     video_url: "https://www.youtube.com/embed/H0U_xoGYP5c?si=v1nHy642Hr6nI7eo",
+    picture_website: [
+      {
+        title: "Interface de connexion",
+        image: ram_connect,
+      },
+      {
+        title: "Interface d'enregistrement d'un nouvelle utilisateur",
+        image: ram_newUser,
+      },
+      {
+        title: "Interface de recherche de mobile",
+        image: ram_search,
+      },
+      {
+        title: "Interface de recherche de mobile par marque",
+        image: ram_search_marq,
+      },
+      {
+        title: "Interface de recherche de mobile par modèle",
+        image: ram_search_model,
+      },
+      {
+        title: "Détails d'un mobile",
+        image: ram_details,
+      },
+      {
+        title: "Mobile éligible à la reprise",
+        image: ram_valid,
+      },
+      {
+        title: "Mobile non éligible à la reprise",
+        image: ram_notValid,
+      },
+      {
+        title: "Ajout d'un mobile à la liste",
+        image: ram_add,
+      },
+      {
+        title: "Chat permettant de communiquer entre utilisateurs",
+        image: ram_chat,
+      },
+      {
+        title: "Chat ( utilisateur 'Martin')",
+        image: ram_chat_1,
+      },
+      {
+        title: "Chat (utilisateur 'Marion')",
+        image: ram_chat_2,
+      },
+      {
+        title: "FAQ concernant l'utilisation de l'application",
+        image: ram_faq,
+      },
+      {
+        title: "Interface mobile",
+        image: ram_mobile,
+      },
+    ],
   },
   {
     id: 5,
     title: "SERENITY",
     description:
-      "Application web accompagnant les patients dans leurs prises en charge à l’hôpital  / développement d’un dashbord “Praticien”",
+      "Application web accompagnant les patients dans leurs prises en charge à l’hôpital, avec un dashboard dédié aux praticiens. Les fonctionnalités incluent la gestion des utilisateurs, des interventions, des spécialités, ainsi que la possibilité d'ajouter des documents..",
     time: "2 mois",
     soloTeam: "En groupe",
     project_steps: [
       {
         step_description:
-          "Conception d’une interface utilisateur web dynamique",
+          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
       },
       {
-        step_description: "Intégration du Back-end",
+        step_description: "Création et gestion des API avec Express.js",
       },
       {
         step_description:
-          "Paramètres : Connexion / inscription pour Patient, Praticien et Admin. Gestion des utilisateurs, interventions, spécialités... (CRUD)",
+          "Mise en place de la connexion à la base de données MySQL pour stocker de manière persistante les données relatives aux patients, aux praticiens, aux interventions, à l'envoi d'un mail automatique à un nouvel utilisateur pour changer son mot de passe suite à la création de son compte...",
+      },
+      {
+        step_description:
+          "Mise en place d'une logique serveur robuste pour garantir le bon fonctionnement des différentes fonctionnalités.",
+      },
+      {
+        step_description:
+          "Fonctionnalités : Connexion / inscription (patient, praticien et administrateur). Gestion des utilisateurs, des interventions...",
       },
     ],
     technos: [
@@ -393,6 +555,11 @@ const projects = [
       {
         title: "Praticien : Ajout d'un patient",
         image: ser_add_patient,
+      },
+      {
+        title:
+          "Interface pour changer son mot de passe (lien reçu automatiquement via boîte mail, suite à la création d'un utilisateur)",
+        image: ser_change_password,
       },
       {
         title: "Praticien : Profil d'un patient",
