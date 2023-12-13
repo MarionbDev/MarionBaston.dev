@@ -112,7 +112,7 @@ export default function LoginPage() {
           <CardFooter className="justify-center">
             <Button
               disabled={isLoading}
-              className="gap-3 bg-dark_black text-white"
+              className="gap-3 bg-purple hover:bg-purple/70 dark:bg-purple/60 rounded-lg dark:hover:bg-pale_pink/20  text-white"
             >
               {isLoading ? (
                 <Loader2 className="animate-spin" size="16" />

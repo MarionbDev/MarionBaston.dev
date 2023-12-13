@@ -8,37 +8,37 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ChevronRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import * as React from "react";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { useState, useEffect } from "react";
 
-const isMobileScreen = () => {
-  if (typeof window !== "undefined") {
-    return window.innerWidth <= 768;
-  }
-  return false; // Gérer le cas où window n'est pas défini (par exemple, lors du rendu côté serveur)
-};
+// const isMobileScreen = () => {
+//   if (typeof window !== "undefined") {
+//     return window.innerWidth <= 768;
+//   }
+//   return false; // Gérer le cas où window n'est pas défini (par exemple, lors du rendu côté serveur)
+// };
 
 export default function ProjectCard({ project }) {
-  const [isMobile, setIsMobile] = useState(isMobileScreen());
+  // const [isMobile, setIsMobile] = useState(isMobileScreen());
 
-  // Mettez à jour isMobile lorsqu'il y a un changement de taille d'écran
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(isMobileScreen());
-    };
+  // // Mettez à jour isMobile lorsqu'il y a un changement de taille d'écran
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(isMobileScreen());
+  //   };
 
-    // Ajoutez un écouteur d'événements pour la gestion du redimensionnement
-    window.addEventListener("resize", handleResize);
+  //   // Ajoutez un écouteur d'événements pour la gestion du redimensionnement
+  //   window.addEventListener("resize", handleResize);
 
-    // Nettoyez l'écouteur d'événements lors du démontage du composant
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   // Nettoyez l'écouteur d'événements lors du démontage du composant
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <Card className="  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none mx-4 ">
@@ -93,27 +93,27 @@ export default function ProjectCard({ project }) {
                 </li>
               ))}
           </ul>
-        </div>
+        </div>{" "}
         {project.picture_website ? (
-          <ScrollArea className="w-[17rem] h-72  md:w-full md:h-[28rem] py-2 md:whitespace-nowrap rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 mb-6">
-            <ul className="h-[26rem] flex flex-col md:flex-row md:w-max p-2 md:space-x-4  gap-2 md:gap-0  ">
+          <ScrollArea className="w-[18rem] h-[12rem] px-1 md:px-3  sm:w-full md:h-[25rem]  rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 mb-6">
+            <ul className=" h-[11rem] md:h-[24rem] flex w-max m-1 md:m-2 md:pt-4 md:pl-4 gap-6  md:space-x-4  ">
               {project.picture_website
                 ? project.picture_website.map((picture) => (
                     <li
                       key={picture.title}
-                      className=" flex flex-col justify-center items-center md:items-start border-2 px-4 py-0"
+                      className=" flex flex-col items-start justify-center md:px-4 border border-purple/60 px-2 "
                     >
                       <figure className="shrink-0 ">
-                        <div className=" flex justify-center rounded-md ">
+                        <div className=" flex justify-start rounded-md ">
                           <Image
                             src={picture.image}
                             alt={picture.image}
-                            className=" md:w-full   "
+                            className=" w-[16rem] md:w-[40rem]  "
                             width={500}
                             height={600}
                           />
                         </div>
-                        <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs">
+                        <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-max">
                           <span className="font-semibold">{picture.title}</span>
                         </figcaption>
                       </figure>
@@ -122,11 +122,11 @@ export default function ProjectCard({ project }) {
                 : null}
             </ul>
             <ScrollBar
-              orientation={isMobile ? "vertical" : "horizontal"}
+              orientation="horizontal"
               className="  dark:bg-purple/30  bg-purple/80 border-none h-3"
             />
           </ScrollArea>
-        ) : null}
+        ) : null}{" "}
       </CardContent>
 
       <CardFooter className="flex justify-center md:justify-end gap-2">
