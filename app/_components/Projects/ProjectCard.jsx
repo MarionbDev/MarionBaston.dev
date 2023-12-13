@@ -113,7 +113,7 @@ export default function ProjectCard({ project }) {
                             height={600}
                           />
                         </div>
-                        <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-max">
+                        <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-[16rem]">
                           <span className="font-semibold">{picture.title}</span>
                         </figcaption>
                       </figure>
