@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description}></meta>
         <meta name="keywords" content={metadata.keywords}></meta>
+        <meta name="robots" content="index, follow" />
       </Head>
       <body className={inter.className}>
         <ThemeProvider
