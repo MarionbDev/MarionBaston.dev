@@ -66,7 +66,7 @@ export default function ProjectCard({ project }) {
                 ? project.picture_website.map((picture) => (
                     <li
                       key={picture.title}
-                      className=" flex flex-col items-start justify-center md:px-4 border border-purple/60 px-2 "
+                      className=" flex flex-col items-start justify-center md:px-4 border border-purple/60 px-2  overflow-y-hidden"
                     >
                       <figure className="shrink-0 ">
                         <div className=" flex justify-start rounded-md ">
