@@ -22,7 +22,11 @@ export default function UserDropdown() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="  w-10 h-10 shadow-inner shadow-purple text-black  dark:text-white rounded-full">
+      <DropdownMenuTrigger
+        aria-haspopup="true"
+        aria-expanded="false"
+        className="  w-10 h-10 shadow-inner shadow-purple text-black  dark:text-white rounded-full"
+      >
         <Avatar>
           <AvatarImage alt="photo d'un avatar" />
           <AvatarFallback>
@@ -38,14 +42,21 @@ export default function UserDropdown() {
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild className="hover:bg-[#dbd8d8]  ">
           <Link href="/admin/account">
-            <User className=" h-4 w-4 " />
-            <span>Profil</span>
+            <div className="flex gap-2">
+              <User className=" h-4 w-4 " />
+              <span>Profil</span>
+            </div>
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem className=" text-[#eb4141] hover:bg-[#dbd8d8] ">
-          <button onClick={handleLogOut}>
+          <button
+            onClick={handleLogOut}
+            role="button"
+            aria-label="se déconnecter"
+            className="flex"
+          >
             <LogOut className="mr-2 h-4 w-4 " />
-            <span>Log Out</span>
+            <span>Déconnexion</span>
           </button>
         </DropdownMenuItem>
       </DropdownMenuContent>

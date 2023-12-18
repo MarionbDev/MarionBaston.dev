@@ -22,7 +22,7 @@ export default function Skills() {
                 <Image
                   src={splash}
                   width={150}
-                  alt="image"
+                  alt="image représenter un tâche de peinture"
                   className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
                 />
               </div>
@@ -42,7 +42,7 @@ export default function Skills() {
                   src={roue}
                   width={150}
                   height={150}
-                  alt="image"
+                  alt="image représentant un engrenage"
                   className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75"
                 />
               </div>
@@ -61,7 +61,7 @@ export default function Skills() {
                   src={tools}
                   width={150}
                   height={150}
-                  alt="image"
+                  alt="image représentant des outils et un pc"
                   className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
                 />
               </div>

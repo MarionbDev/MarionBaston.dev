@@ -91,7 +91,7 @@ export default function LoginPage() {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage aria-live="polite" />
                 </FormItem>
               )}
             />
@@ -111,6 +111,8 @@ export default function LoginPage() {
           </CardContent>
           <CardFooter className="justify-center">
             <Button
+              role="button"
+              aria-label="se connecter"
               disabled={isLoading}
               className="gap-3 bg-purple hover:bg-purple/70 dark:bg-purple/60 rounded-lg dark:hover:bg-pale_pink/20  text-white"
             >
@@ -119,7 +121,7 @@ export default function LoginPage() {
               ) : (
                 <LogIn size="16" />
               )}
-              Login
+              Se connecter
             </Button>
           </CardFooter>
         </Card>

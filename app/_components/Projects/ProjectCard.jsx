@@ -52,7 +52,7 @@ export default function ProjectCard({ project }) {
                     height="24"
                     src={techno.photo_url}
                     title={techno.title}
-                    alt={techno.title}
+                    alt={`Image de la techno utilisée - ${techno.title}`}
                     className="w-5 sm:w-6"
                   />
                 </li>
@@ -72,7 +72,7 @@ export default function ProjectCard({ project }) {
                         <div className=" flex justify-start rounded-md ">
                           <Image
                             src={picture.image}
-                            alt={picture.image}
+                            alt={`Photo du projet - ${picture.image}`}
                             className="w-[16rem] md:w-[40rem]   "
                             width={500}
                             height={600}
@@ -100,9 +100,14 @@ export default function ProjectCard({ project }) {
           {project.video_url ? (
             <Button
               asChild
+              role="button"
               className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] "
             >
-              <Link href={project.video_url} target="_blank">
+              <Link
+                href={project.video_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Voir video <ExternalLink size="16" className="ml-2" />
               </Link>
             </Button>
@@ -110,9 +115,14 @@ export default function ProjectCard({ project }) {
           {project.website_url ? (
             <Button
               asChild
+              role="button"
               className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80 rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0]  "
             >
-              <Link href={project.website_url} target="_blank">
+              <Link
+                href={project.website_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Voir website <ExternalLink size="16" className="ml-2" />
               </Link>
             </Button>
@@ -120,9 +130,14 @@ export default function ProjectCard({ project }) {
           {project.github_url ? (
             <Button
               asChild
+              role="button"
               className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] "
             >
-              <Link href={project.github_url} target="_blank">
+              <Link
+                href={project.github_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Voir GitHub <ExternalLink size="16" className="ml-2" />
               </Link>
             </Button>
