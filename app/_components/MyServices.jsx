@@ -34,18 +34,24 @@ export default function MyServices() {
               </h2>
               <Image
                 src={logoCode}
-                alt="logo-code"
+                alt="Logo d'un chevron"
                 width={90}
                 className="w-20 xl:w-28"
               />
               <HoverCard className=" flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
                   <Button
+                    role="button"
                     variant="link"
                     className="dark:bg-purple/10 dark:shadow-purple/30 dark:shadow-inner  shadow-lg gap-4 w-full "
                   >
                     <p className=" text-sm">Voir plus</p>
-                    <Image src={arrow} alt="arrow" width={24} className="w-5" />
+                    <Image
+                      src={arrow}
+                      alt="Flèche"
+                      width={24}
+                      className="w-5"
+                    />
                   </Button>
                 </HoverCardTrigger>
                 <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg  ">
@@ -81,13 +87,14 @@ export default function MyServices() {
               </h2>
               <Image
                 src={logoCode}
-                alt="logo-code"
+                alt="Logo d'un chevron"
                 width={90}
                 className="w-20 xl:w-28"
               />
               <HoverCard className="flex flex-col items-center justify-centers ">
                 <HoverCardTrigger asChild>
                   <Button
+                    role="button"
                     variant="link"
                     className="dark:bg-purple/10  dark:shadow-purple/30 dark:shadow-inner shadow-lg gap-4 w-full "
                   >
@@ -128,7 +135,7 @@ export default function MyServices() {
               </CardHeader>
               <CardContent className=" flex justify-center">
                 <Button
-                  type="button"
+                  role="button"
                   className=" dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 bg-[#ffffff] dark:hover:bg-pale_pink/20  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff]   shadow-xl"
                 >
                   <Link

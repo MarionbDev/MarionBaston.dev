@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-12 px-8 md:p-0  ">
           <nav className=" col-start-1 col-span-2 lg:col-start-1 lg:col-span-3 flex sm:flex-col justify-between items-start ">
             <div className="flex items-center gap-4 sm:ml-10 w-full">
-              <Link href="/" aria-labelledby="marion-baston ">
+              <Link href="/" aria-labelledby="marion-baston">
                 <div className="flex flex-col items-center lg:items-start ">
                   <span
                     id="marion-baston"
@@ -86,10 +86,10 @@ export default function Footer() {
                 <Button
                   variant="link"
                   asChild
-                  aria-labelledby="footer-skills"
+                  aria-labelledby="footer-services"
                   className="shadow-none"
                 >
-                  <Link href="#myservices" id="footer-skills">
+                  <Link href="#myservices" id="footer-services">
                     Mes services
                   </Link>
                 </Button>
