@@ -92,12 +92,12 @@ export function UpdatePasswordButton() {
           onClick={handleOpen}
           isLoading={loading}
           //   value={user?.email}
-          className="shadow-none border border-t-0"
+          className="shadow-none border-purple/60 border-t-0 dark:hover:bg-purple/60"
         >
           Mot de passe
         </ButtonItem>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-white">
+      <DialogContent className="sm:max-w-[425px] bg-white dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(handleSubmit)}>
             <DialogHeader>
@@ -160,13 +160,16 @@ export function UpdatePasswordButton() {
               />
             </div>
             <DialogFooter>
-              <Button disabled={isLoading} className="gap-2">
+              <Button
+                disabled={isLoading}
+                className="gap-2 dark:hover:bg-pale_pink/20  hover:bg-[#baa8bbc0] dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/20 rounded-xl"
+              >
                 {isLoading ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
                 ) : (
                   <Save size="16" />
                 )}
-                Save
+                Sauvegarder
               </Button>
             </DialogFooter>
           </form>
