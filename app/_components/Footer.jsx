@@ -59,7 +59,7 @@ export default function Footer() {
                   className="shadow-none"
                 >
                   <Link href="#projects" id="footer-projects">
-                    Projets
+                    Mes Projets
                   </Link>
                 </Button>
               </li>
@@ -78,7 +78,7 @@ export default function Footer() {
                   className="shadow-none"
                 >
                   <Link href="#skills" id="footer-skills">
-                    Compétences
+                    Mes Compétences
                   </Link>
                 </Button>
               </li>
