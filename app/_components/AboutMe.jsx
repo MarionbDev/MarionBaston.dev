@@ -71,8 +71,9 @@ export default function AboutMe() {
           </div>
           <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4  md:w-auto lg:mx-6 gap-4 md:gap-6 ">
             <Button
-              type="button"
               asChild
+              role="button"
+              aria-label="Télécharger mon CV"
               className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  text-white  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 "
             >
               <Link
@@ -82,12 +83,17 @@ export default function AboutMe() {
                 aria-labelledby="download-cv"
                 className="flex gap-1 md:gap-2 text-sm  text-center "
               >
-                <Download size="16" id="download-cv" />
+                <Download
+                  size="16"
+                  id="download-cv"
+                  alt="icône de téléchargement"
+                />
                 Télécharger mon CV
               </Link>
             </Button>
             <Button
-              type="button"
+              role="button"
+              aria-label="M'envoyer un email"
               className="slideLink-2 font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 dark:text-white bg-purple/30  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  text-[#313030] hover:text-[#ffff]   "
             >
               <MessagesSquare size="16" id="contact-me" className="mr-2" />

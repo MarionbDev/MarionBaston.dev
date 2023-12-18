@@ -192,11 +192,11 @@ const projects = [
       },
       {
         step_description:
-          "Intégration de Supabase pour développer l'interface d'administration avec connexion administrateur ",
+          "Intégration de Supabase pour développer l'interface d'administration avec connexion utilisateur ",
       },
       {
         step_description:
-          "Fonctionnalités : Connexion, gestion du mot de passe (mot de passe oublié, modification du mot de passe et modifications des informations de l'utilisateur)",
+          "Fonctionnalités : Connexion, gestion du mot de passe (modification du mot de passe et modification des informations de l'utilisateur)",
       },
     ],
     technos: [

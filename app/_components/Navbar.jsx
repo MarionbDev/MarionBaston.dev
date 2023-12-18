@@ -21,7 +21,7 @@ export default function Navbar() {
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className="font-lato flex gap-8 items-center font-medium  ">
           <li className="transition hover:scale-110 duration-300 ">
-            <Link href="#aboutme" aria-label="Qui suis-je ?">
+            <Link href="#aboutme" aria-label="En savoir plus sur moi">
               Qui suis-je ?
             </Link>
           </li>
@@ -44,6 +44,7 @@ export default function Navbar() {
             <Link
               href="https://www.linkedin.com/in/marion-baston/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image
                 src={linkedin}
@@ -55,7 +56,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="transition hover:scale-110 duration-300 hover:rotate-[360deg]">
-            <Link href="https://github.com/MarionbDev" target="_blank">
+            <Link
+              href="https://github.com/MarionbDev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src={githubb}
                 alt="lien vers ma page github"
@@ -66,7 +71,12 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-        <button onClick={handleButtonClick} className="ml-5 pl-4 border-l ">
+        <button
+          onClick={handleButtonClick}
+          role="button"
+          aria-label="Se connecter"
+          className="ml-5 pl-4 border-l "
+        >
           <LogIn size="18" className="hover:scale-125 duration-300 " />
         </button>
       </nav>

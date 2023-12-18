@@ -116,6 +116,8 @@ export default function NavbarMobile(emailAddress) {
               <MenubarItem className="text-sm  px-0 ">
                 <button
                   onClick={handleButtonClick}
+                  role="button"
+                  aria-label="Se connecter"
                   className=" italic flex gap-2 "
                 >
                   <LogIn size="18" className="hover:scale-125 duration-300 " />
