@@ -193,7 +193,7 @@ const projects = [
       },
     ],
     github_url: "https://github.com/MarionbDev/Pojet-2_UniVerse",
-    website_url: "https://universe.laloupe-1.wilders.dev/",
+    website_url: null,
     video_url: "https://www.youtube.com/embed/yUwg8c1jHKY?si=gPwaA4SfyVVUoMoI",
     picture_website: [
       {
@@ -523,7 +523,7 @@ const projects = [
       },
     ],
     github_url: "https://github.com/MarionbDev/Projet-3_Serenity",
-    website_url: "https://serenity.laloupe-1.wilders.dev/",
+    website_url: null,
     video_url: "https://www.youtube.com/embed/hkXG27X0awo?si=8rrnQmRJbKX54qI1",
     picture_website: [
       {

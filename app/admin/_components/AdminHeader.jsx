@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import UserDropdown from "./UserDropdown";
+import { ModeToggle } from "@/app/_components/ModeToggle";
 
 export default function AdminHeader() {
   return (
@@ -23,7 +24,10 @@ export default function AdminHeader() {
           </Link>
         </li>
       </ul>
-      <UserDropdown />
+      <ul className=" flex items-center gap-2">
+        <ModeToggle />
+        <UserDropdown />
+      </ul>
     </nav>
   );
 }

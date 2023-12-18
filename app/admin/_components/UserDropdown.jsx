@@ -22,7 +22,7 @@ export default function UserDropdown() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className=" bg-[#373636]  text-white rounded-full">
+      <DropdownMenuTrigger className="  w-10 h-10 shadow-inner shadow-purple text-black  dark:text-white rounded-full">
         <Avatar>
           <AvatarImage alt="photo d'un avatar" />
           <AvatarFallback>
@@ -30,7 +30,10 @@ export default function UserDropdown() {
           </AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className=" bg-[#f6f5f5] rounded-xl ">
+      <DropdownMenuContent
+        align="end"
+        className=" bg-[#f6f5f5] rounded-xl dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg "
+      >
         <DropdownMenuLabel>Mon compte</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild className="hover:bg-[#dbd8d8]  ">

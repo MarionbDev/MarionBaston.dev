@@ -28,7 +28,7 @@ export default function MyServices() {
         </h2>
         <div className="flex flex-col items-center mt-2 ">
           <div className="font-lato flex flex-col md:flex-row items-center justify-around gap-10">
-            <div className="dark:bg-purple/10  shadow-purple/40 shadow-md w-64 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
+            <div className="dark:bg-purple/10  shadow-purple/40 shadow-md w-80 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
               <h2 className=" text-base lg:text-lg text-center">
                 DEVELOPPEMENT WEB FRONTEND
               </h2>
@@ -75,7 +75,7 @@ export default function MyServices() {
                 </HoverCardContent>
               </HoverCard>
             </div>
-            <div className="font-lato  dark:bg-purple/10 shadow-purple/40 shadow-md  w-64 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
+            <div className="font-lato  dark:bg-purple/10 shadow-purple/40 shadow-md  w-80 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
               <h2 className="text-base  lg:text-lg text-center">
                 DEVELOPPEMENT WEB BACKEND
               </h2>

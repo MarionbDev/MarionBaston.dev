@@ -28,6 +28,10 @@ import tablette from "./assets/drawing_and_co/responsive/tablette.png";
 import mobile_2 from "./assets/drawing_and_co/responsive/mobile_1.png";
 //import portfolio
 import portfolio from "./assets/portfolio_2.png";
+import portfolioLogin from "./assets/portfolio_login.png";
+import portfolioProfile from "./assets/portfolio_profile.png";
+import portfolioPassword from "./assets/portfolio_password.png";
+import portfolioEmail from "./assets/portfolio_email.png";
 
 const projects = [
   {
@@ -183,6 +187,17 @@ const projects = [
         step_description:
           "Conception et maquettage d’une interface utilisateur web dynamique, responsive",
       },
+      {
+        step_description: "Création d'une interface d'administration",
+      },
+      {
+        step_description:
+          "Intégration de Supabase pour développer l'interface d'administration avec connexion administrateur ",
+      },
+      {
+        step_description:
+          "Fonctionnalités : Connexion, gestion du mot de passe (mot de passe oublié, modification du mot de passe et modifications des informations de l'utilisateur)",
+      },
     ],
     technos: [
       {
@@ -203,12 +218,28 @@ const projects = [
       },
     ],
     github_url: "https://github.com/MarionbDev/Portfolio",
-    website_url: "https://marionbaston.fr",
+    website_url: null,
     video_url: null,
     picture_website: [
       {
         title: null,
         image: portfolio,
+      },
+      {
+        title: "Interface de connexion administrateur",
+        image: portfolioLogin,
+      },
+      {
+        title: "Profil administrateur",
+        image: portfolioProfile,
+      },
+      {
+        title: "Changement de l'email administrateur",
+        image: portfolioEmail,
+      },
+      {
+        title: "Changement du mot de passe administrateur",
+        image: portfolioPassword,
       },
     ],
   },
