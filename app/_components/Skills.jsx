@@ -14,7 +14,7 @@ export default function Skills() {
         </h2>
         <div className="flex flex-col items-center mt-2 ">
           <div className="flex flex-col md:flex-row  md:flex-wrap justify-center  lg:flex-nowrap lg:flex-row gap-6 lg:gap-20 xl:justify-around  ">
-            <div className="font-lato dark:bg-purple/10  shadow-purple/40 shadow-md w-64 xl:w-72 px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-8 flex flex-col ">
+            <div className="font-lato dark:bg-purple/10  shadow-purple/40 shadow-md w-80 xl:w-72 px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-8 flex flex-col ">
               <div className="flex flex-col items-center  gap-4 ">
                 <h2 className=" text-lg text-center dark:mb-0 sm:mb-4">
                   FRONTEND
@@ -35,7 +35,7 @@ export default function Skills() {
                 <li>API REST</li>
               </ul>
             </div>
-            <div className="font-lato dark:bg-purple/10 shadow-purple/40 shadow-md  w-64 xl:w-72 px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-8 flex flex-col ">
+            <div className="font-lato dark:bg-purple/10 shadow-purple/40 shadow-md  w-80 xl:w-72 px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-8 flex flex-col ">
               <div className="flex flex-col items-center  gap-4">
                 <h2 className="text-lg text-center ">BACKEND</h2>
                 <Image
@@ -54,7 +54,7 @@ export default function Skills() {
                 <li className=" italic">(CRUD, Queries, Validations)</li>
               </ul>
             </div>
-            <div className="font-lato dark:bg-purple/10  shadow-purple/40 shadow-md w-64 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-8 flex flex-col ">
+            <div className="font-lato dark:bg-purple/10  shadow-purple/40 shadow-md w-80 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-8 flex flex-col ">
               <div className="flex flex-col items-center gap-4">
                 <h2 className="text-lg text-center ">OUTILS</h2>
                 <Image
