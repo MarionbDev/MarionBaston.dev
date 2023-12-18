@@ -27,12 +27,12 @@ export default function Navbar() {
           </li>
           <li className="transition hover:scale-110 duration-300 ">
             <Link href="#projects" aria-label="mes projets">
-              Projets
+              Mes Projets
             </Link>
           </li>
           <li className="transition hover:scale-110 duration-300 ">
             <Link href="#skills" aria-label="mes compétences">
-              Compétences
+              Mes Compétences
             </Link>
           </li>
           <li className="transition hover:scale-110 duration-300 ">
