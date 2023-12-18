@@ -9,13 +9,13 @@ import {
 
 export function DialogStepProject({ project }) {
   return (
-    <Dialog className="">
+    <Dialog>
       <DialogTrigger asChild>
         <Button className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0]">
           Voir plus...
         </Button>
       </DialogTrigger>
-      <DialogContent className="flex flex-col gap-10 overflow-y-scroll  sm:max-w-[668px] dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg">
+      <DialogContent className="dialog gap-10 overflow-y-scroll  sm:max-w-[668px] dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg">
         <DialogTitle>Description du projet</DialogTitle>
         <DialogDescription>
           {project.project_steps &&

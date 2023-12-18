@@ -49,10 +49,10 @@ export default function NavbarMobile(emailAddress) {
                 <MenubarItem className="text-sm ">Qui suis-je ?</MenubarItem>{" "}
               </Link>
               <Link href="#projects" aria-label="mes projets">
-                <MenubarItem className="text-sm ">Projets</MenubarItem>
+                <MenubarItem className="text-sm ">Mes Projets</MenubarItem>
               </Link>
               <Link href="#skills" aria-label="mes compétences">
-                <MenubarItem className="text-sm ">Compétences</MenubarItem>
+                <MenubarItem className="text-sm ">Mes Compétences</MenubarItem>
               </Link>
               <Link href="#myservices" aria-label="mes services">
                 <MenubarItem className="text-sm ">Mes services</MenubarItem>
