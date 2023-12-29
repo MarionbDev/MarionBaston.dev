@@ -18,7 +18,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function ProjectCard({ project }) {
   return (
-    <Card className="  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none ">
+    <Card className=" flex flex-col items-center sm:block dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none ">
       <CardHeader className=" mb-2 sm:mb-0">
         <CardTitle className="font-roboto text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
           {project.title}
@@ -38,7 +38,7 @@ export default function ProjectCard({ project }) {
         </div>
       </CardHeader>
 
-      <CardContent className="flex flex-col-reverse  max-w-screen-xl md:justify-between">
+      <CardContent className="flex flex-col-reverse   max-w-screen-xl md:justify-between">
         <div className="flex flex-col items-center md:items-start">
           <ul
             aria-label="liste des technologies utilisées"
@@ -62,8 +62,8 @@ export default function ProjectCard({ project }) {
         </div>{" "}
         {project.picture_website ? (
           <div>
-            <ScrollArea className="flex flex-col w-[16rem] h-[12rem] mx-auto md:px-3  sm:w-full md:h-[27rem] rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 mb-1">
-              <ul className=" h-[11rem] md:h-[24rem] flex w-max m-1 md:m-2 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
+            <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3  sm:w-full sm:h-[18rem] md:h-[27rem] rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 sm:mb-5">
+              <ul className=" h-[11rem] sm:h-[17rem] md:h-[24rem] flex w-max m-1 md:m-2 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
                 {project.picture_website
                   ? project.picture_website.map((picture) => (
                       <li
@@ -71,11 +71,11 @@ export default function ProjectCard({ project }) {
                         className=" flex flex-col items-start justify-center md:px-4 border border-purple/60 px-2  overflow-y-hidden"
                       >
                         <figure className="shrink-0 ">
-                          <div className=" flex justify-start rounded-md ">
+                          <div className=" flex justify-start rounded-md  ">
                             <Image
                               src={picture.image}
                               alt={`Photo du projet - ${picture.image}`}
-                              className="w-[16rem] md:w-[40rem]   "
+                              className="w-[16rem] sm:w-[26rem] md:w-[30rem] lg:w-[40rem]   "
                               width={500}
                               height={600}
                             />
@@ -95,8 +95,8 @@ export default function ProjectCard({ project }) {
                 className="  dark:bg-purple/30  bg-purple/80 border-none h-3"
               />{" "}
             </ScrollArea>
-            <div className=" flex justify-end w-full  mb-2">
-              <div className="chevron-slide relative -top-28 -right-3 h-5 w-5">
+            <div className=" flex justify-end w-full ">
+              <div className="chevron-slide relative -top-28 -right-1 sm:-top-44  h-5 w-5">
                 <ChevronRight />
               </div>
             </div>
