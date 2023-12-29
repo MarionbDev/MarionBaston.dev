@@ -346,4 +346,7 @@ html {
   .navSupp {
     display: none;
   }
+  .chevron-slide {
+    display: none;
+  }
 }
