@@ -28,7 +28,7 @@ export default function MyServices() {
         </h2>
         <div className="flex flex-col items-center mt-2 ">
           <div className="font-lato flex flex-col md:flex-row items-center justify-around gap-10">
-            <div className="dark:bg-purple/10  shadow-purple/40 shadow-md w-80 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
+            <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
               <h2 className=" text-base lg:text-lg text-center">
                 DEVELOPPEMENT WEB FRONTEND
               </h2>
@@ -81,7 +81,7 @@ export default function MyServices() {
                 </HoverCardContent>
               </HoverCard>
             </div>
-            <div className="font-lato  dark:bg-purple/10 shadow-purple/40 shadow-md  w-80 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
+            <div className="font-lato  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
               <h2 className="text-base  lg:text-lg text-center">
                 DEVELOPPEMENT WEB BACKEND
               </h2>
@@ -122,7 +122,7 @@ export default function MyServices() {
               </HoverCard>
             </div>
           </div>
-          <div className="font-lato mt-10 sm:mt-28 xl:w-3/5  ">
+          <div className="font-lato mt-10 sm:mt-28 w-72 xl:w-3/5  ">
             <Card className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
               <CardHeader>
                 <CardTitle className=" text-lg sm:text-xl md:text-2xl text-center">

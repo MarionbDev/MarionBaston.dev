@@ -31,7 +31,7 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="dark:bg-[#39294f] border-none  bg-white"
+        className="dark:bg-[#39294f] border-none ml-2  bg-white"
       >
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light&nbsp; {theme === "light" && <span>&#10003;</span>}
