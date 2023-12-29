@@ -38,7 +38,7 @@ export default function Home() {
         id="projects"
         className="flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 px-6"
       >
-        <div className="sm:w-10/12 ">
+        <div className="sm:w-10/12  ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
             <h2
               className={`font-roboto  text-2xl font-semibold md:text-4xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple ${
@@ -115,7 +115,7 @@ export default function Home() {
               ) : null}
             </TabsList>
             <div
-              className={`md:w-3/4 mx-auto  ${
+              className={`md:w-full lg:w-3/4 mx-auto  w-11/12  ${
                 isVisible ? "scrollingText.visible" : "scrollingText"
               }`}
               style={{
