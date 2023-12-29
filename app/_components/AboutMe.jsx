@@ -17,7 +17,7 @@ export default function AboutMe() {
               <h3 className="slide-hello font-roboto text-xl md:text-2xl  sm:mb-3   ">
                 Bonjour, je suis
               </h3>
-              <h1 className="slide-name font-alice text-purple  text-3xl sm:text-5xl lg:text-6xl mt-3 md:mt-0 ">
+              <h1 className="slide-name font-alice text-purple  text-3xl sm:text-4xl lg:text-6xl mt-3 md:mt-0 ">
                 <span>M</span>
                 <span>a</span>
                 <span>r</span>
@@ -34,7 +34,7 @@ export default function AboutMe() {
               <p className=" slide-name-dev font-roboto font-medium  text-2xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-10 sm:mb-6 ">
                 Développeuse Web Junior
               </p>
-              <div className="dark:bg-purple/20   slide-para font-lato z-30 text-base text-justify sm:text-2xl md:text-base p-6 sm:p-8  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+              <div className="dark:bg-purple/20   slide-para font-lato z-30 text-base text-justify sm:text-xl md:text-base p-6 sm:p-8  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
                 <p className="">
                   Passionnée de développement web et autodidacte, j'ai acquis de
                   nombreuses compétences durant ma formation à la Wild Code
