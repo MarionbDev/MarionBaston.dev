@@ -15,7 +15,7 @@ export function DialogStepProject({ project }) {
           Voir plus...
         </Button>
       </DialogTrigger>
-      <DialogContent className="dialog gap-10 overflow-y-scroll  sm:max-w-[668px] dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg">
+      <DialogContent className="dialog gap-10 overflow-y-scroll ml-14 md:ml-0 lg:max-w-[668px] dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg">
         <DialogTitle>Description du projet</DialogTitle>
         <DialogDescription>
           {project.project_steps &&
