@@ -31,12 +31,12 @@ export default function Home() {
       <div>
         <NavbarMobile className="navbar-mobile" />
       </div>
-      <div id="aboutme" className=" md:pb-14 px-6  ">
+      <div id="aboutme" className=" md:pb-14  mx-2  ">
         <AboutMe />
       </div>
       <div
         id="projects"
-        className="flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 px-6  "
+        className="flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 px-6"
       >
         <div className="sm:w-10/12 ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
@@ -139,10 +139,10 @@ export default function Home() {
           </Tabs>
         </div>
       </div>
-      <div id="skills" className=" pt-16 md:pb-[4rem] px-6 ">
+      <div id="skills" className=" pt-16 md:pb-[4rem] px-6 mx-6 ">
         <Skills />
       </div>
-      <div id="myservices" className="px-6  pt-16 pb-10 md:pb-[10rem]">
+      <div id="myservices" className="px-6 mx-6  pt-16 pb-10 md:pb-[10rem]">
         <MyServices />
       </div>
       <Footer />

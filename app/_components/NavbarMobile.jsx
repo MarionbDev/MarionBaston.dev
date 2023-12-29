@@ -43,7 +43,7 @@ export default function NavbarMobile(emailAddress) {
             <MenubarContent
               align="start"
               sideOffset={1}
-              className=" dark:bg-[#39294f]   bg-white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
+              className=" dark:bg-[#39294f] mr-2   bg-white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
             >
               <Link href="#aboutme" aria-label="Qui suis-je ?">
                 <MenubarItem className="text-sm ">Qui suis-je ?</MenubarItem>{" "}
