@@ -1,4 +1,5 @@
 import supabase from "@/lib/database";
+import { setIsAuthenticated } from "@/app/admin/middlewares/withAuth";
 
 export const signInUser = async ({ email, password }) => {
   try {
@@ -7,6 +8,7 @@ export const signInUser = async ({ email, password }) => {
       password,
     });
     if (error) throw error;
+    setIsAuthenticated(true);
     return data;
   } catch (error) {
     throw error;
@@ -57,6 +59,7 @@ export const signOutUser = async () => {
   try {
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
+    setIsAuthenticated(false);
   } catch (error) {
     throw error;
   }
