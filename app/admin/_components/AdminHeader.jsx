@@ -14,12 +14,12 @@ export default function AdminHeader() {
           </Link>
         </li>
         <li className="transition hover:scale-110 duration-300 ">
-          <Link href="/admin" aria-label="mes projets">
+          <Link href="/admin/projects" aria-label="mes projets">
             Projets
           </Link>
         </li>
         <li className="transition hover:scale-110 duration-300 ">
-          <Link href="/admin" aria-label="CV">
+          <Link href="/admin/cv" aria-label="CV">
             CV
           </Link>
         </li>
