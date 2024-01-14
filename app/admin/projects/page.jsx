@@ -106,7 +106,6 @@ export default function AddProject() {
   return (
     <div>
       <h1>Mes projets</h1>
-      <p>essai le dim 14</p>
       <div>Mise à jour des projets</div>
       <Dialog open={isDialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild className="flex justify-start">
