@@ -1,17 +1,17 @@
 "use client";
 
-import AddProject from "./_components/Projects";
-import AddTechno from "./_components/Technos";
-import AddCollaborations from "./_components/Collaborations";
-import AddPictures from "./_components/PicturesProjects";
+import CollaborationsList from "./_components/Collaborations";
+import PicturesList from "./_components/PicturesProjects";
+import ProjectsList from "./_components/Projects";
+import TechnosList from "./_components/Technos";
 
 export default function PageProjects() {
   return (
     <div className="flex flex-col gap-10">
-      <AddProject />
-      <AddTechno />
-      <AddCollaborations />
-      <AddPictures />
+      <ProjectsList />
+      <TechnosList />
+      <CollaborationsList />
+      <PicturesList />
     </div>
   );
 }

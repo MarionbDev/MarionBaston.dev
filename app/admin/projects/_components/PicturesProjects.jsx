@@ -1,3 +1,3 @@
-export default function AddPictures() {
+export default function PicturesList() {
   return <div>Diaporama des projets</div>;
 }
