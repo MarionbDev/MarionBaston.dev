@@ -35,7 +35,7 @@ const InsertTechnoFormSchema = yup.object().shape({
     .required("Une image est requise"),
 });
 
-export default function AddTechno() {
+export default function TechnosList() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [technos, setTechnos] = useState([]);
 
@@ -43,9 +43,11 @@ export default function AddTechno() {
 
   const allTechnos = async () => {
     try {
-      const data = await getTechno();
-      if (data) {
-        setTechnos(data);
+      const dataTechno = await getTechno();
+      // console.log("Technos data:", dataTechno);
+
+      if (dataTechno) {
+        setTechnos(dataTechno);
       } else {
         console.error("Error fetching projects");
       }
@@ -104,11 +106,11 @@ export default function AddTechno() {
     <div className="flex flex-col gap-10">
       <h3>Liste des technos</h3>
       <div>
-        <ul>
+        <ul className="grid grid-cols-7">
           {technos.map((techno) => (
             <li key={techno.id} className="flex gap-2">
-              <p>Nom : {techno.title}</p>
-              <p>{techno.image_url}</p>
+              <p>{techno.title}</p>
+              {/* <p>{techno.image_url}</p> */}
               <button
                 type="button"
                 onClick={() => {
@@ -116,7 +118,7 @@ export default function AddTechno() {
                   handleDeleteTechno(techno.id);
                 }}
               >
-                Supprimer
+                X
               </button>
             </li>
           ))}

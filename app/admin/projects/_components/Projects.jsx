@@ -28,12 +28,21 @@ import { getTechno } from "@/lib/api/technos";
 import {
   Select,
   SelectContent,
-  SelectGroup,
   SelectItem,
   SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
-import { SelectValue } from "@radix-ui/react-select";
-import Dashboard from "../../page";
+
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import Link from "next/link";
 
 const InsertProjectFormSchema = yup.object().shape({
   title: yup
@@ -44,7 +53,7 @@ const InsertProjectFormSchema = yup.object().shape({
     .required("Une description est requise"),
 });
 
-export default function AddProject() {
+export default function ProjectList() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [projects, setProjects] = useState([]);
   const [technos, setTechnos] = useState([]);
@@ -71,6 +80,8 @@ export default function AddProject() {
   const allTechnos = async () => {
     try {
       const dataTechno = await getTechno();
+      console.log("Technos data:", dataTechno);
+
       if (dataTechno) {
         setTechnos(dataTechno);
       } else {
@@ -130,32 +141,74 @@ export default function AddProject() {
   };
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 overflow-hidden ">
       <h3> Liste des projets</h3>
-      <div>
-        <ul>
-          {projects.map((project) => (
-            <li key={project.id} className="flex gap-2">
-              <p>Titre :{project.title}</p>
-              <p>Description : {project.description}</p>
-              <p>Temps : {project.time}</p>
-              <p>Technos : {project.techno}</p>
-              <p>Site Web : {project.website_url}</p>
-              <p>Github : {project.github_url}</p>
-              <p>video_url : {project.video_url}</p>
+      <div className="  ">
+        <Table className="   ">
+          <TableHeader>
+            <TableRow className="">
+              <TableHead className="">Nom du projet</TableHead>
+              <TableHead className="">Description</TableHead>
+              <TableHead>Durée effectuée</TableHead>
+              <TableHead className="">Technos utilisées</TableHead>
+              <TableHead className="">Collaborations</TableHead>
+              <TableHead className="">Site web</TableHead>
+              <TableHead className="">Lien Github</TableHead>
+              <TableHead className="">Lien vidéo</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {projects.map((project) => (
+              <TableRow className="">
+                <TableCell key={project.id} className="font-medium   ">
+                  {project.title}
+                </TableCell>
+                <TableCell key={project.id} className="font-medium  ">
+                  {project.description}
+                </TableCell>
+                <TableCell key={project.id} className="font-medium">
+                  {project.time}
+                </TableCell>
+                <TableCell key={project.id} className="font-medium">
+                  {project.techno}
+                </TableCell>
+                <TableCell key={project.id} className="font-medium">
+                  ???
+                </TableCell>
+                <TableCell key={project.id} className="font-medium">
+                  {project.website_url}
+                </TableCell>
+                <TableCell key={project.id} className="font-medium">
+                  {project.github_url}
+                </TableCell>
 
-              <button
-                type="button"
-                onClick={() => {
-                  console.log("Delete button clicked!");
-                  handleDeleteProject(project.id);
-                }}
-              >
-                Supprimer
-              </button>
-            </li>
-          ))}
-        </ul>
+                <TableCell key={project.id} className="font-medium ">
+                  {project.video_url && (
+                    <Link
+                      href={project.video_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.video_url}
+                    </Link>
+                  )}
+                </TableCell>
+                <TableCell>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      console.log("Delete button clicked!");
+                      handleDeleteProject(project.id);
+                    }}
+                  >
+                    Supprimer
+                  </button>{" "}
+                </TableCell>
+                {/* Ajouter un bouton permettant d'ouvri le form avec les données et de le mettre a jour si nécessaire, le faire pour chaque partie  de la page  */}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
       </div>
       <Dialog open={isDialogOpen} onOpenChange={handleOpenChange}>
         <DialogTrigger asChild className="flex justify-start">
@@ -257,11 +310,13 @@ export default function AddProject() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent className="bg-[#1f1d1d]">
-                          {technos.map((techno) => (
-                            <SelectItem key={techno.id} value={techno.id}>
-                              {techno.title}
-                            </SelectItem>
-                          ))}
+                          {technos.map((techno) => {
+                            return (
+                              <SelectItem key={techno.id} value={techno.id}>
+                                {techno.title}
+                              </SelectItem>
+                            );
+                          })}
                         </SelectContent>
                       </Select>
                       <FormMessage />
