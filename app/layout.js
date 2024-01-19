@@ -9,6 +9,10 @@ import { ThemeProvider } from "./_components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   title: "Portfolio Marion Baston | Développeuse Web",
   description:
     "Je suis Marion, développeuse web et web mobile passionnée par les nouvelles technologies, j'aime expérimenter, découvrir et apprendre. Spécialisée dans les frameworks REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
@@ -25,9 +29,10 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <Head>
         <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description}></meta>
-        <meta name="keywords" content={metadata.keywords}></meta>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content={metadata.robots} />
       </Head>
       <body className={inter.className}>
         <ThemeProvider
