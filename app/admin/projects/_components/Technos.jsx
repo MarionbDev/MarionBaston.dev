@@ -157,9 +157,9 @@ export default function TechnosList() {
                   name="image_url"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Image</FormLabel>
+                      <FormLabel>Ajouter des images</FormLabel>
                       <FormControl>
-                        <Input type="text" className="resize-none" {...field} />
+                        <Input type="file" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
