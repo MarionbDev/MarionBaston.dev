@@ -25,48 +25,47 @@ import { Input } from "@/components/ui/input";
 import { useEffect, useState } from "react";
 import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import { deleteTechno, getTechno, insertTechno } from "@/lib/api/technos";
+import { deleteType, getType, insertType } from "@/lib/api/types";
 
-const InsertTechnoFormSchema = yup.object().shape({
+const InsertTypesFormSchema = yup.object().shape({
   title: yup
     .string("Vous devez renseigner un titre")
     .required("Un titre valide est requis"),
-  image_url: yup.string("Vous devez renseigner une image"),
-  // .required("Une image est requise"),
 });
 
-export default function TechnosList() {
+export default function TypesList() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [technos, setTechnos] = useState([]);
+  const [types, setTypes] = useState([]);
 
-  const form = useForm({ resolver: yupResolver(InsertTechnoFormSchema) });
+  const form = useForm({ resolver: yupResolver(InsertTypesFormSchema) });
 
-  const allTechnos = async () => {
+  const allTypes = async () => {
     try {
-      const dataTechno = await getTechno();
-      // console.log("TechnosList data:", dataTechno);
+      const dataType = await getType();
+      console.log("TypesList data:", dataType);
 
-      if (dataTechno) {
-        setTechnos(dataTechno);
+      if (dataType) {
+        setTypes(dataType);
       } else {
-        console.error("Error fetching technosList");
+        console.error("Error fetching TypesList");
       }
     } catch (error) {
-      console.error(`Error fetching technosList: ${error.message}`);
+      console.error(`Error fetching TypesList: ${error.message}`);
     }
   };
 
   useEffect(() => {
     // console.log("Inside useEffect");
-    allTechnos();
+    allTypes();
   }, []);
 
   const handleSubmit = async (formData) => {
     try {
-      const res = await insertTechno(formData);
+      const res = await insertType(formData);
       if (res) {
         console.log(`Data inserted successfully:`, res);
         setIsDialogOpen(false);
-        allTechnos();
+        allTypes();
       } else {
         console.error(`Error inserting data`);
       }
@@ -75,19 +74,19 @@ export default function TechnosList() {
     }
   };
 
-  const handleDeleteTechno = async (technoId) => {
+  const handleDeleteType = async (typeId) => {
     try {
-      console.log("Deleting techno with ID:", technoId);
-      const res = await deleteTechno(technoId);
+      console.log("Deleting type with ID:", typeId);
+      const res = await deleteType(typeId);
 
       if (res && res.error) {
-        console.error(`Error deleting techno:`, res.error);
+        console.error(`Error deleting type:`, res.error);
       } else {
-        console.log(`Project with ID ${technoId} deleted successfully`);
+        console.log(`Type with ID ${typeId} deleted successfully`);
         allTechnos();
       }
     } catch (error) {
-      console.error(`Error deleting techno: ${error.message}`);
+      console.error(`Error deleting type: ${error.message}`);
     }
   };
 
@@ -103,18 +102,17 @@ export default function TechnosList() {
 
   return (
     <div className="flex flex-col gap-10">
-      <h3>Liste des technos</h3>
+      <h3>Liste des types de projet</h3>
       <div>
         <ul className="grid grid-cols-7">
-          {technos.map((techno) => (
-            <li key={techno.id} className="flex gap-2">
-              <p>{techno.title}</p>
-              {/* <p>{techno.image_url}</p> */}
+          {types.map((type) => (
+            <li key={type.id} className="flex gap-2">
+              <p>{type.title}</p>
               <button
                 type="button"
                 onClick={() => {
                   console.log("Delete button clicked!");
-                  handleDeleteTechno(techno.id);
+                  handleDeleteType(type.id);
                 }}
               >
                 X
@@ -136,7 +134,7 @@ export default function TechnosList() {
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="">
               <DialogHeader>
-                <DialogTitle>Ajout d'une techno</DialogTitle>
+                <DialogTitle>Ajout d'un type de projet</DialogTitle>
                 <DialogDescription></DialogDescription>
               </DialogHeader>
               <div className="grid gap-4 py-4">
@@ -144,21 +142,9 @@ export default function TechnosList() {
                   name="title"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nom de la techno</FormLabel>
+                      <FormLabel>Titre du type de projet</FormLabel>
                       <FormControl>
                         <Input type="text" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  name="image_url"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Ajouter des images</FormLabel>
-                      <FormControl>
-                        <Input type="file" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

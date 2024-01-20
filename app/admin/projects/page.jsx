@@ -4,6 +4,7 @@ import CollaborationsList from "./_components/Collaborations";
 import PicturesList from "./_components/PicturesProjects";
 import ProjectsList from "./_components/Projects";
 import TechnosList from "./_components/Technos";
+import TypesList from "./_components/TypesList";
 
 export default function PageProjects() {
   return (
@@ -11,6 +12,7 @@ export default function PageProjects() {
       <ProjectsList />
       <TechnosList />
       <CollaborationsList />
+      <TypesList />
       <PicturesList />
     </div>
   );
