@@ -142,8 +142,8 @@ export default function ProjectList() {
         console.log(`Data inserted successfully:`, res);
         setIsDialogOpen(false);
         allProjects();
-        // allTechnos();
-        // allTypes();
+        allTechnos();
+        allTypes();
       } else {
         console.error(`Error inserting data`);
       }

@@ -83,7 +83,7 @@ export default function TypesList() {
         console.error(`Error deleting type:`, res.error);
       } else {
         console.log(`Type with ID ${typeId} deleted successfully`);
-        allTechnos();
+        allTypes();
       }
     } catch (error) {
       console.error(`Error deleting type: ${error.message}`);
