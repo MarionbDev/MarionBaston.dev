@@ -43,6 +43,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Link from "next/link";
+import { getType } from "@/lib/api/types";
 
 const InsertProjectFormSchema = yup.object().shape({
   title: yup
@@ -51,29 +52,45 @@ const InsertProjectFormSchema = yup.object().shape({
   description: yup
     .string("Vous devez renseigner la description du projet")
     .required("Une description est requise"),
+  type_list: yup.string("Vous devez renseigner le type de projet"),
+  time: yup.string("Vous devez renseigner le temps effectué pour le projet"),
+  techno: yup.string("Vous devez renseigner la technos utilisé lors du projet"),
+  collaboration: yup.string(
+    "Vous devez renseigner les collaborations sur le projet"
+  ),
+  website_url: yup.string().url("Lien du site web invalide"),
+  github_url: yup.string().url("Lien Github invalide"),
+  video_url: yup.string().url("Lien vidéo invalide"),
+  image: yup.mixed(),
 });
 
 export default function ProjectList() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [projects, setProjects] = useState([]);
   const [technos, setTechnos] = useState([]);
+  const [typesList, setTypesList] = useState([]);
+
+  const [collaborations, setCollaborations] = useState([]);
+
   const [selectedTechnos, setSelectedTechnos] = useState([]);
 
   // const [isLoading, setIsLoading] = useState(false);
 
-  const form = useForm({ resolver: yupResolver(InsertProjectFormSchema) });
+  const form = useForm({
+    resolver: yupResolver(InsertProjectFormSchema),
+  });
 
   const allProjects = async () => {
     try {
       const data = await getProject();
-      console.log("Projects data:", data);
+      console.log("ProjectsList data:", data);
       if (data) {
         setProjects(data);
       } else {
-        console.error("Error fetching projects");
+        console.error("Error fetching projectsList");
       }
     } catch (error) {
-      console.error(`Error fetching projects: ${error.message}`);
+      console.error(`Error fetching projectsList: ${error.message}`);
     }
   };
 
@@ -85,10 +102,25 @@ export default function ProjectList() {
       if (dataTechno) {
         setTechnos(dataTechno);
       } else {
-        console.error("Error fetching projects");
+        console.error("Error fetching technos");
       }
     } catch (error) {
-      console.error(`Error fetching projects: ${error.message}`);
+      console.error(`Error fetching technos: ${error.message}`);
+    }
+  };
+
+  const allTypes = async () => {
+    try {
+      const dataType = await getType();
+      console.log("AllTypes data:", dataType);
+
+      if (dataType) {
+        setTypesList(dataType);
+      } else {
+        console.error("Error fetching types");
+      }
+    } catch (error) {
+      console.error(`Error fetching types: ${error.message}`);
     }
   };
 
@@ -96,9 +128,14 @@ export default function ProjectList() {
     // console.log("Inside useEffect");
     allProjects();
     allTechnos();
+    allTypes();
   }, []);
 
   const handleSubmit = async (formData) => {
+    if (formData.type_list === "") {
+      formData.type_list = null;
+    }
+    console.log("Type_list just before submission:", formData.type_list);
     try {
       const res = await insertProject(formData);
       if (res) {
@@ -106,6 +143,7 @@ export default function ProjectList() {
         setIsDialogOpen(false);
         allProjects();
         allTechnos();
+        allTypes();
       } else {
         console.error(`Error inserting data`);
       }
@@ -137,6 +175,7 @@ export default function ProjectList() {
 
   const handleOpen = () => {
     form.reset();
+    console.log("Default values after opening the dialog:", form.getValues());
     setIsDialogOpen(true);
   };
 
@@ -149,6 +188,7 @@ export default function ProjectList() {
             <TableRow className="">
               <TableHead className="">Nom du projet</TableHead>
               <TableHead className="">Description</TableHead>
+              <TableHead className="">Type de projet</TableHead>
               <TableHead>Durée effectuée</TableHead>
               <TableHead className="">Technos utilisées</TableHead>
               <TableHead className="">Collaborations</TableHead>
@@ -159,30 +199,31 @@ export default function ProjectList() {
           </TableHeader>
           <TableBody>
             {projects.map((project) => (
-              <TableRow className="">
-                <TableCell key={project.id} className="font-medium   ">
+              <TableRow key={project.id} className="">
+                <TableCell className="font-medium   ">
                   {project.title}
                 </TableCell>
-                <TableCell key={project.id} className="font-medium  ">
+                <TableCell className="font-medium  ">
                   {project.description}
                 </TableCell>
-                <TableCell key={project.id} className="font-medium">
-                  {project.time}
+                <TableCell className="font-medium  ">
+                  {project.type_list ? project.type_list.title : "N/A"}
                 </TableCell>
-                <TableCell key={project.id} className="font-medium">
-                  {project.techno}
+                <TableCell className="font-medium">{project.time}</TableCell>
+                <TableCell className="font-medium">
+                  {project.collaboration}
                 </TableCell>
-                <TableCell key={project.id} className="font-medium">
-                  ???
+                <TableCell className="font-medium">
+                  {project.techno_id}
                 </TableCell>
-                <TableCell key={project.id} className="font-medium">
+                <TableCell className="font-medium">
                   {project.website_url}
                 </TableCell>
-                <TableCell key={project.id} className="font-medium">
+                <TableCell className="font-medium">
                   {project.github_url}
                 </TableCell>
 
-                <TableCell key={project.id} className="font-medium ">
+                <TableCell className="font-medium ">
                   {project.video_url && (
                     <Link
                       href={project.video_url}
@@ -223,7 +264,7 @@ export default function ProjectList() {
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)} className="">
               <DialogHeader>
-                <DialogTitle>Ajout d'un projte</DialogTitle>
+                <DialogTitle>Ajouter un nouveau projet</DialogTitle>
                 <DialogDescription></DialogDescription>
               </DialogHeader>
               <div className="grid gap-4 py-4">
@@ -256,6 +297,38 @@ export default function ProjectList() {
                   )}
                 />
                 <FormField
+                  control={form.control}
+                  name="typeId"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Type de projet</FormLabel>
+                      <Select
+                        onValueChange={(value) => {
+                          console.log("Select value changed:", value);
+                          console.log("field:", field);
+                          console.log("field.onChange:", field.onChange);
+                          form.setValue("type_list", value);
+                        }}
+                        defaultValue={field.value}
+                      >
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Choisir" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent className="bg-[#b99ed1]">
+                          {typesList.map((type) => (
+                            <SelectItem key={type.id} value={type.title}>
+                              {type.title}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
                   name="time"
                   render={({ field }) => (
                     <FormItem>
@@ -272,7 +345,7 @@ export default function ProjectList() {
                   name="collaboration"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Collaboration</FormLabel>
+                      <FormLabel>Collaborations sur le projet</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -282,21 +355,19 @@ export default function ProjectList() {
                             <SelectValue placeholder="Choisir" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent>
-                          {technos.map((techno) => (
-                            <SelectItem key={techno.id} value={techno.id}>
-                              essai collab
-                            </SelectItem>
-                          ))}
+                        <SelectContent className="bg-[#b99ed1]">
+                          <SelectItem value="solo">En solo</SelectItem>
+                          <SelectItem value="group">En groupe</SelectItem>
                         </SelectContent>
                       </Select>
+
                       <FormMessage />
                     </FormItem>
                   )}
                 />
                 <FormField
                   control={form.control}
-                  name="technos"
+                  name="techno"
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Technologies utilisées</FormLabel>
@@ -309,7 +380,7 @@ export default function ProjectList() {
                             <SelectValue placeholder="Choisir" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent className="bg-[#1f1d1d]">
+                        <SelectContent className="bg-[#b99ed1]">
                           {technos.map((techno) => {
                             return (
                               <SelectItem key={techno.id} value={techno.id}>

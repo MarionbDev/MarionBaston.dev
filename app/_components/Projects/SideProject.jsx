@@ -32,6 +32,8 @@ import portfolioLogin from "./assets/portfolio_login.png";
 import portfolioProfile from "./assets/portfolio_profile.png";
 import portfolioPassword from "./assets/portfolio_password.png";
 import portfolioEmail from "./assets/portfolio_email.png";
+import { getProject } from "@/lib/api/project";
+import { useEffect, useState } from "react";
 
 const projects = [
   {
@@ -246,6 +248,27 @@ const projects = [
 ];
 
 export default function SideProject() {
+  // const [projects, setProjects] = useState([]);
+
+  // const allProjects = async () => {
+  //   try {
+  //     const data = await getProject().eq("type", "side-projects");
+  //     console.log("Projects data:", data);
+  //     if (data) {
+  //       setProjects(data);
+  //     } else {
+  //       console.error("Error fetching projects");
+  //     }
+  //   } catch (error) {
+  //     console.error(`Error fetching projects: ${error.message}`);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   // console.log("Inside useEffect");
+  //   allProjects();
+  // }, []);
+
   return projects.map((project) => (
     <ProjectCard key={project.id} project={project} />
   ));
