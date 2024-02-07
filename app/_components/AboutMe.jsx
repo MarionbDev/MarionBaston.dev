@@ -1,10 +1,10 @@
 "use client";
 
-import { Download, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
-import myPhoto from "../../public/images/photo1.png";
 import Link from "next/link";
+import myPhoto from "../../public/images/photo1.png";
 import Email from "./Email";
 
 export default function AboutMe() {

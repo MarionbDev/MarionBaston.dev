@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,15 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import * as React from "react";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { ChevronRight, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { DialogStepProject } from "../DialogProject";
-import { ChevronRight } from "lucide-react";
 
 export default function ProjectCard({ project }) {
   return (

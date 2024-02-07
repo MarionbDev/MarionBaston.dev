@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import linkedin from "../../public/logos/linkedin.png";
-import githubb from "../../public/logos/github.png";
-import { ModeToggle } from "./ModeToggle";
 import { LogIn } from "lucide-react";
 import { useRouter } from "next-nprogress-bar";
+import Image from "next/image";
+import Link from "next/link";
+import githubb from "../../public/logos/github.png";
+import linkedin from "../../public/logos/linkedin.png";
+import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   const router = useRouter();

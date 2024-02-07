@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { LogIn, Menu } from "lucide-react";
-import { ChevronRight } from "lucide-react";
 import {
   Menubar,
   MenubarContent,
@@ -14,13 +11,15 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
 } from "@radix-ui/react-menubar";
+import { ChevronRight, LogIn, Menu } from "lucide-react";
+import { useRouter } from "next-nprogress-bar";
+import Image from "next/image";
 import Link from "next/link";
+import gmailLogo from "../../public/images/gmail.svg";
 import linkedinColor from "../../public/images/linkedinColor.svg";
 import githubb from "../../public/logos/github.png";
 import Email from "./Email";
-import gmailLogo from "../../public/images/gmail.svg";
 import { ModeToggle } from "./ModeToggle";
-import { useRouter } from "next-nprogress-bar";
 
 export default function NavbarMobile(emailAddress) {
   const router = useRouter();
