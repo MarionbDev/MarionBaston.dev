@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /.next/
 Allow: /.next/static/
-Allow: /*.pdf
+
 
 
 Sitemap: https://marionbaston.fr/sitemap.xml
