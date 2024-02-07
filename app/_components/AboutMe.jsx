@@ -3,11 +3,15 @@
 import { Button } from "@/components/ui/button";
 import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import myPhoto from "../../public/images/photo1.png";
 import Email from "./Email";
 
 export default function AboutMe() {
+  const downloadCV = () => {
+    const imageUrl = "/images/marionbastonCV.png";
+    window.open(imageUrl, "_blank");
+  };
+
   return (
     <div className="flex  sm:mt-0  ">
       <div className="dark:bg-dark_black  text-font flex flex-col items-center justify-center pt-4 md:pt-20 xl:pt-12  pb-8  md:px-0 xl:py-20 bg-[#ffffff]">
@@ -71,25 +75,26 @@ export default function AboutMe() {
           </div>
           <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4  md:w-auto lg:mx-6 gap-4 md:gap-6 ">
             <Button
-              asChild
+              onChild
+              onClick={downloadCV}
               role="button"
               aria-label="Télécharger mon CV"
               className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  text-white  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 "
             >
-              <Link
+              {/* <Link
                 href="/images/marionbastonCV.png"
                 target="_blank"
                 rel=" noopener noreferrer"
                 aria-labelledby="download-cv"
                 className="flex gap-1 md:gap-2 text-sm  text-center "
-              >
-                <Download
-                  size="16"
-                  id="download-cv"
-                  alt="icône de téléchargement"
-                />
-                Télécharger mon CV
-              </Link>
+              > */}
+              <Download
+                size="16"
+                id="download-cv"
+                alt="icône de téléchargement"
+              />
+              Télécharger mon CV
+              {/* </Link> */}
             </Button>
             <Button
               role="button"
