@@ -1,39 +1,37 @@
 import ProjectCard from "./ProjectCard";
-import javascriptPng from "./assets/logos/javascript.png";
+import expressPng from "./assets/logos/express.png";
+import figmaPng from "./assets/logos/figma.png";
 import gitPng from "./assets/logos/git.png";
+import javascriptPng from "./assets/logos/javascript.png";
+import mysqlPng from "./assets/logos/mysql.png";
+import nextPng from "./assets/logos/next.png";
+import nodePng from "./assets/logos/node.png";
 import reactPng from "./assets/logos/react.png";
 import tailwindPng from "./assets/logos/tailwind.png";
-import nodePng from "./assets/logos/node.png";
-import expressPng from "./assets/logos/express.png";
-import mysqlPng from "./assets/logos/mysql.png";
-import figmaPng from "./assets/logos/figma.png";
-import nextPng from "./assets/logos/next.png";
 // import drawing_and_co
-import auth_admin_admin from "./assets/drawing_and_co/auth_admin_admin.png";
-import auth_admin_navbar from "./assets/drawing_and_co/auth_admin_navbar.png";
-import auth_admin_drawing from "./assets/drawing_and_co/auth_admin_drawing.png";
-import auth_gallery from "./assets/drawing_and_co/auth_gallery.png";
-import auth_password_update from "./assets/drawing_and_co/auth_password_update.png";
-import auth_profile_update from "./assets/drawing_and_co/auth_profile_update.png";
-import auth_profile from "./assets/drawing_and_co/auth_profile.png";
 import auth from "./assets/drawing_and_co/auth.png";
+import auth_admin_admin from "./assets/drawing_and_co/auth_admin_admin.png";
+import auth_admin_drawing from "./assets/drawing_and_co/auth_admin_drawing.png";
+import auth_admin_navbar from "./assets/drawing_and_co/auth_admin_navbar.png";
+import auth_drawing from "./assets/drawing_and_co/auth_drawing.png";
+import auth_gallery from "./assets/drawing_and_co/auth_gallery.png";
+import auth_navbar from "./assets/drawing_and_co/auth_navbar.png";
+import auth_password_update from "./assets/drawing_and_co/auth_password_update.png";
+import auth_profile from "./assets/drawing_and_co/auth_profile.png";
+import auth_profile_update from "./assets/drawing_and_co/auth_profile_update.png";
 import faq from "./assets/drawing_and_co/faq.png";
 import gallery from "./assets/drawing_and_co/gallery.png";
 import navbar from "./assets/drawing_and_co/navbar.png";
 import new_auth from "./assets/drawing_and_co/new_auth.png";
-import auth_navbar from "./assets/drawing_and_co/auth_navbar.png";
-import auth_drawing from "./assets/drawing_and_co/auth_drawing.png";
 import mobile_1 from "./assets/drawing_and_co/responsive/mobile.png";
-import tablette from "./assets/drawing_and_co/responsive/tablette.png";
 import mobile_2 from "./assets/drawing_and_co/responsive/mobile_1.png";
+import tablette from "./assets/drawing_and_co/responsive/tablette.png";
 //import portfolio
 import portfolio from "./assets/portfolio_2.png";
-import portfolioLogin from "./assets/portfolio_login.png";
-import portfolioProfile from "./assets/portfolio_profile.png";
-import portfolioPassword from "./assets/portfolio_password.png";
 import portfolioEmail from "./assets/portfolio_email.png";
-import { getProject } from "@/lib/api/project";
-import { useEffect, useState } from "react";
+import portfolioLogin from "./assets/portfolio_login.png";
+import portfolioPassword from "./assets/portfolio_password.png";
+import portfolioProfile from "./assets/portfolio_profile.png";
 
 const projects = [
   {

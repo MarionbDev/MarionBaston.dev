@@ -1,10 +1,6 @@
 import useSession from "@/app/hooks/useSession";
-import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import { useState } from "react";
-import { updateUserPassword } from "@/services/auth.services";
+import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import {
   Dialog,
   DialogContent,
@@ -14,7 +10,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
 import {
   Form,
   FormControl,
@@ -23,8 +18,13 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import ButtonItem from "@/components/ui/buttonList/ButtonItem";
+import { Input } from "@/components/ui/input";
+import { updateUserPassword } from "@/services/auth.services";
+import { yupResolver } from "@hookform/resolvers/yup";
 import { Loader2, Save } from "lucide-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 const UpdatePasswordFormSchema = yup.object().shape({
   password: yup

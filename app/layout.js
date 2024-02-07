@@ -1,18 +1,14 @@
-import "./globals.css";
 import { Inter } from "next/font/google";
+// import Head from "next/head";
 import PropTypes from "prop-types";
 import Providers from "./_components/Providers";
 import { ScrollProvider } from "./_components/ScrollContext";
-import Head from "next/head";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  robots: {
-    index: true,
-    follow: true,
-  },
   title: "Portfolio Marion Baston | Développeuse Web",
   description:
     "Je suis Marion, développeuse web et web mobile passionnée par les nouvelles technologies, j'aime expérimenter, découvrir et apprendre. Spécialisée dans les frameworks REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
@@ -27,13 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content={metadata.robots} />
-      </Head>
+      <title>{metadata.title}</title>
+      <meta name="description" content={metadata.description} />
+      <meta name="keywords" content={metadata.keywords} />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
