@@ -77,7 +77,7 @@ export default function AboutMe() {
               className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  text-white  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 "
             >
               <Link
-                href="/marionbaston_CV.png"
+                href="images/marionbastonCV.png"
                 target="_blank"
                 rel=" noopener noreferrer"
                 aria-labelledby="download-cv"
