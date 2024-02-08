@@ -14,22 +14,6 @@ import TrainingProject from "./_components/Projects/TrainingProject";
 import { useScroll } from "./_components/ScrollContext";
 import Skills from "./_components/Skills";
 
-export const metadata = {
-  robots: {
-    index: true,
-    follow: true,
-  },
-  title: "Portfolio Marion Baston | Développeuse Web",
-  description:
-    "Je suis Marion, développeuse web et web mobile passionnée par les nouvelles technologies, j'aime expérimenter, découvrir et apprendre. Spécialisée dans les frameworks REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
-  keywords: "web, developer, react, next, javascript",
-  creator: "Marion Baston",
-  authors: {
-    name: "Marion Baston",
-    url: "https://marionbaston.fr",
-  },
-};
-
 export default function Home() {
   const { isVisible } = useScroll();
 
