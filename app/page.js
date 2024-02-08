@@ -1,18 +1,18 @@
 "use client";
 
-import { useScroll } from "./_components/ScrollContext";
-import { useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Navbar from "./_components/Navbar";
+import { useEffect } from "react";
 import AboutMe from "./_components/AboutMe";
-import Skills from "./_components/Skills";
 import Footer from "./_components/Footer";
+import MyServices from "./_components/MyServices";
+import Navbar from "./_components/Navbar";
+import NavbarMobile from "./_components/NavbarMobile";
+import OtherProject from "./_components/Projects/OtherProject";
 import ProfessionalProject from "./_components/Projects/ProfessionalProject";
 import SideProject from "./_components/Projects/SideProject";
 import TrainingProject from "./_components/Projects/TrainingProject";
-import OtherProject from "./_components/Projects/OtherProject";
-import MyServices from "./_components/MyServices";
-import NavbarMobile from "./_components/NavbarMobile";
+import { useScroll } from "./_components/ScrollContext";
+import Skills from "./_components/Skills";
 
 export default function Home() {
   const { isVisible } = useScroll();

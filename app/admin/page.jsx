@@ -2,9 +2,8 @@
 "use client";
 
 import { getProject } from "@/lib/api/project";
-import { useEffect, useState } from "react";
-import ProjectsList from "./projects/_components/Projects";
 import { getTechno } from "@/lib/api/technos";
+import { useEffect, useState } from "react";
 
 function DashboardAdmin() {
   console.log("Projects in Dashboard:");
