@@ -8,10 +8,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  // },
+  robots: {
+    index: true,
+    follow: true,
+  },
   title: "Portfolio Marion Baston | Développeuse Web",
   description:
     "Je suis Marion, développeuse web et web mobile passionnée par les nouvelles technologies, j'aime expérimenter, découvrir et apprendre. Spécialisée dans les frameworks REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
-      <meta name="robots" content="all" />
+
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
