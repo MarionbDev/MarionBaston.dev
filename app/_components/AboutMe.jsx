@@ -81,20 +81,12 @@ export default function AboutMe() {
               aria-label="Télécharger mon CV"
               className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  text-white  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 "
             >
-              {/* <Link
-                href="/images/marionbastonCV.png"
-                target="_blank"
-                rel=" noopener noreferrer"
-                aria-labelledby="download-cv"
-                className="flex gap-1 md:gap-2 text-sm  text-center "
-              > */}
               <Download
                 size="16"
                 id="download-cv"
                 alt="icône de téléchargement"
               />
               Télécharger mon CV
-              {/* </Link> */}
             </Button>
             <Button
               role="button"
