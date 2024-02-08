@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import PropTypes from "prop-types";
+import { Suspense } from "react";
 import Providers from "./_components/Providers";
 import { ScrollProvider } from "./_components/ScrollContext";
 import { ThemeProvider } from "./_components/ThemeProvider";
@@ -33,9 +34,11 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <ScrollProvider>
-            <Providers>{children}</Providers>
-          </ScrollProvider>
+          <Suspense fallback={<></>}>
+            <ScrollProvider>
+              <Providers>{children}</Providers>
+            </ScrollProvider>
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>
