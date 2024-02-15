@@ -129,7 +129,7 @@ export default function MyServices() {
                   Prêt à travailler ensemble ou à discuter d'opportunités ?
                 </CardTitle>
                 <CardDescription className=" text-xl py-3 text-center">
-                  Contactez-moi dès maintenant !
+                  Contactez-moi !
                 </CardDescription>
               </CardHeader>
               <CardContent className=" flex justify-center">

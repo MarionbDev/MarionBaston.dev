@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className=" py-2 px-6 to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  dark:to-[#070c21] dark:bg-gradient-to-t dark:from-purple/10 to-transparent w-full font-lato  lg:m-auto lg:px-8 dark:text-white/70 text-[#4f3670] border-t-2 border-[#111c49] ">
+      <div className=" py-2 px-6 to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  dark:to-[#070c21] dark:bg-gradient-to-t dark:from-purple/10 to-transparent w-full font-lato  lg:m-auto lg:px-8 dark:text-white/70 text-[#4f3670] dark:border-t-2 dark:border-[#111c49] ">
         <div className="grid grid-cols-2 lg:grid-cols-12 px-8 md:p-0  ">
           <nav className=" col-start-1 col-span-2 sm:col-start-1 sm:col-span-2 lg:col-start-1 lg:col-span-3 flex sm:flex-col justify-between items-start ">
             <div className="flex items-center gap-4 sm:ml-10 ">
