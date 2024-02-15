@@ -59,7 +59,7 @@ export default function AboutMe() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 ">
+          <div className="xl:grid xl:grid-cols-2 ">
             <div className=" mx-6 py-6 mt-4  gap-10">
               <div className="  flex items-center   dark:bg-purple/20 w  slide-para font-lato z-30 text-base text-justify  sm:text-xl md:text-base p-6 sm:p-4  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
                 <p className="">
