@@ -13,9 +13,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  title: "Portfolio Marion Baston | Développeuse Web",
+  title: "Marion Baston | Développeuse Web - Portfolio",
   description:
-    "Je suis Marion, développeuse web et web mobile passionnée par les nouvelles technologies, j'aime expérimenter, découvrir et apprendre. Spécialisée dans les frameworks REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
+    "Développeuse web et mobile passionnée par la tech, j'aime expérimenter, découvrir et apprendre. Spécialisée en REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
   keywords: "web, developer, react, next, javascript",
   creator: "Marion Baston",
   authors: {

@@ -36,22 +36,48 @@ export default function AboutMe() {
                 <span>n</span>
               </h1>
               <p className=" slide-name-dev font-roboto font-medium  text-2xl sm:text-3xl lg:text-4xl mt-2 md:mt-2 lg:mt-0 mb-10 sm:mb-6 ">
-                Développeuse Web Junior
+                Développeuse Web et Mobile
               </p>
-              <div className="dark:bg-purple/20   slide-para font-lato z-30 text-base text-justify sm:text-xl md:text-base p-6 sm:p-8  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+
+              <div className="dark:bg-purple/20   slide-para font-lato z-30 text-base text-justify sm:text-xl md:text-base p-6 sm:p-5  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+                <p className=" leading-7">
+                  Je suis actuellement disponible et enthousiaste à l'idée de
+                  mettre en pratique mes compétences au sein d'une entreprise
+                  dynamique. Si votre équipe recherche une développeuse web
+                  spécialisée en React/Next, je serais honorée de contribuer à
+                  des projets innovants au sein de votre organisation.
+                </p>
+              </div>
+            </div>
+
+            <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0  mb-10 ml-10 md:mt-0  lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
+              <Image
+                src={myPhoto}
+                alt="ma photo de profil"
+                width={300}
+                className="  md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4  dark:brightness-75 "
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 ">
+            <div className=" mx-6 py-6 mt-4  gap-10">
+              <div className="  flex items-center   dark:bg-purple/20 w  slide-para font-lato z-30 text-base text-justify  sm:text-xl md:text-base p-6 sm:p-4  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
                 <p className="">
-                  Passionnée de développement web et autodidacte, j'ai acquis de
-                  nombreuses compétences durant ma formation à la Wild Code
-                  School, en Juillet 2023. Formation validée par l'obtention du
-                  titre de{" "}
-                  <span className="  text-purple text-lg sm:text-xl  font-semibold sm:font-medium">
+                  Passionnée par la tech et inspirée par ma créativité, je suis
+                  déterminée à mettre en pratique mes compétences acquises en
+                  autodidacte et consolidées par la formation de "Développeur
+                  web et web mobile" à la Wild Code School, en Juillet 2023.
+                  Formation validée par l'obtention du titre de{" "}
+                  <span className="  text-purple text-lg   font-semibold sm:font-medium">
                     "Développeur web et web mobile"
                   </span>{" "}
-                  de niveau 5 reconnu par le RNCP, en Septembre 2023. Je suis
-                  résolument engagée dans une démarche d'amélioration continue,
-                  cherchant toujours à progresser davantage.
+                  de niveau 5 reconnu par le RNCP, en Septembre 2023.
                 </p>
-                <p className="mt-5">
+              </div>{" "}
+            </div>
+            <div className="mx-6 mt-6 flex items-center ">
+              <div className=" flex  dark:bg-purple/20   slide-para font-lato z-30 text-base text-justify   sm:text-xl md:text-base p-6 sm:p-4  bg-white/30  backdrop-blur-lg drop-shadow-lg rounded-2xl relative ">
+                <p className="">
                   Mes objectifs de développement sont orientés vers
                   l'accessibilité et l'optimisation pour les moteurs de
                   recherche (SEO). Je suis déterminée à concevoir des
@@ -64,16 +90,9 @@ export default function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0  mb-10 ml-10 md:mt-0  lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
-              <Image
-                src={myPhoto}
-                alt="ma photo de profil"
-                width={300}
-                className="  md:w-full 2xl:w-60 mb-9 lg:shadow-none lg:border-none  rounded-full  lg:rounded-r-full lg:rounded-l-3xl lg:ml-4  dark:brightness-75 "
-              />
-            </div>
           </div>
-          <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4  md:w-auto lg:mx-6 gap-4 md:gap-6 ">
+
+          <div className=" slideLink-1 mt-8 flex justify-center flex-col  md:flex-row lg:justify-start w-2/4  md:w-auto lg:mx-6 gap-4 md:gap-8 ">
             <Button
               onChild
               onClick={downloadCV}
