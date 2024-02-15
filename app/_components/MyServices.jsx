@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
-import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 import { MessagesSquare } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import arrow from "../../public/images/arrow.svg";
 import logoCode from "../../public/images/logo-code.svg";
 
@@ -126,11 +126,10 @@ export default function MyServices() {
             <Card className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
               <CardHeader>
                 <CardTitle className=" text-lg sm:text-xl md:text-2xl text-center">
-                  Prêt à démarrer un projet ou à discuter d'opportunités ?
+                  Prêt à travailler ensemble ou à discuter d'opportunités ?
                 </CardTitle>
-                <CardDescription className=" text-base py-3 text-center">
-                  Contactez-moi dès maintenant pour discuter de vos idées et
-                  besoins.
+                <CardDescription className=" text-xl py-3 text-center">
+                  Contactez-moi dès maintenant !
                 </CardDescription>
               </CardHeader>
               <CardContent className=" flex justify-center">
@@ -144,7 +143,7 @@ export default function MyServices() {
                     className="flex gap-1 md:gap-2 text-sm text-center sm:text-sm dark:text-white text-purple "
                   >
                     <MessagesSquare size="16" id="contact-me" />
-                    Contactez-moi
+                    C'est ici et maintenant !
                   </Link>
                 </Button>
               </CardContent>

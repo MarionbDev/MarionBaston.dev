@@ -22,7 +22,8 @@ module.exports = {
       white: "#ffffff",
       pale_pink: "#faf8fac0",
       pale_purple: "#400e41c0",
-      dark_black: "#070914",
+      // dark_black: "#070914",
+      dark_black: "#070c21",
     },
     extend: {
       colors: {
