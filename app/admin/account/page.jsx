@@ -1,6 +1,7 @@
 "use client";
 
 import useSession from "@/app/hooks/useSession";
+import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import ButtonList from "@/components/ui/buttonList/index";
 import {
   Card,
@@ -9,8 +10,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { UpdateBioButton } from "./_components/UpdateBioButton";
 import { UpdateEmailButton } from "./_components/UpdateEmailButton";
-import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import { UpdatePasswordButton } from "./_components/UpdatePasswordButton";
 
 export default function AccountPage() {
@@ -31,9 +32,8 @@ export default function AccountPage() {
             <ButtonItem className=" border-purple/60 dark:hover:bg-purple/60">
               Nom
             </ButtonItem>
-            <ButtonItem className="border-purple/60 dark:hover:bg-purple/60">
-              Biographie
-            </ButtonItem>
+
+            <UpdateBioButton />
             <UpdateEmailButton />
             <UpdatePasswordButton />
           </ButtonList>

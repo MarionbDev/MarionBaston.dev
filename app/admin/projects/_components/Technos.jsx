@@ -1,17 +1,7 @@
 "use client";
 
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import {
   Dialog,
   DialogContent,
@@ -21,10 +11,20 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { useEffect, useState } from "react";
-import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import { deleteTechno, getTechno, insertTechno } from "@/lib/api/technos";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 const InsertTechnoFormSchema = yup.object().shape({
   title: yup
