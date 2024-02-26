@@ -27,7 +27,7 @@ import mobile_1 from "./assets/drawing_and_co/responsive/mobile.png";
 import mobile_2 from "./assets/drawing_and_co/responsive/mobile_1.png";
 import tablette from "./assets/drawing_and_co/responsive/tablette.png";
 //import portfolio
-import portfolio from "./assets/portfolio_2.png";
+import portfolio from "./assets/portfolio_marion.png";
 import portfolioEmail from "./assets/portfolio_email.png";
 import portfolioLogin from "./assets/portfolio_login.png";
 import portfolioPassword from "./assets/portfolio_password.png";
