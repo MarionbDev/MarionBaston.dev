@@ -124,16 +124,32 @@ export default function Home() {
               }}
             >
               <TabsContent value="side-project" id="projets-personnels">
+                {/* {SideProject().map((index) => (
+                  <div key={index}> */}
                 <SideProject />
+                {/* </div>
+                ))} */}
               </TabsContent>
               <TabsContent value="training" id="projets-formations">
+                {/* {TrainingProject().map((index) => (
+                  <div key={index}> */}
                 <TrainingProject />
+                {/* </div>
+                ))} */}
               </TabsContent>
               <TabsContent value="professional" id="projets-professionnels">
+                {/* {ProfessionalProject().map((index) => (
+                  <div key={index}> */}
                 <ProfessionalProject />
+                {/* </div>
+                ))} */}
               </TabsContent>
               <TabsContent value="other" id="projets-autres">
+                {/* {OtherProject().map((index) => (
+                  <div key={index}> */}
                 <OtherProject />
+                {/* </div>
+                ))} */}
               </TabsContent>
             </div>
           </Tabs>

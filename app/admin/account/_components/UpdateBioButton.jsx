@@ -28,10 +28,16 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 
 const UpdateBioFormSchema = yup.object().shape({
-  title: yup
+  title_business: yup
     .string("Vous devez renseigner un titre")
     .required("Un titre est requis"),
-  description: yup
+  description_part1: yup
+    .string("Vous devez renseigner une description")
+    .required("Une description est requiss"),
+  description_part2: yup
+    .string("Vous devez renseigner une description")
+    .required("Une description est requiss"),
+  description_part3: yup
     .string("Vous devez renseigner une description")
     .required("Une description est requiss"),
 });
@@ -161,7 +167,6 @@ export function UpdateBioButton() {
       <DialogTrigger asChild className="flex justify-start">
         <ButtonItem
           onClick={handleOpen}
-          //   isLoading={loading}
           className="shadow-none border-purple/60 border-t-0 dark:hover:bg-purple/60 "
         >
           Biographie
@@ -177,12 +182,12 @@ export function UpdateBioButton() {
             <div className="grid gap-4 py-4">
               <FormField
                 control={form.control}
-                name="title"
+                name="title_business"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Titre </FormLabel>
+                    <FormLabel>Titre métier </FormLabel>
                     <FormControl>
-                      <Input type="title" {...field} />
+                      <Input type="title_business" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -190,12 +195,38 @@ export function UpdateBioButton() {
               />
               <FormField
                 control={form.control}
-                name="description"
+                name="description_part1"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Description</FormLabel>
+                    <FormLabel>Description partie 1</FormLabel>
                     <FormControl>
-                      <Input type="description" {...field} />
+                      <Input type="description_part1" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="description_part2"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Description partie 2</FormLabel>
+                    <FormControl>
+                      <Input type="description_part2" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="description_part3"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Description partie 3</FormLabel>
+                    <FormControl>
+                      <Input type="description_part3" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

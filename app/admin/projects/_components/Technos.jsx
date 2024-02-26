@@ -30,8 +30,6 @@ const InsertTechnoFormSchema = yup.object().shape({
   title: yup
     .string("Vous devez renseigner un titre")
     .required("Un titre valide est requis"),
-  image_url: yup.string("Vous devez renseigner une image"),
-  // .required("Une image est requise"),
 });
 
 export default function TechnosList() {
@@ -109,7 +107,7 @@ export default function TechnosList() {
           {technos.map((techno) => (
             <li key={techno.id} className="flex gap-2">
               <p>{techno.title}</p>
-              {/* <p>{techno.image_url}</p> */}
+
               <button
                 type="button"
                 onClick={() => {
@@ -147,18 +145,6 @@ export default function TechnosList() {
                       <FormLabel>Nom de la techno</FormLabel>
                       <FormControl>
                         <Input type="text" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  name="image_url"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Ajouter des images</FormLabel>
-                      <FormControl>
-                        <Input type="file" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
