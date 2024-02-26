@@ -1,16 +1,14 @@
+import useSession from "@/app/hooks/useSession";
 import { Button } from "@/components/ui/button";
+import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import useSession from "@/app/hooks/useSession";
-import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
@@ -19,12 +17,13 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import ButtonItem from "@/components/ui/buttonList/ButtonItem";
-import { useState } from "react";
+import { Input } from "@/components/ui/input";
 import { updateUserEmail } from "@/services/auth.services";
+import { yupResolver } from "@hookform/resolvers/yup";
 import { Loader2, Save } from "lucide-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 const UpdateEmailFormSchema = yup.object().shape({
   email: yup
@@ -88,7 +87,6 @@ export function UpdateEmailButton() {
           <form onSubmit={form.handleSubmit(handleSubmit)}>
             <DialogHeader>
               <DialogTitle>Mise à jour de l'email</DialogTitle>
-              <DialogDescription></DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
               <FormField
