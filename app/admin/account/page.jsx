@@ -10,14 +10,27 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useEffect } from "react";
 import { UpdateBioButton } from "./_components/UpdateBioButton";
 import { UpdateEmailButton } from "./_components/UpdateEmailButton";
 import { UpdatePasswordButton } from "./_components/UpdatePasswordButton";
 
 export default function AccountPage() {
-  const { user } = useSession();
+  const { user, refreshSession, loading, error } = useSession();
 
   console.log("user", user);
+
+  useEffect(() => {
+    refreshSession();
+  }, []);
+
+  if (loading) {
+    return <p>Chargement en cours...</p>; // Peut-être afficher un spinner ou un message de chargement
+  }
+
+  if (error) {
+    return <p>Une erreur s'est produite : {error.message}</p>; // Afficher un message d'erreur
+  }
 
   return (
     <div className="container mx-auto px-44 py-8 flex flex-col space-y-8">

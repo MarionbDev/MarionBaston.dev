@@ -47,9 +47,16 @@ export function UpdateBioButton() {
   const [isLoading, setIsLoading] = useState(false);
   const [bio, setBio] = useState("");
   const { user, loading, refreshSession } = useSession();
-  const [formData, setFormData] = useState([]);
 
-  const form = useForm({ resolver: yupResolver(UpdateBioFormSchema) });
+  const form = useForm({
+    resolver: yupResolver(UpdateBioFormSchema),
+    defaultValues: {
+      title_business: bio.title_business || "",
+      description_part1: "",
+      description_part2: "",
+      description_part3: "",
+    },
+  });
 
   const getUserBio = async () => {
     try {
@@ -65,10 +72,9 @@ export function UpdateBioButton() {
     }
   };
 
-  const insertUserBio = async () => {
+  const insertUserBio = async (formData) => {
     try {
       const dataBio = await insertBio(formData, user.id);
-      console.log("InsertBio response:", dataBio);
 
       if (dataBio !== null) {
         setBio(dataBio);
@@ -80,10 +86,9 @@ export function UpdateBioButton() {
     }
   };
 
-  const updateUserBio = async () => {
+  const updateUserBio = async (formData) => {
     try {
       const dataBio = await updateBio(formData, user.id);
-      console.log("UpdateBio response:", dataBio);
 
       if (dataBio !== null) {
         setBio(dataBio);
@@ -95,72 +100,44 @@ export function UpdateBioButton() {
     }
   };
 
-  useEffect(() => {
-    updateUserBio();
-    getUserBio();
-    insertUserBio();
-  }, []);
-
-  // const handleSubmit = async () => {
-  //   try {
-  //     const formData = form.getValues();
-  //     console.log("Form Data handlSubmit:", formData);
-  //     setFormData(formData);
-  //     // const res = await updateBio(formData, user.id);
-  //     const res = await insertBio(formData, user.id);
-
-  //     if (res) {
-  //       console.log(`Data updated successfully:`, res);
-  //       setIsDialogOpen(false);
-  //     } else {
-  //       console.error(`Error update data`);
-  //     }
-  //   } catch (error) {
-  //     console.error(`Error update data: ${error.message}`);
-  //   }
-  // };
-
-  const handleSubmit = async () => {
+  const handleSubmit = async (formData) => {
     try {
-      const formData = form.getValues();
-      console.log("Form Data handlSubmit:", formData);
-      setFormData(formData);
+      // Vérifie si la bio existe déjà
+      const existingBio = await getBio();
 
-      // Vérifie si la bioexiste déjà
-      const existingBio = await getBio(formData);
-
-      if (existingBio.length > 0) {
+      if (existingBio) {
         // Si la bio existe, utilise updateBio
-        const res = await updateBio(formData, user.id);
-
-        if (res) {
-          console.log(`Data updated successfully:`, res);
-          setIsDialogOpen(false);
-        } else {
-          console.error(`Error updating data`);
-        }
+        await updateUserBio(formData);
       } else {
         // Sinon utilise insertBio
-        const res = await insertBio(formData, user.id);
-
-        if (res) {
-          console.log(`Data inserted successfully:`, res);
-          setIsDialogOpen(false);
-        } else {
-          console.error(`Error inserting data`);
-        }
+        await insertUserBio(formData);
       }
+
+      setIsDialogOpen(false);
     } catch (error) {
       console.error(`Error updating/inserting data: ${error.message}`);
     }
   };
 
   const handleOpenChange = (isOpen) => {
-    refreshSession();
     setIsDialogOpen(isOpen);
   };
 
-  const handleOpen = () => setIsDialogOpen(true);
+  const handleOpen = async () => {
+    try {
+      setIsLoading(true);
+      await getUserBio();
+    } catch (error) {
+      console.error(`Error fetching biographie : ${error.message}`);
+    } finally {
+      setIsLoading(false);
+      setIsDialogOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    getUserBio();
+  }, []);
 
   return (
     <Dialog open={isDialogOpen} onOpenChange={handleOpenChange}>

@@ -15,10 +15,12 @@ export default function AboutMe() {
   };
 
   const [bio, setBio] = useState({});
-  const [titleBusiness, setTitleBusiness] = useState("");
-  const [descriptionPart1, setDescriptionPart1] = useState("");
-  const [descriptionPart2, setDescriptionPart2] = useState("");
-  const [descriptionPart3, setDescriptionPart3] = useState("");
+  // const [titleBusiness, setTitleBusiness] = useState("");
+  // const [descriptionPart1, setDescriptionPart1] = useState("");
+  // const [descriptionPart2, setDescriptionPart2] = useState("");
+  // const [descriptionPart3, setDescriptionPart3] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const isLoading = Object.keys(bio).length === 0;
 
@@ -34,9 +36,12 @@ export default function AboutMe() {
         setDescriptionPart3(data[0]?.description_part3 || "");
       } else {
         console.error("Error fetching admin bio");
+        setError(error.message || "Erreur inconnue");
       }
     } catch (error) {
       console.error(`Error fetching admin bio: ${error.message}`);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -47,10 +52,15 @@ export default function AboutMe() {
 
   return (
     <div className="flex  sm:mt-0  ">
-      {" "}
       {isLoading ? (
         // Affiche un indicateur de chargement ou tout autre chose
-        <p className=" h-screen">Chargement...</p>
+        <div className="mt-20 h-screen">
+          <p className=" text-center"></p>
+        </div>
+      ) : error ? (
+        <div className="mt-20 h-screen">
+          <p className="text-center">Erreur: {error}</p>
+        </div>
       ) : (
         <div className="dark:bg-dark_black  text-font flex flex-col items-center justify-center pt-4 md:pt-20 xl:pt-12  pb-8  md:px-0 xl:py-20 bg-[#ffffff]">
           <div className="slideContainer  md:w-3/4 flex flex-col items-center lg:items-start ">
