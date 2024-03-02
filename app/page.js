@@ -16,15 +16,15 @@ import Skills from "./_components/Skills";
 export default function Home() {
   // const { isVisible } = useScroll();
 
-  const AboutMe = lazy(() => import("./_components/AboutMe"));
-
-  const renderLoader = () => <p className=" h-screen"></p>;
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.scroll(0, 0);
     }
   }, []);
+
+  const AboutMe = lazy(() => import("./_components/AboutMe"));
+
+  const renderLoader = () => <p className=" h-screen"></p>;
 
   return (
     <div className="dark:bg-dark_black  ">
