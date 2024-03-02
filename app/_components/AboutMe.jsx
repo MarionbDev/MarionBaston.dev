@@ -15,10 +15,10 @@ export default function AboutMe() {
   };
 
   const [bio, setBio] = useState({});
-  // const [titleBusiness, setTitleBusiness] = useState("");
-  // const [descriptionPart1, setDescriptionPart1] = useState("");
-  // const [descriptionPart2, setDescriptionPart2] = useState("");
-  // const [descriptionPart3, setDescriptionPart3] = useState("");
+  const [titleBusiness, setTitleBusiness] = useState("");
+  const [descriptionPart1, setDescriptionPart1] = useState("");
+  const [descriptionPart2, setDescriptionPart2] = useState("");
+  const [descriptionPart3, setDescriptionPart3] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -134,7 +134,11 @@ export default function AboutMe() {
                 aria-label="M'envoyer un email"
                 className="slideLink-2 font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 dark:text-white bg-purple/30  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  text-[#313030] hover:text-[#ffff]   "
               >
-                <MessagesSquare size="16" id="contact-me" className="mr-2" />
+                <MessagesSquare
+                  size="16"
+                  id="contact-me header"
+                  className="mr-2"
+                />
                 <Email text="Contactez - moi" />
               </Button>
               <Email />
