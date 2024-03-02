@@ -16,11 +16,15 @@ export const metadata = {
   title: "Marion Baston | Développeuse Web - Portfolio",
   description:
     "Développeuse web et mobile passionnée par la tech, j'aime expérimenter, découvrir et apprendre. Spécialisée en REACT.js et NEXT.js. Découvrez mes compétences et projets sur mon site web.",
-  keywords: "web, developer, react, next, javascript",
+  keywords: ["web", "developer", "react.js", "next.js", "javascript"],
   creator: "Marion Baston",
   authors: {
     name: "Marion Baston",
     url: "https://marionbaston.fr",
+  },
+  alternates: {
+    metadataBase: new URL("https://marionbaston.fr"),
+    canonical: "/",
   },
 };
 
