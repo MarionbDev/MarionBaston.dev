@@ -45,22 +45,25 @@ const UpdateBioFormSchema = yup.object().shape({
 export function UpdateBioButton() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [bio, setBio] = useState("");
-  const { user, loading, refreshSession } = useSession();
+  const [bio, setBio] = useState({});
+  const { user } = useSession();
 
+  console.log("Bio before useForm:", bio);
   const form = useForm({
     resolver: yupResolver(UpdateBioFormSchema),
     defaultValues: {
       title_business: bio.title_business || "",
-      description_part1: "",
-      description_part2: "",
-      description_part3: "",
+      description_part1: bio.description_part1 || "",
+      description_part2: bio.description_part2 || "",
+      description_part3: bio.description_part3 || "",
     },
   });
 
   const getUserBio = async () => {
     try {
       const dataBio = await getBio();
+      console.log("Bio after set:", bio);
+      console.log("Data GetBio:", dataBio);
 
       if (dataBio) {
         setBio(dataBio);
@@ -164,7 +167,11 @@ export function UpdateBioButton() {
                   <FormItem>
                     <FormLabel>Titre métier </FormLabel>
                     <FormControl>
-                      <Input type="title_business" {...field} />
+                      <Input
+                        type="title_business"
+                        {...field}
+                        defaultValue={bio.title_business || ""}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

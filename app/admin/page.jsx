@@ -1,15 +1,15 @@
 // dashboard.jsx
 "use client";
 
+import { getBio } from "@/lib/api/bio";
 import { getProject } from "@/lib/api/project";
 import { getTechno } from "@/lib/api/technos";
 import { useEffect, useState } from "react";
 
 function DashboardAdmin() {
-  console.log("Projects in Dashboard:");
-
   const [projects, setProjects] = useState([]);
   const [technos, setTechnos] = useState([]);
+  const [bioUser, setBioUser] = useState([]);
 
   const allProjects = async () => {
     try {
@@ -40,10 +40,26 @@ function DashboardAdmin() {
     }
   };
 
+  const allBio = async () => {
+    try {
+      const data = await getBio();
+      console.log("bioUser data:", data);
+
+      if (data) {
+        setBioUser(data);
+      } else {
+        console.error("Error fetching bioUser");
+      }
+    } catch (error) {
+      console.error(`Error fetching bioUser: ${error.message}`);
+    }
+  };
+
   useEffect(() => {
     // console.log("Inside useEffect");
     allProjects();
     allTechnos();
+    allBio();
   }, []);
 
   return (
@@ -78,11 +94,29 @@ function DashboardAdmin() {
             </ul>
           </div>
         </div>
+
         <div className=" border p-4">
           <p>Mes collaborations "Freelance, Team ou autres ..."</p>
         </div>
         <div className=" border p-4">
           <p>Mon CV</p>
+        </div>
+      </div>
+      <div className="mt-10">
+        <div className=" border p-4">
+          <p>Ma bio</p>
+          <div>
+            <ul>
+              {bioUser.map((bio) => (
+                <li key={bio.id} className="flex flex-col gap-2">
+                  <p>{bio.title_business}</p>
+                  <p>{bio.description_part1}</p>
+                  <p>{bio.description_part2}</p>
+                  <p>{bio.description_part3}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

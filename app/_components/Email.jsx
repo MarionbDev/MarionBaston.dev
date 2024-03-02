@@ -5,7 +5,7 @@ export default function Email({ text, logo }) {
 
   return (
     <>
-      <Link href={`mailto:${emailAddress}`} aria-labelledby="contact-me">
+      <Link href={`mailto:${emailAddress}`} aria-label="contact-me">
         <p>
           {text} {logo}
         </p>

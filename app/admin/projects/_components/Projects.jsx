@@ -1,15 +1,5 @@
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import ButtonItem from "@/components/ui/buttonList/ButtonItem";
 import {
   Dialog,
   DialogContent,
@@ -19,12 +9,15 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Textarea } from "@/components/ui/textarea";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { useEffect, useState } from "react";
-import ButtonItem from "@/components/ui/buttonList/ButtonItem";
-import { getProject, insertProject, deleteProject } from "@/lib/api/project";
-import { getTechno } from "@/lib/api/technos";
 import {
   Select,
   SelectContent,
@@ -32,18 +25,24 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import { deleteProject, getProject, insertProject } from "@/lib/api/project";
+import { getTechno } from "@/lib/api/technos";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import Link from "next/link";
 import { getType } from "@/lib/api/types";
+import Link from "next/link";
 
 const InsertProjectFormSchema = yup.object().shape({
   title: yup
@@ -459,7 +458,7 @@ export default function ProjectList() {
             </form>
           </Form>
         </DialogContent>
-      </Dialog>{" "}
+      </Dialog>
     </div>
   );
 }
