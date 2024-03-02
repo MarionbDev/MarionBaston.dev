@@ -114,7 +114,7 @@ export default function NavbarMobile(emailAddress) {
                     </Link>
                   </MenubarItem>
                   <MenubarItem
-                    tabIndex={2}
+                    tabIndex={3}
                     aria-label="Lien vers ma page Github"
                   >
                     <Link href="https://github.com/MarionbDev" target="_blank">
