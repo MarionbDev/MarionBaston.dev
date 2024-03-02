@@ -36,7 +36,7 @@ export default function NavbarMobile(emailAddress) {
       <div className="  mr-2 mt-2  fixed right-0 z-50  ">
         <Menubar className="border-none">
           <MenubarMenu>
-            <MenubarTrigger>
+            <MenubarTrigger tabIndex={0} aria-label="barre de navigation">
               <Menu className="w-10 h-10 " />
             </MenubarTrigger>
             <MenubarContent
