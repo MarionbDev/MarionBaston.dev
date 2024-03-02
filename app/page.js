@@ -1,8 +1,9 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Suspense, lazy, useEffect } from "react";
+import { useEffect, useState } from "react";
 
+import AboutMe from "./_components/AboutMe";
 import Footer from "./_components/Footer";
 import MyServices from "./_components/MyServices";
 import Navbar from "./_components/Navbar";
@@ -15,16 +16,22 @@ import Skills from "./_components/Skills";
 
 export default function Home() {
   // const { isVisible } = useScroll();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.scroll(0, 0);
     }
+
+    // Simulating the loading of data for AboutMe
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Adjust the time as needed
   }, []);
 
-  const AboutMe = lazy(() => import("./_components/AboutMe"));
+  // const AboutMe = lazy(() => import("./_components/AboutMe"));
 
-  const renderLoader = () => <p className=" h-screen"></p>;
+  // const renderLoader = () => <p className=" h-screen"></p>;
 
   return (
     <div className="dark:bg-dark_black  ">
@@ -35,9 +42,14 @@ export default function Home() {
         <NavbarMobile className="navbar-mobile" />
       </div>
       <div id="aboutme" className=" md:pb-14  mx-2  ">
-        <Suspense fallback={renderLoader()}>
-          <AboutMe />
-        </Suspense>
+        {/* <Suspense fallback={renderLoader()}> */}
+        <div
+          id="aboutme"
+          className={`md:pb-14 mx-2 ${isLoading ? "loading" : ""}`}
+        >
+          <AboutMe onLoad={() => setIsLoading(false)} />
+        </div>
+        {/* </Suspense> */}
       </div>{" "}
       <div
         id="projects"

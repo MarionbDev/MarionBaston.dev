@@ -45,31 +45,20 @@ export default function NavbarMobile(emailAddress) {
               className=" dark:bg-[#39294f] mr-2   bg-white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
             >
               <Link href="#aboutme" aria-label="Qui suis-je ?">
-                <MenubarItem tabIndex={0} className="text-sm ">
-                  Qui suis-je ?
-                </MenubarItem>
+                <MenubarItem className="text-sm ">Qui suis-je ?</MenubarItem>
               </Link>
               <Link href="#projects" aria-label="mes projets">
-                <MenubarItem tabIndex={1} className="text-sm ">
-                  Mes Projets
-                </MenubarItem>
+                <MenubarItem className="text-sm ">Mes Projets</MenubarItem>
               </Link>
               <Link href="#skills" aria-label="mes compétences">
-                <MenubarItem tabIndex={2} className="text-sm ">
-                  Mes Compétences
-                </MenubarItem>
+                <MenubarItem className="text-sm ">Mes Compétences</MenubarItem>
               </Link>
               <Link href="#myservices" aria-label="mes services">
-                <MenubarItem tabIndex={3} className="text-sm ">
-                  Mes services
-                </MenubarItem>
+                <MenubarItem className="text-sm ">Mes services</MenubarItem>
               </Link>
               <MenubarSeparator className="  bg-purple" />
               <MenubarSub>
-                <MenubarSubTrigger
-                  tabIndex={4}
-                  className="flex text-sm items-center "
-                >
+                <MenubarSubTrigger className="flex text-sm items-center ">
                   <ChevronRight className="  w-5 rotate-180" /> Contact
                 </MenubarSubTrigger>
                 <MenubarSubContent
@@ -77,7 +66,6 @@ export default function NavbarMobile(emailAddress) {
                   className=" bg-white dark:bg-[#39294f] w-32    shadow-[#3f2f5565] shadow-md  "
                 >
                   <MenubarItem
-                    tabIndex={0}
                     aria-label="Lien vers mon adresse Gmail"
                     className="flex gap-2 italic text-sm"
                   >
@@ -94,10 +82,7 @@ export default function NavbarMobile(emailAddress) {
                     />
                     Gmail
                   </MenubarItem>
-                  <MenubarItem
-                    tabIndex={1}
-                    aria-label="Lien vers ma page Linkedin"
-                  >
+                  <MenubarItem aria-label="Lien vers ma page Linkedin">
                     <Link
                       href="https://www.linkedin.com/in/marion-baston/"
                       target="_blank"
@@ -113,10 +98,7 @@ export default function NavbarMobile(emailAddress) {
                       </div>
                     </Link>
                   </MenubarItem>
-                  <MenubarItem
-                    tabIndex={3}
-                    aria-label="Lien vers ma page Github"
-                  >
+                  <MenubarItem aria-label="Lien vers ma page Github">
                     <Link href="https://github.com/MarionbDev" target="_blank">
                       <div className="flex items-center gap-2 italic text-sm">
                         <Image
@@ -133,7 +115,7 @@ export default function NavbarMobile(emailAddress) {
                 </MenubarSubContent>
               </MenubarSub>
               <MenubarSeparator className="  bg-purple" />
-              <MenubarItem tabIndex={5} className="text-sm  px-0 ">
+              <MenubarItem className="text-sm  px-0 ">
                 <button
                   onClick={handleButtonClick}
                   role="button"
