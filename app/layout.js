@@ -24,7 +24,7 @@ export const metadata = {
   },
   alternates: {
     metadataBase: new URL("https://marionbaston.fr"),
-    canonical: "/",
+    canonical: "https://marionbaston.fr",
   },
 };
 
