@@ -27,7 +27,7 @@ export default function AboutMe() {
   const adminBio = async () => {
     try {
       const data = await getBio();
-      console.log("adminBio data:", data);
+      // console.log("adminBio data:", data);
       if (data && data.length > 0) {
         setBio(data[0]);
         setTitleBusiness(data[0]?.title_business || "");
@@ -92,7 +92,7 @@ export default function AboutMe() {
                 </div>
               </div>
 
-              <div className=" slide-picture picture  pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0  mb-10 ml-10 md:mt-0  lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
+              <div className="  picture  pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0  mb-10 ml-10 md:mt-0  lg:mt-12  xl:mt-8 lg:py-3 xl:py-3 lg:px-7 xl:px-6 col-start-7 col-span-4 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
                 <Image
                   src={myPhoto}
                   alt="ma photo de profil"

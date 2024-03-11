@@ -1,16 +1,16 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
-  DropdownMenuContent,
   DropdownMenu,
-  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuItem,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LogOut, User } from "lucide-react";
-import Link from "next/link";
 import { signOutUser } from "@/services/auth.services";
+import { LogOut, User } from "lucide-react";
 import { useRouter } from "next-nprogress-bar";
+import Link from "next/link";
 
 export default function UserDropdown() {
   const router = useRouter();

@@ -57,6 +57,9 @@ const UpdatePasswordFormSchema = yup.object().shape({
 export function UpdatePasswordButton() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const { user, loading, refreshSession } = useSession();
 
   const form = useForm({ resolver: yupResolver(UpdatePasswordFormSchema) });
@@ -116,7 +119,7 @@ export function UpdatePasswordButton() {
                     <FormControl>
                       <Input
                         placeholder="********"
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         {...field}
                       />
                     </FormControl>
@@ -124,6 +127,12 @@ export function UpdatePasswordButton() {
                   </FormItem>
                 )}
               />
+              <div
+                className=" cursor-pointer hover:underline"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                <p className=" text-sm italic">Afficher mot de passe</p>
+              </div>
               <FormField
                 control={form.control}
                 name="newPassword"
@@ -133,7 +142,7 @@ export function UpdatePasswordButton() {
                     <FormControl>
                       <Input
                         placeholder="********"
-                        type="password"
+                        type={showNewPassword ? "text" : "password"}
                         {...field}
                       />
                     </FormControl>
@@ -141,16 +150,22 @@ export function UpdatePasswordButton() {
                   </FormItem>
                 )}
               />
+              <div
+                className=" cursor-pointer hover:underline"
+                onClick={() => setShowNewPassword(!showNewPassword)}
+              >
+                <p className=" text-sm italic">Afficher le mot de passe</p>
+              </div>
               <FormField
                 control={form.control}
                 name="confirmNewPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Confirmer le nouveau mot de passe</FormLabel>
+                    <FormLabel>Confirmer le nouveau le mot de passe</FormLabel>
                     <FormControl>
                       <Input
                         placeholder="********"
-                        type="password"
+                        type={showConfirmPassword ? "text" : "password"}
                         {...field}
                       />
                     </FormControl>
@@ -158,6 +173,12 @@ export function UpdatePasswordButton() {
                   </FormItem>
                 )}
               />
+              <div
+                className=" cursor-pointer hover:underline"
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+              >
+                <p className=" text-sm italic">Afficher le mot de passe</p>
+              </div>
             </div>
             <DialogFooter>
               <Button

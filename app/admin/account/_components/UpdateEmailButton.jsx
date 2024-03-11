@@ -42,6 +42,7 @@ const UpdateEmailFormSchema = yup.object().shape({
 export function UpdateEmailButton() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const { user, loading, refreshSession } = useSession();
 
   const form = useForm({ resolver: yupResolver(UpdateEmailFormSchema) });
@@ -115,7 +116,7 @@ export function UpdateEmailButton() {
                     <FormControl>
                       <Input
                         placeholder="********"
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         {...field}
                       />
                     </FormControl>
@@ -123,6 +124,12 @@ export function UpdateEmailButton() {
                   </FormItem>
                 )}
               />
+              <div
+                className=" cursor-pointer hover:underline"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                <p className=" text-sm italic">Afficher le mot de passe</p>
+              </div>
             </div>
             <DialogFooter>
               <Button

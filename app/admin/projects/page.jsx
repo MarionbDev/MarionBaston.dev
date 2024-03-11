@@ -8,8 +8,8 @@ import TypesList from "./_components/TypesList";
 
 export default function PageProjects() {
   return (
-    <div className="flex flex-col gap-8">
-      <div className=" border p-4 mx-4 mt-20">
+    <div className="flex flex-col gap-8 m-12">
+      <div className=" border p-4 mx-4 ">
         <ProjectsList />
       </div>
       <div className=" border p-4 mx-4">
