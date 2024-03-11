@@ -1,8 +1,6 @@
 "use client";
 
-import { signInUser } from "@/services/auth.services";
 import { Button } from "@/components/ui/button";
-import { LogIn, Loader2 } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -19,13 +17,15 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
-import { useState } from "react";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import { Input } from "@/components/ui/input";
-import { toast } from "sonner";
+import { signInUser } from "@/services/auth.services";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { Loader2, LogIn } from "lucide-react";
 import { useRouter } from "next-nprogress-bar";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import * as yup from "yup";
 
 const loginFormSchema = yup.object().shape({
   email: yup
@@ -43,6 +43,7 @@ const loginFormSchema = yup.object().shape({
 
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const router = useRouter();
 
@@ -105,7 +106,7 @@ export default function LoginPage() {
                   <FormControl>
                     <Input
                       placeholder="********"
-                      type="password"
+                      type={showPassword ? "text" : "password"}
                       autoComplete="current-password"
                       {...field}
                     />
@@ -114,6 +115,12 @@ export default function LoginPage() {
                 </FormItem>
               )}
             />
+            <div
+              className=" cursor-pointer hover:underline"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              <p className=" text-sm italic">Afficher le mot de passe</p>
+            </div>
           </CardContent>
           <CardFooter className="justify-center">
             <Button

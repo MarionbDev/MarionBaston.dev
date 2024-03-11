@@ -10,22 +10,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { useEffect } from "react";
 import { UpdateBioButton } from "./_components/UpdateBioButton";
 import { UpdateEmailButton } from "./_components/UpdateEmailButton";
 import { UpdatePasswordButton } from "./_components/UpdatePasswordButton";
 
 export default function AccountPage() {
-  const { user, refreshSession, loading, error } = useSession();
+  const { user, loading, error } = useSession();
 
   console.log("user", user);
 
-  useEffect(() => {
-    refreshSession();
-  }, []);
-
   if (loading) {
-    return <p>Chargement en cours...</p>; // Peut-être afficher un spinner ou un message de chargement
+    return <p>Chargement en cours...</p>;
   }
 
   if (error) {
