@@ -26,6 +26,9 @@ export const metadata = {
     metadataBase: new URL("https://marionbaston.fr"),
     canonical: "https://marionbaston.fr",
   },
+  icons: {
+    icon: "../logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
