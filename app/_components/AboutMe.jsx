@@ -92,7 +92,7 @@ export default function AboutMe() {
                 </div>
               </div>
 
-              <div className=" rounded-full w-40 h-40 s md:w-56 md:h-56  lg:w-64 lg:h-64  2xl:w-72 2xl:h-72 ring-purple ring-2 pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0 mb-56 sm:mb-20 ml-10   xl:mt-12 col-start-2 col-span-8 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
+              <div className=" rounded-full w-40 h-40 s md:w-56 md:h-56  lg:w-64 lg:h-64  2xl:w-72 2xl:h-72 dark:ring-purple darl:ring-2 pr-1  shadow-[#ad75c7da] shadow-md z-0  mt-0 mb-56 sm:mb-20 ml-10   xl:mt-12 col-start-2 col-span-8 row-start-1 row-span-2 md:col-start-9 md:col-span-3 md:row-start-1 md:row-span-3 lg:col-start-10 lg:col-span-3 lg:row-start-1 lg:row-span-5  2xl:col-start-10 2xl:col-span-4 2xl:row-start-1 2xl:row-span-4  to-[#fae8ff]/20 bg-gradient-to-t from-purple to-transparent   ">
                 <Image
                   src={myPhoto}
                   alt="ma photo de profil"
