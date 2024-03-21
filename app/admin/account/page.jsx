@@ -22,7 +22,6 @@ export default function AccountPage() {
   if (loading) {
     return <p>Chargement en cours...</p>;
   }
-
   if (error) {
     return <p>Une erreur s'est produite : {error.message}</p>; // Afficher un message d'erreur
   }
