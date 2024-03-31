@@ -98,7 +98,7 @@ export default function AboutMe() {
                     </p>
                   </div>
 
-                  <div className=" slideLink-1 lg:mt-8 flex justify-start  lg:mx-6 gap-4 md:gap-8 ">
+                  <div className=" slideLink-1 lg:mt-8 flex justify-start   lg:mx-6 gap-4 md:gap-8 ">
                     <div className="profile-image-mobile flex gap-4">
                       <Button
                         onChild
@@ -125,9 +125,10 @@ export default function AboutMe() {
                           id="contact-me header"
                           className="mr-2"
                         />
-                        <Email text="Contact" />
+                        <Email text="Contactez-moi" />
                       </Button>
                     </div>
+
                     <div className="profile-image-desktop flex gap-6">
                       <Button
                         onChild
