@@ -175,14 +175,14 @@ html {
   opacity: 0;
   animation: slidelink 1s ease forwards;
   /* bounce 0.35s ease 1 alternate; */
-  animation-delay: 1.8s;
+  animation-delay: 1.4s;
 }
 
 .slideLink-2 {
   opacity: 0;
   animation: slidelink 1.4s ease forwards;
   /* bounce 0.35s ease 1 0s 1 normal both; */
-  animation-delay: 1.8s;
+  animation-delay: 1.4s;
 }
 
 @keyframes slidelink {
@@ -246,5 +246,29 @@ html {
   }
   .chevron-slide {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 468px) {
+  .profile-image-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .profile-image-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 933px) {
+  .profile-image-desktop-lg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 932px) {
+  .bio-part1 {
+    display: flex;
   }
 }

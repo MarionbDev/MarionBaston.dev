@@ -29,15 +29,14 @@ export default function NavbarMobile(emailAddress) {
   };
 
   return (
-    <div className="  flex navSupp">
-      <div className=" ml-2 mt-3 ">
+    <div className=" flex navSupp justify-center ">
+      <div className=" flex justify-between w-5/6 rounded-full px-1 mt-9 fixed z-50 bg-purple/40   ">
         <ModeToggle />
-      </div>
-      <div className="  mr-2 mt-2  fixed right-0 z-50  ">
+
         <Menubar className="border-none">
           <MenubarMenu>
             <MenubarTrigger tabIndex={0} aria-label="barre de navigation">
-              <Menu className="w-10 h-10 " />
+              <Menu className="w-10 h-10  mt-2" />
             </MenubarTrigger>
             <MenubarContent
               align="start"

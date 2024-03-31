@@ -1,13 +1,26 @@
 import { LogIn } from "lucide-react";
 import { useRouter } from "next-nprogress-bar";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import githubb from "../../public/logos/github.png";
-import linkedin from "../../public/logos/linkedin.png";
+import { useEffect, useState } from "react";
+import linkedin from "../../public/images/linkedinColor.svg";
+import linkedinDark from "../../public/images/linkedinColorDark.svg";
+import githubDark from "../../public/logos/githubDark.svg";
+import githubLight from "../../public/logos/githubsvgLight.svg";
 import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   const router = useRouter();
+  const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState(theme);
+
+  const linkedinImage = theme === "dark" ? linkedinDark : linkedin;
+  const githubImage = theme === "dark" ? githubDark : githubLight;
+
+  useEffect(() => {
+    setCurrentTheme(theme); // Mettre à jour l'état local lorsque le thème change
+  }, [theme]);
 
   const handleButtonClick = () => {
     router.push("/login");
@@ -47,7 +60,8 @@ export default function Navbar() {
               rel="noopener noreferrer"
             >
               <Image
-                src={linkedin}
+                key={currentTheme}
+                src={linkedinImage}
                 alt="lien vers ma page linkedin"
                 width={36}
                 height={36}
@@ -61,12 +75,13 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              {}
               <Image
-                src={githubb}
+                src={githubImage}
                 alt="lien vers ma page github"
                 width={32}
                 height={32}
-                className=" logo-filter dark:filter-none dark:bg-white rounded-full"
+                className=" logo-filter dark:filter-none  rounded-full"
               />
             </Link>
           </li>

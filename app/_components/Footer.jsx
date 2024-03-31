@@ -8,10 +8,10 @@ export default function Footer() {
     <footer>
       <div className=" py-2 px-6 to-[#fae8ff] bg-gradient-to-t from-purple/50 to-transparent  dark:to-[#070c21] dark:bg-gradient-to-t dark:from-purple/10 to-transparent w-full font-lato  lg:m-auto lg:px-8 dark:text-white/70 text-[#4f3670] dark:border-t-2 dark:border-[#111c49] ">
         <div className="flex flex-col lg:grid lg:grid-cols-12 md:px-8 md:p-0  ">
-          <nav className=" lg:col-start-1 lg:col-span-3 flex flex-col justify-between items-start ">
+          <nav className="lg:col-start-1 lg:col-span-3 flex flex-col sm:flex-row justify-between sm: items-start ">
             <div className="flex md:items-center gap-4 lg:ml-10 ">
               <Link href="/" aria-labelledby="marion-baston">
-                <div className="flex flex-col md:items-center px-4 lg:px-0  lg:items-start ">
+                <div className="flex flex-col  px-4 lg:px-0  lg:items-start ">
                   <span
                     id="marion-baston"
                     className=" font-alice text-xs sm:text-xl font-semibold"
