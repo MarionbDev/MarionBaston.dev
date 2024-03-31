@@ -50,7 +50,7 @@ export default function Home() {
       </div>{" "}
       <div
         id="projects"
-        className=" dark:bg-dark_black flex flex-col items-center justify-center pt-6 md:pt-10 md:pb-20 px-6"
+        className=" dark:bg-dark_black flex flex-col items-center justify-center pt-6 md:pt-16 md:pb-20 px-6"
       >
         <div className="sm:w-10/12  ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">

@@ -271,4 +271,7 @@ html {
   .bio-part1 {
     display: flex;
   }
+  .link_profile {
+    display: flex;
+  }
 }

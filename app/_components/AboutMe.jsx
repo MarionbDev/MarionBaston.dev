@@ -98,34 +98,65 @@ export default function AboutMe() {
                     </p>
                   </div>
 
-                  <div className=" slideLink-1 lg:mt-8 flex justify-center lg:justify-start  lg:mx-6 gap-4 md:gap-8 ">
-                    <Button
-                      onChild
-                      onClick={downloadCV}
-                      role="button"
-                      aria-label="Télécharger mon CV"
-                      className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  dark:text-[#dfd0cb]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 "
-                    >
-                      <Download
-                        size="16"
-                        id="download-cv"
-                        alt="icône de téléchargement"
-                      />
-                      Télécharger mon CV
-                    </Button>
-                    <Button
-                      role="button"
-                      aria-label="M'envoyer un email"
-                      className="slideLink-2 font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30  bg-purple/30  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  dark:text-[#dfd0cb] hover:text-[#ffff]   "
-                    >
-                      <MessagesSquare
-                        size="16"
-                        id="contact-me header"
-                        className="mr-2"
-                      />
-                      <Email text="Contactez - moi" />
-                    </Button>
-                    <Email />
+                  <div className=" slideLink-1 lg:mt-8 flex justify-start  lg:mx-6 gap-4 md:gap-8 ">
+                    <div className="profile-image-mobile flex gap-4">
+                      <Button
+                        onChild
+                        onClick={downloadCV}
+                        role="button"
+                        aria-label="Télécharger mon CV"
+                        className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  dark:text-[#dfd0cb]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 gap-2 px-4 "
+                      >
+                        <Download
+                          size="16"
+                          id="download-cv"
+                          alt="icône de téléchargement"
+                        />
+                        CV
+                      </Button>
+
+                      <Button
+                        role="button"
+                        aria-label="M'envoyer un email"
+                        className=" slideLink-2 font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30  bg-purple/30  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  dark:text-[#dfd0cb] hover:text-[#ffff]   "
+                      >
+                        <MessagesSquare
+                          size="16"
+                          id="contact-me header"
+                          className="mr-2"
+                        />
+                        <Email text="Contact" />
+                      </Button>
+                    </div>
+                    <div className="profile-image-desktop flex gap-6">
+                      <Button
+                        onChild
+                        onClick={downloadCV}
+                        role="button"
+                        aria-label="Télécharger mon CV"
+                        className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl  dark:text-[#dfd0cb]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 gap-2 px-4 "
+                      >
+                        <Download
+                          size="16"
+                          id="download-cv"
+                          alt="icône de téléchargement"
+                        />
+                        Téléchargez mon CV
+                      </Button>
+                      <Button
+                        role="button"
+                        aria-label="M'envoyer un email"
+                        className=" slideLink-2 font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30  bg-purple/30  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] rounded-xl p-2 text-sm  dark:text-[#dfd0cb] hover:text-[#ffff]   "
+                      >
+                        <MessagesSquare
+                          size="16"
+                          id="contact-me header"
+                          className="mr-2"
+                        />
+                        <Email text="Contactez - moi" />
+                      </Button>
+                      <Email />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -144,8 +175,8 @@ export default function AboutMe() {
               </div>
             </div>
             <div className=" flex justify-center">
-              <div className=" mt-20 sm:mt-32 md:mt-0 w-full sm:w-10/12">
-                <div className="flex flex-col items-center sm:items-start gap-3 mb-1 lg:mb-6 md:mb-12  ">
+              <div className=" mt-20 sm:mt-32 md:mt-20 w-full sm:w-10/12">
+                <div className="flex flex-col items-center sm:items-start gap-3 mb-1  lg:mb-6 md:mb-12  ">
                   <h2
                     className={`font-roboto  text-2xl font-semibold md:text-4xl w-4/5 sm:w-full  text-center lg:text-start  border-b-2 pb-4 sm:pb-2  border-purple `}
                   >
