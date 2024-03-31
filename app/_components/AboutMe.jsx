@@ -99,7 +99,7 @@ export default function AboutMe() {
                   </div>
 
                   <div className=" slideLink-1 lg:mt-8 flex justify-start   lg:mx-6 gap-4 md:gap-8 ">
-                    <div className="profile-image-mobile flex gap-4">
+                    <div className="profile-image-mobile w-72  flex gap-4">
                       <Button
                         onChild
                         onClick={downloadCV}
