@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       <link
         rel="preconnect"
         href="https://mssggkataaagdhwyybfs.supabase.co"
-        crossorigin
+        crossOrigin
       />
       <body className={inter.className}>
         <ThemeProvider
