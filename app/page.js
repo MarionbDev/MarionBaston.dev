@@ -29,31 +29,28 @@ export default function Home() {
     }, 2000); // Adjust the time as needed
   }, []);
 
-  // const AboutMe = lazy(() => import("./_components/AboutMe"));
-
-  // const renderLoader = () => <p className=" h-screen"></p>;
-
   return (
-    <div className="dark:bg-dark_black  ">
+    <div className=" ">
       <div className="flex">
         <Navbar className="navbar" />
       </div>
       <div>
         <NavbarMobile className="navbar-mobile" />
       </div>
-      <div id="aboutme" className=" md:pb-14  mx-2  ">
-        {/* <Suspense fallback={renderLoader()}> */}
+      <div
+        id="aboutme"
+        className="dark:bg-dark_gradient_mobile md:dark:bg-dark_gradient md:pb-4    "
+      >
         <div
           id="aboutme"
           className={`md:pb-14 mx-2 ${isLoading ? "loading" : ""}`}
         >
           <AboutMe onLoad={() => setIsLoading(false)} />
         </div>
-        {/* </Suspense> */}
       </div>{" "}
       <div
         id="projects"
-        className="flex flex-col items-center justify-center pt-6 md:pt-20 md:pb-20 px-6"
+        className=" dark:bg-dark_black flex flex-col items-center justify-center pt-6 md:pt-10 md:pb-20 px-6"
       >
         <div className="sm:w-10/12  ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
@@ -149,10 +146,16 @@ export default function Home() {
           </Tabs>
         </div>
       </div>
-      <div id="skills" className=" pt-16 md:pb-[4rem] px-6 mx-6 ">
+      <div
+        id="skills"
+        className="dark:bg-dark_black  pt-16 md:pb-[4rem] px-6  "
+      >
         <Skills />
       </div>
-      <div id="myservices" className="px-6 mx-6  pt-16 pb-10 md:pb-[10rem]">
+      <div
+        id="myservices"
+        className="dark:bg-dark_black  px-6  pt-16 pb-10 md:pb-[10rem]"
+      >
         <MyServices />
       </div>{" "}
       <Footer />

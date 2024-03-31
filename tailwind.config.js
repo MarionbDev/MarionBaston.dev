@@ -22,9 +22,10 @@ module.exports = {
       white: "#ffffff",
       pale_pink: "#faf8fac0",
       pale_purple: "#400e41c0",
-      // dark_black: "#070914",
       dark_black: "#070c21",
+      purple_text: "#4f4956",
     },
+
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -61,6 +62,14 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        dark_gradient: "linear-gradient(30deg, #070c21 60%, #9045f9 100%);",
+        dark_gradient_mobile:
+          "linear-gradient(30deg, #070c21 73%, #9045f9 100%);",
+        dark_bg_profile: "linear-gradient(21deg, #070c21 50%, #9045f9 100%);",
+        bg_profile: "linear-gradient(18deg, #9045f9 25%, #ffffff 100%);",
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
