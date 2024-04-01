@@ -19,7 +19,8 @@ module.exports = {
 
     colors: {
       purple: "#9045f9",
-      white: "#ffffff",
+      white: "#cfcccc",
+      bg_white: "#ffffff",
       pale_pink: "#faf8fac0",
       pale_purple: "#400e41c0",
       dark_black: "#070c21",
@@ -63,6 +64,8 @@ module.exports = {
         },
       },
       backgroundImage: {
+        gradient_about:
+          " linear-gradient(34deg, #ffffff 84%, rgba(165, 69, 248, 0.52) 100%);",
         dark_gradient: "linear-gradient(30deg, #070c21 60%, #9045f9 100%);",
         dark_gradient_mobile:
           "linear-gradient(30deg, #070c21 73%, #9045f9 100%);",

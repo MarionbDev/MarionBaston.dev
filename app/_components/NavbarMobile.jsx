@@ -35,13 +35,13 @@ export default function NavbarMobile(emailAddress) {
 
         <Menubar className="border-none">
           <MenubarMenu>
-            <MenubarTrigger tabIndex={0} aria-label="barre de navigation">
-              <Menu className="w-10 h-10  mt-2" />
+            <MenubarTrigger tabIndex={0} aria-label="barre de navigation ">
+              <Menu className="w-10 h-10  mt-2 text-[#5c23ac] dark:text-[#d6c0f5] " />
             </MenubarTrigger>
             <MenubarContent
               align="start"
               sideOffset={1}
-              className=" dark:bg-[#39294f] mr-2   bg-white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
+              className=" dark:bg-[#39294f] mr-2   bg-bg_white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
             >
               <Link href="#aboutme" aria-label="Qui suis-je ?">
                 <MenubarItem className="text-sm ">Qui suis-je ?</MenubarItem>
