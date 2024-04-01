@@ -88,7 +88,7 @@ export default function AboutMe() {
                       {/* {bio.title_business} => appel depuis la bdd */}
                     </p>
                   </div>
-                  <div className=" profile-image-mobile bio-part1 md:mx-2 text-justify slide-para font-lato z-30 text-base md:text-justify  sm:text-xl md:text-base xl:text-lg p-6   relative text-purple_text dark:text-[#cfcccc] mb-6 ">
+                  <div className=" profile-image-mobile bio-part1 md:mx-2 text-justify slide-para font-lato z-30 text-base  sm:text-xl md:text-base xl:text-lg p-6   relative text-purple_text dark:text-[#cfcccc] mb-6">
                     <p className=" leading-7">
                       " J'aime expérimenter de nouvelles fonctionnalités, tester
                       de nouveaux concepts et relever des défis techniques pour
@@ -96,7 +96,7 @@ export default function AboutMe() {
                       {/* {bio.description_part1} => appel depuis la bdd */}"
                     </p>
                   </div>
-                  <div className="w-full flex justify-center sm:justify-start">
+                  <div className="xl:w-[43rem]   lg:w-[32rem]  flex justify-center sm:justify-start">
                     <div className=" slideLink-1  lg:mt-8 lg:mx-6 md:gap-8 ">
                       <div className="profile-image-mobile flex gap-4">
                         <Button
@@ -163,7 +163,7 @@ export default function AboutMe() {
               </div>
 
               <div className=" flex flex-col items-center lg:sw-[70rem] justify-center md:justify-start lg:justify-center gap-4">
-                <div className=" profile-image-desktop rounded-full w-40 md:w-52  lg:w-48 2xl:w-72  z-0 ">
+                <div className=" profile-image-desktop rounded-full w-40 md:w-52  lg:w-72 2xl:w-[20rem]  z-0 ">
                   <Image
                     src={myPhoto}
                     alt="ma photo de profil"
