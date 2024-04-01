@@ -163,7 +163,7 @@ export default function AboutMe() {
               </div>
 
               <div className=" flex flex-col items-center lg:sw-[70rem] justify-center md:justify-start lg:justify-center gap-4">
-                <div className=" profile-image-desktop rounded-full w-40 md:w-52  lg:w-48 2xl:w-72  z-0 ">
+                <div className=" profile-image-desktop rounded-full w-40 md:w-52  lg:w-72 2xl:w-[20rem]  z-0 ">
                   <Image
                     src={myPhoto}
                     alt="ma photo de profil"
