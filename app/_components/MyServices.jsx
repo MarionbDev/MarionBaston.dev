@@ -1,11 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   HoverCard,
   HoverCardContent,
@@ -122,27 +116,24 @@ export default function MyServices() {
               </HoverCard>
             </div>
           </div>
-          <div className="font-lato mt-10 sm:mt-28 w-72 xl:w-3/5  ">
-            <Card className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 shadow-purple/40 shadow-xl border-none bg-purple/90 rounded-xl  text-[#ffffff] ">
+          <div className="font-lato mt-16 sm:mt-28 w-72 md:w-3/4 xl:w-3/5  ">
+            <Card className="dark:shadow-purple/80 dark:shadow-inner shadow-none dark:bg-purple/10 dark:border-purple/50 border-none  rounded-xl  text-purple dark:text-[#ffffff] ">
               <CardHeader>
-                <CardTitle className=" text-lg sm:text-xl md:text-2xl text-center">
+                <CardTitle className=" text-xl md:text-3xl text-center">
                   Prêt à travailler ensemble ou à discuter d'opportunités ?
                 </CardTitle>
-                <CardDescription className=" text-xl py-3 text-center">
-                  Contactez-moi !
-                </CardDescription>
               </CardHeader>
               <CardContent className=" flex justify-center">
                 <Button
                   role="button"
-                  className=" dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/10 bg-[#ffffff] dark:hover:bg-pale_pink/20  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff]   shadow-xl"
+                  className=" dark:shadow-purple/80 dark:shadow-inner border-purple/80 border-2  dark:bg-purple/10  dark:hover:bg-pale_pink/20  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff] shadow-lg  "
                 >
                   <Link
                     href={`mailto:${emailAddress}`}
                     aria-labelledby="contact-me"
-                    className="flex gap-1 md:gap-2 text-sm text-center sm:text-sm dark:text-white text-purple "
+                    className="flex gap-1 md:gap-2 text-lg text-center sm:text-xl dark:text-white text-purple "
                   >
-                    <MessagesSquare size="16" id="contact-me" />
+                    <MessagesSquare size="20" id="contact-me" />
                     C'est ici et maintenant !
                   </Link>
                 </Button>

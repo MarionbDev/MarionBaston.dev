@@ -39,11 +39,11 @@ export default function Home() {
       </div>
       <div
         id="aboutme"
-        className="dark:bg-dark_gradient_mobile md:dark:bg-dark_gradient md:pb-4    "
+        className="bg-gradient_about  dark:bg-dark_gradient_mobile md:dark:bg-dark_gradient md:pb-4    "
       >
         <div
           id="aboutme"
-          className={`md:pb-14 mx-2 ${isLoading ? "loading" : ""}`}
+          className={`md:pb-8 mx-2 ${isLoading ? "loading" : ""}`}
         >
           <AboutMe onLoad={() => setIsLoading(false)} />
         </div>
@@ -154,7 +154,7 @@ export default function Home() {
       </div>
       <div
         id="myservices"
-        className="dark:bg-dark_black  px-6  pt-16 pb-10 md:pb-[10rem]"
+        className="dark:bg-dark_black  px-6  pt-16 pb-10 md:pb-[6rem]"
       >
         <MyServices />
       </div>{" "}

@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
@@ -31,7 +30,7 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="dark:bg-[#39294f] border-none ml-2  bg-white"
+        className="dark:bg-[#39294f] border-none ml-2  bg-bg_white"
       >
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light&nbsp; {theme === "light" && <span>&#10003;</span>}

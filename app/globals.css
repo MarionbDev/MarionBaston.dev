@@ -122,23 +122,20 @@ html {
   }
 }
 
-.slide-name span {
-  display: inline-block;
-  opacity: 0;
-  transform: translatex(-960%) rotate(-10deg);
-  transition:
-    opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+.dark .name-gradient {
+  background: linear-gradient(to right, #eeeeee 0%, #9045f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.slide-name span:nth-child(1) {
-  animation: slideNameTitle 0.7s ease-in-out forwards;
-  transition-delay: 2s;
-}
-
-.slide-name span:nth-child(n + 2) {
-  animation: slideNameTitle 0.7s ease-in-out forwards;
-  transition-delay: 2s;
+.name-gradient {
+  background: linear-gradient(to right, #6015c9 0%, #d29aec 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes slideNameTitle {
@@ -153,10 +150,28 @@ html {
 }
 
 /*Slide name-dev */
+.dark .slide-name-dev {
+  opacity: 0;
+  animation: slideNameDev 1s ease-in-out forwards;
+  transition-delay: 2.2s;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #dacaec 0%, #9645f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .slide-name-dev {
   opacity: 0;
   animation: slideNameDev 1s ease-in-out forwards;
   transition-delay: 2.2s;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #6015c9 0%, #c36eeb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes slideNameDev {
