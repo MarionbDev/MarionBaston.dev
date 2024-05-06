@@ -68,7 +68,7 @@ export default function AboutMe() {
               src={myPhoto}
               alt="ma photo de profil"
               width={400}
-              className="  rounded-full  dark:brightness-75 dark:bg-dark_bg_profile bg-bg_profile bg-purple "
+              className=" shadow-[#0b080f] shadow-2xl  rounded-full  dark:brightness-75 dark:bg-dark_bg_profile bg-bg_profile bg-purple "
             />
           </div>
 
@@ -104,7 +104,7 @@ export default function AboutMe() {
                           onClick={downloadCV}
                           role="button"
                           aria-label="Télécharger mon CV"
-                          className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-[#ffffff] dark:text-[#cfcccc]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 gap-2 px-4 "
+                          className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/70 bg-purple/80   rounded-xl text-[#ffffff] dark:text-[#cfcccc]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 gap-2 px-4 "
                         >
                           <Download
                             size="16"
@@ -134,7 +134,7 @@ export default function AboutMe() {
                           onClick={downloadCV}
                           role="button"
                           aria-label="Télécharger mon CV"
-                          className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-[#ffffff] dark:text-[#cfcccc]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 gap-2 px-4 "
+                          className="slideLink font-lato dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/70 bg-purple/80   rounded-xl text-[#ffffff] dark:text-[#cfcccc]  dark:hover:bg-pale_pink/20 hover:bg-purple hover:bg-[#baa8bbc0] p-2 gap-2 px-4 "
                         >
                           <Download
                             size="16"
@@ -168,7 +168,7 @@ export default function AboutMe() {
                     src={myPhoto}
                     alt="ma photo de profil"
                     width={400}
-                    className="  lg:shadow-none lg:border-none  rounded-full  dark:brightness-75 dark:bg-dark_bg_profile bg-bg_profile bg-purple "
+                    className="   shadow-2xl  shadow-[#0b080f]  lg:border-none  rounded-full  dark:brightness-75 dark:bg-dark_bg_profile bg-bg_profile bg-purple "
                   />
                 </div>
 

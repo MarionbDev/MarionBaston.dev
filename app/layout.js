@@ -34,11 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <link
-        rel="preconnect"
-        href="https://mssggkataaagdhwyybfs.supabase.co"
-        crossOrigin
-      />
+      <link rel="preconnect" href="https://mssggkataaagdhwyybfs.supabase.co" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
