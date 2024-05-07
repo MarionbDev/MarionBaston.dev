@@ -10,7 +10,7 @@ import Email from "./Email";
 
 export default function AboutMe() {
   const downloadCV = () => {
-    const imageUrl = "/images/marionbastonCV.png";
+    const imageUrl = "/images/marionbastonCV.jpg";
     window.open(imageUrl, "_blank");
   };
 
