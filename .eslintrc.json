@@ -1,5 +1,5 @@
 {
-  "plugins": ["react", "jsx-a11y", "react-hooks", "next"],
+  "plugins": ["react", "jsx-a11y", "react-hooks"],
   "overrides": [
     {
       "files": ["**/*.js", "**/*.jsx"],
