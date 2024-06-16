@@ -1,5 +1,5 @@
 {
-  "plugins": ["react", "jsx-a11y", "react-hooks"],
+  // "plugins": ["react", "jsx-a11y", "react-hooks", "next"],
   "overrides": [
     {
       "files": ["**/*.js", "**/*.jsx"],
@@ -8,8 +8,10 @@
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
-        "plugin:next/recommended",
-        "next/core-web-vitals"
+        "plugin:@next/next/recommended",
+        // "plugin:next/recommended",
+        // "next",
+        "plugin:eslint-plugin-next"
         // "plugin:prettier/recommended"
       ],
       "rules": {
