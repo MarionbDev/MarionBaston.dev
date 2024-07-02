@@ -15,11 +15,11 @@ export default function Navbar() {
   const { theme } = useTheme();
   const [currentTheme, setCurrentTheme] = useState(theme);
 
-  const linkedinImage = theme === "dark" ? linkedinDark : linkedin;
-  const githubImage = theme === "dark" ? githubDark : githubLight;
+  const linkedinImage = theme === "light" ? linkedinDark : linkedin;
+  const githubImage = theme === "light" ? githubDark : githubLight;
 
   useEffect(() => {
-    setCurrentTheme(theme); // Mettre à jour l'état local lorsque le thème change
+    setCurrentTheme(theme);
   }, [theme]);
 
   const handleButtonClick = () => {

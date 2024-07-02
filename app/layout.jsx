@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
         >
           <Suspense fallback={<></>}>
             {/* <ScrollProvider> */}
+
             <Providers>{children}</Providers>
             {/* </ScrollProvider> */}
           </Suspense>
