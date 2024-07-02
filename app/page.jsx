@@ -30,8 +30,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className=" ">
-      <div className="flex">
+    <div className="">
+      <div className="flex  ">
         <Navbar className="navbar" />
       </div>
       <div>
@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div
         id="aboutme"
-        className="bg-gradient_about  dark:bg-dark_gradient_mobile md:dark:bg-dark_gradient md:pb-4    "
+        className="bg-gradient_about  dark:bg-dark_gradient_mobile  md:pb-4    "
       >
         <div
           id="aboutme"
