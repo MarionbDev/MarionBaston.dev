@@ -17,7 +17,9 @@ export default function UserDropdown() {
 
   const handleLogOut = async () => {
     await signOutUser();
-    router.push("/");
+    setTimeout(() => {
+      router.push("/");
+    }, 2000);
   };
 
   return (

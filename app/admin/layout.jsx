@@ -2,32 +2,29 @@
 
 import { Loader } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useSession from "../hooks/useSession";
 import AdminHeader from "./_components/AdminHeader";
-import { getIsAuthenticated } from "./middlewares/withAuth";
 
 export default function AdminLayout({ children }) {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   const router = useRouter();
 
-  const { user, error, refreshSession } = useSession();
+  const { user, error, refreshSession, loading } = useSession();
 
   useEffect(() => {
-    const isAuth = getIsAuthenticated();
-
-    if (!isAuth) {
+    if (!loading && !user) {
       router.replace("/");
     }
-  }, []);
+  }, [user, loading, router]);
 
-  console.log("user layout", user);
+  // console.log("user layout", user);
 
-  useEffect(() => {
-    console.log("Refreshing session...");
-    refreshSession();
-  }, []);
+  // useEffect(() => {
+  //   console.log("Refreshing session...");
+  //   refreshSession();
+  // }, []);
 
   if (loading) {
     return (
