@@ -17,7 +17,7 @@ import { DialogStepProject } from "../DialogProject";
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className=" flex flex-col items-center sm:block dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none ">
+      <Card className=" flex flex-col items-center sm:block   shadow-md rounded-xl border-none ">
         <CardHeader className=" mb-2 sm:mb-0">
           <CardTitle className="font-roboto text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
             {project.title}

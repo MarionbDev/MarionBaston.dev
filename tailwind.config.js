@@ -18,8 +18,11 @@ module.exports = {
     },
 
     colors: {
-      purple: "#9045f9",
+      purple: "#8300E9",
+      txt_black: "#2e2e27",
       white: "#cfcccc",
+      black: "#1E1E1E",
+      dark_bg: "#541696",
       bg_white: "#ffffff",
       pale_pink: "#faf8fac0",
       pale_purple: "#400e41c0",
@@ -28,56 +31,13 @@ module.exports = {
     },
 
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
+      colors: {},
       backgroundImage: {
-        gradient_about:
-          " linear-gradient(34deg, #ffffff 84%, rgba(165, 69, 248, 0.52) 100%);",
-        dark_gradient: "linear-gradient(30deg, #070c21 60%, #9045f9 100%);",
-        dark_gradient_mobile:
-          "linear-gradient(30deg, #070c21 73%, #9045f9 100%);",
-        dark_bg_profile: "linear-gradient(21deg, #070c21 50%, #9045f9 100%);",
+        dark_bg_profile: "linear-gradient(18deg, #b478f8 35%, #dacaec 100%);",
         bg_profile: "linear-gradient(18deg, #9045f9 25%, #ffffff 100%);",
       },
 
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+      borderRadius: {},
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

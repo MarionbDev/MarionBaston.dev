@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="">
+    <div className="dark:bg-[#30144d]  dark:text-white ">
       <div className="flex  ">
         <Navbar className="navbar" />
       </div>
@@ -41,16 +41,13 @@ export default function Home() {
         id="aboutme"
         className="bg-gradient_about  dark:bg-dark_gradient_mobile  md:pb-4    "
       >
-        <div
-          id="aboutme"
-          className={`md:pb-8 mx-2 ${isLoading ? "loading" : ""}`}
-        >
-          <AboutMe onLoad={() => setIsLoading(false)} />
+        <div id="aboutme" className="md:pb-8 mx-2 ">
+          <AboutMe />
         </div>
       </div>{" "}
       <div
         id="projects"
-        className=" dark:bg-dark_black flex flex-col items-center justify-center pt-6 md:pt-16 md:pb-20 px-6"
+        className=" flex flex-col items-center justify-center pt-6 md:pt-16 md:pb-20 px-6"
       >
         <div className="sm:w-10/12  ">
           <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">

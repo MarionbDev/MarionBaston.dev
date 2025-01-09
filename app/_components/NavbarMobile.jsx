@@ -11,13 +11,13 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
 } from "@radix-ui/react-menubar";
-import { ChevronRight, LogIn, Menu } from "lucide-react";
+import { ChevronRight, Menu } from "lucide-react";
 import { useRouter } from "next-nprogress-bar";
 import Image from "next/image";
 import Link from "next/link";
 import gmailLogo from "../../public/images/gmail.svg";
-import linkedinColor from "../../public/images/linkedinColor.svg";
-import githubb from "../../public/logos/github.png";
+// import linkedinColor from "../../public/images/linkedinColor.svg";
+// import githubb from "../../public/logos/github.png";
 import Email from "./Email";
 import { ModeToggle } from "./ModeToggle";
 
@@ -81,39 +81,9 @@ export default function NavbarMobile(emailAddress) {
                     />
                     Gmail
                   </MenubarItem>
-                  <MenubarItem aria-label="Lien vers ma page Linkedin">
-                    <Link
-                      href="https://www.linkedin.com/in/marion-baston/"
-                      target="_blank"
-                    >
-                      <div className="flex items-center gap-2 italic text-sm">
-                        <Image
-                          src={linkedinColor}
-                          alt="lien vers ma page linkedin"
-                          width={30}
-                          height={30}
-                        />{" "}
-                        Linkedin
-                      </div>
-                    </Link>
-                  </MenubarItem>
-                  <MenubarItem aria-label="Lien vers ma page Github">
-                    <Link href="https://github.com/MarionbDev" target="_blank">
-                      <div className="flex items-center gap-2 italic text-sm">
-                        <Image
-                          src={githubb}
-                          alt="lien vers ma page github"
-                          width={28}
-                          height={28}
-                          className=" logo-filter bg-white rounded-full"
-                        />
-                        GitHub{" "}
-                      </div>
-                    </Link>
-                  </MenubarItem>
                 </MenubarSubContent>
               </MenubarSub>
-              <MenubarSeparator className="  bg-purple" />
+              {/* <MenubarSeparator className="  bg-purple" />
               <MenubarItem className="text-sm  px-0 ">
                 <button
                   onClick={handleButtonClick}
@@ -124,7 +94,7 @@ export default function NavbarMobile(emailAddress) {
                   <LogIn size="18" className="hover:scale-125 duration-300 " />
                   Se connecter
                 </button>
-              </MenubarItem>
+              </MenubarItem> */}
             </MenubarContent>
           </MenubarMenu>
         </Menubar>
