@@ -3,7 +3,7 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   return (
-    <div className="navbar flex text-base justify-between items-center  w-full pr-7  h-14 fixed z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
+    <div className="navbar flex text-base justify-between items-center  w-full pr-20  h-14 fixed z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
       <div className="  ml-4">
         <ModeToggle />
       </div>
@@ -24,7 +24,7 @@ export default function Navbar() {
               aria-label="mes projets"
               className="nav-link"
             >
-              Mes Projets<span className="underline"></span>
+              Portfolio<span className="underline"></span>
             </Link>
           </li>
           <li className="">

@@ -1,90 +1,79 @@
-import ProjectCard from "./ProjectCard";
-import javascriptPng from "./assets/logos/javascript.png";
-import cssPng from "./assets/logos/css.png";
-import htmlPng from "./assets/logos/html.png";
-import gitPng from "./assets/logos/git.png";
-import reactPng from "./assets/logos/react.png";
-import tailwindPng from "./assets/logos/tailwind.png";
-import nodePng from "./assets/logos/node.png";
-import expressPng from "./assets/logos/express.png";
-import mysqlPng from "./assets/logos/mysql.png";
-import figmaPng from "./assets/logos/figma.png";
-
 //import TodoList
-import pc_form from "./assets/todoList/pc_form.png";
-import pc_home_todo from "./assets/todoList/pc_home.png";
-import pc_tasks from "./assets/todoList/pc_tasks.png";
-import responsive_home from "./assets/todoList/responsive_home.png";
+import pc_form from "../assets/todoList/pc_form.png";
+import pc_home_todo from "../assets/todoList/pc_home.png";
+import pc_tasks from "../assets/todoList/pc_tasks.png";
+import responsive_home from "../assets/todoList/responsive_home.png";
 
 // import UNIVERSE
-import pc_artist_album from "./assets/universe/pc_artist_album.png";
-import pc_home_2 from "./assets/universe/pc_home_2.png";
-import pc_home_light from "./assets/universe/pc_home_light.png";
-import pc_home from "./assets/universe/pc_home.png";
-import pc_radio from "./assets/universe/pc_radio.png";
-import pc_recommandation from "./assets/universe/pc_recommandation.png";
-import pc_search_album from "./assets/universe/pc_search_album.png";
-import pc_search_artist from "./assets/universe/pc_search_artist.png";
-import pc_search_title from "./assets/universe/pc_search_titre.png";
-import pc_search from "./assets/universe/pc_search.png";
-import pc_title from "./assets/universe/pc_titre.png";
-import mobile_universe from "./assets/universe/mobile.png";
+import mobile_universe from "../assets/universe/mobile.png";
+import pc_artist_album from "../assets/universe/pc_artist_album.png";
+import pc_home from "../assets/universe/pc_home.png";
+import pc_home_2 from "../assets/universe/pc_home_2.png";
+import pc_home_light from "../assets/universe/pc_home_light.png";
+import pc_radio from "../assets/universe/pc_radio.png";
+import pc_recommandation from "../assets/universe/pc_recommandation.png";
+import pc_search from "../assets/universe/pc_search.png";
+import pc_search_album from "../assets/universe/pc_search_album.png";
+import pc_search_artist from "../assets/universe/pc_search_artist.png";
+import pc_search_title from "../assets/universe/pc_search_titre.png";
+import pc_title from "../assets/universe/pc_titre.png";
 
 // import SERENITY
-import ser_add_doc_2 from "./assets/serenity/ser_add_doc_2.png";
-import ser_add_doc from "./assets/serenity/ser_add_doc.png";
-import ser_add_doctor from "./assets/serenity/ser_add_doctor.png";
-import ser_add_patient from "./assets/serenity/ser_add_patient.png";
-import ser_all_pro from "./assets/serenity/ser_all_pro.png";
-import ser_doc_patient from "./assets/serenity/ser_doc_patient.png";
-import ser_home_2 from "./assets/serenity/ser_home_2.png";
-import ser_home_doctor from "./assets/serenity/ser_home_doctor.png";
-import ser_home_patient from "./assets/serenity/ser_home_patient.png";
-import ser_home from "./assets/serenity/ser_home.png";
-import ser_intervention from "./assets/serenity/ser_intervention.png";
-import ser_list_doctor from "./assets/serenity/ser_list_doctor.png";
-import ser_list_pro from "./assets/serenity/ser_list_pro.png";
-import ser_pro from "./assets/serenity/ser_pro.png";
-import ser_profil_patient_patient from "./assets/serenity/ser_profil_patient_patient.png";
-import ser_profil_patient from "./assets/serenity/ser_profil_patient.png";
-import ser_relax_patient from "./assets/serenity/ser_relax_patient.png";
-import ser_todolist from "./assets/serenity/ser_todolist.png";
-import ser_profil_doc from "./assets/serenity/ser_profil_doc.png";
-import ser_change_password from "./assets/serenity/ser_change_pass.png";
+import ser_add_doc from "../assets/serenity/ser_add_doc.png";
+import ser_add_doc_2 from "../assets/serenity/ser_add_doc_2.png";
+import ser_add_doctor from "../assets/serenity/ser_add_doctor.png";
+import ser_add_patient from "../assets/serenity/ser_add_patient.png";
+import ser_all_pro from "../assets/serenity/ser_all_pro.png";
+import ser_change_password from "../assets/serenity/ser_change_pass.png";
+import ser_doc_patient from "../assets/serenity/ser_doc_patient.png";
+import ser_home from "../assets/serenity/ser_home.png";
+import ser_home_2 from "../assets/serenity/ser_home_2.png";
+import ser_home_doctor from "../assets/serenity/ser_home_doctor.png";
+import ser_home_patient from "../assets/serenity/ser_home_patient.png";
+import ser_intervention from "../assets/serenity/ser_intervention.png";
+import ser_list_doctor from "../assets/serenity/ser_list_doctor.png";
+import ser_list_pro from "../assets/serenity/ser_list_pro.png";
+import ser_pro from "../assets/serenity/ser_pro.png";
+import ser_profil_doc from "../assets/serenity/ser_profil_doc.png";
+import ser_profil_patient from "../assets/serenity/ser_profil_patient.png";
+import ser_profil_patient_patient from "../assets/serenity/ser_profil_patient_patient.png";
+import ser_relax_patient from "../assets/serenity/ser_relax_patient.png";
+import ser_todolist from "../assets/serenity/ser_todolist.png";
 
 // import R_Amazing
-import ram_add from "./assets/r_amazing/r_am_add.png";
-import ram_chat from "./assets/r_amazing/r_am_chat.png";
-import ram_chat_1 from "./assets/r_amazing/r_am_chat_1.png";
-import ram_chat_2 from "./assets/r_amazing/r_am_chat_2.png";
-import ram_connect from "./assets/r_amazing/r_am_connect.png";
-import ram_details from "./assets/r_amazing/r_am_details_mobile.png";
-import ram_faq from "./assets/r_amazing/r_am_faq.png";
-import ram_mobile from "./assets/r_amazing/r_am_mobile.png";
-import ram_newUser from "./assets/r_amazing/r_am_new_user.png";
-import ram_notValid from "./assets/r_amazing/r_am_not_valid.png";
-import ram_valid from "./assets/r_amazing/r_am_valid.png";
-import ram_search_marq from "./assets/r_amazing/r_am_search_marque.png";
-import ram_search_model from "./assets/r_amazing/r_am_search_model.png";
-import ram_search from "./assets/r_amazing/r_am_search.png";
+import ram_add from "../assets/r_amazing/r_am_add.png";
+import ram_chat from "../assets/r_amazing/r_am_chat.png";
+import ram_chat_1 from "../assets/r_amazing/r_am_chat_1.png";
+import ram_chat_2 from "../assets/r_amazing/r_am_chat_2.png";
+import ram_connect from "../assets/r_amazing/r_am_connect.png";
+import ram_details from "../assets/r_amazing/r_am_details_mobile.png";
+import ram_faq from "../assets/r_amazing/r_am_faq.png";
+import ram_mobile from "../assets/r_amazing/r_am_mobile.png";
+import ram_newUser from "../assets/r_amazing/r_am_new_user.png";
+import ram_notValid from "../assets/r_amazing/r_am_not_valid.png";
+import ram_search from "../assets/r_amazing/r_am_search.png";
+import ram_search_marq from "../assets/r_amazing/r_am_search_marque.png";
+import ram_search_model from "../assets/r_amazing/r_am_search_model.png";
+import ram_valid from "../assets/r_amazing/r_am_valid.png";
 
 // import Holitrip
-import holi_contact from "./assets/holitrip/holitrip_contact.png";
-import holi_home_2 from "./assets/holitrip/holitrip_home_2.png";
-import holi_home from "./assets/holitrip/holitrip_home.png";
-import holi_moonboard_2 from "./assets/holitrip/holitrip_moonboard_2.png";
-import holi_moonboard from "./assets/holitrip/holitrip_moonboard.png";
-import holi_radio from "./assets/holitrip/holitrip_radio.png";
-import holi_responsive from "./assets/holitrip/holitrip_responsive.png";
-import holi_roadtirp from "./assets/holitrip/holitrip_roadtrip.png";
-import holi_roadtirp_2 from "./assets/holitrip/holitrip_roadtrip_2.png";
-import holi_search_city_2 from "./assets/holitrip/holitrip_search_city_2.png";
-import holi_search_city from "./assets/holitrip/holitrip_search_city.png";
-import holi_search from "./assets/holitrip/holitrip_search.png";
+import holi_contact from "../assets/holitrip/holitrip_contact.png";
+import holi_home from "../assets/holitrip/holitrip_home.png";
+import holi_home_2 from "../assets/holitrip/holitrip_home_2.png";
+import holi_moonboard from "../assets/holitrip/holitrip_moonboard.png";
+import holi_moonboard_2 from "../assets/holitrip/holitrip_moonboard_2.png";
+import holi_radio from "../assets/holitrip/holitrip_radio.png";
+import holi_responsive from "../assets/holitrip/holitrip_responsive.png";
+import holi_roadtirp from "../assets/holitrip/holitrip_roadtrip.png";
+import holi_roadtirp_2 from "../assets/holitrip/holitrip_roadtrip_2.png";
+import holi_search from "../assets/holitrip/holitrip_search.png";
+import holi_search_city from "../assets/holitrip/holitrip_search_city.png";
+import holi_search_city_2 from "../assets/holitrip/holitrip_search_city_2.png";
 
-const projects = [
+const trainingProjects = [
   {
     id: 1,
+    type: "training",
     title: "TodoList",
     description:
       "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires en fournissant un moyen simple de gérer les listes de tâches.",
@@ -108,19 +97,12 @@ const projects = [
     technos: [
       {
         title: "javascript",
-        photo_url: javascriptPng,
       },
       {
         title: "css",
-        photo_url: cssPng,
       },
       {
-        title: "htmlPng",
-        photo_url: htmlPng,
-      },
-      {
-        title: "gitPng",
-        photo_url: gitPng,
+        title: "git",
       },
     ],
     github_url: "https://github.com/MarionbDev/Projet-1_TodoList",
@@ -147,6 +129,7 @@ const projects = [
   },
   {
     id: 2,
+    type: "training",
     title: "UNIVERSE",
     description:
       "Moteur de recherche musicale et radio en ligne. Le projet comprend une interface dynamique pour la recherche d'artistes, d'albums et de titres, ainsi qu'une liste de recommandations.",
@@ -172,24 +155,19 @@ const projects = [
     technos: [
       {
         title: "javascript",
-        photo_url: javascriptPng,
       },
       {
         title: "react",
-        photo_url: reactPng,
       },
       {
-        title: "tailwindPng",
-        photo_url: tailwindPng,
+        title: "tailwind",
       },
       {
-        title: "gitPng",
-        photo_url: gitPng,
+        title: "git",
       },
 
       {
-        title: "figmaPng",
-        photo_url: figmaPng,
+        title: "figma",
       },
     ],
     github_url: "https://github.com/MarionbDev/Pojet-2_UniVerse",
@@ -248,6 +226,7 @@ const projects = [
   },
   {
     id: 3,
+    type: "training",
     title: "HoliTrip",
     description:
       "Plateforme proposant divers itinéraires de road trips avec la possibilité de rechercher des centres d'intérêt par ville (monuments, parcs, jardins, etc.). Le projet a été développé lors d'un hackathon.",
@@ -269,19 +248,15 @@ const projects = [
     technos: [
       {
         title: "javascript",
-        photo_url: javascriptPng,
       },
       {
         title: "react",
-        photo_url: reactPng,
       },
       {
-        title: "tailwindPng",
-        photo_url: tailwindPng,
+        title: "tailwind",
       },
       {
-        title: "gitPng",
-        photo_url: gitPng,
+        title: "git",
       },
     ],
     github_url: "https://github.com/MarionbDev/Hackathon-HoliTrip",
@@ -341,6 +316,7 @@ const projects = [
   },
   {
     id: 4,
+    type: "training",
     title: "R-AMazing-Phone-Pricer, prototype pour Emmaüs Connect. ",
     description:
       "Outil de classification des smartphones selon différents critères. Le projet a été développé lors d'un hackathon",
@@ -370,35 +346,27 @@ const projects = [
     technos: [
       {
         title: "javascript",
-        photo_url: javascriptPng,
       },
       {
         title: "react",
-        photo_url: reactPng,
       },
       {
         title: "node",
-        photo_url: nodePng,
       },
       {
         title: "express",
-        photo_url: expressPng,
       },
       {
-        title: "mysql",
-        photo_url: mysqlPng,
+        title: "mySql",
       },
       {
-        title: "tailwindPng",
-        photo_url: tailwindPng,
+        title: "tailwind",
       },
       {
-        title: "gitPng",
-        photo_url: gitPng,
+        title: "git",
       },
       {
-        title: "figmaPng",
-        photo_url: figmaPng,
+        title: "figma",
       },
     ],
     github_url:
@@ -466,6 +434,7 @@ const projects = [
   },
   {
     id: 5,
+    type: "training",
     title: "SERENITY",
     description:
       "Application web accompagnant les patients dans leurs prises en charge à l’hôpital, avec un dashboard dédié aux praticiens. Les fonctionnalités incluent la gestion des utilisateurs, des interventions, des spécialités, ainsi que la possibilité d'ajouter des documents..",
@@ -495,31 +464,24 @@ const projects = [
     technos: [
       {
         title: "javascript",
-        photo_url: javascriptPng,
       },
       {
         title: "react",
-        photo_url: reactPng,
       },
       {
         title: "node",
-        photo_url: nodePng,
       },
       {
         title: "express",
-        photo_url: expressPng,
       },
       {
-        title: "mysql",
-        photo_url: mysqlPng,
+        title: "mySql",
       },
       {
-        title: "tailwindPng",
-        photo_url: tailwindPng,
+        title: "tailwind",
       },
       {
-        title: "gitPng",
-        photo_url: gitPng,
+        title: "git",
       },
     ],
     github_url: "https://github.com/MarionbDev/Projet-3_Serenity",
@@ -614,23 +576,4 @@ const projects = [
   },
 ];
 
-function compareProjectsById(a, b) {
-  const idA = parseInt(a.id);
-  const idB = parseInt(b.id);
-
-  if (idA < idB) {
-    return 1;
-  }
-  if (idA > idB) {
-    return -1;
-  }
-  return 0;
-}
-
-export default function TrainingProject() {
-  const sortedProjects = projects.slice().sort(compareProjectsById);
-
-  return sortedProjects.map((project) => (
-    <ProjectCard key={project.id} project={project} />
-  ));
-}
+export default trainingProjects;

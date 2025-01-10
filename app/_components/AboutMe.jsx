@@ -19,15 +19,17 @@ export default function AboutMe() {
     <div className="  ">
       <div className=" lg:h-[100vh] text-font pb-8   ">
         <div className="flex justify-around items-center h-full  ">
-          <div className="xl:w-[40rem] flex flex-col gap-4 font-roboto  dark:text-white">
-            <h1 className=" lg:text-[2.8rem] text-txt_black/90  dark:text-white">
-              Bonjour, je suis{" "}
-              <span className="  font-semibold text-purple ">Marion</span>
+          <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-4 dark:text-white">
+            <h1 className=" lg:text-[1.5rem]  dark:text-white">
+              Bonjour, je suis&nbsp;
+              <span className=" lg:text-[2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
+                Marion👋
+              </span>
             </h1>
-            <h2 className="text-[#8300E9] font-semibold slide-name-dev leading-none lg:text-[4rem]">
+            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none lg:text-[3.2rem]">
               Développeuse Web FullStack
             </h2>
-            <p className=" lg:text-[1.2rem] leading-7 ">
+            <p className=" lg:text-[24px] leading-7  ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
               nouveaux concepts et relever des défis techniques pour
               continuellement enrichir mes connaissances.
@@ -97,13 +99,13 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="border-2 border-[#ab6aff] rounded-full p-8 ">
             <Image
               src={myPhoto}
               alt="ma photo de profil"
               width={300}
               height={400}
-              className=" shadow-[#735c91] shadow-2xl  rounded-full  dark:brightness-75 dark:bg-dark_bg_profile bg-bg_profile bg-purple "
+              className="  bg-[#ecebef] rounded-full grayscale "
             />
           </div>
         </div>

@@ -1,31 +1,25 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { ChevronRight, ExternalLink } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { DialogStepProject } from "../DialogProject";
 
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className=" flex flex-col items-center sm:block   shadow-md rounded-xl border-none ">
+      <Card className="font-poppins  flex flex-col items-center sm:block  w-[36rem] shadow-md rounded-xl border-none ">
         <CardHeader className=" mb-2 sm:mb-0">
-          <CardTitle className="font-roboto text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
+          <CardTitle className="text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
             {project.title}
           </CardTitle>
-          <CardDescription className="font-lato text-base">
-            {project.description}
-          </CardDescription>
-          <div className="flex gap-3">
+
+          {/* <div className="flex gap-3">
             <Badge variant="secondary" className=" text-xs sm:text-[9px]">
               {project.time}
             </Badge>
@@ -34,56 +28,51 @@ export default function ProjectCard({ project }) {
                 {project.soloTeam}
               </Badge>
             ) : null}
-          </div>
+          </div> */}
         </CardHeader>
 
-        <CardContent className="flex flex-col-reverse   max-w-screen-xl md:justify-between">
-          <div className="flex flex-col items-center md:items-start">
+        <CardContent className="flex flex-col  max-w-screen-xl">
+          {/* <div className="flex flex-col items-center md:items-start">
             <ul
               aria-label="liste des technologies utilisées"
               className=" dark:bg-purple/20  py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
             >
               {project.technos &&
                 project.technos.map((techno) => (
-                  <li key={techno.title}>
-                    <Image
-                      key={techno.title}
-                      width="24"
-                      height="24"
-                      src={techno.photo_url}
-                      title={techno.title}
-                      alt={`Image de la techno utilisée - ${techno.title}`}
-                      className="w-5 sm:w-6"
-                    />
+                  <li
+                    key={techno.title}
+                    className="border-2 rounded-3xl py-1 px-3 text-xs sm:text-[9px]"
+                  >
+                    {techno.title}
                   </li>
                 ))}
             </ul>
-          </div>{" "}
+          </div>{" "} */}
           {project.picture_website ? (
-            <div>
-              <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3  sm:w-full sm:h-[18rem] md:h-[27rem] rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 sm:mb-5">
-                <ul className=" h-[11rem] sm:h-[17rem] md:h-[24rem] flex w-max m-1 md:m-2 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
+            <div className=" mx-auto">
+              <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3  sm:w-[31rem] sm:h-[8rem] md:h-[18rem]  rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 sm:mb-5">
+                <ul className=" h-[11rem] sm:h-[17rem] md:h-[16.5rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
                   {project.picture_website
                     ? project.picture_website.map((picture) => (
                         <li
                           key={picture.title}
-                          className=" flex flex-col items-start justify-center md:px-4 border border-purple/60 px-2  overflow-y-hidden"
+                          className=" flex flex-col items-start justify-center"
                         >
-                          <figure className="shrink-0 ">
-                            <div className=" flex justify-start rounded-md  ">
+                          <figure className="shrink-0 w-[27rem] ">
+                            <div className=" flex justify-start rounded-md ">
                               <Image
                                 src={picture.image}
                                 alt={`Photo du projet - ${picture.image}`}
-                                className="w-[16rem] sm:w-[26rem] md:w-[30rem] lg:w-[40rem]   "
-                                width={500}
-                                height={600}
+                                className="   "
+                                width={900}
+                                height={400}
                               />
                             </div>
-                            <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-[16rem] sm:w-[40rem]">
+                            {/* <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-[16rem] sm:w-[40rem]">
                               <span className="font-semibold">
                                 {picture.title}
                               </span>
-                            </figcaption>
+                            </figcaption> */}
                           </figure>
                         </li>
                       ))
@@ -101,9 +90,15 @@ export default function ProjectCard({ project }) {
               </div>
             </div>
           ) : null}{" "}
+          <CardDescription className=" text-[1rem] ">
+            {project.description}
+          </CardDescription>
         </CardContent>
+        <Link href={`/portfolio/${project.type}/${project.id}`}>
+          {/* <CircleArrowOutUpRight /> */}
+        </Link>
 
-        <CardFooter className="flex justify-center flex-wrap gap-3 sm:justify-end sm:gap-6 ">
+        {/* <CardFooter className="flex justify-center flex-wrap gap-3 sm:justify-end sm:gap-6 ">
           <DialogStepProject project={project} />
           <div className="flex justify-center flex-wrap  md:justify-end  gap-2">
             {project.video_url ? (
@@ -152,7 +147,7 @@ export default function ProjectCard({ project }) {
               </Button>
             ) : null}{" "}
           </div>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
     </>
   );
