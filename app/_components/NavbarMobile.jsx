@@ -1,3 +1,6 @@
+import { Menu } from "lucide-react";
+import { useRouter } from "next-nprogress-bar";
+import Link from "next/link";
 import {
   Menubar,
   MenubarContent,
@@ -5,28 +8,17 @@ import {
   MenubarMenu,
   MenubarSeparator,
   MenubarTrigger,
-} from "@/components/ui/menubar";
-import {
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-} from "@radix-ui/react-menubar";
-import { ChevronRight, Menu } from "lucide-react";
-import { useRouter } from "next-nprogress-bar";
-import Image from "next/image";
-import Link from "next/link";
-import gmailLogo from "../../public/images/gmail.svg";
+} from "../../components/ui/menubar";
 // import linkedinColor from "../../public/images/linkedinColor.svg";
 // import githubb from "../../public/logos/github.png";
-import Email from "./Email";
 import { ModeToggle } from "./ModeToggle";
 
 export default function NavbarMobile(emailAddress) {
   const router = useRouter();
 
-  const handleButtonClick = () => {
-    router.push("/login");
-  };
+  // const handleButtonClick = () => {
+  //   router.push("/login");
+  // };
 
   return (
     <div className=" flex navSupp justify-center ">
@@ -56,45 +48,6 @@ export default function NavbarMobile(emailAddress) {
                 <MenubarItem className="text-sm ">Mes services</MenubarItem>
               </Link>
               <MenubarSeparator className="  bg-purple" />
-              <MenubarSub>
-                <MenubarSubTrigger className="flex text-sm items-center ">
-                  <ChevronRight className="  w-5 rotate-180" /> Contact
-                </MenubarSubTrigger>
-                <MenubarSubContent
-                  sideOffset={1}
-                  className=" bg-white dark:bg-[#39294f] w-32    shadow-[#3f2f5565] shadow-md  "
-                >
-                  <MenubarItem
-                    aria-label="Lien vers mon adresse Gmail"
-                    className="flex gap-2 italic text-sm"
-                  >
-                    <Email
-                      emailAddress={emailAddress}
-                      logo={
-                        <Image
-                          src={gmailLogo}
-                          alt="logo Gmail"
-                          width={30}
-                          height={30}
-                        />
-                      }
-                    />
-                    Gmail
-                  </MenubarItem>
-                </MenubarSubContent>
-              </MenubarSub>
-              {/* <MenubarSeparator className="  bg-purple" />
-              <MenubarItem className="text-sm  px-0 ">
-                <button
-                  onClick={handleButtonClick}
-                  role="button"
-                  aria-label="Se connecter"
-                  className=" italic flex gap-2 "
-                >
-                  <LogIn size="18" className="hover:scale-125 duration-300 " />
-                  Se connecter
-                </button>
-              </MenubarItem> */}
             </MenubarContent>
           </MenubarMenu>
         </Menubar>

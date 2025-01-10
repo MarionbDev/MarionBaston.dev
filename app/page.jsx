@@ -9,6 +9,7 @@ import Navbar from "./_components/Navbar";
 import NavbarMobile from "./_components/NavbarMobile";
 import ProjectPage from "./_components/Projects/ProjectPage";
 import Skills from "./_components/Skills";
+import ContactPage from "./_components/contactForm/ContactPage";
 
 export default function Home() {
   // const { isVisible } = useScroll();
@@ -38,24 +39,18 @@ export default function Home() {
           <AboutMe />
         </div>
       </div>{" "}
-      <div
-        id="projects"
-        className=" flex flex-col items-center justify-center pt-6 md:pt-16 md:pb-20 px-6"
-      >
+      <div id="projects" className=" px-28 pb-[6rem] pt-20">
         <ProjectPage />
       </div>
-      <div
-        id="skills"
-        className="dark:bg-dark_black  pt-16 md:pb-[4rem] px-6  "
-      >
+      <div id="skills" className="px-28 pb-[6rem] pt-20 ">
         <Skills />
       </div>
-      <div
-        id="myservices"
-        className="dark:bg-dark_black  px-6  pt-16 pb-10 md:pb-[6rem]"
-      >
+      <div id="myservices" className="px-28 pb-[6rem] mt-16 pt-20">
         <MyServices />
-      </div>{" "}
+      </div>
+      <div id="contactPage" className=" pb-20">
+        <ContactPage />
+      </div>
       <Footer />
     </div>
   );

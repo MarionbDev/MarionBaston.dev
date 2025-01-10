@@ -1,53 +1,14 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, CircleArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className="font-poppins  flex flex-col items-center sm:block  w-[36rem] shadow-md rounded-xl border-none ">
-        <CardHeader className=" mb-2 sm:mb-0">
-          <CardTitle className="text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
-            {project.title}
-          </CardTitle>
-
-          {/* <div className="flex gap-3">
-            <Badge variant="secondary" className=" text-xs sm:text-[9px]">
-              {project.time}
-            </Badge>
-            {project.soloTeam ? (
-              <Badge variant="secondary" className="text-xs sm:text-[9px]">
-                {project.soloTeam}
-              </Badge>
-            ) : null}
-          </div> */}
-        </CardHeader>
-
-        <CardContent className="flex flex-col  max-w-screen-xl">
-          {/* <div className="flex flex-col items-center md:items-start">
-            <ul
-              aria-label="liste des technologies utilisées"
-              className=" dark:bg-purple/20  py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
-            >
-              {project.technos &&
-                project.technos.map((techno) => (
-                  <li
-                    key={techno.title}
-                    className="border-2 rounded-3xl py-1 px-3 text-xs sm:text-[9px]"
-                  >
-                    {techno.title}
-                  </li>
-                ))}
-            </ul>
-          </div>{" "} */}
+      <Card className="font-poppins flex flex-col items-center sm:block  w-[36rem] border-none shadow-none ">
+        <CardHeader>
           {project.picture_website ? (
             <div className=" mx-auto">
               <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3  sm:w-[31rem] sm:h-[8rem] md:h-[18rem]  rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 sm:mb-5">
@@ -90,14 +51,43 @@ export default function ProjectCard({ project }) {
               </div>
             </div>
           ) : null}{" "}
-          <CardDescription className=" text-[1rem] ">
-            {project.description}
-          </CardDescription>
-        </CardContent>
-        <Link href={`/portfolio/${project.type}/${project.id}`}>
-          {/* <CircleArrowOutUpRight /> */}
-        </Link>
+          <CardTitle className="flex items-center gap-4 text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
+            {project.title}
+            <Link href={`/portfolio/${project.type}/${project.id}`}>
+              <CircleArrowOutUpRight size={18} />
+            </Link>
+          </CardTitle>
+          {/* <div className="flex gap-3">
+            <Badge variant="secondary" className=" text-xs sm:text-[9px]">
+              {project.time}
+            </Badge>
+            {project.soloTeam ? (
+              <Badge variant="secondary" className="text-xs sm:text-[9px]">
+                {project.soloTeam}
+              </Badge>
+            ) : null}
+          </div> */}
+        </CardHeader>
+        <CardContent className="flex flex-col-reverse max-w-screen-xl  text-[1rem]">
+          {/* <div className="flex flex-col items-center md:items-start">
+            <ul
+              aria-label="liste des technologies utilisées"
+              className=" dark:bg-purple/20  py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
+            >
+              {project.technos &&
+                project.technos.map((techno) => (
+                  <li
+                    key={techno.title}
+                    className="border-2 rounded-3xl py-1 px-3 text-xs sm:text-[9px]"
+                  >
+                    {techno.title}
+                  </li>
+                ))}
+            </ul>
+          </div>{" "} */}
 
+          {project.description}
+        </CardContent>
         {/* <CardFooter className="flex justify-center flex-wrap gap-3 sm:justify-end sm:gap-6 ">
           <DialogStepProject project={project} />
           <div className="flex justify-center flex-wrap  md:justify-end  gap-2">

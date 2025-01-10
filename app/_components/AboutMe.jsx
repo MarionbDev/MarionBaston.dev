@@ -1,13 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import Github from "@/public/images/github-about.svg";
-import Linkedin from "@/public/images/linkedin-about.svg";
+// import { Button } from "@/components/ui/button";
 import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../../components/ui/button";
+import Github from "../../public/images/github-about.svg";
+import Linkedin from "../../public/images/linkedin-about.svg";
 import myPhoto from "../../public/images/photo1.png";
-import Email from "./Email";
 
 export default function AboutMe() {
   const downloadCV = () => {
@@ -36,18 +36,18 @@ export default function AboutMe() {
             </p>
             <div className="lg:mt-8  md:gap-8 ">
               <div className=" flex items-center gap-4">
-                <Button
-                  role="button"
+                <Link
+                  href={"/#contactPage"}
                   aria-label="M'envoyer un email"
-                  className=" bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff]  p-2 gap-2 px-4 "
+                  className="flex items-center bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 gap-1 px-4 "
                 >
                   <MessagesSquare
                     size="16"
                     id="contact-me header"
                     className="mr-2"
-                  />
-                  <Email text="Contactez-moi" />
-                </Button>
+                  />{" "}
+                  Contactez-moi
+                </Link>
 
                 <Button
                   onChild

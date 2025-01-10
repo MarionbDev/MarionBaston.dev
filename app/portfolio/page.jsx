@@ -7,15 +7,15 @@ export default function Portfolio() {
 
   return (
     <div>
-      <div className="sm:w-10/12  ">
+      <div className="sm:w-10/12 ">
         <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12 ">
           <div className=" flex items-end gap-1 h-16 ">
-            <h2 className="font-poppins text-2xl pb-1 font-semibold md:text-[4rem] ">
+            <h2 className="font-poppins text-txt_black  text-2xl pb-1 font-semibold md:text-[4rem] ">
               Portfolio
             </h2>
             <span className=" w-4 h-4 rounded-full bg-purple"></span>
           </div>
-          <p className="font-lato pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-lg ">
+          <p className="text-txt_black  pt-0 px-8 sm:px-0 md:pt-4 text-sm sm:text-lg ">
             Découvrez la diversité de mes expériences en développement web !
           </p>
         </div>
