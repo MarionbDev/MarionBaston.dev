@@ -17,7 +17,7 @@ export default function Skills() {
       </div>
       <div className="flex flex-col items-center mt-2 ">
         <div className="flex flex-col  items-stretch   md:flex-row  md:flex-wrap justify-center  lg:flex-nowrap lg:flex-row gap-6 lg:gap-8 xl:justify-around  ">
-          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none  w-[18rem]  px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 flex flex-col ">
+          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none  w-[18rem]  px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 flex flex-col ">
             <div className="flex flex-col items-center  gap-4 ">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">FRONTEND</h2>
@@ -39,7 +39,7 @@ export default function Skills() {
               <li>API REST</li>
             </ul>
           </div>
-          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72   px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none w-72   px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
             <div className="flex flex-col items-center  gap-4">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">BACKEND</h2>
@@ -61,7 +61,7 @@ export default function Skills() {
             </ul>
           </div>
 
-          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none w-72 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
@@ -82,7 +82,7 @@ export default function Skills() {
               <li>VERCEL</li>
             </ul>
           </div>
-          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+          <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none w-72 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { createSlug } from "@/utils/slug";
 import { ChevronRight, CircleArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,7 @@ export default function ProjectCard({ project }) {
         <CardHeader>
           {project.picture_website ? (
             <div className=" mx-auto">
-              <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3  sm:w-[31rem] sm:h-[8rem] md:h-[18rem]  rounded-lg md:rounded-t-xl border-purple/10 border-2   dark:bg-purple/10 sm:mb-5">
+              <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3  sm:w-[31rem] sm:h-[8rem] md:h-[18rem]  rounded-lg md:rounded-t-xl  shadow-sm shadow-purple/40  dark:bg-purple/10 sm:mb-5">
                 <ul className=" h-[11rem] sm:h-[17rem] md:h-[16.5rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
                   {project.picture_website
                     ? project.picture_website.map((picture) => (
@@ -53,7 +54,7 @@ export default function ProjectCard({ project }) {
           ) : null}{" "}
           <CardTitle className="flex items-center gap-4 text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
             {project.title}
-            <Link href={`/portfolio/${project.type}/${project.id}`}>
+            <Link href={`/portfolio/${createSlug(project.title)}`}>
               <CircleArrowOutUpRight size={18} />
             </Link>
           </CardTitle>

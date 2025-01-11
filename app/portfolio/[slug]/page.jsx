@@ -1,16 +1,21 @@
-// /app/portfolio/[type]/[id]/page.jsx
-
 import sideProjects from "@/app/_components/Projects/allProjects/SideProject";
 import trainingProjects from "@/app/_components/Projects/allProjects/TrainingProject";
+import { createSlug } from "@/utils/slug";
+
+export async function generateStaticParams() {
+  const allProjects = [...sideProjects, ...trainingProjects];
+
+  return allProjects.map((project) => ({
+    slug: createSlug(project.title),
+  }));
+}
 
 export default function ProjectPage({ params }) {
-  const { type, id } = params;
+  const { slug } = params;
 
-  // Récupérer le projet en fonction du type et de l'id
+  // Récupérer tous les projets
   const allProjects = [...sideProjects, ...trainingProjects];
-  const project = allProjects.find(
-    (proj) => proj.type === type && proj.id === parseInt(id)
-  );
+  const project = allProjects.find((proj) => createSlug(proj.title) === slug);
 
   if (!project) {
     return <div>Projet introuvable.</div>;

@@ -17,7 +17,7 @@ export default function MyServices() {
       </p>
       <div className="flex flex-col items-center ">
         <div className="font-poppins flex flex-col md:flex-row gap-28">
-          <div className="dark:bg-purple/10 dark:shadow-purple/50 border-2 border-purple/30  rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
+          <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
             <h2 className=" text-purple font-semibold text-base lg:text-lg text-center">
               DEVELOPPEMENT WEB FRONTEND
             </h2>
@@ -42,7 +42,7 @@ export default function MyServices() {
               </ul>
             </div>
           </div>
-          <div className="font-poppins  dark:bg-purple/10 dark:shadow-purple/50 border-2 border-purple/30 rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
+          <div className="font-poppins  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
             <h2 className=" text-purple font-semibold text-base  lg:text-lg text-center">
               DEVELOPPEMENT WEB BACKEND
             </h2>

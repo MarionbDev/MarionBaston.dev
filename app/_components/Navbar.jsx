@@ -11,11 +11,11 @@ export default function Navbar() {
         <ul className="font-lato flex gap-8 items-center font-medium  ">
           <li className="">
             <Link
-              href="#aboutme"
+              href="#home"
               aria-label="En savoir plus sur moi"
               className="nav-link"
             >
-              Qui suis-je ?<span className="underline"></span>
+              Home<span className="underline"></span>
             </Link>
           </li>
           <li className="">

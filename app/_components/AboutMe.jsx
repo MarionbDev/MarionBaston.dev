@@ -1,6 +1,7 @@
 "use client";
 
 // import { Button } from "@/components/ui/button";
+import splash from "@/public/images/splash.jpg";
 import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,17 +20,17 @@ export default function AboutMe() {
     <div className="  ">
       <div className=" lg:h-[100vh] text-font pb-8   ">
         <div className="flex justify-around items-center h-full  ">
-          <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-4 dark:text-white">
+          <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
             <h1 className=" lg:text-[1.5rem]  dark:text-white">
               Bonjour, je suis&nbsp;
-              <span className=" lg:text-[2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
+              <span className=" lg:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
                 Marion👋
               </span>
             </h1>
-            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none lg:text-[3.2rem]">
+            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none lg:text-[3.2rem] mb-2">
               Développeuse Web FullStack
             </h2>
-            <p className=" lg:text-[24px] leading-7  ">
+            <p className=" text-[1.5rem] leading-7   ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
               nouveaux concepts et relever des défis techniques pour
               continuellement enrichir mes connaissances.
@@ -99,14 +100,19 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="border-2 border-[#ab6aff] rounded-full p-8 ">
-            <Image
-              src={myPhoto}
-              alt="ma photo de profil"
-              width={300}
-              height={400}
-              className="  bg-[#ecebef] rounded-full grayscale "
-            />
+          <div className="flex justify-center items-center -rotate-6 bottom-6 relative">
+            <div className="border-2 p-[0.4rem] rotate-12 border-[#ab6aff] absolute top-[5rem]">
+              <div className=" border-2 border-[#ab6aff]  rotate-12">
+                <Image
+                  src={myPhoto}
+                  alt="ma photo de profil"
+                  width={900}
+                  height={400}
+                  className=" w-[21rem] rounded-b-xl grayscale -rotate-12 relative bottom-4 "
+                />
+              </div>
+            </div>
+            <Image src={splash} width={400} className="mt-14 " />
           </div>
         </div>
       </div>

@@ -88,7 +88,7 @@ export default function ContactForm() {
 
   return (
     <div className=" text-txt_black  ">
-      <Card className=" max-w-lg  border-purple/30 tracking-wide ">
+      <Card className=" max-w-lg  shadow-purple/40 shadow-sm border-none tracking-wide ">
         <form onSubmit={handleSubmitFormContact}>
           <CardHeader>
             <CardDescription className=" text-[0.9rem] font-medium ">
@@ -114,7 +114,7 @@ export default function ContactForm() {
                   onChange={(e) =>
                     setLatsName(capitalizeFirstLetter(e.target.value))
                   }
-                  className="custom-placeholder"
+                  className="custom-placeholder border-purple/40"
                 />
               </div>
               <div className="space-y-2">
@@ -132,7 +132,7 @@ export default function ContactForm() {
                   onChange={(e) =>
                     setFirstname(capitalizeFirstLetter(e.target.value))
                   }
-                  className="custom-placeholder"
+                  className="custom-placeholder border-purple/40"
                 />
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function ContactForm() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="custom-placeholder"
+                  className="custom-placeholder border-purple/40"
                 />
               </div>
               <div className="space-y-2">
@@ -168,7 +168,7 @@ export default function ContactForm() {
                   pattern="([0-9]{2}[\s]?)?[0-9]{2}[\s]?[0-9]{2}[\s]?[0-9]{2}[\s]?[0-9]{2}"
                   value={phone}
                   onChange={(e) => setPhone(formatPhoneNumber(e.target.value))}
-                  className="custom-placeholder"
+                  className="custom-placeholder border-purple/40"
                 />
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function ContactForm() {
               <Textarea
                 id="message"
                 placeholder="Votre message"
-                className="custom-placeholder min-h-[120px] "
+                className="custom-placeholder border-purple/40 min-h-[120px] "
                 required
                 value={message}
                 onChange={(e) =>

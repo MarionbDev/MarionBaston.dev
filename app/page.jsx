@@ -34,10 +34,8 @@ export default function Home() {
       <div>
         <NavbarMobile className="navbar-mobile" />
       </div>
-      <div id="aboutme" className=" md:pb-4    ">
-        <div id="aboutme" className="md:pb-8 mx-2 ">
-          <AboutMe />
-        </div>
+      <div id="home" className=" mx-2 ">
+        <AboutMe />
       </div>{" "}
       <div id="projects" className=" px-28 pb-[6rem] pt-20">
         <ProjectPage />
