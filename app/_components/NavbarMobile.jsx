@@ -1,5 +1,4 @@
 import { Menu } from "lucide-react";
-import { useRouter } from "next-nprogress-bar";
 import Link from "next/link";
 import {
   Menubar,
@@ -13,13 +12,7 @@ import {
 // import githubb from "../../public/logos/github.png";
 import { ModeToggle } from "./ModeToggle";
 
-export default function NavbarMobile(emailAddress) {
-  const router = useRouter();
-
-  // const handleButtonClick = () => {
-  //   router.push("/login");
-  // };
-
+export default function NavbarMobile() {
   return (
     <div className=" flex navSupp justify-center ">
       <div className=" flex justify-between w-5/6 rounded-full px-1 mt-9 fixed z-50 bg-purple/40   ">

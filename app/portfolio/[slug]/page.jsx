@@ -1,9 +1,14 @@
+import professionalProjects from "@/app/_components/Projects/allProjects/ProfessionalProject";
 import sideProjects from "@/app/_components/Projects/allProjects/SideProject";
 import trainingProjects from "@/app/_components/Projects/allProjects/TrainingProject";
 import { createSlug } from "@/utils/slug";
 
 export async function generateStaticParams() {
-  const allProjects = [...sideProjects, ...trainingProjects];
+  const allProjects = [
+    ...sideProjects,
+    ...trainingProjects,
+    ...professionalProjects,
+  ];
 
   return allProjects.map((project) => ({
     slug: createSlug(project.title),
@@ -14,7 +19,11 @@ export default function ProjectPage({ params }) {
   const { slug } = params;
 
   // Récupérer tous les projets
-  const allProjects = [...sideProjects, ...trainingProjects];
+  const allProjects = [
+    ...sideProjects,
+    ...trainingProjects,
+    ...professionalProjects,
+  ];
   const project = allProjects.find((proj) => createSlug(proj.title) === slug);
 
   if (!project) {

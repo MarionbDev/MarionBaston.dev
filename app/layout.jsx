@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { Suspense } from "react";
 import Providers from "./_components/Providers";
 // import { ScrollProvider } from "./_components/ScrollContext";
+import Navbar from "./_components/Navbar";
+import NavbarMobile from "./_components/NavbarMobile";
 import { ThemeProvider } from "./_components/ThemeProvider";
 import "./globals.css";
 
@@ -45,7 +47,16 @@ export default function RootLayout({ children }) {
           <Suspense fallback={<></>}>
             {/* <ScrollProvider> */}
 
-            <Providers>{children}</Providers>
+            <Providers>
+              {" "}
+              <div className="flex  ">
+                <Navbar className="navbar" />
+              </div>
+              <div>
+                <NavbarMobile className="navbar-mobile" />
+              </div>
+              {children}
+            </Providers>
             {/* </ScrollProvider> */}
           </Suspense>
         </ThemeProvider>

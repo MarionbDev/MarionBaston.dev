@@ -1,20 +1,23 @@
-import Link from "next/link";
-import Footer from "./../_components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import Footer from "./../_components/Footer";
 
 export default function LegalNoticePage() {
   return (
     <>
-      <>
-        <div className="container mx-auto py-8 flex flex-col gap-8 mb-8">
-          <h1 className="text-4xl font-bold">Mentions légales</h1>
-          <Button className="gap-2 w-fit" variant="outline" asChild>
-            <Link href="/">
-              <ArrowLeft size="16" />
-              Retour au site
-            </Link>
-          </Button>
+      <div className="container font-poppins text-txt_black mx-auto py-8 flex flex-col gap-8 mb-8">
+        <h1 className="text-4xl font-bold">Mentions légales</h1>
+        <Button
+          className="gap-2 w-fit shadow-purple/60 shadow-sm hover:bg-purple hover:text-white"
+          asChild
+        >
+          <Link href="/">
+            <ArrowLeft size="16" />
+            Retour au site
+          </Link>
+        </Button>
+        <div className=" max-w-[900px] flex flex-col gap-14 mx-auto">
           <div>
             <h2 className="text-3xl font-semibold mb-4">1 - Édition du site</h2>
             <p>
@@ -71,7 +74,7 @@ export default function LegalNoticePage() {
               </Link>
               .
             </p>
-            <div className="p-4 rounded-md flex flex-col gap-3 bg-slate-100 max-w-[700px] text-justify">
+            <div className=" rounded-md flex flex-col gap-3 bg-slate-100  ">
               <p>
                 La permission est accordée, gratuitement, à toute personne
                 obtenant une copie de ce logiciel et des fichiers de
@@ -113,7 +116,7 @@ export default function LegalNoticePage() {
                 directs et indirects causés au matériel de l&apos;utilisateur,
                 lors de l&apos;accès au site&nbsp;
               </span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               .
@@ -124,7 +127,7 @@ export default function LegalNoticePage() {
                 l&apos;utilisation qui pourrait être faite des informations et
                 contenus présents sur&nbsp;
               </span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               .
@@ -133,7 +136,7 @@ export default function LegalNoticePage() {
               <span className="mr-1">
                 Marion Baston s&apos;engage à sécuriser au mieux le site&nbsp;
               </span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               <span>
@@ -164,7 +167,7 @@ export default function LegalNoticePage() {
             </h2>
             <p>
               <span className="mr-1">À ce jour, le site&nbsp;</span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               <span>&nbsp;ne prélève aucune donnée de ses utilisateurs.</span>
@@ -182,7 +185,7 @@ export default function LegalNoticePage() {
             </h2>
             <p>
               <span className="mr-1">Le site</span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               <span>
@@ -190,14 +193,14 @@ export default function LegalNoticePage() {
                 dégage toute responsabilité à propos de ces liens externes ou
                 des liens créés par d&apos;autres sites vers&nbsp;
               </span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               .
             </p>
             <p>
               <span className="mr-1">La navigation sur le site</span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               <span>
@@ -231,7 +234,7 @@ export default function LegalNoticePage() {
               <span className="mr-1">
                 Tout litige en relation avec l&apos;utilisation du site
               </span>
-              <Link href="https://marionbaston.fr ">
+              <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
               <span>
@@ -242,8 +245,8 @@ export default function LegalNoticePage() {
             </p>
           </div>
         </div>
-        <Footer />
-      </>
+      </div>
+      <Footer />
     </>
   );
 }

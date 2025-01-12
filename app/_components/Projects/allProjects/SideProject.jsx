@@ -36,6 +36,7 @@ const sideProjects = [
   {
     id: 1,
     type: "side",
+    date: "2023-06-01",
     title: "Drawing And Co",
     time: "1 mois, évolutif",
     description:
@@ -176,8 +177,9 @@ const sideProjects = [
   {
     id: 2,
     type: "side",
+    date: "2023-10-01",
     title: "Marion Baston",
-    description: "Mon portfolio",
+    description: "",
     time: "3 semaines, évolutif",
     soloTeam: null,
     project_steps: [

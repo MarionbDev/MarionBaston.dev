@@ -1,8 +1,4 @@
 //import TodoList
-import pc_form from "../assets/todoList/pc_form.png";
-import pc_home_todo from "../assets/todoList/pc_home.png";
-import pc_tasks from "../assets/todoList/pc_tasks.png";
-import responsive_home from "../assets/todoList/responsive_home.png";
 
 // import UNIVERSE
 import mobile_universe from "../assets/universe/mobile.png";
@@ -71,65 +67,66 @@ import holi_search_city from "../assets/holitrip/holitrip_search_city.png";
 import holi_search_city_2 from "../assets/holitrip/holitrip_search_city_2.png";
 
 const trainingProjects = [
-  {
-    id: 1,
-    type: "training",
-    title: "TodoList",
-    description:
-      "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires en fournissant un moyen simple de gérer les listes de tâches.",
-    time: "3 semaines",
-    soloTeam: "En groupe",
-    project_steps: [
-      {
-        step_description: "Conception et maquettage de l'application web",
-      },
-      {
-        step_description: "Creation d'un timer d'échéance personnalisé",
-      },
-      {
-        step_description:
-          "Déplacement des tâches en fonction de leur avancement",
-      },
-      {
-        step_description: "Possibilité de supprimer des tâches à tout moment",
-      },
-    ],
-    technos: [
-      {
-        title: "javascript",
-      },
-      {
-        title: "css",
-      },
-      {
-        title: "git",
-      },
-    ],
-    github_url: "https://github.com/MarionbDev/Projet-1_TodoList",
-    website_url: "https://marionbdev.github.io/Projet-1_TodoList/",
-    video_url: "https://www.youtube.com/embed/Csi9pC6GqOk?si=FUWK4xFy9GHKDrQL",
-    picture_website: [
-      {
-        title: "Interface principale",
-        image: pc_home_todo,
-      },
-      {
-        title: "Formulaire d'enregistrement des tâches",
-        image: pc_form,
-      },
-      {
-        title: "Interface avec toutes les tâches enregistrées",
-        image: pc_tasks,
-      },
-      {
-        title: "Interface mobile et tablette",
-        image: responsive_home,
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   type: "training",
+  //   title: "TodoList",
+  //   description:
+  //     "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires en fournissant un moyen simple de gérer les listes de tâches.",
+  //   time: "3 semaines",
+  //   soloTeam: "En groupe",
+  //   project_steps: [
+  //     {
+  //       step_description: "Conception et maquettage de l'application web",
+  //     },
+  //     {
+  //       step_description: "Creation d'un timer d'échéance personnalisé",
+  //     },
+  //     {
+  //       step_description:
+  //         "Déplacement des tâches en fonction de leur avancement",
+  //     },
+  //     {
+  //       step_description: "Possibilité de supprimer des tâches à tout moment",
+  //     },
+  //   ],
+  //   technos: [
+  //     {
+  //       title: "javascript",
+  //     },
+  //     {
+  //       title: "css",
+  //     },
+  //     {
+  //       title: "git",
+  //     },
+  //   ],
+  //   github_url: "https://github.com/MarionbDev/Projet-1_TodoList",
+  //   website_url: "https://marionbdev.github.io/Projet-1_TodoList/",
+  //   video_url: "https://www.youtube.com/embed/Csi9pC6GqOk?si=FUWK4xFy9GHKDrQL",
+  //   picture_website: [
+  //     {
+  //       title: "Interface principale",
+  //       image: pc_home_todo,
+  //     },
+  //     {
+  //       title: "Formulaire d'enregistrement des tâches",
+  //       image: pc_form,
+  //     },
+  //     {
+  //       title: "Interface avec toutes les tâches enregistrées",
+  //       image: pc_tasks,
+  //     },
+  //     {
+  //       title: "Interface mobile et tablette",
+  //       image: responsive_home,
+  //     },
+  //   ],
+  // },
   {
     id: 2,
     type: "training",
+    date: "2023-03-01",
     title: "UNIVERSE",
     description:
       "Moteur de recherche musicale et radio en ligne. Le projet comprend une interface dynamique pour la recherche d'artistes, d'albums et de titres, ainsi qu'une liste de recommandations.",
@@ -227,6 +224,7 @@ const trainingProjects = [
   {
     id: 3,
     type: "training",
+    date: "2023-04-01",
     title: "HoliTrip",
     description:
       "Plateforme proposant divers itinéraires de road trips avec la possibilité de rechercher des centres d'intérêt par ville (monuments, parcs, jardins, etc.). Le projet a été développé lors d'un hackathon.",
@@ -317,6 +315,7 @@ const trainingProjects = [
   {
     id: 4,
     type: "training",
+    date: "2023-05-01",
     title: "R-AMazing-Phone-Pricer, prototype pour Emmaüs Connect. ",
     description:
       "Outil de classification des smartphones selon différents critères. Le projet a été développé lors d'un hackathon",
@@ -435,6 +434,7 @@ const trainingProjects = [
   {
     id: 5,
     type: "training",
+    date: "2023/05/01",
     title: "SERENITY",
     description:
       "Application web accompagnant les patients dans leurs prises en charge à l’hôpital, avec un dashboard dédié aux praticiens. Les fonctionnalités incluent la gestion des utilisateurs, des interventions, des spécialités, ainsi que la possibilité d'ajouter des documents..",

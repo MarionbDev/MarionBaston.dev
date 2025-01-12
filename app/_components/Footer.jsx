@@ -80,7 +80,7 @@ export default function Footer() {
                   id="marion-baston"
                   className=" font-poppins tracking-wide font-semibold "
                 >
-                  Marion Baston &nbsp;
+                  Marion Baston. Développeuse Web FullStack
                 </p>
               </div>
             </Link>

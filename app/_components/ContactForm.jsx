@@ -19,7 +19,6 @@ export default function ContactForm() {
   const [lastname, setLatsName] = useState("");
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -36,7 +35,7 @@ export default function ContactForm() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ lastname, firstname, email, phone, message }),
+          body: JSON.stringify({ lastname, firstname, email, message }),
         }
       );
       // console.log("Received response :", response);
@@ -66,7 +65,6 @@ export default function ContactForm() {
         setLatsName("");
         setFirstname("");
         setEmail("");
-        setPhone("");
         setMessage("");
       } else {
         toast.error("Une erreur s'est produite ! Veuillez réessayer !");
@@ -80,10 +78,6 @@ export default function ContactForm() {
 
   const capitalizeFirstLetter = (value) => {
     return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
-  };
-
-  const formatPhoneNumber = (phone) => {
-    return phone.replace(/(\d{2})(?=\d)/g, "$1 ");
   };
 
   return (
@@ -136,7 +130,7 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4 ">
+            <div className=" ">
               <div className="space-y-2">
                 <Label
                   htmlFor="email"
@@ -151,24 +145,7 @@ export default function ContactForm() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="custom-placeholder border-purple/40"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label
-                  htmlFor="phone"
-                  className="text-text_color text-[0.9rem]"
-                >
-                  Téléphone
-                </Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="Votre numéro de téléphone"
-                  pattern="([0-9]{2}[\s]?)?[0-9]{2}[\s]?[0-9]{2}[\s]?[0-9]{2}[\s]?[0-9]{2}"
-                  value={phone}
-                  onChange={(e) => setPhone(formatPhoneNumber(e.target.value))}
-                  className="custom-placeholder border-purple/40"
+                  className="custom-placeholder border-purple/40 "
                 />
               </div>
             </div>

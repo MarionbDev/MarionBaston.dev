@@ -17,11 +17,11 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="  ">
+    <div className="mt-36 sm:mt-0 ">
       <div className=" lg:h-[100vh] text-font pb-8   ">
-        <div className="flex justify-around items-center h-full  ">
+        <div className="flex flex-col-reverse sm:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
-            <h1 className=" lg:text-[1.5rem]  dark:text-white">
+            <h1 className=" mt-6 sm:mt-0 lg:text-[1.5rem]  dark:text-white">
               Bonjour, je suis&nbsp;
               <span className=" lg:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
                 Marion👋
@@ -72,7 +72,6 @@ export default function AboutMe() {
                       rel="noopener noreferrer"
                     >
                       <Image
-                        // key={currentTheme}
                         src={Linkedin}
                         alt="lien vers ma page linkedin"
                         width={26}
@@ -100,19 +99,23 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6 bottom-6 relative">
-            <div className="border-2 p-[0.4rem] rotate-12 border-[#ab6aff] absolute top-[5rem]">
-              <div className=" border-2 border-[#ab6aff]  rotate-12">
-                <Image
-                  src={myPhoto}
-                  alt="ma photo de profil"
-                  width={900}
-                  height={400}
-                  className=" w-[21rem] rounded-b-xl grayscale -rotate-12 relative bottom-4 "
-                />
-              </div>
+          <div className="flex justify-center items-center -rotate-6 bottom- relative ">
+            <div className="border-2 p-[0.4rem] rotate-12 border-[#ab6aff] absolute sm:top-[6rem] ">
+              <Image
+                src={myPhoto}
+                alt="ma photo de profil"
+                width={900}
+                height={400}
+                className=" w-[14rem] sm:w-[21rem] rounded-b-xl grayscale -rotate-12 absolute bottom-6 sm:bottom-10  "
+              />
+              <div className=" border-2 border-[#ab6aff] p-28 sm:p-44 relative rotate-12"></div>
             </div>
-            <Image src={splash} width={400} className="mt-14 " />
+
+            <Image
+              src={splash}
+              width={450}
+              className=" w-[18rem] sm:w-[28rem] mt-4 sm:mt-16"
+            />
           </div>
         </div>
       </div>

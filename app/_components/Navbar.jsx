@@ -10,17 +10,14 @@ export default function Navbar() {
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className="font-lato flex gap-8 items-center font-medium  ">
           <li className="">
-            <Link
-              href="#home"
-              aria-label="En savoir plus sur moi"
-              className="nav-link"
-            >
+            <Link href="/#home" aria-label="Accueil" className="nav-link">
               Home<span className="underline"></span>
             </Link>
           </li>
+
           <li className="">
             <Link
-              href="#projects"
+              href="/#projects"
               aria-label="mes projets"
               className="nav-link"
             >
@@ -29,7 +26,7 @@ export default function Navbar() {
           </li>
           <li className="">
             <Link
-              href="#skills"
+              href="/#skills"
               aria-label="mes compétences "
               className="nav-link"
             >
@@ -38,7 +35,7 @@ export default function Navbar() {
           </li>
           <li className="">
             <Link
-              href="#myservices"
+              href="/#myservices"
               aria-label="mes services"
               className="nav-link"
             >

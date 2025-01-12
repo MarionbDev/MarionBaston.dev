@@ -6,7 +6,7 @@ export const POST = async (request) => {
   try {
     // Parse les données du formulaire
     const body = await request.json();
-    const { firstname, lastname, email, phone, message } = body;
+    const { firstname, lastname, email, message } = body;
 
     const EMAIL_TO = "marionbaston84@gmail.com";
 
@@ -23,7 +23,7 @@ export const POST = async (request) => {
       from: " marionbaston.fr <noreply@marionbaston.fr>",
       to: [EMAIL_TO],
       subject: "Vous avez reçu un nouveau message",
-      react: EmailTemplate({ firstname, lastname, email, phone, message }),
+      react: EmailTemplate({ firstname, lastname, email, message }),
     });
 
     if (error) {

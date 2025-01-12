@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className="font-poppins flex flex-col items-center sm:block  w-[36rem] border-none shadow-none ">
+      <Card className="font-poppins text-txt_black flex flex-col items-center sm:block  w-[36rem] border-none shadow-none ">
         <CardHeader>
           {project.picture_website ? (
             <div className=" mx-auto">
