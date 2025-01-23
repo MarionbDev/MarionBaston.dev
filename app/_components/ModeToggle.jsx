@@ -20,10 +20,10 @@ export function ModeToggle() {
 
   return (
     <Button
-      variant="outline"
       size="icon"
       aria-label={`Toggle ${theme === "light" ? "Dark" : "Light"} theme`}
       onClick={toggleTheme}
+      className=" border-2 rounded-full"
     >
       {theme === "dark" ? (
         <Sun className="h-[1.2rem] w-[1.2rem]" />
