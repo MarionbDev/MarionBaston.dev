@@ -9,10 +9,7 @@
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
         "plugin:@next/next/recommended",
-        // "plugin:next/recommended",
-        // "next",
-        "plugin:eslint-plugin-next"
-        // "plugin:prettier/recommended"
+        "plugin:eslint-plugin-next/recommended"
       ],
       "rules": {
         // Indentation

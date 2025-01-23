@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const path = require("path");
+
 const nextConfig = {
   env: {
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
@@ -18,6 +21,13 @@ const nextConfig = {
       });
     }
     return headers;
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": path.resolve(__dirname),
+    };
+    return config;
   },
 };
 

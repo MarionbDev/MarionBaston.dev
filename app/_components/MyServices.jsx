@@ -1,144 +1,72 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
-import { MessagesSquare } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import arrow from "../../public/images/arrow.svg";
-import logoCode from "../../public/images/logo-code.svg";
-
 export default function MyServices() {
   const emailAddress = "marionbaston84@gmail.com";
 
   return (
-    <div className="flex flex-col items-center justify-center ">
-      <div className="w-3/4 sm:w-10/12 ">
-        <h2 className="font-roboto text-2xl font-semibold  sm:text-3xl w-full text-center lg:text-start border-b-2 mb-10 pb-2 border-purple ">
-          Mes services
+    <div className="flex flex-col  justify-center tracking-wide ">
+      <div className=" flex items-end gap-1 h-16 ">
+        <h2 className="font-poppins font-semibold text-2xl pb-1 font-semibo ld md:text-[3.5rem] ">
+          Mes Services
         </h2>
-        <div className="flex flex-col items-center mt-2 ">
-          <div className="font-lato flex flex-col md:flex-row items-center justify-around gap-10">
-            <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
-              <h2 className=" text-base lg:text-lg text-center">
-                DEVELOPPEMENT WEB FRONTEND
-              </h2>
-              <Image
-                src={logoCode}
-                alt="Logo d'un chevron"
-                width={90}
-                className="w-20 xl:w-28"
-              />
-              <HoverCard className=" flex flex-col items-center justify-centers ">
-                <HoverCardTrigger asChild>
-                  <Button
-                    role="button"
-                    variant="link"
-                    className="dark:bg-purple/10 dark:shadow-purple/30 dark:shadow-inner  shadow-lg gap-4 w-full "
-                  >
-                    <p className=" text-sm">Voir plus</p>
-                    <Image
-                      src={arrow}
-                      alt="Flèche"
-                      width={24}
-                      className="w-5"
-                    />
-                  </Button>
-                </HoverCardTrigger>
-                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg  ">
-                  <div className="flex justify-between space-x-4">
-                    <div className=" space-y-1 ">
-                      <h4 className=" text-sm lg:text-base  font-semibold">
-                        Developpement Web FrontEnd
-                      </h4>
-                      <p className=" text-sm mt-8">
-                        Je développe l'interface visible de votre site web à
-                        partir d'une maquette.
-                      </p>
-                      <ul className=" text-sm mt-8 list-disc pl-4 gap-1 flex flex-col">
-                        <li>Interfaces utilisateurs interactives</li>
-                        <li>
-                          Accessibilité et amélioration de l'expérience
-                          utilisateur (UX)
-                        </li>
-                        <li>Optimisation SEO</li>
-                        <li>
-                          Site web adaptable à tous les écrans (mobiles,
-                          tablettes, ordinateurs)
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </HoverCardContent>
-              </HoverCard>
-            </div>
-            <div className="font-lato  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-md rounded-xl border-none w-72 h-72 px-6 py-4 gap-6 flex flex-col items-center justify-around">
-              <h2 className="text-base  lg:text-lg text-center">
-                DEVELOPPEMENT WEB BACKEND
-              </h2>
-              <Image
-                src={logoCode}
-                alt="Logo d'un chevron"
-                width={90}
-                className="w-20 xl:w-28"
-              />
-              <HoverCard className="flex flex-col items-center justify-centers ">
-                <HoverCardTrigger asChild>
-                  <Button
-                    role="button"
-                    variant="link"
-                    className="dark:bg-purple/10  dark:shadow-purple/30 dark:shadow-inner shadow-lg gap-4 w-full "
-                  >
-                    <p className=" text-sm">Voir plus</p>
-
-                    <Image src={arrow} alt="arrow" width={24} className="w-5" />
-                  </Button>
-                </HoverCardTrigger>
-                <HoverCardContent className="xl:w-[30rem] xl:h-44 overflow-y-scroll xl:translate-x-[21rem] xl:-translate-y-24 dark:shadow-inner dark:shadow-purple/60 shadow-purple/40 shadow-md border-none bg-purple/20 backdrop-blur-3xl drop-shadow-lg rounded-lg ">
-                  <div className="flex justify-between space-x-4">
-                    <div className="space-y-1">
-                      <h4 className="text-sm lg:text-base  font-semibold">
-                        Developpement Web BackEnd
-                      </h4>
-                      <div className="text-sm mt-8 ">
-                        <p>
-                          Je réponds au cahier des charges en développant toutes
-                          les fonctionnalités invisibles à l'utilisateur et
-                          nécessaire au fonctionnement de l'interface.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </HoverCardContent>
-              </HoverCard>
+        <span className=" w-4 h-4 rounded-full bg-purple"></span>
+      </div>
+      <p className="font-poppins pt-8 mb-24 text-[1rem] ">
+        Je vous offre une solution web sur-mesure, en alliant des interfaces
+        utilisateurs modernes et responsives (frontend) aux fonctionnalités
+        puissantes et sécurisées (backend), pour garantir la performance, la
+        sécurité et l’évolutivité de votre site.{" "}
+      </p>
+      <div className="flex flex-col items-center ">
+        <div className="font-poppins flex flex-col md:flex-row gap-28">
+          <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
+            <h2 className=" text-purple font-semibold text-base lg:text-lg text-center">
+              DEVELOPPEMENT WEB FRONTEND
+            </h2>
+            <div className=" tracking-tight text-[1rem]">
+              <p className="  mt-8">
+                Je développe l'interface visible de votre site web à partir
+                d'une maquette.
+              </p>
+              <ul className="  mt-4 list-disc pl-4 gap-1 flex flex-col">
+                <li>
+                  Conception d'interfaces utilisateur interactives et intuitives
+                </li>
+                <li>
+                  Accessibilité et amélioration de l'expérience utilisateur (UX)
+                </li>
+                <li>Optimisation SEO pour un meilleur référencement</li>
+                <li>
+                  Création de site web adaptatifs (responsive) pour une
+                  compatibilité optimale avec tous les écrans (mobiles,
+                  tablettes, ordinateurs)
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="font-lato mt-16 sm:mt-28 w-72 md:w-3/4 xl:w-3/5  ">
-            <Card className="dark:shadow-purple/80 dark:shadow-inner shadow-none dark:bg-purple/10 dark:border-purple/50 border-none  rounded-xl  text-purple dark:text-[#ffffff] ">
-              <CardHeader>
-                <CardTitle className=" text-xl md:text-3xl text-center">
-                  Prêt à travailler ensemble ou à discuter d'opportunités ?
-                </CardTitle>
-              </CardHeader>
-              <CardContent className=" flex justify-center">
-                <Button
-                  role="button"
-                  className=" dark:shadow-purple/80 dark:shadow-inner border-purple/80 border-2  dark:bg-purple/10  dark:hover:bg-pale_pink/20  hover:bg-[#baa8bbc0] rounded-xl p-2 text-[#313030] hover:text-[#ffff] shadow-lg  "
-                >
-                  <Link
-                    href={`mailto:${emailAddress}`}
-                    aria-labelledby="contact-me"
-                    className="flex gap-1 md:gap-2 text-lg text-center sm:text-xl dark:text-white text-purple "
-                  >
-                    <MessagesSquare size="20" id="contact-me" />
-                    C'est ici et maintenant !
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="font-poppins  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
+            <h2 className=" text-purple font-semibold text-base  lg:text-lg text-center">
+              DEVELOPPEMENT WEB BACKEND
+            </h2>
+            <div className="  tracking-tight text-[1rem]">
+              <p className=" mt-8">
+                Je réponds aux besoins techniques du projet en développant
+                toutes les fonctionnalités invisibles nécessaires au bon
+                fonctionnement de l'interface.
+              </p>
+              <ul className="mt-4 list-disc pl-4 gap-2 flex flex-col">
+                <li>
+                  Mise en place de mesures de sécurité pour protéger les
+                  utilisateurs et leurs données
+                </li>
+                <li>
+                  Garantie de la performance, de l'évolutivité et de la
+                  fiabilité des applications backend
+                </li>
+                <li>
+                  Automatisation des processus avec l'intégration continu et le
+                  déploiement continu (CI/CD)
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", Arial, sans-serif;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+}
 
 .font-lato {
   font-family: "Lato", sans-serif;
 }
 
-.font-alice {
-  font-family: "Alice", serif;
-}
-
 .font-roboto {
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -26,12 +28,6 @@
 
 body {
   zoom: 1;
-}
-
-/* styles form a modifier et supprimer par la suite*/
-.p {
-  color: #bf1650;
-  text-align: center;
 }
 
 /* Styles label "Skills"*/
@@ -56,11 +52,6 @@ body {
   display: block;
 }
 
-/* Blob */
-.picture {
-  border-radius: 75% 25% 66% 34% / 33% 20% 80% 67%;
-}
-
 /* Style Navbar */
 .navbar {
   background: transparent;
@@ -71,20 +62,21 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Slide hello */
-.slide-hello {
-  animation: slideHello 500ms ease-in-out forwards;
+.underline {
+  display: block;
+  height: 1px;
+  background-color: transparent;
+  width: 0%;
+  transition:
+    width 0.4s,
+    background-color 0.5s;
+  margin: 2px auto 0 auto;
+  border-radius: 50px;
 }
 
-@keyframes slideHello {
-  0% {
-    transform: translateY(-270%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.nav-link:hover .underline {
+  width: 100%;
+  background-color: #8300e9;
 }
 
 /*Slide paragraphe */
@@ -149,13 +141,9 @@ html {
   }
 }
 
-/*Slide name-dev */
-.dark .slide-name-dev {
-  opacity: 0;
-  animation: slideNameDev 1s ease-in-out forwards;
-  transition-delay: 2.2s;
+/* Slide name-dev .dark .slide-name-dev {
   text-transform: uppercase;
-  background: linear-gradient(to right, #dacaec 0%, #9645f3 100%);
+  background: linear-gradient(to right, #b478f8 0%, #dacaec 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -163,63 +151,13 @@ html {
 }
 
 .slide-name-dev {
-  opacity: 0;
-  animation: slideNameDev 1s ease-in-out forwards;
-  transition-delay: 2.2s;
   text-transform: uppercase;
   background: linear-gradient(to right, #6015c9 0%, #c36eeb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-@keyframes slideNameDev {
-  0% {
-    transform: translateX(-160%);
-    opacity: 0;
-  }
-  100% {
-    transform: translatex(0);
-    opacity: 1;
-  }
-}
-
-/*Slide link */
-.slideLink-1 {
-  opacity: 0;
-  animation: slidelink 1s ease forwards;
-  /* bounce 0.35s ease 1 alternate; */
-  animation-delay: 1.4s;
-}
-
-.slideLink-2 {
-  opacity: 0;
-  animation: slidelink 1.4s ease forwards;
-  /* bounce 0.35s ease 1 0s 1 normal both; */
-  animation-delay: 1.4s;
-}
-
-@keyframes slidelink {
-  0% {
-    transform: translateY(-160%) rotate(10deg);
-
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) rotate(0);
-
-    opacity: 1;
-  }
-}
-@keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-20px);
-  }
-}
+} */
 
 /* scrolling text */
 .scrollingText {
