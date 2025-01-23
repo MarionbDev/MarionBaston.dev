@@ -1,13 +1,18 @@
 "use client";
-
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react"; // Utilisation de useState et useEffect
 import { Button } from "../../components/ui/button";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false); // Vérification du montage
 
-  if (!theme) return null;
+  useEffect(() => {
+    setMounted(true); // Une fois monté, on change l'état
+  }, []);
+
+  if (!mounted) return null; // N'affiche rien avant le montage
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -17,8 +22,7 @@ export function ModeToggle() {
     <Button
       variant="outline"
       size="icon"
-      aria-label={`Toggle ${theme === "dark" ? "Light" : "Dark"} theme`}
-      className="transition-all duration-300 ease-in-out shadow-inner shadow-purple rounded-full m-1 border-none w-10 h-10 transform hover:scale-110"
+      aria-label={`Toggle ${theme === "light" ? "Dark" : "Light"} theme`}
       onClick={toggleTheme}
     >
       {theme === "dark" ? (

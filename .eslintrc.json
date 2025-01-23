@@ -8,10 +8,10 @@
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
-        "plugin:@next/next/recommended",
+        "plugin:@next/next/recommended"
         // "plugin:next/recommended",
         // "next",
-        "plugin:eslint-plugin-next"
+        // "plugin:eslint-plugin-next"
         // "plugin:prettier/recommended"
       ],
       "rules": {

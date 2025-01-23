@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
           {/* <Suspense fallback={<></>}> */}
@@ -64,5 +64,5 @@ export default function RootLayout({ children }) {
 }
 
 RootLayout.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.node,
 };
