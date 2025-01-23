@@ -18,37 +18,37 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="mt-36 sm:mt-0 ">
+    <div className="mt-36 md:mt-20 lg:mt-0 mx-6 xl:mx-0">
       <div className=" lg:h-[100vh] text-font pb-8   ">
-        <div className="flex flex-col-reverse sm:flex-row justify-around items-center h-full  ">
+        <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
-            <h1 className=" mt-6 sm:mt-0 lg:text-[1.5rem]  dark:text-white">
+            <h1 className=" mt-6 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
               Bonjour, je suis&nbsp;
-              <span className=" lg:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
+              <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
                 Marion👋
               </span>
             </h1>
-            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none lg:text-[3.2rem] mb-2">
+            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
               Développeuse Web
             </h2>
-            <p className=" text-[1.5rem] leading-7   ">
+            <p className=" text-[1rem] md:text-[1.5rem] leading-7   ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
               nouveaux concepts et relever des défis techniques pour
               continuellement enrichir mes connaissances.
             </p>
-            <div className="lg:mt-8  md:gap-8 ">
+            <div className=" flex flex-col md:flex-row lg:mt-8 md:gap-8  ">
               <div className=" flex items-center gap-4">
                 <Link
                   href={"/#contactPage"}
                   aria-label="M'envoyer un email"
-                  className="flex items-center bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 gap-1 px-4 "
+                  className="flex  items-center bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 md:gap-1 px-4 "
                 >
                   <MessagesSquare
-                    size="16"
+                    size="22"
                     id="contact-me header"
-                    className="mr-2"
-                  />{" "}
-                  Contactez-moi
+                    className="md:mr-2  "
+                  />
+                  <span className=" hidden md:flex">Contactez-moi</span>
                 </Link>
 
                 <Button
@@ -57,12 +57,10 @@ export default function AboutMe() {
                   aria-label="Télécharger mon CV"
                   className=" border-2 shadow-none border-purple/30 hover:border-purple dark:border-purple/20  dark:hover:border-purple dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
                 >
-                  <Download
-                    size="16"
-                    id="download-cv"
-                    alt="icône de téléchargement"
-                  />
-                  Téléchargez le CV
+                  <Download id="download-cv" alt="icône de téléchargement  " />
+                  <p className="flex gap-1">
+                    <span className="hidden md:flex">Téléchargez mon</span> CV
+                  </p>
                 </Button>
                 <ul className="flex items-center gap-2">
                   <li className=" border-2 border-purple/30 duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">

@@ -141,7 +141,7 @@ html {
   }
 }
 
-/* Slide name-dev .dark .slide-name-dev {
+Slide name-dev .dark .slide-name-dev {
   text-transform: uppercase;
   background: linear-gradient(to right, #b478f8 0%, #dacaec 100%);
   -webkit-background-clip: text;
@@ -157,7 +157,7 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-} */
+}
 
 /* scrolling text */
 .scrollingText {

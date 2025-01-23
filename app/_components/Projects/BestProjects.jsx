@@ -35,25 +35,27 @@ export default function BestProjects() {
 
   return (
     <div className="tracking-wide ">
-      <div className="flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12  ">
-        <div className=" flex items-end gap-1 h-16  ">
-          <h2 className="font-poppins text-2xl pb-1 font-semibold md:text-[3.5rem] ">
+      <div className="  flex flex-col  items-center sm:items-start md:gap-3 mb-6 md:mb-12  ">
+        <div className=" flex justify-start  w-full items-end gap-1 h-16  ">
+          <h2 className="font-poppins text-2xl md:pb-1 font-semibold md:text-[3.5rem] ">
             Portfolio
           </h2>
-          <span className=" w-4 h-4 rounded-full bg-purple "></span>
+          <span className="mb-[0.46rem] sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>
         </div>
-        <div className="flex items-center pt-8">
-          <p className="font-poppins pt-0 px-8 sm:px-0 text-sm sm:text-lg ">
+        <div className="flex flex-col md:flex-row w-full md:items-center pt-2 md:pt-8">
+          <p className="font-poppins   md:px-0 text-[1rem]">
             Découvrez la diversité de mes expériences en développement web !
           </p>
-          <Link href={"/portfolio"} className="  text-purple ml-2 ">
-            Voir plus
-          </Link>
-          <ArrowRight size={20} className=" text-purple -rotate-45 mb-1" />
+          <div className=" flex">
+            <Link href={"/portfolio"} className="  text-purple md:ml-2 ">
+              Voir plus
+            </Link>
+            <ArrowRight size={20} className=" text-purple -rotate-45 mb-1" />
+          </div>
         </div>
       </div>
       <div className=" px-10 ">
-        <div className="flex flex-wrap gap-x-10 gap-y-14 ">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap lg:gap-x-10 lg:gap-y-14 ">
           {sortedProProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}{" "}
