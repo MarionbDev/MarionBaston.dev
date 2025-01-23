@@ -23,12 +23,12 @@ export function ModeToggle() {
       size="icon"
       aria-label={`Toggle ${theme === "light" ? "Dark" : "Light"} theme`}
       onClick={toggleTheme}
-      className=" border-2 rounded-full"
+      className=" border-2 rounded-full border-purple shadow-none"
     >
       {theme === "dark" ? (
-        <Sun className="h-[1.2rem] w-[1.2rem]" />
+        <Sun color="#8300E9" className="h-[1.2rem] w-[1.2rem] " />
       ) : (
-        <Moon className="h-[1.2rem] w-[1.2rem]" />
+        <Moon color="#8300E9" className="h-[1.2rem] w-[1.2rem]" />
       )}
       <span className="sr-only">Toggle theme</span>
     </Button>

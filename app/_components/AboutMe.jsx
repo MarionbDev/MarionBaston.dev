@@ -9,7 +9,7 @@ import { Button } from "../../components/ui/button";
 import Github from "../../public/images/github-about.svg";
 import Linkedin from "../../public/images/linkedin-about.svg";
 // import myPhoto from "../../public/images/photo1.png";
-import myPhoto from "../../public/myphoto.png";
+import myPhoto from "@/public/images/myPhoto.png";
 
 export default function AboutMe() {
   const downloadCV = () => {
@@ -86,7 +86,6 @@ export default function AboutMe() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {}
                       <Image
                         src={Github}
                         alt="lien vers ma page github"
@@ -99,8 +98,8 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6 relative  ">
-            <div className="border-2 p-[0.4rem]  rotate-12 border-[#ab6aff] absolute sm:top-[6rem]  ">
+          <div className="flex justify-center items-center -rotate-6  relative bottom-6  ">
+            <div className="border-2 p-[0.4rem]  rotate-12 border-[#ab6aff] absolute sm:top-[6rem]   ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
