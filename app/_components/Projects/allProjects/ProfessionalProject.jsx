@@ -1,3 +1,5 @@
+import HomePlessis from "@/public/images/leplessis.png";
+
 const professionalProjects = [
   {
     id: 1,
@@ -53,8 +55,8 @@ const professionalProjects = [
     video_url: null,
     picture_website: [
       {
-        title: "",
-        image: "",
+        title: "Interface public : Accueil",
+        image: HomePlessis,
       },
     ],
   },

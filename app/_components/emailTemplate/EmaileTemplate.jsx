@@ -3,7 +3,6 @@ import { Container } from "@react-email/container";
 import { Html } from "@react-email/html";
 import { Tailwind } from "@react-email/tailwind";
 import { Text } from "@react-email/text";
-import styles from "./emailTemplate.module.css";
 
 const capitalizeFirstLetter = (value) =>
   value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
@@ -15,7 +14,7 @@ const formatPhoneNumber = (phone) => {
 const EmailTemplate = ({ firstname, lastname, email, message, phone }) => (
   <Tailwind>
     <Html>
-      <Container className={styles.container}>
+      <Container className="max-w-[580px] bg-white">
         <h1 className="font-title-home text-title_color italic font-extralight text-[1.5rem] tracking-[3px]">
           Le Plessis Aux Lys
         </h1>

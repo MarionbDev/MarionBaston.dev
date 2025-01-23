@@ -34,7 +34,7 @@ export default function Portfolio() {
 
   return (
     <div>
-      <div className="sm:w-10/12 mt-24  mx-20 ">
+      <div className="sm:w-10/12 mt-24  mx-32 ">
         <div className="text-txt_black dark:text-white flex flex-col items-center sm:items-start gap-3 mb-6 md:mb-12">
           <div className=" flex items-end gap-1 h-16 ">
             <h2 className="font-poppins   text-2xl pb-1 font-semibold md:text-[4rem] ">
@@ -54,6 +54,7 @@ export default function Portfolio() {
               </p>
               <Link
                 href={"https://github.com/MarionbDev"}
+                target="_blank"
                 className="flex text-purple font-semibold"
               >
                 GitHub
@@ -63,13 +64,13 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {sortedProProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {sortedProProjects.map((project, index) => (
+            <ProjectCard key={`${index}-${project.id}`} project={project} />
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {sortedProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {sortedProjects.map((project, index) => (
+            <ProjectCard key={` ${index}-${project.id}`} project={project} />
           ))}
         </div>
       </div>

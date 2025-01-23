@@ -7,20 +7,8 @@ import { ArrowLeftCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export async function generateStaticParams() {
-  const allProjects = [
-    ...sideProjects,
-    ...trainingProjects,
-    ...professionalProjects,
-  ];
-
-  return allProjects.map((project) => ({
-    slug: createSlug(project.title),
-  }));
-}
-
-export default function ProjectPage({ params }) {
-  const { slug } = params;
+export default async function ProjectPage({ params }) {
+  const { slug } = await params;
 
   // Récupérer tous les projets
   const allProjects = [
@@ -28,6 +16,8 @@ export default function ProjectPage({ params }) {
     ...trainingProjects,
     ...professionalProjects,
   ];
+
+  // Trouver le projet correspondant au slug
   const project = allProjects.find((proj) => createSlug(proj.title) === slug);
 
   if (!project) {
@@ -50,14 +40,16 @@ export default function ProjectPage({ params }) {
         <p className=" text-sm sm:text-base">{project.description}</p>
         <ul className=" flex flex-col gap-3 text-sm sm:text-base">
           {project.project_steps.map((step, index) => (
-            <li key={index}>{step.step_description}</li>
+            <li key={`${index}-${step.step_description}`}>
+              {step.step_description}
+            </li>
           ))}
         </ul>
         <ul className="flex gap-4 ">
           {project.technos.map((techno, index) => (
             <li
+              key={`${index}-${techno.title}}`}
               className=" border-2 border-purple text-purple dark:text-white text-sm sm:text-base  px-4 py-1 rounded-3xl"
-              key={index}
             >
               {techno.title}
             </li>
@@ -69,7 +61,7 @@ export default function ProjectPage({ params }) {
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (
                     <li
-                      key={index}
+                      key={`${index}-${picture.image}`}
                       className=" flex flex-col items-start justify-center"
                     >
                       <figure className="shrink-0 w-[40rem] ">

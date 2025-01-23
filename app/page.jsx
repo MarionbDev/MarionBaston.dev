@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 import AboutMe from "./_components/AboutMe";
 import ContactPage from "./_components/contactForm/ContactPage";
 import Footer from "./_components/Footer";
@@ -10,14 +6,6 @@ import BestProjects from "./_components/Projects/BestProjects";
 import Skills from "./_components/Skills";
 
 export default function Home() {
-  // const { isVisible } = useScroll();
-  const [isLoading, setIsLoading] = useState(true);
-
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     window.scroll(0, 0);
-  //   }
-
   return (
     <div className=" text-txt_black dark:text-white ">
       <div id="home" className=" mx-2 ">

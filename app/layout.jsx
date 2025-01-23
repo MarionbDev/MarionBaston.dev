@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import PropTypes from "prop-types";
-import { Suspense } from "react";
 import Providers from "./_components/Providers";
 // import { ScrollProvider } from "./_components/ScrollContext";
 import Navbar from "./_components/Navbar";
@@ -44,20 +43,20 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Suspense fallback={<></>}>
-            {/* <ScrollProvider> */}
+          {/* <Suspense fallback={<></>}> */}
+          {/* <ScrollProvider> */}
 
-            <Providers>
-              <div className="flex  ">
-                <Navbar className="navbar" />
-              </div>
-              <div>
-                <NavbarMobile className="navbar-mobile" />
-              </div>
-              {children}
-            </Providers>
-            {/* </ScrollProvider> */}
-          </Suspense>
+          <Providers>
+            <div className="flex  ">
+              <Navbar className="navbar" />
+            </div>
+            <div>
+              <NavbarMobile className="navbar-mobile" />
+            </div>
+            {children}
+          </Providers>
+          {/* </ScrollProvider> */}
+          {/* </Suspense> */}
         </ThemeProvider>
       </body>
     </html>

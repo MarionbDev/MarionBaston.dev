@@ -52,7 +52,6 @@ export default function AboutMe() {
                 </Link>
 
                 <Button
-                  onChild
                   onClick={downloadCV}
                   role="button"
                   aria-label="Télécharger mon CV"
@@ -100,20 +99,21 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6 bottom- relative ">
+          <div className="flex justify-center items-center -rotate-6 relative  ">
             <div className="border-2 p-[0.4rem]  rotate-12 border-[#ab6aff] absolute sm:top-[6rem]  ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={900}
                 height={400}
-                className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]  "
+                className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]   "
               />
               <div className=" border-2 border-[#ab6aff] p-28 sm:p-44 relative rotate-12 "></div>
             </div>
 
             <Image
               src={splash}
+              alt="splach"
               width={450}
               className=" w-[18rem] sm:w-[28rem] mt-4 sm:mt-16 "
             />
@@ -143,7 +143,7 @@ export default function AboutMe() {
                   <div className=" slideLink-1  lg:mt-8 lg:mx-6 md:gap-8 ">
                     <div className="profile-image-mobile flex gap-4">
                       <Button
-                        onChild
+                        
                         onClick={downloadCV}
                         role="button"
                         aria-label="Télécharger mon CV"
@@ -173,7 +173,7 @@ export default function AboutMe() {
 
                     <div className="profile-image-desktop flex gap-6">
                       <Button
-                        onChild
+                        
                         onClick={downloadCV}
                         role="button"
                         aria-label="Télécharger mon CV"

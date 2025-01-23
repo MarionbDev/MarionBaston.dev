@@ -2,20 +2,12 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
+  if (!theme) return null;
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -26,7 +18,7 @@ export function ModeToggle() {
       variant="outline"
       size="icon"
       aria-label={`Toggle ${theme === "dark" ? "Light" : "Dark"} theme`}
-      className="shadow-inner shadow-purple rounded-full m-1 border-none w-10 h-10"
+      className="transition-all duration-300 ease-in-out shadow-inner shadow-purple rounded-full m-1 border-none w-10 h-10 transform hover:scale-110"
       onClick={toggleTheme}
     >
       {theme === "dark" ? (
