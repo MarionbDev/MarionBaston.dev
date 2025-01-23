@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className="font-poppins text-txt_black flex flex-col items-center sm:block  w-[36rem] border-none shadow-none ">
+      <Card className="font-poppins text-txt_black dark:text-white flex flex-col items-center sm:block  w-[36rem] border-none shadow-none ">
         <CardHeader>
           {project.picture_website ? (
             <div className=" mx-auto">
@@ -30,11 +30,6 @@ export default function ProjectCard({ project }) {
                                 height={400}
                               />
                             </div>
-                            {/* <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-[16rem] sm:w-[40rem]">
-                              <span className="font-semibold">
-                                {picture.title}
-                              </span>
-                            </figcaption> */}
                           </figure>
                         </li>
                       ))
@@ -52,93 +47,19 @@ export default function ProjectCard({ project }) {
               </div>
             </div>
           ) : null}{" "}
-          <CardTitle className="flex items-center gap-4 text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
-            {project.title}
-            <Link href={`/portfolio/${createSlug(project.title)}`}>
+          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
+            <Link
+              href={`/portfolio/${createSlug(project.title)}`}
+              className="flex gap-3 items-center"
+            >
+              {project.title}
               <CircleArrowOutUpRight size={18} />
             </Link>
           </CardTitle>
-          {/* <div className="flex gap-3">
-            <Badge variant="secondary" className=" text-xs sm:text-[9px]">
-              {project.time}
-            </Badge>
-            {project.soloTeam ? (
-              <Badge variant="secondary" className="text-xs sm:text-[9px]">
-                {project.soloTeam}
-              </Badge>
-            ) : null}
-          </div> */}
         </CardHeader>
-        <CardContent className="flex flex-col-reverse max-w-screen-xl  text-[1rem]">
-          {/* <div className="flex flex-col items-center md:items-start">
-            <ul
-              aria-label="liste des technologies utilisées"
-              className=" dark:bg-purple/20  py-2  px-3 rounded-xl w-fit flex items-start gap-3  "
-            >
-              {project.technos &&
-                project.technos.map((techno) => (
-                  <li
-                    key={techno.title}
-                    className="border-2 rounded-3xl py-1 px-3 text-xs sm:text-[9px]"
-                  >
-                    {techno.title}
-                  </li>
-                ))}
-            </ul>
-          </div>{" "} */}
-
+        <CardContent className=" max-w-screen-xl  text-[0.9rem]">
           {project.description}
         </CardContent>
-        {/* <CardFooter className="flex justify-center flex-wrap gap-3 sm:justify-end sm:gap-6 ">
-          <DialogStepProject project={project} />
-          <div className="flex justify-center flex-wrap  md:justify-end  gap-2">
-            {project.video_url ? (
-              <Button
-                asChild
-                role="button"
-                className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] "
-              >
-                <Link
-                  href={project.video_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir video <ExternalLink size="16" className="ml-2" />
-                </Link>
-              </Button>
-            ) : null}
-            {project.website_url ? (
-              <Button
-                asChild
-                role="button"
-                className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80 rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0]  "
-              >
-                <Link
-                  href={project.website_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir website <ExternalLink size="16" className="ml-2" />
-                </Link>
-              </Button>
-            ) : null}
-            {project.github_url ? (
-              <Button
-                asChild
-                role="button"
-                className="dark:shadow-purple/80 dark:shadow-inner dark:bg-purple/30 bg-purple/80   rounded-xl text-xs sm:text-sm text-white  dark:hover:bg-pale_pink/20 hover:bg-[#baa8bbc0] "
-              >
-                <Link
-                  href={project.github_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir GitHub <ExternalLink size="16" className="ml-2" />
-                </Link>
-              </Button>
-            ) : null}{" "}
-          </div>
-        </CardFooter> */}
       </Card>
     </>
   );

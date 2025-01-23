@@ -1,14 +1,15 @@
 "use client";
 
 // import { Button } from "@/components/ui/button";
-import splash from "@/public/images/splash.jpg";
+import splash from "@/public/images/splash.png";
 import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../../components/ui/button";
 import Github from "../../public/images/github-about.svg";
 import Linkedin from "../../public/images/linkedin-about.svg";
-import myPhoto from "../../public/images/photo1.png";
+// import myPhoto from "../../public/images/photo1.png";
+import myPhoto from "../../public/myphoto.png";
 
 export default function AboutMe() {
   const downloadCV = () => {
@@ -28,7 +29,7 @@ export default function AboutMe() {
               </span>
             </h1>
             <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none lg:text-[3.2rem] mb-2">
-              Développeuse Web FullStack
+              Développeuse Web
             </h2>
             <p className=" text-[1.5rem] leading-7   ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
@@ -100,21 +101,21 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="flex justify-center items-center -rotate-6 bottom- relative ">
-            <div className="border-2 p-[0.4rem] rotate-12 border-[#ab6aff] absolute sm:top-[6rem] ">
+            <div className="border-2 p-[0.4rem]  rotate-12 border-[#ab6aff] absolute sm:top-[6rem]  ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={900}
                 height={400}
-                className=" w-[14rem] sm:w-[21rem] rounded-b-xl grayscale -rotate-12 absolute bottom-6 sm:bottom-10  "
+                className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]  "
               />
-              <div className=" border-2 border-[#ab6aff] p-28 sm:p-44 relative rotate-12"></div>
+              <div className=" border-2 border-[#ab6aff] p-28 sm:p-44 relative rotate-12 "></div>
             </div>
 
             <Image
               src={splash}
               width={450}
-              className=" w-[18rem] sm:w-[28rem] mt-4 sm:mt-16"
+              className=" w-[18rem] sm:w-[28rem] mt-4 sm:mt-16 "
             />
           </div>
         </div>

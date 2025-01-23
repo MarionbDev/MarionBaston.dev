@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className=" py-2 px-6 bg-purple text-[#f3f1f1] ">
+      <div className=" py-2 px-6 bg-purple dark:bg-[#1b1c1f] text-[#f3f1f1] ">
         <div className="">
           <nav
             aria-labelledby="footer-navigation-link "
@@ -80,7 +80,7 @@ export default function Footer() {
                   id="marion-baston"
                   className=" font-poppins tracking-wide font-semibold "
                 >
-                  Marion Baston. Développeuse Web FullStack
+                  Marion Baston. Développeuse Web
                 </p>
               </div>
             </Link>

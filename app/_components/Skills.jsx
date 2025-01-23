@@ -33,7 +33,7 @@ export default function Skills() {
                 className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-40 dark:sm:h-40 dark:brightness-75 mt-6"
               />
             </div>
-            <ul className=" text-[1rem] text-center lg:text-[1rem] mt-6 ">
+            <ul className=" text-[1rem] text-center smt-6 ">
               <li>JavaScript / TypeScript</li>
               <li>React, Next</li>
               <li>Shadcn/ui</li>
@@ -57,7 +57,7 @@ export default function Skills() {
               />
             </div>
 
-            <ul className="text-[1rem] text-center lg:text-[1rem] ">
+            <ul className="text-[1rem] text-center s">
               <li>Node.js, Express.js</li>
               <li>MySql, Supabase</li>
               <li>API</li>
@@ -78,7 +78,7 @@ export default function Skills() {
                 className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
               />
             </div>
-            <ul className=" text-[1rem] text-center lg:text-[1rem] ">
+            <ul className=" text-[1rem] text-center s">
               <li>Git, GitHub</li>
               <li>VS Code</li>
               <li>Figma</li>
@@ -101,7 +101,7 @@ export default function Skills() {
                 className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
               />
             </div>
-            <ul className="text-[1rem] text-center lg:text-[1rem] ">
+            <ul className="text-[1rem] text-center s">
               <li>Communication efficace</li>
               <li>Résolution de problème</li>
               <li>Créativité</li>

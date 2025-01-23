@@ -36,11 +36,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <link rel="preconnect" href="https://mssggkataaagdhwyybfs.supabase.co" />
+      {/* <link rel="preconnect" href="https://mssggkataaagdhwyybfs.supabase.co" /> */}
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
@@ -48,7 +48,6 @@ export default function RootLayout({ children }) {
             {/* <ScrollProvider> */}
 
             <Providers>
-              {" "}
               <div className="flex  ">
                 <Navbar className="navbar" />
               </div>

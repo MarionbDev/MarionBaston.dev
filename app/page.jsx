@@ -18,14 +18,8 @@ export default function Home() {
   //     window.scroll(0, 0);
   //   }
 
-  //   // Simulating the loading of data for AboutMe
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 2000); // Adjust the time as needed
-  // }, []);
-
   return (
-    <div className=" text-txt_black">
+    <div className=" text-txt_black dark:text-white ">
       <div id="home" className=" mx-2 ">
         <AboutMe />
       </div>{" "}

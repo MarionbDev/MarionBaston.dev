@@ -75,6 +75,7 @@ const trainingProjects = [
   //     "Application web permettant de mieux anticiper les tâches prioritaires ou secondaires en fournissant un moyen simple de gérer les listes de tâches.",
   //   time: "3 semaines",
   //   soloTeam: "En groupe",
+  //   client: "fictif, 1er projet de formation à la Wild Code School",
   //   project_steps: [
   //     {
   //       step_description: "Conception et maquettage de l'application web",
@@ -126,10 +127,11 @@ const trainingProjects = [
   {
     id: 2,
     type: "training",
-    date: "2023-03-01",
+    date: "2023-03",
     title: "UNIVERSE",
+    client: "fictif, 2ème projet de formation à la Wild Code School",
     description:
-      "Moteur de recherche musicale et radio en ligne. Le projet comprend une interface dynamique pour la recherche d'artistes, d'albums et de titres, ainsi qu'une liste de recommandations.",
+      "Moteur de recherche musicale et radio en ligne. Le projet comprend une interface dynamique pour la recherche d'artistes, d'albums et de titres, ainsi qu'une liste de recommandations. Le projet a été développé lors de la formation à la Wild Code School",
     project_steps: [
       {
         step_description:
@@ -224,12 +226,13 @@ const trainingProjects = [
   {
     id: 3,
     type: "training",
-    date: "2023-04-01",
+    date: "2023-04",
     title: "HoliTrip",
     description:
       "Plateforme proposant divers itinéraires de road trips avec la possibilité de rechercher des centres d'intérêt par ville (monuments, parcs, jardins, etc.). Le projet a été développé lors d'un hackathon.",
     time: "24 heures",
     soloTeam: "En groupe",
+    client: "fictif, 1er Hackathon à la Wild Code School",
     project_steps: [
       {
         step_description:
@@ -315,12 +318,14 @@ const trainingProjects = [
   {
     id: 4,
     type: "training",
-    date: "2023-05-01",
-    title: "R-AMazing-Phone-Pricer, prototype pour Emmaüs Connect. ",
+    date: "2023-05",
+    title: "R-AMazing-Phone-Pricer ",
     description:
-      "Outil de classification des smartphones selon différents critères. Le projet a été développé lors d'un hackathon",
+      "Prototype pour Emmaüs Connect. Outil de classification des smartphones selon différents critères. Le projet a été développé lors d'un hackathon",
     time: "48 heures",
     soloTeam: "En groupe (Finaliste)",
+    client: "Emmaüs Connect, 2ème Hackathon à la Wild Code School",
+
     project_steps: [
       {
         step_description:
@@ -434,10 +439,11 @@ const trainingProjects = [
   {
     id: 5,
     type: "training",
-    date: "2023/05/01",
+    date: "2023/05",
     title: "SERENITY",
+    client: "fictif, 3ème projet de formation à la Wild Code School",
     description:
-      "Application web accompagnant les patients dans leurs prises en charge à l’hôpital, avec un dashboard dédié aux praticiens. Les fonctionnalités incluent la gestion des utilisateurs, des interventions, des spécialités, ainsi que la possibilité d'ajouter des documents..",
+      "Application web accompagnant les patients dans leurs prises en charge à l’hôpital, avec un dashboard dédié aux praticiens. Les fonctionnalités incluent la gestion des utilisateurs, des interventions, des spécialités, ainsi que la possibilité d'ajouter des documents... Le projet a été développé lors de la formation à la Wild Code School",
     time: "2 mois",
     soloTeam: "En groupe",
     project_steps: [

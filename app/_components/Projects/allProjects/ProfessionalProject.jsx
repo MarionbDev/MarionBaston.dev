@@ -2,16 +2,15 @@ const professionalProjects = [
   {
     id: 1,
     type: "pro",
-    date: "2024-12-01",
+    date: "2024-12",
     title: "Le Plessis aux Lys",
     time: "",
     description:
-      "Site vitrine pour des gîtes et chambres d'hôtes, permettant aux clients de découvrir les hébergements et activités proposées. Pour les administrateurs, le site inclut une interface dédiée à la gestion des calendriers de réservations, des tarifs, des informations sur les hébergements et les activités.",
+      "Site vitrine pour des gîtes et chambres d'hôtes, permettant aux clients de découvrir les hébergements et activités proposées. Pour les administrateurs, le site inclut une interface dédiée à la gestion des calendriers de réservations, des tarifs, des informations sur les hébergements...",
     soloTeam: null,
+    client: "Le Plessis Aux Lys",
+
     project_steps: [
-      {
-        step_description: "Projet client",
-      },
       {
         step_description:
           "Création et conception d'une maquette pour une interface utilisateur web dynamique et responsive",
@@ -54,7 +53,7 @@ const professionalProjects = [
     video_url: null,
     picture_website: [
       {
-        title: "Interface public : Accueil",
+        title: "",
         image: "",
       },
     ],

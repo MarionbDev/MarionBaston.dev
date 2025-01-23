@@ -36,15 +36,16 @@ const sideProjects = [
   {
     id: 1,
     type: "side",
-    date: "2023-06-01",
+    date: "2023-06",
     title: "Drawing And Co",
     time: "1 mois, évolutif",
     description:
-      "Plateforme de gestion d'une galerie de dessins avec des fonctionnalités interactives pour les utilisateurs",
+      "Je suis passionnée de dessins au crayon graphite, j'ai décidé de créer mon site. Il s'agit d'une plateforme de gestion d'une galerie de dessins avec des fonctionnalités interactives pour les utilisateurs",
     soloTeam: null,
     project_steps: [
       {
-        step_description: "Projet présenté au Titre Professionnel",
+        step_description:
+          "Projet présenté au Titre Professionnel Développeur web et web mobile (RNCP, niveau 5) ",
       },
       {
         step_description:
@@ -61,6 +62,9 @@ const sideProjects = [
       {
         step_description:
           "Fonctionnalités : Connexion / inscription d'un utilisateur, naviguer à travers la galerie de dessins, les utilisateurs peuvent ajouter ou supprimer des commentaires sur les dessins. L'administrateur à des fonctions supplémentaires : la gestion des utilisateurs et de la galerie. Un système de FAQ est intégré pour fournir des informations utiles aux utilisateurs. L'application est conçue pour être responsive.",
+      },
+      {
+        step_description: "A venir : la mise en production du site",
       },
     ],
     technos: [
@@ -182,6 +186,7 @@ const sideProjects = [
     description: "",
     time: "3 semaines, évolutif",
     soloTeam: null,
+    client: "projet perso ",
     project_steps: [
       {
         step_description: "Mes premiers pas avec Next.js",
