@@ -1,14 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { createSlug } from "@/utils/slug";
-import { ChevronRight, CircleArrowOutUpRight } from "lucide-react";
+import { CircleArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className="font-poppins text-txt_black dark:text-white flex flex-col items-center sm:block  w-[36rem] border-none shadow-none ">
+      <Card className="font-poppins text-txt_black dark:text-white flex flex-col items-center sm:block  max-w-[36rem] border-none shadow-none ">
         <CardHeader>
           {project.picture_website ? (
             <div className=" mx-auto">
@@ -40,11 +40,11 @@ export default function ProjectCard({ project }) {
                   className="  dark:bg-purple/30  bg-purple/80 border-none h-3"
                 />{" "}
               </ScrollArea>
-              <div className=" flex justify-end w-full ">
-                <div className="chevron-slide relative -top-28 -right-1 sm:-top-44  h-5 w-5">
+              {/* <div className=" flex justify-end w-full ">
+                <div className="chevron-slide relative -top-28 -right-1 sm:-top-44  h-5 w-5 ">
                   <ChevronRight />
                 </div>
-              </div>
+              </div> */}
             </div>
           ) : null}{" "}
           <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold">
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }) {
             </Link>
           </CardTitle>
         </CardHeader>
-        <CardContent className=" max-w-screen-xl  text-[0.9rem]">
+        <CardContent className="  max-w-screen-xl  text-[0.9rem]">
           {project.description}
         </CardContent>
       </Card>

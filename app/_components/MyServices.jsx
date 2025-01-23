@@ -1,23 +1,21 @@
 export default function MyServices() {
-  const emailAddress = "marionbaston84@gmail.com";
-
   return (
     <div className="flex flex-col  justify-center tracking-wide ">
-      <div className=" flex items-end gap-1 h-16 ">
-        <h2 className="font-poppins font-semibold text-2xl pb-1 font-semibo ld md:text-[3.5rem] ">
+      <div className=" flex justify-start w-full items-end gap-1 h-16  ">
+        <h2 className="font-poppins text-2xl pb-1 font-semibold md:text-[3.5rem]  ">
           Mes Services
         </h2>
-        <span className=" w-4 h-4 rounded-full bg-purple"></span>
+        <span className=" mb-[0.69rem]  sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>
       </div>
-      <p className="font-poppins pt-8 mb-24 text-[1rem] ">
+      <p className="font-poppins pt-2 md:pt-8 mb-12 md:mb-24 text-[1rem] ">
         Je vous offre une solution web sur-mesure, en alliant des interfaces
         utilisateurs modernes et responsives (frontend) aux fonctionnalités
         puissantes et sécurisées (backend), pour garantir la performance, la
         sécurité et l’évolutivité de votre site.{" "}
       </p>
-      <div className="flex flex-col items-center ">
-        <div className="font-poppins flex flex-col md:flex-row gap-28">
-          <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
+      <div className="flex flex-col items-center md:justify-center ">
+        <div className="font-poppins flex flex-wrap justify-center  gap-14 lg:gap-28">
+          <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[22rem] h-[27rem]  sm:w-[30rem] md:h-[25rem] xl:px-8 py-8 gap-6 px-4 ">
             <h2 className=" text-purple font-semibold text-base lg:text-lg text-center">
               DEVELOPPEMENT WEB FRONTEND
             </h2>
@@ -42,7 +40,7 @@ export default function MyServices() {
               </ul>
             </div>
           </div>
-          <div className="font-poppins  dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl w-[30rem] h-[25rem] px-8 py-8 gap-6 ">
+          <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[22rem] h-[27rem]  sm:w-[30rem] md:h-[25rem] xl:px-8 py-8 gap-6 px-4 ">
             <h2 className=" text-purple font-semibold text-base  lg:text-lg text-center">
               DEVELOPPEMENT WEB BACKEND
             </h2>

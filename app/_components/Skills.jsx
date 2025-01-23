@@ -10,16 +10,16 @@ export default function Skills() {
   return (
     <div className="tracking-wide">
       <div>
-        <div className=" flex items-end gap-1 h-16 mb-24 ">
-          <h2 className="font-poppins text-2xl pb-1 font-semibold md:text-[3.5rem] ">
-            Mes Compétences
+        <div className=" flex justify-start w-full items-end gap-1 h-16  ">
+          <h2 className="font-poppins text-2xl md:pb-1 font-semibold md:text-[3.5rem] ">
+            Mes compétences
           </h2>
-          <span className=" w-4 h-4 rounded-full bg-purple"></span>
+          <span className=" mb-[0.48rem] sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-2 ">
-        <div className="flex flex-col  items-stretch   md:flex-row  md:flex-wrap justify-center  lg:flex-nowrap lg:flex-row gap-6 lg:gap-8 xl:justify-around  ">
+      <div className="flex flex-col items-center mt-2 md:mt-20 ">
+        <div className="flex flex-col  items-stretch   md:flex-row  md:flex-wrap justify-center  xl:flex-nowrap xl:flex-row gap-6 md:gap-12 xl:gap-8 xl:justify-around  ">
           <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none  w-[18rem]  px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 flex flex-col ">
             <div className="flex flex-col items-center  gap-4 ">
               <div className="flex flex-col">
@@ -33,7 +33,7 @@ export default function Skills() {
                 className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-40 dark:sm:h-40 dark:brightness-75 mt-6"
               />
             </div>
-            <ul className=" text-[1rem] text-center smt-6 ">
+            <ul className=" text-[1rem] text-center mt-6 ">
               <li>JavaScript / TypeScript</li>
               <li>React, Next</li>
               <li>Shadcn/ui</li>
