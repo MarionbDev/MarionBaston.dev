@@ -13,6 +13,8 @@ export default function BestProjects() {
     ...professionalProjects,
   ];
 
+  // console.log(typeof window !== "undefined" ? "Côté client" : "Côté serveur");
+
   // Filtrer les projets par ID et type
   const selectedProProjects = allProjects.filter(
     (project) => project.type === "pro" && [1].includes(project.id)
@@ -37,7 +39,7 @@ export default function BestProjects() {
     <div className="tracking-wide ">
       <div className="  flex flex-col  items-center sm:items-start md:gap-3 mb-6 md:mb-12  ">
         <div className=" flex justify-start  w-full items-end gap-1 h-16  ">
-          <h2 className="font-poppins text-2xl md:pb-1 font-semibold md:text-[3.5rem] ">
+          <h2 className="font-poppins text-3xl md:pb-1 font-semibold md:text-[3.5rem] ">
             Portfolio
           </h2>
           <span className="mb-[0.46rem] sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>

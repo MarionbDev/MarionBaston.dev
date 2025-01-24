@@ -2,12 +2,21 @@
 
 import Link from "next/link";
 
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
+import { useEffect, useState } from "react";
 
+export default function Footer() {
+  const [currentYear, setCurrentYear] = useState(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
+  if (!currentYear) {
+    return null;
+  }
   return (
     <footer>
-      <div className=" py-2 px-6 bg-purple dark:bg-[#1b1c1f] text-[#f3f1f1] ">
+      <div className=" py-2 px-6 bg-purple dark:border-t-[1px] dark:bg-[#121212] text-[#f3f1f1] ">
         <div className="">
           <nav
             aria-labelledby="footer-navigation-link "
@@ -74,7 +83,7 @@ export default function Footer() {
             </div>
           </nav>
           <div className="">
-            <span className="flex justify-center mx-4 border-t-2  border-[#f3dec9] my-8"></span>
+            <span className="flex justify-center mx-4 border-t-[1px]  border-[#f3dec9] my-8"></span>
             <Link href="/" aria-labelledby="marion-baston">
               <div className="flex items-center gap-2 mb-8">
                 <span className="text-xs sm:text-sm">© {currentYear}</span>

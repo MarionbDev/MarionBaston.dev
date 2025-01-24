@@ -18,11 +18,11 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="mt-36 md:mt-20 lg:mt-0 mx-6 xl:mx-0">
-      <div className=" lg:h-[100vh] text-font pb-8   ">
+    <div className="  mx-6 md:mx-20 xl:mx-0">
+      <div className=" lg:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
-            <h1 className=" mt-6 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
+            <h1 className=" mt-14 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
               Bonjour, je suis&nbsp;
               <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
                 Marion👋
@@ -31,6 +31,7 @@ export default function AboutMe() {
             <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
               Développeuse Web
             </h2>
+            <span className="wave-home relative "></span>
             <p className=" text-[1rem] md:text-[1.5rem] leading-7   ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
               nouveaux concepts et relever des défis techniques pour
@@ -39,14 +40,14 @@ export default function AboutMe() {
             <div className=" flex flex-col md:flex-row lg:mt-8 md:gap-8  ">
               <div className=" flex items-center gap-4">
                 <Link
-                  href={"/#contactPage"}
+                  href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
                   className="flex  items-center bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 md:gap-1 px-4 "
                 >
                   <MessagesSquare
                     size="22"
                     id="contact-me header"
-                    className="md:mr-2  "
+                    className="md:mr-2 w-16 md:w-0 "
                   />
                   <span className=" hidden md:flex">Contactez-moi</span>
                 </Link>
@@ -96,7 +97,7 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6  relative bottom-6  ">
+          <div className="flex justify-center items-center -rotate-6  relative bottom-6 xl:bottom-10 ">
             <div className="border-2 p-[0.4rem]  rotate-12 border-[#ab6aff] absolute sm:top-[6rem]   ">
               <Image
                 src={myPhoto}
@@ -105,14 +106,15 @@ export default function AboutMe() {
                 height={400}
                 className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]   "
               />
-              <div className=" border-2 border-[#ab6aff] p-28 sm:p-44 relative rotate-12 "></div>
+              <div className=" border-2 border-[#800080] p-28 sm:p-44 relative rotate-12 "></div>
             </div>
 
             <Image
               src={splash}
               alt="splach"
               width={450}
-              className=" w-[18rem] sm:w-[28rem] mt-4 sm:mt-16 "
+              height={450}
+              className=" w-[16rem] sm:w-[28rem] mt-0 sm:mt-16 "
             />
           </div>
         </div>

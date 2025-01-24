@@ -11,20 +11,20 @@ export default function Skills() {
     <div className="tracking-wide">
       <div>
         <div className=" flex justify-start w-full items-end gap-1 h-16  ">
-          <h2 className="font-poppins text-2xl md:pb-1 font-semibold md:text-[3.5rem] ">
+          <h2 className="font-poppins text-3xl md:pb-1 font-semibold md:text-[3.5rem] ">
             Mes compétences
           </h2>
           <span className=" mb-[0.48rem] sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-2 md:mt-20 ">
+      <div className="flex flex-col items-center mt-10 md:mt-20 ">
         <div className="flex flex-col  items-stretch   md:flex-row  md:flex-wrap justify-center  xl:flex-nowrap xl:flex-row gap-6 md:gap-12 xl:gap-8 xl:justify-around  ">
           <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none  w-[18rem]  px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 flex flex-col ">
             <div className="flex flex-col items-center  gap-4 ">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">FRONTEND</h2>
-                <span className=" w-full h-[0.1rem] rounded-full bg-purple/70"></span>{" "}
+                <span className="wave-services relative flex justify-center "></span>
               </div>
               <Image
                 src={splash}
@@ -46,7 +46,7 @@ export default function Skills() {
             <div className="flex flex-col items-center  gap-4">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">BACKEND</h2>
-                <span className=" w-full h-[0.1rem] rounded-full bg-purple/70"></span>{" "}
+                <span className="wave-services relative flex justify-center "></span>
               </div>
               <Image
                 src={backend}
@@ -68,7 +68,7 @@ export default function Skills() {
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
-                <span className=" w-full h-[0.1rem] rounded-full bg-purple/70"></span>{" "}
+                <span className="wave-services relative flex justify-center "></span>
               </div>{" "}
               <Image
                 src={tools}
@@ -91,7 +91,7 @@ export default function Skills() {
                 <h2 className="text-lg text-center  font-semibold">
                   SOFT SKILLS
                 </h2>
-                <span className=" w-full h-[0.1rem] rounded-full bg-purple/70"></span>{" "}
+                <span className="wave-services relative flex justify-center "></span>
               </div>
               <Image
                 src={softSkills}

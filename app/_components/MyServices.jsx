@@ -2,7 +2,7 @@ export default function MyServices() {
   return (
     <div className="flex flex-col  justify-center tracking-wide ">
       <div className=" flex justify-start w-full items-end gap-1 h-16  ">
-        <h2 className="font-poppins text-2xl pb-1 font-semibold md:text-[3.5rem]  ">
+        <h2 className="font-poppins text-3xl pb-1 font-semibold md:text-[3.5rem]  ">
           Mes Services
         </h2>
         <span className=" mb-[0.69rem]  sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>
@@ -16,9 +16,13 @@ export default function MyServices() {
       <div className="flex flex-col items-center md:justify-center ">
         <div className="font-poppins flex flex-wrap justify-center  gap-14 lg:gap-28">
           <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[22rem] h-[27rem]  sm:w-[30rem] md:h-[25rem] xl:px-8 py-8 gap-6 px-4 ">
-            <h2 className=" text-purple font-semibold text-base lg:text-lg text-center">
-              DEVELOPPEMENT WEB FRONTEND
-            </h2>
+            <div className="flex flex-col ">
+              <h2 className=" text-purple dark:text-white font-semibold text-base lg:text-lg text-center">
+                DEVELOPPEMENT WEB FRONTEND
+              </h2>
+              <span className="wave-services relative flex justify-center "></span>
+            </div>
+
             <div className=" tracking-tight text-[1rem]">
               <p className="  mt-8">
                 Je développe l'interface visible de votre site web à partir
@@ -41,9 +45,12 @@ export default function MyServices() {
             </div>
           </div>
           <div className="dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm  rounded-xl w-[22rem] h-[27rem]  sm:w-[30rem] md:h-[25rem] xl:px-8 py-8 gap-6 px-4 ">
-            <h2 className=" text-purple font-semibold text-base  lg:text-lg text-center">
-              DEVELOPPEMENT WEB BACKEND
-            </h2>
+            <div className="flex flex-col ">
+              <h2 className=" text-purple dark:text-white font-semibold text-base lg:text-lg text-center">
+                DEVELOPPEMENT WEB BACKEND
+              </h2>
+              <span className="wave-services relative flex justify-center "></span>
+            </div>
             <div className="  tracking-tight text-[1rem]">
               <p className=" mt-8">
                 Je réponds aux besoins techniques du projet en développant
