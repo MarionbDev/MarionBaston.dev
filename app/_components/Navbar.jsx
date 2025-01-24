@@ -17,7 +17,7 @@ export default function Navbar() {
 
           <li className="">
             <Link
-              href="/#projects"
+              href="/#portfolio"
               aria-label="mes projets"
               className="nav-link"
             >
@@ -26,7 +26,7 @@ export default function Navbar() {
           </li>
           <li className="">
             <Link
-              href="/#skills"
+              href="/#mes-competences"
               aria-label="mes compétences "
               className="nav-link"
             >
@@ -35,7 +35,7 @@ export default function Navbar() {
           </li>
           <li className="">
             <Link
-              href="/#myservices"
+              href="/#mes-services"
               aria-label="mes services"
               className="nav-link"
             >

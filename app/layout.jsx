@@ -1,9 +1,8 @@
 import { Inter } from "next/font/google";
 import PropTypes from "prop-types";
-import Providers from "./_components/Providers";
-// import { ScrollProvider } from "./_components/ScrollContext";
 import Navbar from "./_components/Navbar";
 import NavbarMobile from "./_components/NavbarMobile";
+import Providers from "./_components/Providers";
 import { ThemeProvider } from "./_components/ThemeProvider";
 import "./globals.css";
 
@@ -34,8 +33,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      {/* <link rel="preconnect" href="https://mssggkataaagdhwyybfs.supabase.co" /> */}
+    <html lang="fr" className="light">
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -43,9 +41,6 @@ export default function RootLayout({ children }) {
           enableSystem={false}
           disableTransitionOnChange
         >
-          {/* <Suspense fallback={<></>}> */}
-          {/* <ScrollProvider> */}
-
           <Providers>
             <div className="flex  ">
               <Navbar className="navbar" />
@@ -55,8 +50,6 @@ export default function RootLayout({ children }) {
             </div>
             {children}
           </Providers>
-          {/* </ScrollProvider> */}
-          {/* </Suspense> */}
         </ThemeProvider>
       </body>
     </html>
