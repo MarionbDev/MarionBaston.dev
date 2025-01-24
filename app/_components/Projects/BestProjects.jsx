@@ -1,39 +1,63 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import professionalProjects from "./allProjects/ProfessionalProject";
-import sideProjects from "./allProjects/SideProject";
-import trainingProjects from "./allProjects/TrainingProject";
+// import professionalProjects from "./allProjects/ProfessionalProject";
+// import sideProjects from "./allProjects/SideProject";
+// import trainingProjects from "./allProjects/TrainingProject";
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 export default function BestProjects() {
   // Fusionner les projets
-  const allProjects = [
-    ...sideProjects,
-    ...trainingProjects,
-    ...professionalProjects,
-  ];
+  // const allProjects = [
+  //   ...sideProjects,
+  //   ...trainingProjects,
+  //   ...professionalProjects,
+  // ];
 
-  // console.log(typeof window !== "undefined" ? "Côté client" : "Côté serveur");
+  // // console.log(typeof window !== "undefined" ? "Côté client" : "Côté serveur");
 
-  // Filtrer les projets par ID et type
-  const selectedProProjects = allProjects.filter(
-    (project) => project.type === "pro" && [1].includes(project.id)
-  );
+  // // Filtrer les projets par ID et type
+  // const selectedProProjects = allProjects.filter(
+  //   (project) => project.type === "pro" && [1].includes(project.id)
+  // );
 
-  const selectedProjects = allProjects.filter(
-    (project) =>
-      (project.type === "side" && [1].includes(project.id)) ||
-      (project.type === "training" && [5].includes(project.id))
-  );
+  // const selectedProjects = allProjects.filter(
+  //   (project) =>
+  //     (project.type === "side" && [1].includes(project.id)) ||
+  //     (project.type === "training" && [5].includes(project.id))
+  // );
 
-  // Trier les projets par date (du plus récent au plus ancien)
-  const sortedProProjects = selectedProProjects.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  // // Trier les projets par date (du plus récent au plus ancien)
+  // const sortedProProjects = selectedProProjects.sort(
+  //   (a, b) => new Date(b.date) - new Date(a.date)
+  // );
 
-  const sortedProjects = selectedProjects.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  // const sortedProjects = selectedProjects.sort(
+  //   (a, b) => new Date(b.date) - new Date(a.date)
+  // );
+
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const res = await fetch("/api/projects/projectsPro");
+        if (!res.ok) throw new Error("Failed to fetch projects");
+        const data = await res.json();
+        setProjects(data);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchProjects();
+  }, []);
+
+  if (loading) return <p>Loading projects...</p>;
 
   return (
     <div className="tracking-wide ">
@@ -58,10 +82,13 @@ export default function BestProjects() {
       </div>
       <div className=" px-10 ">
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap lg:gap-x-10 lg:gap-y-14 ">
-          {sortedProProjects.map((project) => (
+          {/* {sortedProProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}{" "}
           {sortedProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))} */}
+          {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
