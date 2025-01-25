@@ -439,7 +439,7 @@ const trainingProjects = [
   {
     id: 5,
     type: "training",
-    date: "2023/05",
+    date: "2023/06",
     title: "SERENITY",
     client: "fictif, 3ème projet de formation à la Wild Code School",
     description:

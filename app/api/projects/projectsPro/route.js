@@ -1,4 +1,4 @@
-import professionalProjects from "@/lib/dataPro/projects";
+import professionalProjects from "@/data/dataPro/projects";
 
 export async function GET(request) {
   try {

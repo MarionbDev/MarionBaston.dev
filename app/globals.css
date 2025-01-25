@@ -54,54 +54,53 @@ html {
 
 .underline {
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: transparent;
   width: 0%;
   transition:
     width 0.4s,
     background-color 0.5s;
   margin: 2px auto 0 auto;
-  border-radius: 50px;
+  border-radius: 100%;
 }
 
 .nav-link:hover .underline {
   width: 100%;
-  background-color: #8300e9;
+  background-color: #c80ec8;
 }
 
-.wave-form::after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  border-top: solid 3px purple;
-  bottom: 10px;
-  border-radius: 50%;
-  height: 8px;
-}
-
+/*PSEUDO-ELEMENT Wave*/
 .wave-home {
   position: relative;
-  /* left: -380px; */
-  bottom: -2px;
 }
 
 .wave-home::after {
   content: "";
   position: absolute;
-  width: 18%;
-  border-top: solid 3px #800080;
-  left: 50px;
-  top: -8px;
+  border-top: solid 3px rgb(200, 14, 200);
+  height: 8px;
+  width: 22%;
+  border-radius: 50%;
+  rotate: -10deg;
+  top: 68px;
+  left: 45px;
+}
+
+.wave-form::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  border-top: solid 3px #c80ec8;
+  bottom: 10px;
   border-radius: 50%;
   height: 8px;
-  rotate: -10deg;
 }
 
 .wave-services::after {
   content: "";
   position: absolute;
   width: 50%;
-  border-top: solid 3px purple;
+  border-top: solid 3px rgb(200, 14, 200);
   top: 2px;
   border-radius: 50%;
   height: 8px;
@@ -203,10 +202,10 @@ html {
 
 /* RESPONSIVE */
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 447px) {
   .wave-home::after {
-    left: 340px;
-    width: 16%;
+    left: 330px;
+    top: 40px;
   }
 }
 
@@ -214,18 +213,21 @@ html {
   .navbar {
     display: none;
   }
-}
-
-@media only screen and (min-width: 606px) {
   .wave-home::after {
-    width: 12%;
+    width: 16%;
+    top: 38px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .wave-home::after {
-    left: 340px;
+@media only screen and (min-width: 606px) {
+  /* .wave-home::after {
     width: 12%;
+  } */
+}
+
+@media only screen and (min-width: 769px) {
+  .wave-home::after {
+    width: 16%;
   }
 }
 
@@ -242,44 +244,43 @@ html {
 }
 
 @media only screen and (min-width: 800px) {
-  .wave-home::after {
+  /* .wave-home::after {
     width: 10%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 957px) {
-  .wave-home::after {
+  /* .wave-home::after {
     width: 10%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
   .wave-home::after {
-    left: 540px;
-    width: 14%;
+    left: 530px;
+    top: 58px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .wave-home::after {
+  /* .wave-home::after {
     left: 510px;
     width: 14%;
     top: -2px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1280px) {
   .wave-home::after {
     left: 550px;
-    width: 14%;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .wave-home::after {
+  /* .wave-home::after {
     left: 550px;
     width: 18%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 468px) {

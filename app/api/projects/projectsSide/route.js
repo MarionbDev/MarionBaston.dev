@@ -1,6 +1,4 @@
-// app/api/projects/route.js
-
-import projectsSide from "@/lib/dataSide/projects";
+import projectsSide from "@/data/dataSide/projects";
 
 export async function GET(request) {
   try {

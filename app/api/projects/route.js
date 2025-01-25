@@ -5,24 +5,29 @@ export async function GET(req) {
     const exclude = url.searchParams.get("exclude");
 
     const sideProjectsResponse = await fetch(
-      "http://localhost:3000/api/projects/projectsSide"
+      `${process.env.NEXT_PUBLIC_API_URL}/api/projects/projectsSide`
     );
-    console.log("side :", sideProjectsResponse);
     const sideProjects = await sideProjectsResponse.json();
 
     const proProjectsResponse = await fetch(
-      "http://localhost:3000/api/projects/projectsPro"
+      `${process.env.NEXT_PUBLIC_API_URL}/api/projects/projectsPro`
     );
     const proProjects = await proProjectsResponse.json();
 
     const trainingProjectsResponse = await fetch(
-      "http://localhost:3000/api/projects/projectsTraining"
+      `${process.env.NEXT_PUBLIC_API_URL}/api/projects/projectsTraining`
     );
     const trainingProjects = await trainingProjectsResponse.json();
 
+    const sortedTrainingProjects = trainingProjects.sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB - dateA;
+    });
+
     const filteredTrainingProjects = filter
-      ? trainingProjects.filter((project) => [5].includes(project.id))
-      : trainingProjects;
+      ? sortedTrainingProjects.filter((project) => [5].includes(project.id))
+      : sortedTrainingProjects;
 
     const filteredProProjects = filter
       ? proProjects.filter((project) => [1].includes(project.id))
@@ -32,20 +37,16 @@ export async function GET(req) {
       ? sideProjects.filter((project) => project.id == parseInt(exclude))
       : sideProjects;
 
-    // Combiner tous les projets
     const allProjects = [
       ...filteredProProjects,
       ...filteredSideProjects,
       ...filteredTrainingProjects,
     ];
 
-    // Réponse combinée en JSON
     return new Response(JSON.stringify(allProjects), {
       status: 200,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*", // Permet toutes les origines
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS", // Autorise certaines méthodes
       },
     });
   } catch (error) {

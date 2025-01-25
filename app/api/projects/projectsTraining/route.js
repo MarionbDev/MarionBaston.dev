@@ -1,4 +1,4 @@
-import trainingProjects from "@/lib/dataTraining/projects";
+import trainingProjects from "@/data/dataTraining/projects";
 
 export async function GET(request) {
   try {
