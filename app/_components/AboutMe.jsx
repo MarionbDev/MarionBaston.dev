@@ -28,10 +28,12 @@ export default function AboutMe() {
                 Marion👋
               </span>
             </h1>
-            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
-              Développeuse Web
-            </h2>
-            <span className="wave-home relative "></span>
+            <div className="flex flex-col ">
+              <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
+                Développeuse Web
+              </h2>
+              <span className="wave-home  "></span>
+            </div>
             <p className=" text-[1rem] md:text-[1.5rem] leading-7   ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
               nouveaux concepts et relever des défis techniques pour

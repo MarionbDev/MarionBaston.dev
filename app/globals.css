@@ -74,10 +74,15 @@ html {
   position: absolute;
   width: 80%;
   border-top: solid 3px purple;
-
   bottom: 10px;
   border-radius: 50%;
   height: 8px;
+}
+
+.wave-home {
+  position: relative;
+  /* left: -380px; */
+  bottom: -2px;
 }
 
 .wave-home::after {
@@ -85,8 +90,8 @@ html {
   position: absolute;
   width: 18%;
   border-top: solid 3px #800080;
-  left: 45px;
-  bottom: 18px;
+  left: 50px;
+  top: -8px;
   border-radius: 50%;
   height: 8px;
   rotate: -10deg;
@@ -197,19 +202,31 @@ html {
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 770px) {
+
+@media only screen and (min-width: 450px) {
+  .wave-home::after {
+    left: 340px;
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .navbar {
     display: none;
   }
+}
 
-  /* .dialog {
+@media only screen and (min-width: 606px) {
+  .wave-home::after {
+    width: 12%;
+  }
+}
 
-    left: 50%;
-    top: 40%;
-    transform: translate(-70%, -40%);
-    width: 70%;
-    max-width: none;
-  } */
+@media only screen and (min-width: 768px) {
+  .wave-home::after {
+    left: 340px;
+    width: 12%;
+  }
 }
 
 @media only screen and (min-width: 771px) {
@@ -224,52 +241,44 @@ html {
   }
 }
 
-@media only screen and (max-width: 957px) {
-  .wave-home::after {
-    left: 340px;
-    bottom: 17px;
-    width: 12%;
-  }
-}
-
-@media only screen and (max-width: 456px) {
-  .wave-home::after {
-    left: 60px;
-    bottom: 20px;
-    width: 12%;
-  }
-}
-@media only screen and (min-width: 457px) {
-  .wave-home::after {
-    left: 350px;
-    bottom: 20px;
-    width: 12%;
-  }
-}
-
-/* @media only screen and (min-width: 777px) {
-  .wave-home::after {
-    left: 90px;
-    bottom: 20px;
-    width: 12%;
-  }
-} */
-
 @media only screen and (min-width: 800px) {
   .wave-home::after {
-    left: 340px;
+    width: 10%;
+  }
+}
+
+@media only screen and (min-width: 957px) {
+  .wave-home::after {
+    width: 10%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .wave-home::after {
+    left: 540px;
+    width: 14%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wave-home::after {
+    left: 510px;
+    width: 14%;
+    top: -2px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wave-home::after {
     left: 550px;
+    width: 14%;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .wave-home::after {
-    left: 570px;
+    left: 550px;
+    width: 18%;
   }
 }
 

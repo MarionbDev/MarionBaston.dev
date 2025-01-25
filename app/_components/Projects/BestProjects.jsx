@@ -39,12 +39,14 @@ export default function BestProjects() {
 
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const res = await fetch("/api/projects/projectsPro");
+        const res = await fetch("/api/projects");
         if (!res.ok) throw new Error("Failed to fetch projects");
+
         const data = await res.json();
         setProjects(data);
       } catch (error) {
@@ -58,6 +60,7 @@ export default function BestProjects() {
   }, []);
 
   if (loading) return <p>Loading projects...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div className="tracking-wide ">
