@@ -1,36 +1,60 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import professionalProjects from "../_components/Projects/allProjects/ProfessionalProject";
-import sideProjects from "../_components/Projects/allProjects/SideProject";
-import trainingProjects from "../_components/Projects/allProjects/TrainingProject";
+import { useEffect, useState } from "react";
 import ProjectCard from "../_components/Projects/ProjectCard";
 
 export default function Portfolio() {
-  const allProjects = [
-    ...sideProjects,
-    ...trainingProjects,
-    ...professionalProjects,
-  ];
+  // const allProjects = [
+  //   ...sideProjects,
+  //   ...trainingProjects,
+  //   ...professionalProjects,
+  // ];
 
-  // Filtrer les projets par ID et type
-  const selectedProProjects = allProjects.filter(
-    (project) => project.type === "pro" && [1].includes(project.id)
-  );
+  // // Filtrer les projets par ID et type
+  // const selectedProProjects = allProjects.filter(
+  //   (project) => project.type === "pro" && [1].includes(project.id)
+  // );
 
-  const selectedProjects = allProjects.filter(
-    (project) =>
-      (project.type === "side" && [1].includes(project.id)) ||
-      (project.type === "training" && [2, 3, 4, 5].includes(project.id))
-  );
+  // const selectedProjects = allProjects.filter(
+  //   (project) =>
+  //     (project.type === "side" && [1].includes(project.id)) ||
+  //     (project.type === "training" && [2, 3, 4, 5].includes(project.id))
+  // );
 
-  // Trier les projets par date (du plus récent au plus ancien)
-  const sortedProProjects = selectedProProjects.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  // // Trier les projets par date (du plus récent au plus ancien)
+  // const sortedProProjects = selectedProProjects.sort(
+  //   (a, b) => new Date(b.date) - new Date(a.date)
+  // );
 
-  const sortedProjects = selectedProjects.sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  // const sortedProjects = selectedProjects.sort(
+  //   (a, b) => new Date(b.date) - new Date(a.date)
+  // );
+
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const res = await fetch("/api/projects?exclude=1");
+        if (!res.ok) throw new Error("Failed to fetch projects");
+
+        const data = await res.json();
+        setProjects(data);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchProjects();
+  }, []);
+
+  if (loading) return <p>Loading projects...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div className="sm:w-10/12  mt-24 px-6 md:mx-20 lg:mx-32 ">
@@ -64,13 +88,17 @@ export default function Portfolio() {
       </div>
       <div className=" flex flex-col items-center">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 ">
-          {sortedProProjects.map((project, index) => (
+          {/* {sortedProProjects.map((project, index) => (
             <ProjectCard key={`${index}-${project.id}`} project={project} />
           ))}
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
           {sortedProjects.map((project, index) => (
             <ProjectCard key={` ${index}-${project.id}`} project={project} />
+          ))} */}
+
+          {projects.map((project, index) => (
+            <ProjectCard key={`${project.id}-${index}`} project={project} />
           ))}
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function Footer() {
     setCurrentYear(new Date().getFullYear());
   }, []);
 
-  if (!currentYear) {
+  if (currentYear === null) {
     return null;
   }
   return (
@@ -33,23 +33,23 @@ export default function Footer() {
               <p className="font-bold text-[1.2rem]">Plan du site</p>
               <ul className="flex flex-col gap-2 ">
                 <li>
-                  <Link href="#aboutme" id="footer-about-me">
-                    Qui suis-je
+                  <Link href="#home" id="footer-about-me">
+                    Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="#projects" id="footer-projects">
+                  <Link href="#portfolio" id="footer-projects">
                     Mes Projets
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#skills" id="footer-skills">
+                  <Link href="#mes-competences" id="footer-skills">
                     Mes Compétences
                   </Link>
                 </li>
                 <li>
-                  <Link href="#myservices" id="footer-services">
+                  <Link href="#mes-services" id="footer-services">
                     Mes services
                   </Link>
                 </li>

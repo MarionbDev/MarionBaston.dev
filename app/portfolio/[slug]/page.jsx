@@ -1,27 +1,24 @@
-import professionalProjects from "@/app/_components/Projects/allProjects/ProfessionalProject";
-import sideProjects from "@/app/_components/Projects/allProjects/SideProject";
-import trainingProjects from "@/app/_components/Projects/allProjects/TrainingProject";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { createSlug } from "@/utils/slug";
 import { ArrowLeftCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import { createSlug } from "@/utils/slug";
 
 export default async function ProjectPage({ params }) {
-  const { slug } = await params;
+  const { slug } = await params; // Les paramètres sont déjà fournis par Next.js de manière asynchrone
 
-  // Récupérer tous les projets
-  const allProjects = [
-    ...sideProjects,
-    ...trainingProjects,
-    ...professionalProjects,
-  ];
+  // Récupérer les projets depuis l'API
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`);
+  const allProjects = await res.json();
 
-  // Trouver le projet correspondant au slug
-  const project = allProjects.find((proj) => createSlug(proj.title) === slug);
+  // Chercher le projet en fonction du slug
+  const project = allProjects.find((p) => createSlug(p.title) === slug);
 
+  // Si le projet n'est pas trouvé, rediriger vers la page 404
   if (!project) {
-    return <div>Projet introuvable.</div>;
+    return notFound(); // Retourner une page 404
   }
 
   return (
@@ -67,7 +64,7 @@ export default async function ProjectPage({ params }) {
                         <div className=" flex justify-start rounded-md ">
                           <Image
                             src={picture.image}
-                            alt={`Photo du projet - ${picture.image}`}
+                            alt="photo du projet"
                             width={900}
                             height={400}
                             className="   border-2  bg-black/10 "

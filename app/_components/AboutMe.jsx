@@ -28,10 +28,12 @@ export default function AboutMe() {
                 Marion👋
               </span>
             </h1>
-            <h2 className="text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
-              Développeuse Web
-            </h2>
-            <span className="wave-home relative "></span>
+            <div className="flex flex-col ">
+              <h2 className="wave-home text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
+                Développeuse Web
+              </h2>
+              {/* <span className="wave-home  "></span> */}
+            </div>
             <p className=" text-[1rem] md:text-[1.5rem] leading-7   ">
               J'aime expérimenter de nouvelles fonctionnalités, tester de
               nouveaux concepts et relever des défis techniques pour
@@ -42,7 +44,7 @@ export default function AboutMe() {
                 <Link
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex  items-center bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 md:gap-1 px-4 "
+                  className="flex  items-center bg-purple dark:bg-purple/80 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 md:gap-1 px-4 "
                 >
                   <MessagesSquare
                     size="22"
@@ -56,7 +58,7 @@ export default function AboutMe() {
                   onClick={downloadCV}
                   role="button"
                   aria-label="Télécharger mon CV"
-                  className=" border-2 shadow-none border-purple/30 hover:border-purple dark:border-purple/20  dark:hover:border-purple dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
+                  className=" border-2 shadow-none border-purple/30 hover:border-purple dark:border-purple/70  dark:hover:border-purple dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
                 >
                   <Download id="download-cv" alt="icône de téléchargement  " />
                   <p className="flex gap-1">
@@ -64,7 +66,7 @@ export default function AboutMe() {
                   </p>
                 </Button>
                 <ul className="flex items-center gap-2">
-                  <li className=" border-2 border-purple/30 duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
+                  <li className=" border-2 border-purple duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
                     <Link
                       href="https://www.linkedin.com/in/marion-baston/"
                       target="_blank"
@@ -78,7 +80,7 @@ export default function AboutMe() {
                       />
                     </Link>
                   </li>
-                  <li className=" border-2 border-purple/30 duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
+                  <li className=" border-2 border-purple duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
                     {" "}
                     <Link
                       href="https://github.com/MarionbDev"
@@ -106,7 +108,7 @@ export default function AboutMe() {
                 height={400}
                 className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]   "
               />
-              <div className=" border-2 border-[#800080] p-28 sm:p-44 relative rotate-12 "></div>
+              <div className=" border-2 border-[#c80ec8] p-28 sm:p-44 relative rotate-12 "></div>
             </div>
 
             <Image
