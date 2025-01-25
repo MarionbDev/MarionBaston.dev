@@ -8,35 +8,6 @@ import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
 export default function BestProjects() {
-  // Fusionner les projets
-  // const allProjects = [
-  //   ...sideProjects,
-  //   ...trainingProjects,
-  //   ...professionalProjects,
-  // ];
-
-  // // console.log(typeof window !== "undefined" ? "Côté client" : "Côté serveur");
-
-  // // Filtrer les projets par ID et type
-  // const selectedProProjects = allProjects.filter(
-  //   (project) => project.type === "pro" && [1].includes(project.id)
-  // );
-
-  // const selectedProjects = allProjects.filter(
-  //   (project) =>
-  //     (project.type === "side" && [1].includes(project.id)) ||
-  //     (project.type === "training" && [5].includes(project.id))
-  // );
-
-  // // Trier les projets par date (du plus récent au plus ancien)
-  // const sortedProProjects = selectedProProjects.sort(
-  //   (a, b) => new Date(b.date) - new Date(a.date)
-  // );
-
-  // const sortedProjects = selectedProjects.sort(
-  //   (a, b) => new Date(b.date) - new Date(a.date)
-  // );
-
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -44,7 +15,7 @@ export default function BestProjects() {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const res = await fetch("/api/projects");
+        const res = await fetch("/api/projects?filter=true&exclude=1");
         if (!res.ok) throw new Error("Failed to fetch projects");
 
         const data = await res.json();
@@ -91,8 +62,8 @@ export default function BestProjects() {
           {sortedProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))} */}
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={`${project.id}-${index}`} project={project} />
           ))}
         </div>
       </div>
