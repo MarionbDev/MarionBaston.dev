@@ -1,10 +1,11 @@
-export async function GET({ params }) {
+export async function GET(req) {
   try {
-    const { slug } = params;
+    const url = new URL(req.url);
+    const slug = url.pathname.split("/").pop();
 
     if (!slug) {
-      return new Response(JSON.stringify({ message: "Slug manquant" }), {
-        status: 400, // Retourne un mauvais paramètre
+      return new NextResponse(JSON.stringify({ message: "Slug manquant" }), {
+        status: 400,
         headers: { "Content-Type": "application/json" },
       });
     }

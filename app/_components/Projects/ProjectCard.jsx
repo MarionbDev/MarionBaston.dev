@@ -49,7 +49,6 @@ export default function ProjectCard({ project }) {
               href={`/portfolio/${createSlug(project.title)}`}
               className="flex gap-3 items-center"
             >
-              {console.log("Generated slug:", createSlug(project.title))}
               {project.title}
               <CircleArrowOutUpRight size={18} />
             </Link>
