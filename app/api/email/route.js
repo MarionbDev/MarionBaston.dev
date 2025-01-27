@@ -16,7 +16,7 @@ export const POST = async (request) => {
       );
     }
 
-    console.log("Envoi de l'email vers:", EMAIL_TO);
+    // console.log("Envoi de l'email vers:", EMAIL_TO);
 
     // Envoi de l'email via Resend
     const { error } = await resend.emails.send({

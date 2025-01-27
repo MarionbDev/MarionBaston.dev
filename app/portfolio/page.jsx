@@ -5,32 +5,6 @@ import { useEffect, useState } from "react";
 import ProjectCard from "../_components/Projects/ProjectCard";
 
 export default function Portfolio() {
-  // const allProjects = [
-  //   ...sideProjects,
-  //   ...trainingProjects,
-  //   ...professionalProjects,
-  // ];
-
-  // // Filtrer les projets par ID et type
-  // const selectedProProjects = allProjects.filter(
-  //   (project) => project.type === "pro" && [1].includes(project.id)
-  // );
-
-  // const selectedProjects = allProjects.filter(
-  //   (project) =>
-  //     (project.type === "side" && [1].includes(project.id)) ||
-  //     (project.type === "training" && [2, 3, 4, 5].includes(project.id))
-  // );
-
-  // // Trier les projets par date (du plus récent au plus ancien)
-  // const sortedProProjects = selectedProProjects.sort(
-  //   (a, b) => new Date(b.date) - new Date(a.date)
-  // );
-
-  // const sortedProjects = selectedProjects.sort(
-  //   (a, b) => new Date(b.date) - new Date(a.date)
-  // );
-
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

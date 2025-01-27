@@ -1,9 +1,6 @@
 "use client";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-// import professionalProjects from "./allProjects/ProfessionalProject";
-// import sideProjects from "./allProjects/SideProject";
-// import trainingProjects from "./allProjects/TrainingProject";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
@@ -56,12 +53,6 @@ export default function BestProjects() {
       </div>
       <div className=" px-10 ">
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap lg:gap-x-10 lg:gap-y-14 ">
-          {/* {sortedProProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}{" "}
-          {sortedProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))} */}
           {projects.map((project, index) => (
             <ProjectCard key={`${project.id}-${index}`} project={project} />
           ))}

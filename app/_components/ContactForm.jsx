@@ -12,8 +12,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader, Send } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
-import { toast, Toaster } from "sonner";
+import { toast } from "sonner";
 
 export default function ContactForm() {
   const [lastname, setLatsName] = useState("");
@@ -21,53 +22,55 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
 
   const handleSubmitFormContact = async (e) => {
     e.preventDefault();
 
     try {
       setIsLoading(true);
-      // console.log("Submitting form...");
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/email/`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ lastname, firstname, email, message }),
-        }
-      );
-      // console.log("Received response :", response);
-      // console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      const data = await response.json();
-      // console.log("data client : ", data);
-
-      if (data && data.message) {
-        const promise = () =>
-          new Promise((resolve) =>
-            setTimeout(() => {
-              resolve({ name: "Sonner" });
-            }, 400)
-          );
-
-        toast.promise(promise, {
-          success: (data) => {
-            return `Votre message à bien été envoyé !`;
-          },
-          error: "Error",
-        });
-
-        setLatsName("");
-        setFirstname("");
-        setEmail("");
-        setMessage("");
+      if (!acceptedPrivacyPolicy) {
+        toast.warning("Veuillez accepter la politique de confidentialté.");
       } else {
-        toast.error("Une erreur s'est produite ! Veuillez réessayer !");
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/email/`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ lastname, firstname, email, message }),
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+
+        if (data && data.message) {
+          const promise = () =>
+            new Promise((resolve) =>
+              setTimeout(() => {
+                resolve({ name: "Sonner" });
+              }, 400)
+            );
+
+          toast.promise(promise, {
+            success: (data) => {
+              return `Votre message à bien été envoyé !`;
+            },
+            error: "Error",
+          });
+
+          setLatsName("");
+          setFirstname("");
+          setEmail("");
+          setMessage("");
+          setAcceptedPrivacyPolicy(false);
+        } else {
+          toast.error("Une erreur s'est produite ! Veuillez réessayer !");
+        }
       }
     } catch (error) {
       console.error("Error :", error);
@@ -167,6 +170,30 @@ export default function ContactForm() {
                 }
               />
             </div>
+            <div>
+              <Label className=" flex items-center ">
+                <Input
+                  type="checkbox"
+                  id="acceptedPrivacyPolicy"
+                  checked={acceptedPrivacyPolicy}
+                  onChange={(e) => setAcceptedPrivacyPolicy(e.target.checked)}
+                  className=" w-12 "
+                />
+                <span className=" text-[0.7rem] ml-2">
+                  * En soumettant ce formulaire, j'accepte que mes données
+                  personnelles soient utilisées pour me recontacter. Aucun autre
+                  traitement ne sera effectué avec mes informations.
+                  <Link
+                    href={"/legal-notice"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" hover:text-blue-700 italic"
+                  >
+                    &nbsp;Politique de confidentialité
+                  </Link>
+                </span>
+              </Label>
+            </div>
           </CardContent>
           <CardFooter>
             <Button
@@ -184,7 +211,6 @@ export default function ContactForm() {
           </CardFooter>
         </form>
       </Card>
-      <Toaster />
     </div>
   );
 }
