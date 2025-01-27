@@ -6,7 +6,7 @@ import Footer from "./../_components/Footer";
 export default function LegalNoticePage() {
   return (
     <>
-      <div className="container font-poppins text-txt_black mx-auto py-8 flex flex-col gap-8 mb-8">
+      <div className="container font-poppins text-txt_black dark:text-white mx-auto mt-20 py-8 flex flex-col gap-8 mb-8">
         <h1 className="text-4xl font-bold">Mentions légales</h1>
         <Button
           className="gap-2 w-fit shadow-purple/60 shadow-sm hover:bg-purple hover:text-white"
@@ -170,7 +170,29 @@ export default function LegalNoticePage() {
               <Link href="https://marionbaston.fr " className="hover:underline">
                 https://marionbaston.fr
               </Link>
-              <span>&nbsp;ne prélève aucune donnée de ses utilisateurs.</span>
+              <span>&nbsp;</span>
+              collecte des informations personnelles (nom, prénom, email,
+              message) lorsque vous utilisez le formulaire de contact. Ces
+              données sont uniquement utilisées pour répondre à vos demandes et
+              sont envoyées par email au propriétaire du site.{" "}
+            </p>
+            <p>
+              Utilisation des données : Les informations que vous fournissez via
+              le formulaire de contact seront utilisées exclusivement pour
+              traiter votre demande.
+            </p>
+            <p>
+              Gestion des informations : Ces données ne sont pas stockées dans
+              une base de données, elles sont envoyées directement au
+              propriétaire du site sous forme de message électronique.
+            </p>
+            <p>
+              Sécurité des données : Bien que les informations ne soient pas
+              archivées, le propriétaire du site s'engage à garantir que la
+              communication par email respecte des mesures de sécurité pour
+              protéger vos données. Si vous avez des questions concernant la
+              gestion de vos informations personnelles via le formulaire de
+              contact, n'hésitez pas à contacter le propriétaire du site.
             </p>
             {/* <p>
 					<span className="mr-1">Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l&apos;utilisateur du site</span><Link href="https://marionbaston.fr ">https://marionbaston.fr </Link><span> dispose d&apos;un droit d&apos;accès, de modification et de suppression des informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : Marion Baston - marionbaston84@gmail.com</span>

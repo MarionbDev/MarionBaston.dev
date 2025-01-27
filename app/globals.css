@@ -70,20 +70,16 @@ html {
 }
 
 /*PSEUDO-ELEMENT Wave*/
-.wave-home {
-  position: relative;
-}
 
-.wave-home::after {
-  content: "";
-  position: absolute;
-  border-top: solid 3px rgb(200, 14, 200);
-  height: 8px;
-  width: 22%;
+.wave-about {
+  display: block;
+  margin-left: auto;
+  width: 20%;
+
+  border-top: solid 3px #c80ec8;
   border-radius: 50%;
+  height: 8px;
   rotate: -10deg;
-  top: 68px;
-  left: 45px;
 }
 
 .wave-form::after {
@@ -285,6 +281,12 @@ html {
 
 @media only screen and (min-width: 468px) {
   .profile-image-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .wave-about {
     display: none;
   }
 }
