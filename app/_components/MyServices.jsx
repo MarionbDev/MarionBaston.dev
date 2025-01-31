@@ -23,12 +23,12 @@ export default function MyServices() {
               <span className="wave-services relative flex justify-center "></span>
             </div>
 
-            <div className=" tracking-tight text-[1rem]">
+            <div className=" tracking-tight text-[1rem] leading-7">
               <p className="  mt-8">
                 Je développe l'interface visible de votre site web à partir
                 d'une maquette.
               </p>
-              <ul className="  mt-4 list-disc pl-4 gap-1 flex flex-col">
+              <ul className="  mt-4 list-disc pl-4 gap-1 flex flex-col ">
                 <li>
                   Conception d'interfaces utilisateur interactives et intuitives
                 </li>
@@ -51,7 +51,7 @@ export default function MyServices() {
               </h2>
               <span className="wave-services relative flex justify-center "></span>
             </div>
-            <div className="  tracking-tight text-[1rem]">
+            <div className="  tracking-tight text-[1rem] leading-7">
               <p className=" mt-8">
                 Je réponds aux besoins techniques du projet en développant
                 toutes les fonctionnalités invisibles nécessaires au bon

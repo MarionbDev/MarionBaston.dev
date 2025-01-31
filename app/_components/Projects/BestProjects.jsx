@@ -27,7 +27,12 @@ export default function BestProjects() {
     fetchProjects();
   }, []);
 
-  if (loading) return <p>Loading projects...</p>;
+  if (loading)
+    return (
+      <p className="text-center text-[1.2rem]">
+        Chargement des projets en-cours...
+      </p>
+    );
   if (error) return <p>{error}</p>;
 
   return (
@@ -44,7 +49,10 @@ export default function BestProjects() {
             Découvrez la diversité de mes expériences en développement web !
           </p>
           <div className=" flex">
-            <Link href={"/portfolio"} className="  text-purple md:ml-2 ">
+            <Link
+              href={"/portfolio"}
+              className="  text-purple dark:text-purple_dark md:ml-2 "
+            >
               Voir plus
             </Link>
             <ArrowRight size={20} className=" text-purple -rotate-45 mb-1" />

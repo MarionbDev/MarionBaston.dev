@@ -83,15 +83,21 @@ export default function Footer() {
             </div>
           </nav>
           <div className="">
-            <span className="flex justify-center mx-4 border-t-[1px]  border-[#f3dec9] my-8"></span>
+            <span className="flex justify-center  mx-4 border-t-[1px]  border-[#f3dec9] my-8"></span>
             <Link href="/" aria-labelledby="marion-baston">
-              <div className="flex items-center gap-2 mb-8">
-                <span className="text-xs sm:text-sm">© {currentYear}</span>
+              <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mb-8">
+                <p className=" ">© {currentYear}</p>
                 <p
                   id="marion-baston"
                   className=" font-poppins tracking-wide font-semibold "
                 >
-                  Marion Baston. Développeuse Web
+                  Marion Baston
+                </p>
+                <p
+                  id="marion-baston"
+                  className=" font-poppins tracking-wide font-semibold "
+                >
+                  Développeuse Web
                 </p>
               </div>
             </Link>

@@ -46,7 +46,7 @@ export default function AboutMe() {
                 <Link
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex  items-center bg-purple dark:bg-purple/80 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 md:gap-1 px-4 "
+                  className="flex  items-center bg-purple dark:bg-purple/80 hover:bg-purple/60  dark:hover:bg-purple_dark dark:hover:text-white  dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem]  p-2 md:gap-1 px-4 "
                 >
                   <MessagesSquare
                     size="22"
@@ -60,7 +60,7 @@ export default function AboutMe() {
                   onClick={downloadCV}
                   role="button"
                   aria-label="Télécharger mon CV"
-                  className=" border-2 shadow-none border-purple/30 hover:border-purple dark:border-purple/70  dark:hover:border-purple dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
+                  className=" border-2 shadow-none border-purple/30 hover:border-purple dark:border-purple/60  dark:hover:border-purple_dark dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
                 >
                   <Download id="download-cv" alt="icône de téléchargement  " />
                   <p className="flex gap-1">
@@ -68,7 +68,7 @@ export default function AboutMe() {
                   </p>
                 </Button>
                 <ul className="flex items-center gap-2">
-                  <li className=" border-2 border-purple duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
+                  <li className=" border-2 border-purple duration-200  opacity-50 hover:opacity-100  hover:border-purple_dark rounded-full p-2 ">
                     <Link
                       href="https://www.linkedin.com/in/marion-baston/"
                       target="_blank"

@@ -199,7 +199,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="bg-purple dark:bg-purple/50 hover:bg-purple/70  dark:hover:bg-purple dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] ml-auto gap-2"
+              className="bg-purple hover:bg-purple/70 dark:bg-purple  dark:hover:bg-purple_dark dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] ml-auto gap-2"
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />

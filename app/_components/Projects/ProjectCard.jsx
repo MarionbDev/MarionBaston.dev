@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { createSlug } from "@/utils/slug";
 import { ChevronLeft, ChevronRight, CircleArrowOutUpRight } from "lucide-react";
@@ -44,19 +44,20 @@ export default function ProjectCard({ project }) {
               <ChevronRight className="md:hidden" />
             </div>
           ) : null}{" "}
-          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold pt-3">
+          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple dark:text-purple_dark font-semibold pt-3 mx-4 md:mx-0 ">
             <Link
               href={`/portfolio/${createSlug(project.title)}`}
-              className="flex gap-3 items-center"
+              className="flex gap-3 items-center "
             >
               {project.title}
               <CircleArrowOutUpRight size={18} />
             </Link>
           </CardTitle>
+          <p className="mx-4 md:mx-0">{project.description}</p>
+          <p className="mx-4 md:mx-0  max-w-screen-xl leading-7 text-[0.9rem] md:text-base">
+            {project.context}
+          </p>
         </CardHeader>
-        <CardContent className="  max-w-screen-xl  text-[0.9rem]">
-          {project.description}
-        </CardContent>
       </Card>
     </>
   );
