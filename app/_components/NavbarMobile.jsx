@@ -25,24 +25,29 @@ export default function NavbarMobile() {
               <Menu className="w-11 h-11  text-[#5c23ac]  " />
             </MenubarTrigger>
             <MenubarContent
-              align="start"
               sideOffset={0}
-              className=" dark:bg-[#39294f] mr-2   bg-bg_white border-none  shadow-md shadow-[#3f2f5565] rounded-lg "
+              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#121212] bg-bg_white border-none shadow-md  pt-8"
             >
               <Link href="/#home" aria-label="Home">
-                <MenubarItem className="text-sm ">Home</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">Home</MenubarItem>
               </Link>
               <Link href="/#portfolio" aria-label="mes projets">
-                <MenubarItem className="text-sm ">Portfolio</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">Portfolio</MenubarItem>
               </Link>
               <Link href="/#mes-competences" aria-label="mes compétences">
-                <MenubarItem className="text-sm ">Mes Compétences</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">
+                  Mes Compétences
+                </MenubarItem>
               </Link>
               <Link href="/#mes-services" aria-label="mes services">
-                <MenubarItem className="text-sm ">Mes services</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">
+                  Mes services
+                </MenubarItem>
               </Link>
               <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className="text-sm ">Contactez-moi</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">
+                  Contactez-moi
+                </MenubarItem>
               </Link>
             </MenubarContent>
           </MenubarMenu>
