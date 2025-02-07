@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, LoaderCircle } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ProjectCard from "../_components/Projects/ProjectCard";
@@ -29,7 +29,10 @@ export default function Portfolio() {
 
   if (loading)
     return (
-      <p className=" mt-32 text-center">Chargement des projets en cours...</p>
+      <div className="flex flex-col items-center gap-10 justify-center h-screen">
+        <p className=" mt-32 text-center">Chargement des projets en cours...</p>{" "}
+        <LoaderCircle size={56} color="#8300e9" className=" animate-spin" />
+      </div>
     );
   if (error) return <p>{error}</p>;
 

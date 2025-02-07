@@ -11,6 +11,7 @@ export default async function ProjectPage({ params }) {
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`);
   const allProjects = await res.json();
+  console.log("project:", allProjects);
 
   const project = allProjects.find((p) => createSlug(p.title) === slug);
 
@@ -31,10 +32,29 @@ export default async function ProjectPage({ params }) {
             </h1>
             <span className="title-point mb-[0.62rem] md:mb-1 lg:mb-0  w-3 h-3 md:w-4 md:h-4 rounded-full bg-purple "></span>
           </div>
-          <h2 h2 className="md:text-2xl ">
-            {project.description}
-          </h2>
+          <h2 className="md:text-2xl ">{project.description}</h2>
         </div>
+
+        <ul className="flex justify-center items-center gap-8 my-8">
+          <li>
+            <Image
+              src={project.picture_mockup?.[1].image.src}
+              alt={project.picture_mockup?.[1].title}
+              width={900}
+              height={600}
+              className="w-[28rem]"
+            />{" "}
+          </li>
+          <li>
+            <Image
+              src={project.picture_mockup?.[0].image.src}
+              alt={project.picture_mockup?.[0].title}
+              width={900}
+              height={600}
+              className="w-[9rem]"
+            />
+          </li>
+        </ul>
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">🚀 Context & Objectif</h3>
@@ -83,7 +103,7 @@ export default async function ProjectPage({ params }) {
               ))}
             </ul>{" "}
           </div>
-          <ul className="flex flex-wrap gap-2 md:gap-4 my-8">
+          <ul className="flex justify-center flex-wrap gap-2 md:gap-4 my-8">
             {project.technos.map((techno, index) => (
               <li
                 key={`${index}-${techno.title}}`}
@@ -104,7 +124,7 @@ export default async function ProjectPage({ params }) {
                       key={`${index}-${picture.image}`}
                       className=" flex flex-col items-start justify-center"
                     >
-                      <figure className="shrink-0 w-[17rem] sm:w-[24rem]  md:w-[35rem] ">
+                      <figure className="shrink-0 w-[17rem] sm:w-[24rem]  md:w-[40rem] ">
                         <div className=" flex justify-start rounded-md ">
                           <Image
                             src={picture.image}

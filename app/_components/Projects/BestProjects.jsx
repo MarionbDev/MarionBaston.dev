@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, LoaderCircle } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
@@ -29,15 +29,16 @@ export default function BestProjects() {
 
   if (loading)
     return (
-      <p className="text-center text-[1.2rem]">
-        Chargement des projets en-cours...
-      </p>
+      <div className="flex flex-col items-center gap-10 justify-center h-screen">
+        <p className=" mt-32 text-center">Chargement des projets en cours...</p>{" "}
+        <LoaderCircle size={56} color="#8300e9" className=" animate-spin" />
+      </div>
     );
   if (error) return <p>{error}</p>;
 
   return (
     <div className="tracking-wide ">
-      <div className="  flex flex-col  items-center sm:items-start md:gap-3 mb-6 md:mb-12  ">
+      <div className="  flex flex-col items-center sm:items-start md:gap-3 mb-6 md:mb-12  ">
         <div className=" flex justify-start  w-full items-end gap-1 h-16  ">
           <h2 className="font-poppins text-3xl md:pb-1 font-semibold md:text-[3.5rem] ">
             Portfolio
@@ -60,7 +61,7 @@ export default function BestProjects() {
         </div>
       </div>
       <div className=" px-10 ">
-        <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap lg:gap-x-10 lg:gap-y-14 ">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start lg:flex-wrap lg:gap-x-10 lg:gap-y-14 ">
           {projects.map((project, index) => (
             <ProjectCard key={`${project.id}-${index}`} project={project} />
           ))}

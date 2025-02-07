@@ -1,4 +1,12 @@
-import HomePlessis from "@/public/images/leplessis.png";
+import Activity from "@/public/assets/le_plessis_aux_lys/activity.png";
+import Admin from "@/public/assets/le_plessis_aux_lys/admin.png";
+import ContactForm from "@/public/assets/le_plessis_aux_lys/contactForm.png";
+import Gallery from "@/public/assets/le_plessis_aux_lys/gallery.png";
+import Gite from "@/public/assets/le_plessis_aux_lys/gite.png";
+import Gite1 from "@/public/assets/le_plessis_aux_lys/gite1.png";
+import Home from "@/public/assets/le_plessis_aux_lys/home.png";
+import MockupMobile from "@/public/assets/le_plessis_aux_lys/mobile-mockup.png";
+import MockupPc from "@/public/assets/le_plessis_aux_lys/mockup-pc.png";
 
 const professionalProjects = [
   {
@@ -96,7 +104,7 @@ const professionalProjects = [
     technos: [
       { title: "typescript" },
       { title: "next.js" },
-      { title: "tailwind CSS" },
+      { title: "tailwindCSS" },
       { title: "supabase" },
       { title: "supabase Auth" },
       { title: "Zod" },
@@ -105,10 +113,39 @@ const professionalProjects = [
     ],
     github_url: "https://github.com/MarionbDev/Le-Plessis-Aux-Lys",
     website_url: "www.le-plessis-aux-lys.fr",
+    picture_mockup: [
+      { title: "présentation mobile", image: MockupMobile },
+      { title: "présentation PC", image: MockupPc },
+    ],
+
     picture_website: [
       {
-        title: "Interface public : Accueil",
-        image: HomePlessis,
+        title: "",
+        image: Home,
+      },
+      {
+        title: "",
+        image: Gite,
+      },
+      {
+        title: "",
+        image: Gite1,
+      },
+      {
+        title: "",
+        image: Gallery,
+      },
+      {
+        title: "",
+        image: Activity,
+      },
+      {
+        title: "",
+        image: ContactForm,
+      },
+      {
+        title: "",
+        image: Admin,
       },
     ],
   },
