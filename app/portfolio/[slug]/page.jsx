@@ -11,7 +11,6 @@ export default async function ProjectPage({ params }) {
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`);
   const allProjects = await res.json();
-  console.log("project:", allProjects);
 
   const project = allProjects.find((p) => createSlug(p.title) === slug);
 
@@ -22,39 +21,40 @@ export default async function ProjectPage({ params }) {
   return (
     <div className="font-poppins text-txt_black dark:text-white mt-32 mx-4 lg:mx-20 flex flex-col gap-8 pb-32">
       <Link href={"/portfolio"} className="w-8">
-        <ArrowLeftCircleIcon size={28} color="#8300e9" />
+        <ArrowLeftCircleIcon size={36} color="#8300e9" />
       </Link>
       <div className="flex flex-col gap-8 md:gap-12 mx-4 md:mx-32">
         <div>
           <div className="flex  items-end gap-1 h-16 mb-6  ">
-            <h1 className="text-black dark:text-white text-3xl pb-1 font-semibold md:text-[3rem] lg:text-[4rem] ">
+            <h1 className="text-txt_black dark:text-white text-3xl pb-1 font-semibold sm:text-[2rem] md:text-[2.3rem] lg:text-[3rem]  ">
               {project.title}
             </h1>
-            <span className="title-point mb-[0.62rem] md:mb-1 lg:mb-0  w-3 h-3 md:w-4 md:h-4 rounded-full bg-purple "></span>
+            <span className="title-point mb-[0.62rem] md:mb-[0.25rem]  w-3 h-3  md:w-4 md:h-4 rounded-full bg-purple "></span>
           </div>
-          <h2 className="md:text-2xl ">{project.description}</h2>
+          <h2 className="md:text-lg ">{project.description}</h2>
         </div>
-
-        <ul className="flex justify-center items-center gap-8 my-8">
-          <li>
-            <Image
-              src={project.picture_mockup?.[1].image.src}
-              alt={project.picture_mockup?.[1].title}
-              width={900}
-              height={600}
-              className="w-[28rem]"
-            />{" "}
-          </li>
-          <li>
-            <Image
-              src={project.picture_mockup?.[0].image.src}
-              alt={project.picture_mockup?.[0].title}
-              width={900}
-              height={600}
-              className="w-[9rem]"
-            />
-          </li>
-        </ul>
+        {project.picture_mockup?.length > 0 && (
+          <ul className="flex justify-center items-center gap-8 my-8">
+            <li>
+              <Image
+                src={project.picture_mockup?.[1].image.src}
+                alt={project.picture_mockup?.[1].title}
+                width={900}
+                height={600}
+                className="w-[28rem]"
+              />{" "}
+            </li>
+            <li>
+              <Image
+                src={project.picture_mockup?.[0].image.src}
+                alt={project.picture_mockup?.[0].title}
+                width={900}
+                height={600}
+                className="w-[9rem]"
+              />
+            </li>
+          </ul>
+        )}
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">🚀 Context & Objectif</h3>
@@ -64,11 +64,9 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className=" text-lg">🔑 Fonctionnalités Clés </h3>
-            <p className="text-sm sm:text-base">
-              ✅ Côté utilisateur (visiteurs du site) :
-            </p>
+            <p className="text-sm sm:text-base">✅ Côté utilisateur :</p>
 
-            <ul className=" flex flex-col gap23 text-sm sm:text-base leading-7 list-disc ml-5">
+            <ul className=" flex flex-col  text-sm sm:text-base leading-7 list-disc ml-5">
               {project.project_steps?.[0]?.functionalities?.[0]?.user?.map(
                 (item, index) => (
                   <li key={`${index}-${item.title}`}>{item.title}</li>
@@ -76,16 +74,21 @@ export default async function ProjectPage({ params }) {
               )}
             </ul>
 
-            <p className="mt-4 text-sm sm:text-base ">
-              ✅ Côté administrateur (gestionnaire du site) :
-            </p>
-            <ul className=" flex flex-col gap-2 text-sm sm:text-base leading-7 list-disc ml-5">
-              {project.project_steps?.[0]?.functionalities?.[0]?.admin?.map(
-                (item, index) => (
-                  <li key={`${index}-${item.title}`}>{item.title}</li>
-                )
-              )}
-            </ul>
+            {project.project_steps?.[0]?.functionalities?.[0]?.admin?.length >
+              0 && (
+              <div className="flex flex-col gap-2">
+                <p className="mt-4 text-sm sm:text-base ">
+                  ✅ Côté administrateur :
+                </p>
+                <ul className=" flex flex-col gap-2 text-sm sm:text-base leading-7 list-disc ml-5">
+                  {project.project_steps?.[0]?.functionalities?.[0]?.admin?.map(
+                    (item, index) => (
+                      <li key={`${index}-${item.title}`}>{item.title}</li>
+                    )
+                  )}
+                </ul>
+              </div>
+            )}
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">⚡Challenges & Solutions</h3>
@@ -163,12 +166,39 @@ export default async function ProjectPage({ params }) {
                 href={`https://${project.website_url}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline  text-[#5179ef]"
               >
-                {project.website_url}{" "}
+                {project.website_url}
               </Link>
             </p>
           ) : null}
+          <div className="flex  ">
+            <p className="font-semibold mr-2 ">Liens : </p>
+            {project.github_url ? (
+              <p>
+                <Link
+                  href={`${project.github_url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-[#5179ef] mr-4"
+                >
+                  GitHub
+                </Link>
+              </p>
+            ) : null}
+            {project.video_url ? (
+              <p>
+                <Link
+                  href={`${project.video_url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-[#5179ef]"
+                >
+                  YouTube
+                </Link>
+              </p>
+            ) : null}{" "}
+          </div>
           {project.date ? (
             <p>
               <span className=" font-semibold pr-2">Date : </span>

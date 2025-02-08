@@ -130,36 +130,80 @@ const trainingProjects = [
     date: "2023-03",
     title: "UNIVERSE",
     client: "fictif, 2ème projet de formation à la Wild Code School",
-    description:
-      "Moteur de recherche musicale et radio en ligne. Le projet comprend une interface dynamique pour la recherche d'artistes, d'albums et de titres, ainsi qu'une liste de recommandations. Le projet a été développé lors de la formation à la Wild Code School",
+    time: "1 mois",
+    soloTeam: "En équipe",
+    context:
+      "L'objectif était de concevoir un moteur de recherche intuitif permettant aux utilisateurs d'explorer un vaste catalogue musical à l'aide d'API externes. Le projet devait proposer une expérience fluide et réactive, avec une navigation optimisée sur tous les supports.",
     project_steps: [
       {
-        step_description:
-          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
+        functionalities: [
+          {
+            user: [
+              {
+                title:
+                  "Recherche avancée : Recherche par artiste, album ou titre avec affichage interactif des résultats.",
+              },
+              {
+                title:
+                  "Recommandations dynamiques : Suggestions basées sur les artistes, albums et titres consultés.",
+              },
+              {
+                title:
+                  "Consultation des métadonnées : Informations détaillées sur les artistes, albums et titres.",
+              },
+              {
+                title:
+                  "Mode clair/sombre : Interface adaptable aux préférences visuelles des utilisateurs.",
+              },
+              {
+                title:
+                  "Navigation lfuide et responsive : Expérience optimisée pour tous les supports.",
+              },
+            ],
+
+            admin: [],
+          },
+        ],
       },
       {
-        step_description:
-          "Intégration de deux API externes pour récupérer les métadonnées et obtenir des recommandations. ",
+        challenges: [
+          {
+            title:
+              "Intégrations d'API musicales : Récupération et gestion des données issues de services externes (SPOTIFY)",
+          },
+          {
+            title:
+              "Optimisations des performances : Chargement rapide des données et amélioration de l'expérience utilisateur.",
+          },
+        ],
       },
       {
-        step_description: "Recherche par artiste / titre / album",
-      },
-      {
-        step_description:
-          "Liste de recommandations par artiste / album / titre ",
+        result: [
+          {
+            title:
+              "Un moteur de recherche efficace : Recherche rapide et intuitive avec des résultats pertinents.",
+          },
+          {
+            title:
+              "Une interface réactive et moderne : Un design responsive qui s'adapte à tous les écrans.",
+          },
+          {
+            title:
+              "Expérience utilisateur améliorée : Une navigaiton fluide et un accès simplifié aux informations musicales.",
+          },
+        ],
       },
     ],
-    time: "1 mois",
-    soloTeam: "En groupe",
+
     technos: [
       {
         title: "javascript",
       },
       {
-        title: "react",
+        title: "react.js",
       },
       {
-        title: "tailwind",
+        title: "tailwindcss",
       },
       {
         title: "git",
@@ -229,21 +273,56 @@ const trainingProjects = [
     date: "2023-04",
     title: "HoliTrip",
     description:
-      "Plateforme proposant divers itinéraires de road trips avec la possibilité de rechercher des centres d'intérêt par ville (monuments, parcs, jardins, etc.). Le projet a été développé lors d'un hackathon.",
+      "Site proposant divers itinéraires de road trips. Le projet a été développé lors d'un hackathon.",
     time: "24 heures",
     soloTeam: "En groupe",
     client: "fictif, 1er Hackathon à la Wild Code School",
+    context:
+      "Développement d'une plateforme permettant aux utilisateurs d'explorer des itinéraires de road trip prédéfinis tout en recherchant des lieux d'intérêt par ville.",
     project_steps: [
       {
-        step_description:
-          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
+        functionalities: [
+          {
+            user: [
+              { title: "Consultation d'itinéraires de road trip prédéfinis." },
+              {
+                title:
+                  "Recherche de centres d'intérêt par ville (monuments, parcs, jardins, etc...).",
+              },
+              { title: "Affichage des détails de chaque lieu." },
+              { title: "Interface fluide et responsive" },
+            ],
+            admin: [],
+          },
+        ],
       },
       {
-        step_description:
-          "Intégration de deux API externes pour récupérer les métadonnées",
+        challenges: [
+          {
+            title:
+              "Intégration rapide et efficace d'API externes pour obtenir des métadonnées.",
+          },
+          {
+            title:
+              "Optimisation de la recherche pour fournir des résultats pertinents.",
+          },
+          {
+            title:
+              "Conception d'une interface utilisateur intuitive et responsive en un temps limité.",
+          },
+        ],
       },
       {
-        step_description: "Recherche par ville",
+        result: [
+          {
+            title:
+              "Une plateforme fonctionnelle développée en 24 heures lors d'un Hackathon.",
+          },
+          {
+            title:
+              "Une navigation fluide et optimisée pour la recherche de lieux.",
+          },
+        ],
       },
     ],
     technos: [
@@ -251,10 +330,10 @@ const trainingProjects = [
         title: "javascript",
       },
       {
-        title: "react",
+        title: "react.js",
       },
       {
-        title: "tailwind",
+        title: "tailwindCSS",
       },
       {
         title: "git",
@@ -321,30 +400,92 @@ const trainingProjects = [
     date: "2023-05",
     title: "R-AMazing-Phone-Pricer ",
     description:
-      "Prototype pour Emmaüs Connect. Outil de classification des smartphones selon différents critères. Le projet a été développé lors d'un hackathon",
+      "Prototype d'un outil permettant aux volontaires d'Emmaüs Connect de classifier et d'évaluer les smartphones déposés par les visiteurs afin de proposer un prix de rachat unifié dans tous les centres Emmaüs. Ce projet a été développé en 48 heures lors d'un hackathon.",
     time: "48 heures",
-    soloTeam: "En groupe (Finaliste)",
+    soloTeam: "En équipe (Finaliste)",
     client: "Emmaüs Connect, 2ème Hackathon à la Wild Code School",
+    context:
+      "Emmaüs reçoit régulièrement des dons de smartphones de la part des visiteurs. Cependant, l'évaluation et la revente de ces appareils varient selon les centres, ce qui entraîne des incohérences dans les prix proposés. L'objectif du projet R-AMazing-Phone-Pricer est d'offrir un outil centralisé permettant aux volontaires d’Emmaüs d’analyser, classifier et estimer un prix juste pour chaque smartphone, assurant ainsi une homogénéité dans toute l'organisation.",
 
     project_steps: [
       {
-        step_description:
-          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
+        functionalities: [
+          {
+            user: [
+              {
+                title:
+                  "Evaluation des smartphones : Analyse de l'état et des caractéristiques techniques des téléphones déposés.",
+              },
+              {
+                title:
+                  "Proposition de prix unifié : Estimation automatique d'un prix de reprise basé sur des critères définis (modèle, état, année de sortie...).",
+              },
+              {
+                title:
+                  "Consultation et gestion des smartphones : Accès aux fiches de téléphones déjà enregistrés.",
+              },
+              {
+                title:
+                  "Messagerie interne : Possibilité de communiquer avec d'autres centres Emmaüs via un système de chat.",
+              },
+            ],
+
+            admin: [
+              {
+                title:
+                  "Gestion des utilisateurs : Création et gestion des comptes des colontaires et administrateurs.",
+              },
+              {
+                title:
+                  "Modification des critères de tarification : Ajustement des paramètres influençant l'estimation des prix.",
+              },
+              {
+                title:
+                  "Suivi des transactions : Visualisation des martphones repris et des décisions de tarification prises.",
+              },
+            ],
+          },
+        ],
       },
       {
-        step_description: "Création et gestion des API avec Express.js",
+        challenges: [
+          {
+            title:
+              "Conception d'une interface intuitive : Création d'une maquette et développement d'une interface web simple d'utilisation pour les volontaires.",
+          },
+          {
+            title:
+              "Connexion à une base de donnée : Stockage structuré des smartphones et des utilisateurs pour assurer un accès fluide aux données. ",
+          },
+          {
+            title:
+              "Sécurisation et authentification : Gestion des rôles (volontaires/admins) et mise en place d'une connexion sécurisée.",
+          },
+          {
+            title:
+              "Intégration d'un chat interne : Développement d'un système de messagerie en temps réel entre les volontaires et les différents centres Emmaüs.",
+          },
+        ],
       },
       {
-        step_description:
-          "Mise en place de la connexion à la base de données MySQL pour stocker de manière persistante les données relatives aux smartphones, aux utilisateurs et au Chat.",
-      },
-      {
-        step_description:
-          "Mise en place d'une logique serveur robuste pour garantir le bon fonctionnement des différentes fonctionnalités.",
-      },
-      {
-        step_description:
-          "Fonctionnalités : Connexion / inscription (utilisateur, administrateur). Gestion des utilisateurs, des smartphones, du Chat ...",
+        result: [
+          {
+            title:
+              "Un prototype fonctionnel en 48 heures permettant d'évaluer et de fixer un prix cohérent pour les smartphones.",
+          },
+          {
+            title:
+              "Une plateforme intuitive et efficace, facilitant le travail des volontaires.",
+          },
+          {
+            title:
+              "Un outil favorisant une tarification équitable et homogène dans tous les centres.",
+          },
+          {
+            title:
+              "Reconnaissance du projet en tant que finaliste du hackaton.",
+          },
+        ],
       },
     ],
     technos: [
@@ -352,19 +493,19 @@ const trainingProjects = [
         title: "javascript",
       },
       {
-        title: "react",
+        title: "react.js",
       },
       {
-        title: "node",
+        title: "node.js",
       },
       {
-        title: "express",
+        title: "express.js",
       },
       {
         title: "mySql",
       },
       {
-        title: "tailwind",
+        title: "tailwindCss",
       },
       {
         title: "git",
@@ -443,28 +584,89 @@ const trainingProjects = [
     title: "SERENITY",
     client: "fictif, 3ème projet de formation à la Wild Code School",
     description:
-      "Application web accompagnant les patients dans leurs prises en charge à l’hôpital, avec un dashboard dédié aux praticiens. Les fonctionnalités incluent la gestion des utilisateurs, des interventions, des spécialités, ainsi que la possibilité d'ajouter des documents... Le projet a été développé lors de la formation à la Wild Code School",
+      "Développemnt d'une application web permettant d'accompagner les patients dans leur prise en charge à l'hôpital, tout en fournissant aux praticiens un dashboard dédié pour gérer les patients, interventions et documents médicaux.",
     time: "2 mois",
-    soloTeam: "En groupe",
+    soloTeam: "En équipe",
+    context:
+      "Les établissements de santé ont besoin d’une gestion centralisée et efficace des patients et interventions médicales. L’objectif de cette application est de fournir un outil numérique intuitif pour améliorer la coordination entre patients, praticiens et administrateurs hospitaliers. Grâce à cette plateforme, chaque utilisateur dispose d’un espace dédié, pour les Patients (Suivi des interventions et accès aux documents médicaux), pour les Praticiens (Gestion des patients et planification des interventions) et pour les Administrateurs (Supervision globale et gestion des utilisateurs).",
     project_steps: [
       {
-        step_description:
-          "Collaboration sur la création et la conception d'une maquette pour une interface utilisateur web dynamique",
+        functionalities: [
+          {
+            user: [
+              { title: "Création d'un compte sécurisé et authentification" },
+              {
+                title: "Consultation des interventions programmées et passées.",
+              },
+              {
+                title:
+                  "Accès aux documents médicaux partagés par les praticiens.",
+              },
+              {
+                title:
+                  "Praticien => Dashboard dédié : Visualisation et gestion des patients",
+              },
+              {
+                title:
+                  "Praticien => Gestion des interventions médicales : Planification et suivi.",
+              },
+              {
+                title:
+                  "Praticien => Ajout et partage de documents médicaux avec les patients.",
+              },
+            ],
+            admin: [
+              {
+                title:
+                  "Gestion des utilisateurs (patients, praticiens et administrateurs).",
+              },
+              {
+                title:
+                  "Supervision des spécialités médicales et interventions.",
+              },
+              {
+                title:
+                  "Envoi automatique d'un email de création de compte avec un lien sécurisé pour le premier changement de mot de passe.",
+              },
+            ],
+          },
+        ],
       },
       {
-        step_description: "Création et gestion des API avec Express.js",
+        challenges: [
+          {
+            title:
+              "Conception d'une interface intuitive : Collaboration sur la création d'une maquette UX/UI pour un parcours utilisateur fluide.",
+          },
+          {
+            title:
+              "Développement d'une API : Gestion des patients, interventions et spécialités médicales.",
+          },
+          {
+            title:
+              "Connexion à une base de donnée : Stockage structuré et sécurisé des informations médicales.",
+          },
+          {
+            title:
+              "Mise en place d'un système d'authentification sécurisé : Gestion des rôles (patients, praticiens, administrateurs).",
+          },
+          {
+            title:
+              "Automatisation des emails : Envoi d'un email automatique aux nouveaux utilisateurs pour la gestion de leur mot de passe.",
+          },
+        ],
       },
       {
-        step_description:
-          "Mise en place de la connexion à la base de données MySQL pour stocker de manière persistante les données relatives aux patients, aux praticiens, aux interventions, à l'envoi d'un mail automatique à un nouvel utilisateur pour changer son mot de passe suite à la création de son compte...",
-      },
-      {
-        step_description:
-          "Mise en place d'une logique serveur robuste pour garantir le bon fonctionnement des différentes fonctionnalités.",
-      },
-      {
-        step_description:
-          "Fonctionnalités : Connexion / inscription (patient, praticien et administrateur). Gestion des utilisateurs, des interventions...",
+        result: [
+          {
+            title:
+              "Une plateforme fonctionnelle permettant un meilleur suivi des patients et une gestion optimisée des interventions médicales.",
+          },
+          {
+            title:
+              "Un dashboard performant pour les praticiens, facilitant l'organisation des soins et la gestion des documents.",
+          },
+        ],
       },
     ],
     technos: [
@@ -472,19 +674,19 @@ const trainingProjects = [
         title: "javascript",
       },
       {
-        title: "react",
+        title: "react.js",
       },
       {
-        title: "node",
+        title: "node.js",
       },
       {
-        title: "express",
+        title: "express.js",
       },
       {
         title: "mySql",
       },
       {
-        title: "tailwind",
+        title: "tailwindcss",
       },
       {
         title: "git",

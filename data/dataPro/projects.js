@@ -14,7 +14,8 @@ const professionalProjects = [
     type: "pro",
     date: "2024-12",
     title: "Le Plessis aux Lys",
-    description: "Gîtes et Chambres d'Hôtes",
+    description:
+      "Site permettant aux visiteurs de découvrir les Gîtes et Chambres d'Hôtes, tout en explorant les activités touristiques disponibles dans la région.",
     time: "",
     context:
       "Développement d'un site web permettant aux visiteurs de découvrir différents hébergements avec leurs tarifs et disponibilités, ainsi que les activités à faire dans la région. L'objectif était d'offir une présentation claire et attrayante des offres, tout en permettant au client de gérer facilement le contenu via une interface d'administration.",

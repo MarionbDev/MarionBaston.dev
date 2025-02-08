@@ -35,6 +35,7 @@ const sideProjects = [
     title: "Drawing And Co",
     description: "Galerie de portraits au crayon graphite",
     time: "1 mois, évolutif",
+    client: "Projet personnel, présenté au Titre professionnel",
     context:
       "Dans le cadre de ma formation et passionnée par le dessin au crayon graphite, j’ai décidé de créer mon propre site. Cette plateforme permet de gérer une galerie de dessins tout en offrant des fonctionnalités interactives aux utilisateurs. Projet présenté au Titre Professionnel Développeur web et web mobile (RNCP, niveau 5)",
     soloTeam: null,
