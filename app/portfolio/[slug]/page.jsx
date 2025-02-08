@@ -22,7 +22,11 @@ export default async function ProjectPage({ params }) {
     <div className="font-poppins text-txt_black dark:text-white mt-32 mx-4 lg:mx-20 flex flex-col gap-8 pb-32">
       <div className="flex justify-center">
         <Link href={"/portfolio"} className="w-8">
-          <ArrowLeftCircleIcon size={33} color="#fff" className=" opacity-50" />
+          <ArrowLeftCircleIcon
+            size={33}
+            color="#8300e9"
+            className=" opacity-70 dark:opacity-60"
+          />
         </Link>
       </div>
       <div className="flex flex-col gap-8 md:gap-12 mx-4 md:mx-32">
@@ -170,7 +174,7 @@ export default async function ProjectPage({ params }) {
                 href={`https://${project.website_url}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline  text-[#5a46ed]"
+                className="hover:underline  text-[#5e85fb]"
               >
                 {project.website_url}
               </Link>
@@ -184,7 +188,7 @@ export default async function ProjectPage({ params }) {
                   href={`${project.github_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-[#5179ef] mr-4"
+                  className="hover:underline text-[#5e85fb] mr-4"
                 >
                   GitHub
                 </Link>
@@ -196,7 +200,7 @@ export default async function ProjectPage({ params }) {
                   href={`${project.video_url}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-[#5179ef]"
+                  className="hover:underline text-[#5e85fb]"
                 >
                   YouTube
                 </Link>
