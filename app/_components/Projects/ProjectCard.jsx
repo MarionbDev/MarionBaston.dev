@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { createSlug } from "@/utils/slug";
 import { ChevronLeft, ChevronRight, CircleArrowOutUpRight } from "lucide-react";
@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
         <CardHeader>
           {project.picture_website ? (
             <div className=" mx-auto flex items-center">
-              <ChevronLeft className="md:hidden" />
+              <ChevronLeft color="#c6ccd5" className="md:hidden " />
               <ScrollArea className="flex flex-col justify-center w-[18rem] h-[11rem]  md:px-3  md:w-[31rem] md:h-[18rem]  rounded-lg md:rounded-t-xl  shadow-sm shadow-purple/40  dark:bg-purple/10 sm:mb-5">
                 <ul className=" h-[10rem]  md:h-[16.5rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
                   {project.picture_website
@@ -41,22 +41,23 @@ export default function ProjectCard({ project }) {
                   className="  dark:bg-purple/30  bg-purple/80 border-none h-3"
                 />{" "}
               </ScrollArea>
-              <ChevronRight className="md:hidden" />
+              <ChevronRight color="#c6ccd5" className="md:hidden" />
             </div>
           ) : null}{" "}
-          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple font-semibold pt-3">
+          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple dark:text-purple_dark font-semibold pt-3 mx-4 md:mx-0 ">
             <Link
               href={`/portfolio/${createSlug(project.title)}`}
-              className="flex gap-3 items-center"
+              className="flex gap-3 items-center "
             >
               {project.title}
               <CircleArrowOutUpRight size={18} />
             </Link>
           </CardTitle>
+          <p className="mx-4 md:mx-0">{project.description}</p>
+          <p className="mx-4 md:mx-0  max-w-screen-xl leading-7 text-[0.9rem] md:text-base">
+            {project.context}
+          </p>
         </CardHeader>
-        <CardContent className="  max-w-screen-xl  text-[0.9rem]">
-          {project.description}
-        </CardContent>
       </Card>
     </>
   );

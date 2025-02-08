@@ -19,18 +19,20 @@ export function ModeToggle() {
   };
 
   return (
-    <Button
-      size="icon"
-      aria-label={`Toggle ${theme === "light" ? "Dark" : "Light"} theme`}
-      onClick={toggleTheme}
-      className=" border-2 rounded-full border-purple/70 shadow-none hover:border-purple "
-    >
-      {theme === "dark" ? (
-        <Sun color="#8300E9" className="h-[1.2rem] w-[1.2rem]  " />
-      ) : (
-        <Moon color="#8300E9" className="h-[1.2rem] w-[1.2rem]" />
-      )}
-      <span className="sr-only">Toggle theme</span>
-    </Button>
+    <>
+      <Button
+        size="icon"
+        aria-label={`Toggle ${theme === "light" ? "Dark" : "Light"} theme`}
+        onClick={toggleTheme}
+        className=" border-2 rounded-full border-purple/70 shadow-none hover:border-purple_dark "
+      >
+        {theme === "dark" ? (
+          <Sun color="#8300E9" className="h-[1.2rem] w-[1.2rem]  " />
+        ) : (
+          <Moon color="#8300E9" className="h-[1.2rem] w-[1.2rem]" />
+        )}
+        <span className="sr-only">Toggle theme</span>
+      </Button>
+    </>
   );
 }

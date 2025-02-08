@@ -52,19 +52,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.underline {
+.underline-nav {
   display: block;
   height: 2px;
-  background-color: transparent;
+  background-color: black;
   width: 0%;
-  transition:
-    width 0.4s,
-    background-color 0.5s;
+
   margin: 2px auto 0 auto;
   border-radius: 100%;
 }
 
-.nav-link:hover .underline {
+.nav-link:hover .underline-nav {
   width: 100%;
   background-color: #c80ec8;
 }
@@ -75,7 +73,6 @@ html {
   display: block;
   margin-left: auto;
   width: 20%;
-
   border-top: solid 3px #c80ec8;
   border-radius: 50%;
   height: 8px;
@@ -287,6 +284,9 @@ html {
 
 @media only screen and (max-width: 465px) {
   .wave-about {
+    display: none;
+  }
+  .title-point {
     display: none;
   }
 }

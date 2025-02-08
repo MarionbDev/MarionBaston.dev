@@ -21,7 +21,7 @@ export default function Skills() {
       <div className="flex flex-col items-center mt-10 md:mt-20 ">
         <div className="flex flex-col  items-stretch   md:flex-row  md:flex-wrap justify-center  xl:flex-nowrap xl:flex-row gap-6 md:gap-12 xl:gap-8 xl:justify-around  ">
           <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none  w-[18rem]  px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 flex flex-col ">
-            <div className="flex flex-col items-center  gap-4 ">
+            <div className="flex flex-col items-center  gap-6 ">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">FRONTEND</h2>
                 <span className="wave-services relative flex justify-center "></span>
@@ -30,20 +30,19 @@ export default function Skills() {
                 src={splash}
                 width={150}
                 alt="image représenter un tâche de peinture"
-                className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-40 dark:sm:h-40 dark:brightness-75 mt-6"
+                className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-36 dark:sm:h-36 dark:brightness-75 mt-6 sm:mt-0"
               />
             </div>
-            <ul className=" text-[1rem] text-center mt-6 ">
+            <ul className=" text-[1rem] text-center mt-6 sm:mt-4 leading-7 ">
               <li>JavaScript / TypeScript</li>
               <li>React, Next</li>
               <li>Shadcn/ui</li>
               <li>Tailwind</li>
               <li>Responsive design</li>
-              <li>API REST</li>
             </ul>
           </div>
           <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none w-72   px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
-            <div className="flex flex-col items-center  gap-4">
+            <div className="flex flex-col items-center  gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">BACKEND</h2>
                 <span className="wave-services relative flex justify-center "></span>
@@ -57,7 +56,7 @@ export default function Skills() {
               />
             </div>
 
-            <ul className="text-[1rem] text-center s">
+            <ul className="text-[1rem] text-center leading-7">
               <li>Node.js, Express.js</li>
               <li>MySql, Supabase</li>
               <li>API</li>
@@ -65,20 +64,20 @@ export default function Skills() {
           </div>
 
           <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none w-72 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
                 <span className="wave-services relative flex justify-center "></span>
-              </div>{" "}
+              </div>
               <Image
                 src={tools}
                 width={150}
                 height={150}
                 alt="image représentant des outils et un pc"
-                className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
+                className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 "
               />
             </div>
-            <ul className=" text-[1rem] text-center s">
+            <ul className=" text-[1rem] text-center leading-7 mt-4">
               <li>Git, GitHub</li>
               <li>VS Code</li>
               <li>Figma</li>
@@ -86,7 +85,7 @@ export default function Skills() {
             </ul>
           </div>
           <div className="font-poppins dark:bg-purple/10 dark:shadow-purple/50 shadow-purple/40 shadow-sm rounded-xl border-none w-72 xl:w-72  sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">
                   SOFT SKILLS
@@ -101,7 +100,7 @@ export default function Skills() {
                 className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
               />
             </div>
-            <ul className="text-[1rem] text-center s">
+            <ul className="text-[1rem] text-center leading-7">
               <li>Communication efficace</li>
               <li>Résolution de problème</li>
               <li>Créativité</li>

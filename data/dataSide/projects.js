@@ -1,11 +1,6 @@
-import expressPng from "@/public/assets/logos/express.png";
-import figmaPng from "@/public/assets/logos/figma.png";
 import gitPng from "@/public/assets/logos/git.png";
 import javascriptPng from "@/public/assets/logos/javascript.png";
-import mysqlPng from "@/public/assets/logos/mysql.png";
 import nextPng from "@/public/assets/logos/next.png";
-import nodePng from "@/public/assets/logos/node.png";
-import reactPng from "@/public/assets/logos/react.png";
 import tailwindPng from "@/public/assets/logos/tailwind.png";
 // import drawing_and_co
 import auth from "@/public/assets/drawing_and_co/auth.png";
@@ -38,68 +33,104 @@ const sideProjects = [
     type: "side",
     date: "2023-06",
     title: "Drawing And Co",
+    description: "Galerie de portraits au crayon graphite",
     time: "1 mois, évolutif",
-    description:
-      "Je suis passionnée de dessins au crayon graphite, j'ai décidé de créer mon site. Il s'agit d'une plateforme de gestion d'une galerie de dessins avec des fonctionnalités interactives pour les utilisateurs",
-    soloTeam: null,
+    client: "",
+    project_type: "Projet personnel, présenté au Titre professionnel",
+    context:
+      "Dans le cadre de ma formation et passionnée par le dessin au crayon graphite, j’ai décidé de créer mon propre site. Cette plateforme permet de gérer une galerie de dessins tout en offrant des fonctionnalités interactives aux utilisateurs. Projet présenté au Titre Professionnel de Développeur web et web mobile (RNCP, niveau 5)",
     project_steps: [
       {
-        step_description:
-          "Projet présenté au Titre Professionnel Développeur web et web mobile (RNCP, niveau 5) ",
+        functionalities: [
+          {
+            user: [
+              { title: "Galerie des portraits." },
+
+              {
+                title:
+                  "Consultation des portraits : Accès à une galerie de dessins avec possibilité de filtrer les oeuvres.",
+              },
+
+              {
+                title:
+                  "Interaction avec les portraits : Laisser des commentaires sous chaque portrait.",
+              },
+
+              {
+                title:
+                  "Authentification et gestion du profil : Inscription, connexion sécurisée, modification des informations personnelles (profil et mot de passe)",
+              },
+              {
+                title:
+                  "FAQ intégrée : Réponses aux question courantes sur le site et son fonctionnement.",
+              },
+              {
+                title:
+                  "Interface fluide et responsive : Expérience utilisateur optimisée pour une navigation agréable sur tous les types d'écrans.",
+              },
+            ],
+            admin: [
+              {
+                title:
+                  "Gestion des utilisateurs : Consultation, suppression des utilisateurs inscrits.",
+              },
+              {
+                title:
+                  "Modération des commentaires : Suppression des commentaires inappropriés.",
+              },
+
+              {
+                title:
+                  "Ajout et gestion des portraits : Ajout, modification et suppression des dessins avec toutes les informations associées.",
+              },
+              {
+                title:
+                  "Navigation dédiée à l'administration : Menu spécifique pour accéder aux fonctionnalités de gestion du site.",
+              },
+            ],
+          },
+        ],
       },
       {
-        step_description:
-          "Création et conception d'une maquette pour une interface utilisateur web dynamique et responsive",
+        challenges: [
+          {
+            title:
+              "Sécurisation des accès : Authentification robuste via JWT et MySQL, protection des routes sensibles",
+          },
+          {
+            title:
+              "Expérience utilisateur fluide : Interface responsive et intuitive pour faciliter la navigation",
+          },
+          {
+            title:
+              "Modification efficace : Mise en place d'outils d'administration permettant de gérer les interactions sur le site.",
+          },
+        ],
       },
       {
-        step_description:
-          "Mise en place de la connexion à la base de données MySQL pour stocker de manière persistante les données relatives aux utilisateurs, aux dessins, aux commentaires...",
-      },
-      {
-        step_description:
-          "Mise en place d'une logique serveur robuste pour garantir le bon fonctionnement des différentes fonctionnalités telles que la gestion des utilisateurs, la gestion de la galerie de dessins, et la gestion des commentaires avec les opérations CRUD (Create, Read, Update, Delete). Les utilisateurs, qu'ils soient simples utilisateurs ou administrateurs, peuvent se connecter ou s'inscrire. Les formulaires sont sécurisés pour assurer la protection des données.",
-      },
-      {
-        step_description:
-          "Fonctionnalités : Connexion / inscription d'un utilisateur, naviguer à travers la galerie de dessins, les utilisateurs peuvent ajouter ou supprimer des commentaires sur les dessins. L'administrateur à des fonctions supplémentaires : la gestion des utilisateurs et de la galerie. Un système de FAQ est intégré pour fournir des informations utiles aux utilisateurs. L'application est conçue pour être responsive.",
-      },
-      {
-        step_description: "A venir : la mise en production du site",
+        result: [
+          {
+            title:
+              "Un site intuitif permettant aux utilisateurs de découvrir et d'interagir avec une galerie de portraits de manière fluide.",
+          },
+          {
+            title:
+              "Une gestion simplifiée du contenu via une interface administrateur sécurisée, offrant un contrôle total sur les utilisateurs, commentaires et dessins.",
+          },
+        ],
       },
     ],
+
     technos: [
-      {
-        title: "javascript",
-        photo_url: javascriptPng,
-      },
-      {
-        title: "react",
-        photo_url: reactPng,
-      },
-      {
-        title: "node",
-        photo_url: nodePng,
-      },
-      {
-        title: "express",
-        photo_url: expressPng,
-      },
-      {
-        title: "mysql",
-        photo_url: mysqlPng,
-      },
-      {
-        title: "tailwindPng",
-        photo_url: tailwindPng,
-      },
-      {
-        title: "gitPng",
-        photo_url: gitPng,
-      },
-      {
-        title: "figmaPng",
-        photo_url: figmaPng,
-      },
+      { title: "javascript" },
+      { title: "react.js" },
+      { title: "node.js" },
+      { title: "express" },
+      { title: "yup" },
+      { title: "mySQL" },
+      { title: "tailwindCSS" },
+      { title: "git" },
+      { title: "figma" },
     ],
     github_url: "https://github.com/MarionbDev/Drawing_And_Co",
     website_url: null,

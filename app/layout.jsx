@@ -43,10 +43,10 @@ export default function RootLayout({ children }) {
         >
           <Providers>
             <div className="flex  ">
-              <Navbar className="navbar" />
+              <Navbar className="navbar " />
             </div>
             <div>
-              <NavbarMobile className="navbar-mobile" />
+              <NavbarMobile className="navbar-mobile " />
             </div>
             {children}
           </Providers>

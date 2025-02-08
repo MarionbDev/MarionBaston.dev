@@ -19,6 +19,7 @@ module.exports = {
 
     colors: {
       purple: "#8300e9",
+      purple_dark: "#8d3dd8",
       txt_black: "#4E525A",
       white: "#f3f1f1",
       black: "#1E1E1E",
