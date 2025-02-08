@@ -60,7 +60,7 @@ export default function AboutMe() {
                   onClick={downloadCV}
                   role="button"
                   aria-label="Télécharger mon CV"
-                  className=" border-2 shadow-none border-purple/30 hover:border-purple dark:border-purple/60  dark:hover:border-purple_dark dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
+                  className=" border-2 shadow-none dark:border-purple md:border-purple/30 hover:border-purple md:dark:border-purple/60  dark:hover:border-purple_dark dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
                 >
                   <Download id="download-cv" alt="icône de téléchargement  " />
                   <p className="flex gap-1">
@@ -68,7 +68,7 @@ export default function AboutMe() {
                   </p>
                 </Button>
                 <ul className="flex items-center gap-2">
-                  <li className=" border-2 border-purple duration-200  opacity-50 hover:opacity-100  hover:border-purple_dark rounded-full p-2 ">
+                  <li className=" border-2 border-purple duration-200 md:opacity-50 hover:opacity-100  hover:border-purple_dark rounded-full p-2 ">
                     <Link
                       href="https://www.linkedin.com/in/marion-baston/"
                       target="_blank"
@@ -82,7 +82,7 @@ export default function AboutMe() {
                       />
                     </Link>
                   </li>
-                  <li className=" border-2 border-purple duration-200  opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
+                  <li className=" border-2 border-purple duration-200  md:opacity-50 hover:opacity-100  hover:border-purple rounded-full p-2 ">
                     {" "}
                     <Link
                       href="https://github.com/MarionbDev"

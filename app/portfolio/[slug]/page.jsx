@@ -20,13 +20,15 @@ export default async function ProjectPage({ params }) {
 
   return (
     <div className="font-poppins text-txt_black dark:text-white mt-32 mx-4 lg:mx-20 flex flex-col gap-8 pb-32">
-      <Link href={"/portfolio"} className="w-8">
-        <ArrowLeftCircleIcon size={36} color="#8300e9" />
-      </Link>
+      <div className="flex justify-center">
+        <Link href={"/portfolio"} className="w-8">
+          <ArrowLeftCircleIcon size={33} color="#fff" className=" opacity-50" />
+        </Link>
+      </div>
       <div className="flex flex-col gap-8 md:gap-12 mx-4 md:mx-32">
         <div>
           <div className="flex  items-end gap-1 h-16 mb-6  ">
-            <h1 className="text-txt_black dark:text-white text-3xl pb-1 font-semibold sm:text-[2rem] md:text-[2.3rem] lg:text-[3rem]  ">
+            <h1 className=" name-gradient text-txt_black dark:text-white text-3xl pb-1 font-semibold sm:text-[2rem] md:text-[2.3rem] lg:text-[3rem]  ">
               {project.title}
             </h1>
             <span className="title-point mb-[0.62rem] md:mb-[0.25rem]  w-3 h-3  md:w-4 md:h-4 rounded-full bg-purple "></span>
@@ -58,15 +60,13 @@ export default async function ProjectPage({ params }) {
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">🚀 Context & Objectif</h3>
-            <p className=" text-sm sm:text-base leading-7">
-              {project.context}
-            </p>{" "}
+            <p className=" text-base leading-7">{project.context}</p>{" "}
           </div>
           <div className="flex flex-col gap-2">
             <h3 className=" text-lg">🔑 Fonctionnalités Clés </h3>
-            <p className="text-sm sm:text-base">✅ Côté utilisateur :</p>
+            <p className="text-base">✅ Côté utilisateur :</p>
 
-            <ul className=" flex flex-col  text-sm sm:text-base leading-7 list-disc ml-5">
+            <ul className=" flex flex-col  text-base leading-7 list-disc ml-5">
               {project.project_steps?.[0]?.functionalities?.[0]?.user?.map(
                 (item, index) => (
                   <li key={`${index}-${item.title}`}>{item.title}</li>
@@ -77,10 +77,8 @@ export default async function ProjectPage({ params }) {
             {project.project_steps?.[0]?.functionalities?.[0]?.admin?.length >
               0 && (
               <div className="flex flex-col gap-2">
-                <p className="mt-4 text-sm sm:text-base ">
-                  ✅ Côté administrateur :
-                </p>
-                <ul className=" flex flex-col gap-2 text-sm sm:text-base leading-7 list-disc ml-5">
+                <p className="mt-4 text-base ">✅ Côté administrateur :</p>
+                <ul className=" flex flex-col gap-2 text-base leading-7 list-disc ml-5">
                   {project.project_steps?.[0]?.functionalities?.[0]?.admin?.map(
                     (item, index) => (
                       <li key={`${index}-${item.title}`}>{item.title}</li>
@@ -92,7 +90,7 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">⚡Challenges & Solutions</h3>
-            <ul className=" flex flex-col gap-3 text-sm sm:text-base leading-7">
+            <ul className=" flex flex-col gap-3 text-base leading-7">
               {project.project_steps?.[1]?.challenges?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
               ))}
@@ -100,7 +98,7 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">📈 Résultats & Impact</h3>
-            <ul className=" flex flex-col gap-3 text-sm sm:text-base leading-7">
+            <ul className=" flex flex-col gap-3 text-base leading-7">
               {project.project_steps?.[2]?.result?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
               ))}
@@ -110,7 +108,7 @@ export default async function ProjectPage({ params }) {
             {project.technos.map((techno, index) => (
               <li
                 key={`${index}-${techno.title}}`}
-                className=" border-2 border-purple text-purple dark:text-white text-sm sm:text-base  px-4 py-1 rounded-3xl"
+                className=" border-2 border-purple text-purple dark:text-white text-base  px-4 py-1 rounded-3xl"
               >
                 {techno.title.charAt(0).toUpperCase() +
                   techno.title.slice(1).toLowerCase()}
@@ -152,7 +150,7 @@ export default async function ProjectPage({ params }) {
           </ScrollArea>
         </div>
 
-        <div className="text-sm sm:text-base flex flex-col gap-2">
+        <div className="text-base flex flex-col gap-2">
           {project.client ? (
             <p className="  font-medium">
               <span className=" font-semibold pr-2 "> Client : </span>
@@ -172,7 +170,7 @@ export default async function ProjectPage({ params }) {
                 href={`https://${project.website_url}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline  text-[#5179ef]"
+                className="hover:underline  text-[#5a46ed]"
               >
                 {project.website_url}
               </Link>

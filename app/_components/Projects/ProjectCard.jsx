@@ -44,7 +44,7 @@ export default function ProjectCard({ project }) {
               <ChevronRight color="#c6ccd5" className="md:hidden" />
             </div>
           ) : null}{" "}
-          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple dark:text-purple_dark font-semibold pt-3 mx-4 md:mx-0 ">
+          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple md:dark:text-purple_dark font-semibold pt-3 mx-4 md:mx-0 ">
             <Link
               href={`/portfolio/${createSlug(project.title)}`}
               className="flex gap-3 items-center "
@@ -53,8 +53,8 @@ export default function ProjectCard({ project }) {
               <CircleArrowOutUpRight size={18} />
             </Link>
           </CardTitle>
-          <p className="mx-4 md:mx-0">{project.description}</p>
-          <p className="mx-4 md:mx-0  max-w-screen-xl leading-7 text-[0.9rem] md:text-base">
+          <p className="mx-4 md:mx-0 text-[16px]">{project.description}</p>
+          <p className="mx-4 md:mx-0  max-w-screen-xl leading-7 text-[16px] ">
             {project.context}
           </p>
         </CardHeader>
