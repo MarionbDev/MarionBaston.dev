@@ -22,7 +22,7 @@ export default function NavbarMobile() {
               aria-label="barre de navigation "
               className="p-0 m-0"
             >
-              <Menu className="w-11 h-11  text-[#5c23ac]  " />
+              <Menu className="w-11 h-11  text-purple  " />
             </MenubarTrigger>
             <MenubarContent
               sideOffset={0}

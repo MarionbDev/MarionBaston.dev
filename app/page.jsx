@@ -11,7 +11,10 @@ export default function Home() {
       <div id="home" className=" mx-2 pt-48 sm:pt-20 lg:pt-0 ">
         <AboutMe />
       </div>{" "}
-      <div id="portfolio" className=" px-6 md:px-28 md:pb-[6rem] pt-20">
+      <div
+        id="portfolio"
+        className=" px-6 md:px-28 md:pb-[6rem] pt-20 md:pt-44"
+      >
         <BestProjectsPage />
       </div>
       <div id="mes-competences" className="px-6 md:px-28 md:pb-[6rem] pt-20 ">

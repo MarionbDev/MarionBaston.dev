@@ -20,7 +20,7 @@ export default function BestProjectsPage() {
           <div className=" flex">
             <Link
               href={"/portfolio"}
-              className="  text-purple dark:text-purple_dark md:ml-2 "
+              className="  text-purple md:dark:text-purple_dark md:ml-2 "
             >
               Voir plus
             </Link>

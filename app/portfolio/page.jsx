@@ -45,13 +45,13 @@ export default function Portfolio() {
           </h2>
           <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
         </div>
-        <div>
-          <p className=" pt-0 sm:px-0 md:pt-4 text-sm sm:text-base leading-7 ">
+        <div className="text-[1rem]">
+          <p className=" pt-0 sm:px-0 md:pt-4 leading-7 ">
             Découvrez une sélection de mes projets réalisés en tant que
             freelance et au cours de ma formation, où j'ai conçu et développé
             des applications robustes et élégantes.
           </p>
-          <div className="flex flex-col sm:flex-row gap-1 text-sm sm:text-base">
+          <div className="flex flex-col sm:flex-row gap-1 ">
             <p className="flex  gap-1 ">
               Pour découvrir davantage de projets, visitez mon
             </p>
