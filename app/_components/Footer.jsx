@@ -59,7 +59,7 @@ export default function Footer() {
               <p className=" font-bold text-[1.2rem]">Contact</p>
               <ul className=" flex flex-col gap-2">
                 <li className=" w-full ">
-                  <Link href={"/#contactPage"}>Email</Link>
+                  <Link href={"/#me-contacter"}>Email</Link>
                 </li>
                 <li className=" w-full ">
                   <Link

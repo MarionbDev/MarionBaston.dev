@@ -35,10 +35,10 @@ const sideProjects = [
     title: "Drawing And Co",
     description: "Galerie de portraits au crayon graphite",
     time: "1 mois, évolutif",
-    client: "Projet personnel, présenté au Titre professionnel",
+    client: "",
+    project_type: "Projet personnel, présenté au Titre professionnel",
     context:
-      "Dans le cadre de ma formation et passionnée par le dessin au crayon graphite, j’ai décidé de créer mon propre site. Cette plateforme permet de gérer une galerie de dessins tout en offrant des fonctionnalités interactives aux utilisateurs. Projet présenté au Titre Professionnel Développeur web et web mobile (RNCP, niveau 5)",
-    soloTeam: null,
+      "Dans le cadre de ma formation et passionnée par le dessin au crayon graphite, j’ai décidé de créer mon propre site. Cette plateforme permet de gérer une galerie de dessins tout en offrant des fonctionnalités interactives aux utilisateurs. Projet présenté au Titre Professionnel de Développeur web et web mobile (RNCP, niveau 5)",
     project_steps: [
       {
         functionalities: [
@@ -48,7 +48,7 @@ const sideProjects = [
 
               {
                 title:
-                  "Consultation des portraits : Accès à une galerie de dessins avec possibilité de filtrer les oeuvres",
+                  "Consultation des portraits : Accès à une galerie de dessins avec possibilité de filtrer les oeuvres.",
               },
 
               {
@@ -58,7 +58,7 @@ const sideProjects = [
 
               {
                 title:
-                  "Authentification et gestion du profil : Inscription, connexion sécurisée (JWT + MySQL), modification des informations personnelles (profil et mot de passe)",
+                  "Authentification et gestion du profil : Inscription, connexion sécurisée, modification des informations personnelles (profil et mot de passe)",
               },
               {
                 title:
@@ -72,7 +72,7 @@ const sideProjects = [
             admin: [
               {
                 title:
-                  "Gestion des utilisateurs : Consultations, suppression des utilisateurs inscrits.",
+                  "Gestion des utilisateurs : Consultation, suppression des utilisateurs inscrits.",
               },
               {
                 title:
@@ -81,7 +81,7 @@ const sideProjects = [
 
               {
                 title:
-                  "Ajout et gestion des portraits : Ajour, modification et suppression des dessins avec toutes les informations associées.",
+                  "Ajout et gestion des portraits : Ajout, modification et suppression des dessins avec toutes les informations associées.",
               },
               {
                 title:
@@ -99,7 +99,7 @@ const sideProjects = [
           },
           {
             title:
-              "Expérience utilisateur fluide : Interface responsive et intuitive pour faciliter la navigaiton",
+              "Expérience utilisateur fluide : Interface responsive et intuitive pour faciliter la navigation",
           },
           {
             title:

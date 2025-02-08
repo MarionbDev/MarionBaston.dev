@@ -106,7 +106,7 @@ export default async function ProjectPage({ params }) {
               ))}
             </ul>{" "}
           </div>
-          <ul className="flex justify-center flex-wrap gap-2 md:gap-4 my-8">
+          <ul className="flex  flex-wrap gap-2 md:gap-4 my-8">
             {project.technos.map((techno, index) => (
               <li
                 key={`${index}-${techno.title}}`}
@@ -120,7 +120,7 @@ export default async function ProjectPage({ params }) {
         </div>
         <div className="flex justify-center">
           <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3 sm:w-[25rem] sm:h-[18rem]  md:w-[50rem]  md:h-[25rem]  rounded-lg md:rounded-t-xl  shadow-sm shadow-purple/40  dark:bg-purple/10 sm:mb-5">
-            <ul className=" h-[11rem] sm:h-[18rem]  md:h-[24rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
+            <ul className=" h-[11rem] sm:h-[16rem]  md:h-[24rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (
                     <li
@@ -157,6 +157,12 @@ export default async function ProjectPage({ params }) {
             <p className="  font-medium">
               <span className=" font-semibold pr-2 "> Client : </span>
               {project.client}
+            </p>
+          ) : null}
+          {project.project_type ? (
+            <p className="  font-medium">
+              <span className=" font-semibold pr-2 "> Cadre du projet : </span>
+              {project.project_type}
             </p>
           ) : null}
           {project.website_url ? (

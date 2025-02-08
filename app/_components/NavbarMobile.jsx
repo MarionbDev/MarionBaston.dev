@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import { Github, Linkedin, Menu } from "lucide-react";
 import Link from "next/link";
 import {
   Menubar,
@@ -12,7 +12,7 @@ import { ModeToggle } from "./ModeToggle";
 export default function NavbarMobile() {
   return (
     <div className=" flex navSupp justify-center  ">
-      <div className=" flex justify-between  w-full px-8 sm:px-12 mt-9 fixed z-50  ">
+      <div className=" flex justify-between  w-full px-8 sm:px-12 mt-9 fixed z-50   ">
         <ModeToggle />
 
         <Menubar className="border-none p-0 m-0">
@@ -49,6 +49,26 @@ export default function NavbarMobile() {
                   Contactez-moi
                 </MenubarItem>
               </Link>
+              <div className="flex  gap-3">
+                <Link
+                  href="https://www.linkedin.com/in/marion-baston/"
+                  target="_blank"
+                  aria-label="me contacter"
+                >
+                  <MenubarItem className="text-[1.2rem] ">
+                    <Linkedin size={28} />
+                  </MenubarItem>
+                </Link>
+                <Link
+                  href="https://github.com/MarionbDev"
+                  target="_blank"
+                  aria-label="me contacter"
+                >
+                  <MenubarItem className="text-[1.2rem] ">
+                    <Github size={28} />
+                  </MenubarItem>
+                </Link>
+              </div>
             </MenubarContent>
           </MenubarMenu>
         </Menubar>

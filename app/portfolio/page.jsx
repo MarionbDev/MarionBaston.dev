@@ -37,7 +37,7 @@ export default function Portfolio() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="sm:w-10/12  mt-24 mx-6 md:mx-20 lg:mx-32 ">
+    <div className="  mt-24 mx-6 md:mx-20 lg:mx-32 ">
       <div className="text-txt_black dark:text-white flex flex-col  sm:items-start gap-3 mb-6 md:mb-12">
         <div className=" flex items-end gap-1 h-16 ">
           <h2 className="font-poppins text-3xl pb-1 font-semibold md:text-[4rem] ">

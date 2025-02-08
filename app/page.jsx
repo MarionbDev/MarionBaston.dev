@@ -2,7 +2,7 @@ import AboutMe from "./_components/AboutMe";
 import ContactPage from "./_components/contactForm/ContactPage";
 import Footer from "./_components/Footer";
 import MyServices from "./_components/MyServices";
-import BestProjects from "./_components/Projects/BestProjects";
+import BestProjectsPage from "./_components/Projects/BestProjectsPage";
 import Skills from "./_components/Skills";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <AboutMe />
       </div>{" "}
       <div id="portfolio" className=" px-6 md:px-28 md:pb-[6rem] pt-20">
-        <BestProjects />
+        <BestProjectsPage />
       </div>
       <div id="mes-competences" className="px-6 md:px-28 md:pb-[6rem] pt-20 ">
         <Skills />

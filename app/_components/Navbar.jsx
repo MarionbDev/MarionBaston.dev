@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 
@@ -40,6 +41,16 @@ export default function Navbar() {
               className="nav-link"
             >
               Mes services<span className="underline-nav"></span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/#me-contacter"}
+              aria-label="me contacter"
+              className="nav-link"
+            >
+              <MessageCircle size={24} />{" "}
+              <span className="underline-nav"></span>
             </Link>
           </li>
         </ul>

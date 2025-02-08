@@ -14,9 +14,9 @@ const professionalProjects = [
     type: "pro",
     date: "2024-12",
     title: "Le Plessis aux Lys",
-    description:
-      "Site permettant aux visiteurs de découvrir les Gîtes et Chambres d'Hôtes, tout en explorant les activités touristiques disponibles dans la région.",
+    description: "Site de Gîtes et Chambres d'Hôtes.",
     time: "",
+    project_type: "Freelance",
     context:
       "Développement d'un site web permettant aux visiteurs de découvrir différents hébergements avec leurs tarifs et disponibilités, ainsi que les activités à faire dans la région. L'objectif était d'offir une présentation claire et attrayante des offres, tout en permettant au client de gérer facilement le contenu via une interface d'administration.",
     soloTeam: null,
@@ -41,7 +41,7 @@ const professionalProjects = [
               },
               {
                 title:
-                  "Localisation du domaine sur Google Maps : Sur la page d'accueil, les utilisateurs peuvent visualiser l'emplacement du domaine des gîtes et chambres d'hôtes via une carte Google Maps interactive, nécessitant l'acceptation des cookies pour afficher la carte.",
+                  "Localisation du domaine sur Google Maps : Sur la page d'accueil, les utilisateurs peuvent visualiser l'emplacement des gîtes et chambres d'hôtes via une carte Google Maps interactive, nécessitant l'acceptation des cookies pour afficher la carte.",
               },
 
               {
@@ -70,7 +70,7 @@ const professionalProjects = [
         challenges: [
           {
             title:
-              "Gestion dynamique des hébergements : Mise en place d'un système permettant une synchronisation fluide et une actualisation en temps réeel des données d'hébergement et des activités touristiques locales.",
+              "Gestion dynamique des hébergements : Mise en place d'un système permettant une synchronisation fluide et une actualisation en temps réeel des données d'hébergements et des activités touristiques locales.",
           },
           {
             title:
@@ -89,11 +89,11 @@ const professionalProjects = [
         result: [
           {
             title:
-              "Un site intuitif et moderne pour présenter efficacement les offres d'hébergement et les activités locales",
+              "Un site intuitif et moderne pour présenter efficacement les offres d'hébergements et les activités locales.",
           },
           {
             title:
-              "Une gestion simplifiée du contenu via une interface administrateur accessible et sécurisée",
+              "Une gestion simplifiée du contenu via une interface administrateur accessible et sécurisée.",
           },
           {
             title:

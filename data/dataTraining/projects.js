@@ -129,9 +129,9 @@ const trainingProjects = [
     type: "training",
     date: "2023-03",
     title: "UNIVERSE",
-    client: "fictif, 2ème projet de formation à la Wild Code School",
+    client: "",
     time: "1 mois",
-    soloTeam: "En équipe",
+    project_type: "Formation (Wild Code School) - En équipe",
     context:
       "L'objectif était de concevoir un moteur de recherche intuitif permettant aux utilisateurs d'explorer un vaste catalogue musical à l'aide d'API externes. Le projet devait proposer une expérience fluide et réactive, avec une navigation optimisée sur tous les supports.",
     project_steps: [
@@ -275,8 +275,8 @@ const trainingProjects = [
     description:
       "Site proposant divers itinéraires de road trips. Le projet a été développé lors d'un hackathon.",
     time: "24 heures",
-    soloTeam: "En groupe",
-    client: "fictif, 1er Hackathon à la Wild Code School",
+    project_type: "Formation (Wild Code School) - En équipe",
+    client: "",
     context:
       "Développement d'une plateforme permettant aux utilisateurs d'explorer des itinéraires de road trip prédéfinis tout en recherchant des lieux d'intérêt par ville.",
     project_steps: [
@@ -400,9 +400,9 @@ const trainingProjects = [
     date: "2023-05",
     title: "R-AMazing-Phone-Pricer ",
     description:
-      "Prototype d'un outil permettant aux volontaires d'Emmaüs Connect de classifier et d'évaluer les smartphones déposés par les visiteurs afin de proposer un prix de rachat unifié dans tous les centres Emmaüs. Ce projet a été développé en 48 heures lors d'un hackathon.",
+      "Prototype pour Emmaüs Connect. Ce projet a été développé en 48 heures lors d'un hackathon.",
     time: "48 heures",
-    soloTeam: "En équipe (Finaliste)",
+    project_type: "Formation (Wild Code School) - En équipe ",
     client: "Emmaüs Connect, 2ème Hackathon à la Wild Code School",
     context:
       "Emmaüs reçoit régulièrement des dons de smartphones de la part des visiteurs. Cependant, l'évaluation et la revente de ces appareils varient selon les centres, ce qui entraîne des incohérences dans les prix proposés. L'objectif du projet R-AMazing-Phone-Pricer est d'offrir un outil centralisé permettant aux volontaires d’Emmaüs d’analyser, classifier et estimer un prix juste pour chaque smartphone, assurant ainsi une homogénéité dans toute l'organisation.",
@@ -459,7 +459,7 @@ const trainingProjects = [
           },
           {
             title:
-              "Sécurisation et authentification : Gestion des rôles (volontaires/admins) et mise en place d'une connexion sécurisée.",
+              "Sécurisation et authentification : Gestion des rôles (volontaires/admins), mise en place d'une connexion sécurisée via JWT et MySQL et protection des routes sensibles.",
           },
           {
             title:
@@ -582,11 +582,11 @@ const trainingProjects = [
     type: "training",
     date: "2023/06",
     title: "SERENITY",
-    client: "fictif, 3ème projet de formation à la Wild Code School",
     description:
-      "Développemnt d'une application web permettant d'accompagner les patients dans leur prise en charge à l'hôpital, tout en fournissant aux praticiens un dashboard dédié pour gérer les patients, interventions et documents médicaux.",
+      "Application web permettant d'accompagner les patients dans leur prise en charge à l'hôpital.",
     time: "2 mois",
-    soloTeam: "En équipe",
+    client: "",
+    project_type: "Formation (Wild Code School) - En équipe",
     context:
       "Les établissements de santé ont besoin d’une gestion centralisée et efficace des patients et interventions médicales. L’objectif de cette application est de fournir un outil numérique intuitif pour améliorer la coordination entre patients, praticiens et administrateurs hospitaliers. Grâce à cette plateforme, chaque utilisateur dispose d’un espace dédié, pour les Patients (Suivi des interventions et accès aux documents médicaux), pour les Praticiens (Gestion des patients et planification des interventions) et pour les Administrateurs (Supervision globale et gestion des utilisateurs).",
     project_steps: [
@@ -648,7 +648,7 @@ const trainingProjects = [
           },
           {
             title:
-              "Mise en place d'un système d'authentification sécurisé : Gestion des rôles (patients, praticiens, administrateurs).",
+              "Mise en place d'un système d'authentification sécurisé : Authentification robuste via JWT et MySQL, gestion des rôles (patients, praticiens, administrateurs) et protection des routes sensibles.",
           },
           {
             title:
