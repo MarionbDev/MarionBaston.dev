@@ -34,23 +34,23 @@ export default function Footer() {
               <ul className="flex flex-col gap-2 ">
                 <li>
                   <Link href="#home" id="footer-about-me">
-                    Home
+                    Bienvenue
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/parcours" id="footer-services">
+                    Mon parcours
                   </Link>
                 </li>
                 <li>
                   <Link href="#portfolio" id="footer-projects">
-                    Mes Projets
+                    Portfolio
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#mes-competences" id="footer-skills">
+                  <Link href="#skills" id="footer-skills">
                     Mes Compétences
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#mes-services" id="footer-services">
-                    Mes services
                   </Link>
                 </li>
               </ul>

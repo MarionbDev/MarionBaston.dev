@@ -12,7 +12,7 @@ import { ModeToggle } from "./ModeToggle";
 export default function NavbarMobile() {
   return (
     <div className=" flex navSupp justify-center  ">
-      <div className=" flex justify-between  w-full px-8 sm:px-12 mt-9 fixed z-50   ">
+      <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#121212]  ">
         <ModeToggle />
 
         <Menubar className="border-none p-0 m-0">
@@ -22,28 +22,33 @@ export default function NavbarMobile() {
               aria-label="barre de navigation "
               className="p-0 m-0"
             >
-              <Menu className="w-11 h-11  text-purple  " />
+              <Menu className="w-9 h-9  text-purple  " />
             </MenubarTrigger>
             <MenubarContent
-              sideOffset={0}
+              sideOffset={2}
               className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#121212] bg-bg_white border-none shadow-md  pt-8"
             >
               <Link href="/#home" aria-label="Home">
-                <MenubarItem className="text-[1.2rem] ">Home</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
               </Link>
-              <Link href="/#portfolio" aria-label="mes projets">
+              <Link
+                href="/parcours"
+                aria-label="mon parcours"
+                className="nav-link"
+              >
+                <MenubarItem className="text-[1.2rem] ">
+                  Mon parcours
+                </MenubarItem>
+              </Link>
+              <Link href="/portfolio" aria-label="mes projets">
                 <MenubarItem className="text-[1.2rem] ">Portfolio</MenubarItem>
               </Link>
-              <Link href="/#mes-competences" aria-label="mes compétences">
+              <Link href="/#skills" aria-label="mes compétences">
                 <MenubarItem className="text-[1.2rem] ">
                   Mes Compétences
                 </MenubarItem>
               </Link>
-              <Link href="/#mes-services" aria-label="mes services">
-                <MenubarItem className="text-[1.2rem] ">
-                  Mes services
-                </MenubarItem>
-              </Link>
+
               <Link href="/#me-contacter" aria-label="me contacter">
                 <MenubarItem className="text-[1.2rem] ">
                   Contactez-moi
