@@ -19,7 +19,6 @@ export default function Home() {
       <div id="me-contacter" className=" pb-20 pt-20">
         <ContactPage />
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import PropTypes from "prop-types";
+import Footer from "./_components/Footer";
 import Navbar from "./_components/Navbar";
 import NavbarMobile from "./_components/NavbarMobile";
 import Providers from "./_components/Providers";
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
             <NavbarMobile className="navbar-mobile " />
 
             {children}
+            <Footer />
           </Providers>
         </ThemeProvider>
       </body>

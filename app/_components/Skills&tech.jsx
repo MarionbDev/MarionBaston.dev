@@ -19,11 +19,11 @@ export default function SkillsAndTech() {
         </div>
         <p className=" font-poppins pt-2 md:pt-8 mb-12 md:mb-24 text-[1rem] md:text-[1.1rem]">
           J'ai acquis des compétences en développement{" "}
-          <span className=" font-bold text-[1.3rem] text-purple dark:text-[#d29aec]">
+          <span className=" font-bold text-[1.1rem] text-purple dark:text-[#d29aec]">
             frontend
           </span>{" "}
           et{" "}
-          <span className=" font-bold text-[1.3rem] text-purple dark:text-[#d29aec]">
+          <span className=" font-bold text-[1.1rem] text-purple dark:text-[#d29aec]">
             backend
           </span>
           , me permettant de concevoir des applications modernes, performantes

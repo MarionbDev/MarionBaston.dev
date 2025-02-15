@@ -38,6 +38,11 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/parcours" id="footer-services">
+                    Mon parcours
+                  </Link>
+                </li>
+                <li>
                   <Link href="#portfolio" id="footer-projects">
                     Portfolio
                   </Link>
@@ -46,11 +51,6 @@ export default function Footer() {
                 <li>
                   <Link href="#skills" id="footer-skills">
                     Mes Compétences
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/parcours" id="footer-services">
-                    Mon parcours
                   </Link>
                 </li>
               </ul>

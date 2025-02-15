@@ -12,7 +12,7 @@ import { ModeToggle } from "./ModeToggle";
 export default function NavbarMobile() {
   return (
     <div className=" flex navSupp justify-center  ">
-      <div className=" flex justify-between items-center  w-full px-8 sm:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#121212]  ">
+      <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#121212]  ">
         <ModeToggle />
 
         <Menubar className="border-none p-0 m-0">
@@ -31,14 +31,6 @@ export default function NavbarMobile() {
               <Link href="/#home" aria-label="Home">
                 <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
               </Link>
-              <Link href="/#portfolio" aria-label="mes projets">
-                <MenubarItem className="text-[1.2rem] ">Portfolio</MenubarItem>
-              </Link>
-              <Link href="/#skills" aria-label="mes compétences">
-                <MenubarItem className="text-[1.2rem] ">
-                  Mes Compétences
-                </MenubarItem>
-              </Link>
               <Link
                 href="/parcours"
                 aria-label="mon parcours"
@@ -48,6 +40,15 @@ export default function NavbarMobile() {
                   Mon parcours
                 </MenubarItem>
               </Link>
+              <Link href="/portfolio" aria-label="mes projets">
+                <MenubarItem className="text-[1.2rem] ">Portfolio</MenubarItem>
+              </Link>
+              <Link href="/#skills" aria-label="mes compétences">
+                <MenubarItem className="text-[1.2rem] ">
+                  Mes Compétences
+                </MenubarItem>
+              </Link>
+
               <Link href="/#me-contacter" aria-label="me contacter">
                 <MenubarItem className="text-[1.2rem] ">
                   Contactez-moi

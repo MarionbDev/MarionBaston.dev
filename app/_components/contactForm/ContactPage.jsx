@@ -16,11 +16,11 @@ export default function ContactPage() {
           <div className="font-poppins text-txt_black dark:text-white pt-2 md:pt-8 mb-12 md:mb-16 text-[1rem] md:text-[1.2rem] xl:px-10   flex flex-col items-center  gap-4 ">
             <p>
               Je suis à la recherche d'une{" "}
-              <span className="font-bold text-[1.3rem] md:text-[1.5rem] text-purple dark:text-[#d29aec]">
+              <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple dark:text-[#d29aec]">
                 opportunité{" "}
               </span>
               en CDD, CDI en tant que{" "}
-              <span className="font-bold text-[1.3rem] md:text-[1.5rem] text-purple dark:text-[#d29aec]">
+              <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple dark:text-[#d29aec]">
                 Développeuse Web.
               </span>
             </p>

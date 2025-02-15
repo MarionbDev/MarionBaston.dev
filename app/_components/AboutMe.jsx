@@ -69,11 +69,11 @@ export default function AboutMe() {
               </p>
             </div>
             <div className=" flex flex-col  md:flex-row lg:mt-8 md:gap-8  ">
-              <div className=" flex flex-col md:flex-row md:items-center gap-6 md:gap-4">
+              <div className=" flex flex-col sm:flex-row sm:items-center gap-6 md:gap-4">
                 <Link
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/60  dark:hover:bg-purple_dark dark:hover:text-white  dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] text-center p-2   w-full md:w-[16rem]"
+                  className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/60  dark:hover:bg-purple_dark dark:hover:text-white  dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] text-center p-2   w-full sm:w-[16rem]"
                 >
                   <MessagesSquare
                     size="22"

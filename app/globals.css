@@ -89,10 +89,10 @@ html {
   height: 8px;
 }
 
-.wave-services::after {
+.wave-skills::after {
   content: "";
   position: absolute;
-  width: 30%;
+  width: 40%;
   border-top: solid 3px #c80ec8;
   top: 2px;
   border-radius: 50%;
@@ -252,6 +252,10 @@ html {
   .wave-home::after {
     left: 530px;
     top: 58px;
+  }
+
+  .wave-skills::after {
+    width: 20%;
   }
 }
 

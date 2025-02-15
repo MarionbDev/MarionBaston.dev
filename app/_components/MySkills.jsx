@@ -9,10 +9,10 @@ export default function MySkills() {
             <h2 className=" text-purple dark:text-white font-semibold text-base lg:text-lg text-center">
               DEVELOPPEMENT WEB FRONTEND
             </h2>
-            <span className="wave-services relative flex justify-center "></span>
+            <span className="wave-skills relative flex justify-center "></span>
           </div>
 
-          <div className=" tracking-tight text-[1rem] leading-7">
+          <div className="  text-[1rem] leading-7">
             <p className="  mt-8">
               Je développe l'interface visible d'un site web à partir d'une
               maquette, en garantissant une expérience utilisateur fluide et
@@ -55,9 +55,9 @@ export default function MySkills() {
             <h2 className=" text-purple dark:text-white font-semibold text-base lg:text-lg text-center">
               DEVELOPPEMENT WEB BACKEND
             </h2>
-            <span className="wave-services relative flex justify-center "></span>
+            <span className="wave-skills relative flex justify-center "></span>
           </div>
-          <div className="  tracking-tight text-[1rem] leading-7">
+          <div className="   text-[1rem] leading-7">
             <p className=" mt-8">
               Je conçois et mets en place l'architecture backend d'un projet
               afin d'assurer sa fiabilité, sa sécurité et sa scalabilité.
