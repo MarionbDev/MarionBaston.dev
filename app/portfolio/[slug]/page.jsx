@@ -63,7 +63,7 @@ export default async function ProjectPage({ params }) {
         )}
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg">🚀 Context & Objectif</h3>
+            <h3 className="text-lg">🚀 Contexte & Objectif</h3>
             <p className=" text-base leading-7">{project.context}</p>{" "}
           </div>
           <div className="flex flex-col gap-2">

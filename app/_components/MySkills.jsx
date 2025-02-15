@@ -86,8 +86,8 @@ export default function MySkills() {
               </li>
               <li className="flex gap-1 items-center md:ml-4 ">
                 <Check size={20} color="#8300e9" /> Optimisation des
-                performances backend (mise en cache, requêtes optimisées,gestion
-                de la charge...)
+                performances backend (mise en cache, requêtes optimisées,
+                gestion de la charge...)
               </li>
               <li className="flex gap-1 items-center md:ml-4 ">
                 <Check size={20} color="#8300e9" />

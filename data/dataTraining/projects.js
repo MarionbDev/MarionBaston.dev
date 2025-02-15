@@ -157,7 +157,7 @@ const trainingProjects = [
               },
               {
                 title:
-                  "Navigation lfuide et responsive : Expérience optimisée pour tous les supports.",
+                  "Navigation fluide et responsive : Expérience optimisée pour tous les supports.",
               },
             ],
 
@@ -185,11 +185,11 @@ const trainingProjects = [
           },
           {
             title:
-              "Une interface réactive et moderne : Un design responsive qui s'adapte à tous les écrans.",
+              "Une interface réactive et moderne : Un design responsif qui s'adapte à tous les écrans.",
           },
           {
             title:
-              "Expérience utilisateur améliorée : Une navigaiton fluide et un accès simplifié aux informations musicales.",
+              "Expérience utilisateur améliorée : Une navigation fluide et un accès simplifié aux informations musicales.",
           },
         ],
       },
@@ -433,7 +433,7 @@ const trainingProjects = [
             admin: [
               {
                 title:
-                  "Gestion des utilisateurs : Création et gestion des comptes des colontaires et administrateurs.",
+                  "Gestion des utilisateurs : Création et gestion des comptes des volontaires et administrateurs.",
               },
               {
                 title:
@@ -441,7 +441,7 @@ const trainingProjects = [
               },
               {
                 title:
-                  "Suivi des transactions : Visualisation des martphones repris et des décisions de tarification prises.",
+                  "Suivi des transactions : Visualisation des smartphones repris et des décisions de tarification prises.",
               },
             ],
           },
@@ -455,7 +455,7 @@ const trainingProjects = [
           },
           {
             title:
-              "Connexion à une base de donnée : Stockage structuré des smartphones et des utilisateurs pour assurer un accès fluide aux données. ",
+              "Connexion à une base de données : Stockage structuré des smartphones et des utilisateurs pour assurer un accès fluide aux données. ",
           },
           {
             title:
@@ -483,7 +483,7 @@ const trainingProjects = [
           },
           {
             title:
-              "Reconnaissance du projet en tant que finaliste du hackaton.",
+              "Reconnaissance du projet en tant que finaliste du hackathon.",
           },
         ],
       },

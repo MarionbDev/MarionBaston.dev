@@ -18,7 +18,7 @@ const professionalProjects = [
     time: "",
     project_type: "Freelance",
     context:
-      "Développement d'un site web permettant aux visiteurs de découvrir différents hébergements avec leurs tarifs et disponibilités, ainsi que les activités à faire dans la région. L'objectif était d'offir une présentation claire et attrayante des offres, tout en permettant au client de gérer facilement le contenu via une interface d'administration.",
+      "Développement d'un site web permettant aux visiteurs de découvrir différents hébergements avec leurs tarifs et disponibilités, ainsi que les activités à faire dans la région. L'objectif était d'offrir une présentation claire et attrayante des offres, tout en permettant au client de gérer facilement le contenu via une interface d'administration.",
     soloTeam: null,
     client: "Le Plessis Aux Lys",
     project_steps: [
@@ -74,7 +74,7 @@ const professionalProjects = [
           },
           {
             title:
-              "Sécurisation de l'accès administration : Intégration d'une authentification robuste avec Supabase Auth et mise en place de protection de routes pour sécruriser l'accès à l'interface d'administration.",
+              "Sécurisation de l'accès administration : Intégration d'une authentification robuste avec Supabase Auth et mise en place de protection de routes pour sécuriser l'accès à l'interface d'administration.",
           },
           {
             title:
@@ -97,7 +97,7 @@ const professionalProjects = [
           },
           {
             title:
-              "Déploiement performant: le site a été déployé rapidement et de manière performante grâce à Vercel, assurant une bonne expérience utilisateur.",
+              "Déploiement performant : le site a été déployé rapidement et de manière performante grâce à Vercel, assurant une bonne expérience utilisateur.",
           },
         ],
       },
