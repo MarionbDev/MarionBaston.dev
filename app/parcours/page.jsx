@@ -142,9 +142,9 @@ export default function MyBackground() {
               <Link href={"https:/www.le-plessis-aux-lys.fr"} target="_blank">
                 "Le Plessis aux Lys"
               </Link>
-              , site de Gîtes et Chambres d'Hôtes , ce qui m’a permis
-              d’appliquer mes compétences dans un cadre professionnel et de
-              mieux comprendre les besoins réels d’un projet digital.
+              , site de Gîtes et Chambres d'Hôtes, ce qui m’a permis d’appliquer
+              mes compétences dans un cadre professionnel et de mieux comprendre
+              les besoins réels d’un projet digital.
             </p>
             <p>
               💡Mon objectif ? Apporter mes compétences en développement web à
@@ -162,12 +162,12 @@ export default function MyBackground() {
               d'exprimer ma créativité, mon souci du détail et ma patience.
             </p>
             <p>
-              🏃 Le sport fait partie de mon équilibre : j'aime courrir, faire
-              du CrossFit et me ressourcer en pleine nature 🌳🌊.
+              🏃 Le sport fait partie de mon équilibre : j'aime courir, faire du
+              CrossFit et me ressourcer en pleine nature 🌳🌊.
             </p>
             <p>
               Que ce soit dans à travers le sport ou le dessin, ce que j'aime
-              par dessus tout, c'est de relever des défis et progresser
+              par-dessus tout, c'est de relever des défis et progresser
               constamment.
             </p>
           </div>
