@@ -82,7 +82,7 @@ html {
 .wave-form::after {
   content: "";
   position: absolute;
-  width: 60%;
+  width: 20%;
   border-top: solid 3px #c80ec8;
   bottom: 10px;
   border-radius: 50%;
@@ -92,8 +92,8 @@ html {
 .wave-services::after {
   content: "";
   position: absolute;
-  width: 50%;
-  border-top: solid 3px rgb(200, 14, 200);
+  width: 30%;
+  border-top: solid 3px #c80ec8;
   top: 2px;
   border-radius: 50%;
   height: 8px;

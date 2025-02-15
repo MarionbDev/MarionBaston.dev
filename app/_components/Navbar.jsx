@@ -12,7 +12,7 @@ export default function Navbar() {
         <ul className="font-lato flex gap-8 items-center font-medium  ">
           <li className="">
             <Link href="/#home" aria-label="Accueil" className="nav-link">
-              Home<span className="underline-nav"></span>
+              Bienvenue<span className="underline-nav"></span>
             </Link>
           </li>
 
@@ -27,22 +27,23 @@ export default function Navbar() {
           </li>
           <li className="">
             <Link
-              href="/#mes-competences"
-              aria-label="mes compétences "
+              href="/#skills"
+              aria-label="mes compétences"
               className="nav-link"
             >
-              Mes Compétences<span className="underline-nav"></span>
+              Mes compétences<span className="underline-nav"></span>
             </Link>
           </li>
           <li className="">
             <Link
-              href="/#mes-services"
-              aria-label="mes services"
+              href="/parcours"
+              aria-label="mon parcours"
               className="nav-link"
             >
-              Mes services<span className="underline-nav"></span>
+              Mon parcours<span className="underline-nav"></span>
             </Link>
           </li>
+
           <li>
             <Link
               href={"/#me-contacter"}
