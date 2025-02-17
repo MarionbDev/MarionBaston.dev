@@ -29,7 +29,7 @@ export default async function ProjectPage({ params }) {
           />
         </Link>
       </div>
-      <div className="flex flex-col gap-8 md:gap-12 mx-4 md:mx-32">
+      <div className="flex flex-col gap-8 md:gap-12 mx-4 sm:mx-14 md:mx-20 lg:mx-32">
         <div>
           <div className="flex  items-end gap-1 h-16 mb-6  ">
             <h1 className=" name-gradient text-txt_black dark:text-white text-3xl pb-1 font-semibold sm:text-[2rem] md:text-[2.3rem] lg:text-[3rem]  ">
@@ -121,15 +121,15 @@ export default async function ProjectPage({ params }) {
           </ul>
         </div>
         <div className="flex justify-center">
-          <ScrollArea className="flex flex-col w-[18rem] h-[12rem]  md:px-3 sm:w-[25rem] sm:h-[18rem]  md:w-[50rem]  md:h-[25rem]  rounded-lg md:rounded-t-xl  shadow-sm shadow-purple/40  dark:bg-purple/10 sm:mb-5">
-            <ul className=" h-[11rem] sm:h-[16rem]  md:h-[24rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
+          <ScrollArea className="flex flex-col w-[30rem] h-[14rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl  shadow-sm shadow-purple/40  dark:bg-purple/10 sm:mb-5">
+            <ul className=" h-[13rem] sm:h-[18rem]  md:h-[22rem] lg:h-[25rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (
                     <li
                       key={`${index}-${picture.image}`}
                       className=" flex flex-col items-start justify-center"
                     >
-                      <figure className="shrink-0 w-[17rem] sm:w-[24rem]  md:w-[40rem] ">
+                      <figure className="shrink-0 w-[22rem] sm:w-[30rem]  md:w-[36rem] lg:w-[41rem] ">
                         <div className=" flex justify-start rounded-md ">
                           <Image
                             src={picture.image}

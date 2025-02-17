@@ -1,6 +1,5 @@
 import AboutMe from "./_components/AboutMe";
 import ContactPage from "./_components/contactForm/ContactPage";
-import Footer from "./_components/Footer";
 import BestProjectsPage from "./_components/Projects/BestProjectsPage";
 import SkillsAndTech from "./_components/Skills&tech";
 
