@@ -6,8 +6,6 @@
 
 .font-poppins {
   font-family: "Poppins", Arial, sans-serif;
-  /* font-weight: 400; */
-  /* font-style: normal; */
 }
 
 * {
@@ -18,6 +16,9 @@
 
 body {
   zoom: 1;
+}
+.dark body {
+  background-color: #110118;
 }
 
 /* Styles label "Skills"*/
@@ -99,41 +100,6 @@ html {
   height: 8px;
 }
 
-/*Slide paragraphe */
-.slide-para {
-  opacity: 0;
-  animation: slideparagraphe 1s ease-in-out forwards;
-  animation-delay: 0.4s;
-}
-
-@keyframes slideparagraphe {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*Slide picture */
-.slide-picture {
-  opacity: 0;
-  animation: slidepicture 1s ease-in-out forwards;
-}
-
-@keyframes slidepicture {
-  0% {
-    transform: translateX(270%) rotate(1000deg);
-
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) rotate(0);
-
-    opacity: 1;
-  }
-}
-
 .dark .name-gradient {
   background: linear-gradient(to right, #eeeeee 0%, #9045f9 100%);
   -webkit-background-clip: text;
@@ -148,17 +114,6 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-@keyframes slideNameTitle {
-  0% {
-    transform: translatex(-960%) rotate(-10deg);
-    opacity: 0;
-  }
-  100% {
-    transform: translatex(0) rotate(0deg);
-    opacity: 1;
-  }
 }
 
 .slide name-dev .dark .slide-name-dev {
@@ -212,12 +167,6 @@ html {
   }
 }
 
-@media only screen and (min-width: 606px) {
-  /* .wave-home::after {
-    width: 12%;
-  } */
-}
-
 @media only screen and (min-width: 769px) {
   .wave-home::after {
     width: 16%;
@@ -236,18 +185,6 @@ html {
   }
 }
 
-@media only screen and (min-width: 800px) {
-  /* .wave-home::after {
-    width: 10%;
-  } */
-}
-
-@media only screen and (min-width: 957px) {
-  /* .wave-home::after {
-    width: 10%;
-  } */
-}
-
 @media only screen and (min-width: 1024px) {
   .wave-home::after {
     left: 530px;
@@ -259,25 +196,10 @@ html {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  /* .wave-home::after {
-    left: 510px;
-    width: 14%;
-    top: -2px;
-  } */
-}
-
 @media only screen and (min-width: 1280px) {
   .wave-home::after {
     left: 550px;
   }
-}
-
-@media only screen and (min-width: 1400px) {
-  /* .wave-home::after {
-    left: 550px;
-    width: 18%;
-  } */
 }
 
 @media only screen and (min-width: 468px) {

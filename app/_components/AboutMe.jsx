@@ -20,7 +20,7 @@ export default function AboutMe() {
       <div className=" lg:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start gap-2">
               <h1 className="  mt-14 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
                 Bonjour, je suis&nbsp;
                 <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">

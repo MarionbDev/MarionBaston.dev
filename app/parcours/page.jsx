@@ -157,18 +157,33 @@ export default function MyBackground() {
               💫 Mes autres passions
             </h2>
             <p>
-              🎨 En dehors du développement web, je suis passionnée par le
-              dessin de portraits au crayon graphite, un art qui me permet
-              d'exprimer ma créativité, mon souci du détail et ma patience.
+              Dès que j'ai un moment, je m'évade à travers d'autres activités
+              qui me stimulent tout autant.
             </p>
             <p>
-              🏃 Le sport fait partie de mon équilibre : j'aime courir, faire du
-              CrossFit et me ressourcer en pleine nature 🌳🌊.
+              🎨 Je suis passionnée par le dessin de portraits au crayon
+              graphite, un art qui me permet d'exprimer ma créativité, mon souci
+              du détail et ma patience. Retrouvez mes dessins dans mon projet
+              "Drawing And Co".
             </p>
             <p>
-              Que ce soit dans à travers le sport ou le dessin, ce que j'aime
-              par-dessus tout, c'est de relever des défis et progresser
-              constamment.
+              🎶 La musique fait partie de mon quotidien et m’accompagne dans
+              tous les moments de la vie. Je suis une véritable autodidacte !
+              Piano, guitare.... J’aime aussi découvrir de nouveaux styles
+              musicaux et assister à des concerts. La musique, sous toutes ses
+              formes, est une source d’émotions et d’inspiration au quotidien.
+            </p>
+            <p>
+              🏃 Le sport fait partie de mon équilibre : il m'apporte à la fois
+              énergie, discipline et bien-être. J'aime la sensation de liberté
+              et de dépassement de soi dans la course à pied et le CrossFit. Que
+              ce soit pour me défouler, relever de nouveaux défis ou simplement
+              prendre un bol d'air frais.
+            </p>
+            <p>
+              ✨ Entre le sport, la musique ou le dessin, ces passions me
+              permettent de m'exprimer et nourrissent ma persévérence au
+              quotidien.
             </p>
           </div>
         </div>
