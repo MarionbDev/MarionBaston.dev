@@ -43,12 +43,12 @@ export default function SkillsAndTech() {
             <div className="flex flex-col items-center  gap-6  ">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">FRONTEND</h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={splash}
                 width={150}
-                alt="image représenter un tâche de peinture"
+                alt="ilustration de la section frontend"
                 className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-36 dark:sm:h-36 dark:brightness-75 mt-6 sm:mt-0"
               />
             </div>
@@ -64,13 +64,13 @@ export default function SkillsAndTech() {
             <div className="flex flex-col items-center  gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">BACKEND</h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={backend}
                 width={150}
                 height={150}
-                alt="image représentant un engrenage"
+                alt="illustration de la section backend"
                 className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75"
               />
             </div>
@@ -86,13 +86,13 @@ export default function SkillsAndTech() {
             <div className="flex flex-col items-center gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={tools}
                 width={150}
                 height={150}
-                alt="image représentant des outils et un pc"
+                alt="illustration de le section outils"
                 className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 "
               />
             </div>
@@ -109,13 +109,13 @@ export default function SkillsAndTech() {
                 <h2 className="text-lg text-center  font-semibold">
                   SOFT SKILLS
                 </h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={softSkills}
                 width={150}
                 height={150}
-                alt="image représentant des outils et un pc"
+                alt="illustration de la section soft skills"
                 className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
               />
             </div>

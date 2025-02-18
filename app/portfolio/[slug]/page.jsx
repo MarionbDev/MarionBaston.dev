@@ -121,27 +121,27 @@ export default async function ProjectPage({ params }) {
           </ul>
         </div>
         <div className="flex justify-center">
-          <ScrollArea className="flex flex-col w-[30rem] h-[14rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl  shadow-sm shadow-purple/40  dark:bg-purple/10 sm:mb-5">
-            <ul className=" h-[13rem] sm:h-[18rem]  md:h-[22rem] lg:h-[25rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
+          <ScrollArea className="flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl  bg-purple/90  dark:bg-purple/40 sm:mb-5">
+            <ul className=" h-[12.5rem] sm:h-[18rem]  md:h-[22rem] lg:h-[25rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (
                     <li
                       key={`${index}-${picture.image}`}
                       className=" flex flex-col items-start justify-center"
                     >
-                      <figure className="shrink-0 w-[22rem] sm:w-[30rem]  md:w-[36rem] lg:w-[41rem] ">
+                      <figure className="shrink-0 w-[21.5rem] sm:w-[30rem]  md:w-[36rem] lg:w-[41rem] ">
                         <div className=" flex justify-start rounded-md ">
                           <Image
                             src={picture.image}
-                            alt="photo du projet"
+                            alt="captures écran du projet"
                             width={900}
                             height={400}
                             className="   border-2  bg-black/10 "
                           />
                         </div>
-                        <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-[16rem] sm:w-[40rem]">
+                        {/* <figcaption className="pt-2  md:mb-0 text-[8px] md:text-xs flex flex-wrap w-[16rem] sm:w-[40rem]">
                           <span className="font-semibold">{picture.title}</span>
-                        </figcaption>
+                        </figcaption> */}
                       </figure>
                     </li>
                   ))

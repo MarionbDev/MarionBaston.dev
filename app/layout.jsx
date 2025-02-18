@@ -43,13 +43,10 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Providers>
-            <div className="flex  ">
-              <Navbar className="navbar " />
-            </div>
-
-            <NavbarMobile className="navbar-mobile " />
-
-            {children}
+            {/* <div className="flex  "> */}
+            <Navbar className="navbar " />
+            {/* </div> */}
+            <NavbarMobile className="navbar-mobile " /> {children}
             <Footer />
           </Providers>
         </ThemeProvider>

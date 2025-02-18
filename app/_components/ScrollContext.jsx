@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, createContext, useContext } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const ScrollContext = createContext();
 
@@ -13,8 +13,6 @@ export const ScrollProvider = ({ children }) => {
 
       if (scrollingText) {
         const scrollingTextPosition = scrollingText.getBoundingClientRect().top;
-        // console.log("scrollingTextPosition:", scrollingTextPosition);
-        // console.log("window.innerHeight:", window.innerHeight);
         setIsVisible(scrollingTextPosition < window.innerHeight / 1.2);
       }
     };
@@ -32,8 +30,6 @@ export const ScrollProvider = ({ children }) => {
     isVisible,
     setIsVisible,
   };
-
-  // console.log("Context value:", value);
 
   return (
     <ScrollContext.Provider value={value}>{children}</ScrollContext.Provider>
