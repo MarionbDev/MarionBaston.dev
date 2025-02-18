@@ -11,14 +11,11 @@ export default function Custom404() {
         <br /> Mais on en a plein d'autres à vous montrer !{" "}
       </h1>
 
-      <div>
-        <Link href="/">
-          <p className=" underline text-[20px] text-purple">
-            {" "}
-            Retour sur la page d'accueil
-          </p>
-        </Link>
-      </div>
+      <Link href="/">
+        <p className=" underline text-[20px] text-purple">
+          Retour sur la page d'accueil
+        </p>
+      </Link>
     </div>
   );
 }

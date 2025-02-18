@@ -1,11 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { useEffect, useState } from "react";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState(null);
+  const pathname = usePathname();
+
+  const hideFooterOn = ["/developpeuse-web-freelance"];
+
+  if (hideFooterOn.includes(pathname)) return null;
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -14,6 +20,7 @@ export default function Footer() {
   if (currentYear === null) {
     return null;
   }
+
   return (
     <footer>
       <div className=" py-2 px-6 bg-purple dark:border-t-[1px] dark:bg-[#121212] text-[#f3f1f1] ">
@@ -84,7 +91,7 @@ export default function Footer() {
           </nav>
           <div className="">
             <span className="flex justify-center  mx-4 border-t-[1px]  border-[#f3dec9] my-8"></span>
-            <Link href="/" aria-labelledby="marion-baston">
+            <Link href="/" aria-labelledby="marion-baston" className="block">
               <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mb-8">
                 <p className=" ">© {currentYear}</p>
                 <p

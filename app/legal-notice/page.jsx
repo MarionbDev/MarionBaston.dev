@@ -194,12 +194,6 @@ export default function LegalNoticePage() {
               gestion de vos informations personnelles via le formulaire de
               contact, n'hésitez pas à contacter le propriétaire du site.
             </p>
-            {/* <p>
-					<span className="mr-1">Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l&apos;utilisateur du site</span><Link href="https://marionbaston.fr ">https://marionbaston.fr </Link><span> dispose d&apos;un droit d&apos;accès, de modification et de suppression des informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : Marion Baston - marionbaston84@gmail.com</span>
-				</p>
-				<p>
-					<span className="mr-1">Pour plus d&apos;informations sur la façon dont nous traitons vos données (type de données, finalité, destinataire...), lisez notre</span><Link href="https://marionbaston.fr /legal-notice">https://marionbaston.fr /legal-notice</Link>.
-				</p> */}
           </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">
@@ -230,23 +224,6 @@ export default function LegalNoticePage() {
                 sur l&apos;ordinateur de l&apos;utilisateur.
               </span>
             </p>
-            {/* <p>
-					<span className="mr-1">La navigation sur le site</span>
-					<Link href="https://marionbaston.fr ">https://marionbaston.fr </Link>
-					<span>est susceptible de provoquer l&apos;installation de cookie(s) sur l&apos;ordinateur de l&apos;utilisateur.</span>
-				</p> */}
-            {/* <p>
-					<span className="mr-1">Un &ldquo;cookie&rdquo; est un fichier de petite taille qui enregistre des informations relatives à la navigation d&apos;un utilisateur sur un site. Les données ainsi obtenues permettent d&apos;obtenir des mesures de fréquentation, par exemple.</span>
-				</p>
-				<p>
-					Vous avez la possibilité d&apos;accepter ou de refuser les cookies en modifiant les paramètres de votre navigateur. Aucun cookie ne sera déposé sans votre consentement.
-				</p>
-				<p>
-					Les cookies sont enregistrés pour une durée maximale de 6 mois.
-				</p>
-				<p>
-					Pour plus d&apos;informations sur la façon dont nous faisons usage des cookies, lisez notre <Link href="https://marionbaston.fr /legal-notice">https://marionbaston.fr /legal-notice</Link>.
-				</p> */}
           </div>
           <div>
             <h2 className="text-3xl font-semibold mb-4">

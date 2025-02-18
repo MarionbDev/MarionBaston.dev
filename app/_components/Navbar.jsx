@@ -1,10 +1,19 @@
+"use client";
+
 import { MessageCircle } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const hideNavbarOn = ["/developpeuse-web-freelance"];
+
+  if (hideNavbarOn.includes(pathname)) return null;
+
   return (
-    <div className="navbar flex text-base justify-between items-center  w-full pr-3 lg:pr-6  h-14 fixed z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
+    <div className="navbar flex text-base justify-between items-center  w-full pr-3 lg:pr-6  h-14 fixed top-0 z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
       <div className="  ml-4">
         <ModeToggle />
       </div>

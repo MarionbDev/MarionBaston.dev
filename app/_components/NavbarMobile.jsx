@@ -1,5 +1,8 @@
+"use client";
+
 import { Github, Linkedin, Menu } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   Menubar,
   MenubarContent,
@@ -10,9 +13,14 @@ import {
 import { ModeToggle } from "./ModeToggle";
 
 export default function NavbarMobile() {
+  const pathname = usePathname();
+
+  const hideNavbarOn = ["/developpeuse-web-freelance"];
+
+  if (hideNavbarOn.includes(pathname)) return null;
   return (
     <div className=" flex navSupp justify-center  ">
-      <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#121212]  ">
+      <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#0e0e0e]  ">
         <ModeToggle />
 
         <Menubar className="border-none p-0 m-0">
@@ -26,7 +34,7 @@ export default function NavbarMobile() {
             </MenubarTrigger>
             <MenubarContent
               sideOffset={2}
-              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#121212] bg-bg_white border-none shadow-md  pt-8"
+              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#0e0e0e] bg-bg_white border-none shadow-md  pt-8"
             >
               <Link href="/#home" aria-label="Home">
                 <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>

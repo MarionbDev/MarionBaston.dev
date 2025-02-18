@@ -147,7 +147,7 @@ export default function AboutMe() {
 
             <Image
               src={splash}
-              alt="splach"
+              alt=""
               width={450}
               height={450}
               className=" w-[16rem] sm:w-[28rem] mt-0 sm:mt-16 "
