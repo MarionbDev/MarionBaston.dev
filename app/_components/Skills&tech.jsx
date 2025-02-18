@@ -43,7 +43,7 @@ export default function SkillsAndTech() {
             <div className="flex flex-col items-center  gap-6  ">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">FRONTEND</h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={splash}
@@ -64,7 +64,7 @@ export default function SkillsAndTech() {
             <div className="flex flex-col items-center  gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">BACKEND</h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={backend}
@@ -86,7 +86,7 @@ export default function SkillsAndTech() {
             <div className="flex flex-col items-center gap-6">
               <div className="flex flex-col">
                 <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={tools}
@@ -109,7 +109,7 @@ export default function SkillsAndTech() {
                 <h2 className="text-lg text-center  font-semibold">
                   SOFT SKILLS
                 </h2>
-                <span className="wave-services relative flex justify-center "></span>
+                <span className="wave-skills relative flex justify-center "></span>
               </div>
               <Image
                 src={softSkills}
