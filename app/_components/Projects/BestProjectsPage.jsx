@@ -13,11 +13,11 @@ export default function BestProjectsPage() {
           </h2>
           <span className="mb-[0.46rem] sm:mb-0 w-3 h-3 rounded-full bg-purple "></span>
         </div>
-        <div className="flex flex-col md:flex-row w-full md:items-center pt-2 md:pt-8">
+        <div className="flex flex-col lg:flex-row w-full md:items-center pt-2 md:pt-8">
           <p className="font-poppins   md:px-0 text-[1rem]">
             Découvrez la diversité de mes expériences en développement web !
           </p>
-          <div className=" flex">
+          <div className=" flex ">
             <Link
               href={"/portfolio"}
               className="  text-purple md:dark:text-purple_dark md:ml-2 "

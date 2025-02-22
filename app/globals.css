@@ -116,6 +116,14 @@ html {
   color: transparent;
 }
 
+.bg-gradient-card {
+  background: linear-gradient(to right, #6015c9de 0%, #d29aec 100%);
+}
+
+.dark .bg-gradient-card {
+  background: linear-gradient(to right, #230930 0%, #5f04a466 100%);
+}
+
 .slide name-dev .dark .slide-name-dev {
   text-transform: uppercase;
   background: linear-gradient(to right, #b478f8 0%, #dacaec 100%);
