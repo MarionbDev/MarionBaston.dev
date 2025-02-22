@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
                 color="#c6ccd5"
                 className="md:hidden dark:opacity-50  "
               />
-              <ScrollArea className="flex flex-col justify-center w-[18rem] h-[11rem]  md:px-3  md:w-[31rem] md:h-[18rem]  rounded-lg md:rounded-t-xl   bg-purple/90 dark:bg-purple/40  sm:mb-5">
+              <ScrollArea className="bg-gradient-card flex flex-col justify-center w-[18rem] h-[11rem]  md:px-3  md:w-[31rem] md:h-[18rem]  rounded-lg md:rounded-t-xl dark:bg-purple/40  sm:mb-5">
                 <ul className=" h-[10rem]  md:h-[16.5rem] flex w-max m-1 pl-1 md:pl-0 gap-6  md:space-x-4   ">
                   {project.picture_website
                     ? project.picture_website.map((picture, index) => (

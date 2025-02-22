@@ -133,7 +133,7 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6  relative bottom-6 xl:bottom-10 ">
+          <div className="flex justify-center items-center -rotate-6  relative bottom-6 lg:bottom-32 xl:bottom-10 ">
             <div className="border-2 p-[0.4rem]  rotate-12 border-[#ab6aff] absolute sm:top-[6rem]   ">
               <Image
                 src={myPhoto}
