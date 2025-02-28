@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Footer from "./../_components/Footer";
 
 export default function LegalNoticePage() {
   return (
     <>
-      <div className="container font-poppins text-txt_black dark:text-white mx-auto mt-20 py-8 flex flex-col gap-8 mb-8">
+      <div className="container font-poppins text-txt_black dark:text-white mx-auto mt-20 py-8 flex flex-col gap-8 mb-8 leading-7 text-pretty">
         <h1 className="text-4xl font-bold">Mentions légales</h1>
         <Button
           className="gap-2 w-fit shadow-purple/60 shadow-sm hover:bg-purple hover:text-white"
@@ -19,7 +18,9 @@ export default function LegalNoticePage() {
         </Button>
         <div className=" max-w-[900px] flex flex-col gap-14 mx-auto">
           <div>
-            <h2 className="text-3xl font-semibold mb-4">1 - Édition du site</h2>
+            <h2 className="text-3xl font-semibold mb-4 text-balances">
+              1 - Édition du site
+            </h2>
             <p>
               <span className="mr-1">
                 En vertu de l&apos;article 6 de la loi n°2004-575 du 21 juin
@@ -60,7 +61,7 @@ export default function LegalNoticePage() {
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-3xl font-semibold mb-4 text-balance">
               2 - Propriété intellectuelle et contrefaçons.
             </h2>
             <p className="mb-2">
@@ -107,7 +108,7 @@ export default function LegalNoticePage() {
             </div>
           </div>
           <div>
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-3xl font-semibold mb-4 text-balance">
               3 - Limitations de responsabilité.
             </h2>
             <p>
@@ -162,7 +163,7 @@ export default function LegalNoticePage() {
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-3xl font-semibold mb-4 text-balance">
               4 - CNIL et gestion des données personnelles.
             </h2>
             <p>
@@ -196,7 +197,7 @@ export default function LegalNoticePage() {
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-3xl font-semibold mb-4 text-balance">
               5 - Liens hypertextes et cookies.
             </h2>
             <p>
@@ -226,7 +227,7 @@ export default function LegalNoticePage() {
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-3xl font-semibold mb-4 text-balance">
               6 - Droit applicable et attribution de juridiction.
             </h2>
             <p>
@@ -245,7 +246,6 @@ export default function LegalNoticePage() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

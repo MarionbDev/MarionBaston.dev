@@ -23,21 +23,25 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className=" py-2 px-6 bg-purple dark:border-t-[1px] dark:bg-[#121212] text-[#f3f1f1] ">
+      <div className=" py-2 px-6 bg-gradient-to-r from-[#6015c9de] to-[#d29aec] dark:border-t-[1px] dark:border-purple dark:bg-none  text-[#f3f1f1] ">
         <div className="">
           <nav
             aria-labelledby="footer-navigation-link "
             className=" lg:block lg:col-start- lg:col-span-2"
           >
             <div className="flex flex-col gap-2 my-6">
-              <p className="font-bold text-[1.2rem]">Informations Légales</p>
+              <p className="font-bold text-[1.2rem] dark:text-purple">
+                Informations Légales
+              </p>
 
               <Link href="/legal-notice" id="legal-notice">
                 Mentions légales
               </Link>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-[1.2rem]">Plan du site</p>
+              <p className="font-bold text-[1.2rem] dark:text-purple">
+                Plan du site
+              </p>
               <ul className="flex flex-col gap-2 ">
                 <li>
                   <Link href="#home" id="footer-about-me">
@@ -63,7 +67,9 @@ export default function Footer() {
               </ul>
             </div>
             <div className="flex flex-col my-6 gap-2 ">
-              <p className=" font-bold text-[1.2rem]">Contact</p>
+              <p className=" font-bold text-[1.2rem] dark:text-purple">
+                Contact
+              </p>
               <ul className=" flex flex-col gap-2">
                 <li className=" w-full ">
                   <Link href={"/#me-contacter"}>Email</Link>
@@ -90,9 +96,9 @@ export default function Footer() {
             </div>
           </nav>
           <div className="">
-            <span className="flex justify-center  mx-4 border-t-[1px]  border-[#f3dec9] my-8"></span>
+            <span className=" flex justify-center  mx-4 border-t-[1px]  border-purple/40 my-8"></span>
             <Link href="/" aria-labelledby="marion-baston" className="block">
-              <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mb-8">
+              <div className=" flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mb-8">
                 <p className=" ">© {currentYear}</p>
                 <p
                   id="marion-baston"
