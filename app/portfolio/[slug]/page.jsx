@@ -37,10 +37,12 @@ export default async function ProjectPage({ params }) {
             </h1>
             <span className="title-point mb-[0.62rem] md:mb-[0.25rem]  w-3 h-3  md:w-4 md:h-4 rounded-full bg-purple "></span>
           </div>
-          <h2 className="md:text-lg ">{project.description}</h2>
+          <h2 className="md:text-lg text-pretty leading-7 ">
+            {project.description}
+          </h2>
         </div>
         {project.picture_mockup?.length > 0 && (
-          <ul className="flex justify-center items-center gap-8 my-8">
+          <ul className="flex justify-center items-center gap-8 my-8 ">
             <li>
               <Image
                 src={project.picture_mockup?.[1].image.src}
@@ -66,7 +68,7 @@ export default async function ProjectPage({ params }) {
             <h3 className="text-lg">🚀 Contexte & Objectif</h3>
             <p className=" text-base leading-7">{project.context}</p>{" "}
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 text-pretty">
             <h3 className=" text-lg">🔑 Fonctionnalités Clés </h3>
             <p className="text-base">✅ Côté utilisateur :</p>
 
@@ -94,7 +96,7 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">⚡Challenges & Solutions</h3>
-            <ul className=" flex flex-col gap-3 text-base leading-7">
+            <ul className=" flex flex-col gap-3 text-base leading-7 text-pretty">
               {project.project_steps?.[1]?.challenges?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
               ))}
@@ -102,7 +104,7 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg">📈 Résultats & Impact</h3>
-            <ul className=" flex flex-col gap-3 text-base leading-7">
+            <ul className=" flex flex-col gap-3 text-base leading-7 text-pretty">
               {project.project_steps?.[2]?.result?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
               ))}
@@ -121,7 +123,7 @@ export default async function ProjectPage({ params }) {
           </ul>
         </div>
         <div className="flex justify-center">
-          <ScrollArea className="flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl  bg-purple/90  dark:bg-purple/40 sm:mb-5">
+          <ScrollArea className="bg-gradient-card  flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl shadow-md dark:shadow-purple sm:mb-5">
             <ul className=" h-[12.5rem] sm:h-[18rem]  md:h-[22rem] lg:h-[25rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (

@@ -62,14 +62,16 @@ export default function NavbarMobile() {
                   Contactez-moi
                 </MenubarItem>
               </Link>
+
+              <span className=" flex justify-center border-t-[1px]  border-purple/40 my-8 w-2/4"></span>
               <div className="flex  gap-3">
                 <Link
                   href="https://www.linkedin.com/in/marion-baston/"
                   target="_blank"
                   aria-label="me contacter"
                 >
-                  <MenubarItem className="text-[1.2rem] ">
-                    <Linkedin size={28} />
+                  <MenubarItem className="text-[1.2rem] bg-purple/70 rounded-full p-2 ">
+                    <Linkedin size={28} color="white " />
                   </MenubarItem>
                 </Link>
                 <Link
@@ -77,8 +79,8 @@ export default function NavbarMobile() {
                   target="_blank"
                   aria-label="me contacter"
                 >
-                  <MenubarItem className="text-[1.2rem] ">
-                    <Github size={28} />
+                  <MenubarItem className="text-[1.2rem]  bg-purple/70 rounded-full p-2">
+                    <Github size={28} color="white" />
                   </MenubarItem>
                 </Link>
               </div>
