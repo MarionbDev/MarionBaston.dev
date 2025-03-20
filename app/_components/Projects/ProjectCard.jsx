@@ -63,6 +63,7 @@ export default function ProjectCard({ project }) {
               />
             </Link>
           </CardTitle>
+          <p className="mx-4 md:mx-0 text-[16px]">{project.project_type}</p>
           <p className="mx-4 md:mx-0 text-[16px]">{project.description}</p>
           <p className="mx-4 md:mx-0  max-w-screen-xl leading-7 text-[16px] text-pretty line-clamp-3 ">
             {project.context}
