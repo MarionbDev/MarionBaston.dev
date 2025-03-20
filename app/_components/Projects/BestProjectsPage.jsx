@@ -86,7 +86,7 @@ export default function BestProjectsPage() {
           transition={{ duration: 0.5 }}
         >
           <div className=" px-10 ">
-            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start lg:flex-wrap lg:gap-x-10 lg:gap-y-14 ">
+            <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start lg:flex-wrap gap-y-6 lg:gap-x-10 lg:gap-y-14 ">
               <BestProjects />
             </div>
           </div>
