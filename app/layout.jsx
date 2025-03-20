@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import PropTypes from "prop-types";
-import Footer from "./_components/Footer";
-import Navbar from "./_components/Navbar";
-import NavbarMobile from "./_components/NavbarMobile";
+import LayoutContent from "./_components/LayoutContent";
+import { PathnameProvider } from "./_components/PathnameProvider";
 import Providers from "./_components/Providers";
 import { ThemeProvider } from "./_components/ThemeProvider";
 import "./globals.css";
@@ -43,11 +42,9 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Providers>
-            {/* <div className="flex  "> */}
-            <Navbar className="navbar " />
-            {/* </div> */}
-            <NavbarMobile className="navbar-mobile  " /> {children}
-            <Footer />
+            <PathnameProvider>
+              <LayoutContent>{children}</LayoutContent>
+            </PathnameProvider>
           </Providers>
         </ThemeProvider>
       </body>
