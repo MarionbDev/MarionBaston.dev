@@ -18,6 +18,9 @@ module.exports = {
     },
 
     colors: {
+      free_grey: "#F3F3F3",
+      free_purple: "#8E55FF",
+      free_yellow: "#FFE355",
       purple: "#8300e9",
       purple_dark: "#8d3dd8",
       txt_black: "#4E525A",

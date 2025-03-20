@@ -100,6 +100,16 @@ html {
   height: 8px;
 }
 
+.wave-free::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  border-top: solid 5px #ffe355;
+  bottom: 2px;
+  border-radius: 50%;
+  height: 15px;
+}
+
 .dark .name-gradient {
   background: linear-gradient(to right, #eeeeee 0%, #9045f9 100%);
   -webkit-background-clip: text;
