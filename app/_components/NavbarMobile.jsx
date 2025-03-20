@@ -34,7 +34,7 @@ export default function NavbarMobile() {
             </MenubarTrigger>
             <MenubarContent
               sideOffset={2}
-              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#0e0e0e] bg-bg_white border-none shadow-md  pt-8"
+              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8"
             >
               <Link href="/#home" aria-label="Home">
                 <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
