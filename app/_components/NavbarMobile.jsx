@@ -38,6 +38,7 @@ export default function NavbarMobile() {
             >
               <Link href="/#home" aria-label="Home">
                 <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
+                <span className="wave-form relative mt-3 flex justify-center "></span>
               </Link>
               <Link
                 href="/parcours"
@@ -56,9 +57,12 @@ export default function NavbarMobile() {
                   Mes Compétences
                 </MenubarItem>
               </Link>
+              <Link href="/#stacks" aria-label="Stacks">
+                <MenubarItem className="text-[1.2rem] ">Stacks</MenubarItem>
+              </Link>
 
               <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className="text-[1.2rem] ">
+                <MenubarItem className="text-[1.2rem] border-purple border-2 rounded-full px-6">
                   Contactez-moi
                 </MenubarItem>
               </Link>

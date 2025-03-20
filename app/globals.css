@@ -18,7 +18,7 @@ body {
   zoom: 1;
 }
 .dark body {
-  background-color: #0e0e0e;
+  background-color: #181616;
 }
 
 /* Styles label "Skills"*/
@@ -116,7 +116,7 @@ html {
   color: transparent;
 }
 
-.bg-gradient-card {
+.bg-gradient-card-img {
   background: linear-gradient(to right, #6015c9de 0%, #d29aec 100%);
 }
 
@@ -128,6 +128,10 @@ html {
 .border-two-gradient {
   border: 2px solid transparent; /* Bordure transparente */
   border-image: linear-gradient(to left, #c80ec8, #c565f1) 1;
+}
+
+.bg-gradient-card {
+  background-color: #f1e5fe;
 }
 
 .dark .bg-gradient-card {

@@ -2,9 +2,9 @@ import { Check } from "lucide-react";
 
 export default function MySkills() {
   return (
-    <div className=" ">
+    <div className="">
       <div className="  font-poppins flex flex-wrap justify-center sm:justify-start   gap-14 lg:gap-22">
-        <div className="py-8 gap-6 mx-auto">
+        <div className="bg-gradient-card rounded-md shadow-sm shadow-purple px-4 py-8 gap-6 mx-auto max-w-[50rem]">
           <div className="flex flex-col ">
             <h2 className=" text-purple dark:text-white font-semibold text-lg lg:text-xl text-center">
               DEVELOPPEMENT WEB FRONTEND
@@ -74,8 +74,8 @@ export default function MySkills() {
             </ul>
           </div>
         </div>
-        <div className=" py-8 gap-6 mx-auto ">
-          <div className="flex flex-col ">
+        <div className="bg-gradient-card rounded-md shadow-sm shadow-purple px-4 py-8 gap-6 mx-auto max-w-[50rem] ">
+          <div className=" flex flex-col ">
             <h2 className=" text-purple dark:text-white font-semibold text-lg lg:text-xl text-center">
               DEVELOPPEMENT WEB BACKEND
             </h2>

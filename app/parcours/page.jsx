@@ -71,7 +71,7 @@ export default function MyBackground() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="mt-28 text-[1.2rem] md:text-[1.3rem] text-balance text-center sm:text-left mb-[1rem]">
+              <h2 className="mt-28 text-[1.2rem] md:text-[1.3rem] text-balance  mb-[1rem]">
                 ✨ Une reconversion motivée par la passion
               </h2>
             </motion.div>
@@ -130,7 +130,7 @@ export default function MyBackground() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-balance text-center sm:text-left mb-4">
+                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-balance  mb-4">
                   🔁 De la grande distribution au développement web : un
                   parcours complémentaire
                 </h2>
@@ -204,7 +204,7 @@ export default function MyBackground() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-balance text-center sm:text-left mb-4">
+                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-balance  mb-4">
                   🚀 Développement Web : un nouvel horizon, mais des valeurs
                   inchangées
                 </h2>
@@ -285,7 +285,7 @@ export default function MyBackground() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-center sm:text-left mb-4">
+                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem]  mb-4">
                   💫 Mes autres passions
                 </h2>
               </motion.div>

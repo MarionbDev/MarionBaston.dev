@@ -52,6 +52,11 @@ export default function Navbar() {
               Mes compétences<span className="underline-nav"></span>
             </Link>
           </li>
+          <li className="">
+            <Link href="/#stacks" aria-label="ma stack" className="nav-link">
+              Stacks<span className="underline-nav"></span>
+            </Link>
+          </li>
 
           <li>
             <Link
