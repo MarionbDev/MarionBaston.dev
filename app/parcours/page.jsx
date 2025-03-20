@@ -263,7 +263,7 @@ export default function MyBackground() {
                     d’appliquer mes compétences dans un cadre professionnel et
                     de mieux comprendre les besoins réels d’un projet digital.
                   </p>
-                  <p>
+                  <p className="text-pretty leading-7">
                     💡Mon objectif ? Apporter mes compétences en développement
                     web à une équipe engagée, en contribuant activement à la
                     conception et à l’optimisation d’applications performantes

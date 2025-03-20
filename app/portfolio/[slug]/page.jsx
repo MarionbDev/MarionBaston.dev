@@ -65,11 +65,11 @@ export default async function ProjectPage({ params }) {
         )}
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg">🚀 Contexte & Objectif</h3>
+            <h3 className="text-lg font-semibold">🚀 Contexte & Objectif</h3>
             <p className=" text-base leading-7">{project.context}</p>{" "}
           </div>
           <div className="flex flex-col gap-2 text-pretty">
-            <h3 className=" text-lg">🔑 Fonctionnalités Clés </h3>
+            <h3 className=" text-lg font-semibold">🔑 Fonctionnalités Clés </h3>
             <p className="text-base">✅ Côté utilisateur :</p>
 
             <ul className=" flex flex-col  text-base leading-7 list-disc ml-5">
@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }) {
             )}
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg">⚡Challenges & Solutions</h3>
+            <h3 className="text-lg font-semibold">⚡Challenges & Solutions</h3>
             <ul className=" flex flex-col gap-3 text-base leading-7 text-pretty">
               {project.project_steps?.[1]?.challenges?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
@@ -103,7 +103,7 @@ export default async function ProjectPage({ params }) {
             </ul>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg">📈 Résultats & Impact</h3>
+            <h3 className="text-lg font-semibold">📈 Résultats & Impact</h3>
             <ul className=" flex flex-col gap-3 text-base leading-7 text-pretty">
               {project.project_steps?.[2]?.result?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>

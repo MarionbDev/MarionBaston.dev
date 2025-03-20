@@ -20,10 +20,10 @@ export default function NavbarMobile() {
   if (hideNavbarOn.includes(pathname)) return null;
   return (
     <div className=" flex navSupp justify-center  ">
-      <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#0e0e0e]  ">
+      <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#181616]  ">
         <ModeToggle />
 
-        <Menubar className="border-none p-0 m-0">
+        <Menubar className=" border-none p-0 m-0">
           <MenubarMenu>
             <MenubarTrigger
               tabIndex={0}

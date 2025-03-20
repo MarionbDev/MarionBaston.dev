@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
             {/* <div className="flex  "> */}
             <Navbar className="navbar " />
             {/* </div> */}
-            <NavbarMobile className="navbar-mobile " /> {children}
+            <NavbarMobile className="navbar-mobile  " /> {children}
             <Footer />
           </Providers>
         </ThemeProvider>
