@@ -1,6 +1,13 @@
 import { Card } from "../../../components/ui/card";
+import refonte from "../images/maintenance.png";
+import update from "../images/miseAjour.png";
+import perf from "../images/performance.png";
+import responsive from "../images/responsive.png";
+import suivi from "../images/suivi.png";
+import surMesure from "../images/sur-mesure.png";
 import CardServices from "./CardServices";
 import CustomLink from "./CustomLink";
+
 export default function ServicesFree() {
   return (
     <div className="flex flex-col justify-center gap-8 md:gap-10">
@@ -15,50 +22,56 @@ export default function ServicesFree() {
           SEO et surtout simple à utiliser.
         </p>
       </div>
-      <div className="flex flex-col justify-center gap-4 md:gap-10">
+      <div className="flex flex-col justify-center sm:flex-row flex-wrap gap-4">
         <CardServices
           title_1="Des site optimisés"
           title_2="et performants"
-          className=" "
+          classNameImage="w-[9rem]"
           bgColor=" bg-free_grey "
           bgText="bg-free_yellow"
+          image={perf}
         />
         <CardServices
           title_1="Un site responsive"
           title_2="& SEO friendly"
-          className=""
+          classNameImage="w-[11rem]"
           bgColor=" bg-free_yellow"
           bgText="bg-free_grey"
+          image={responsive}
         />
         <CardServices
           title_1="Un site sur mesure"
           title_2="Adapté à vos besoins"
-          className=""
+          classNameImage="w-[10rem] "
           bgColor=" bg-free_purple"
           bgText="bg-free_grey"
           colorText="text-free_grey"
+          image={surMesure}
         />
         <CardServices
           title_1="Refonte de"
           title_2="Site Web"
-          className=" "
+          classNameImage="w-[10rem] "
           bgColor=" bg-free_grey "
           bgText="bg-free_yellow"
+          image={refonte}
         />
         <CardServices
           title_1="Maintenance"
           title_2="& Mise à jour"
-          className=""
+          classNameImage="w-[11rem] "
           bgColor=" bg-free_yellow"
           bgText="bg-free_grey"
+          image={update}
         />
         <CardServices
           title_1="Analyse & suivi"
           title_2="des performances"
-          className=""
+          classNameImage="w-[10rem] "
           bgColor=" bg-free_purple"
           bgText="bg-free_grey"
           colorText="text-free_grey"
+          image={suivi}
         />
       </div>
       <div>

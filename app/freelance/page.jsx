@@ -9,7 +9,9 @@ import styles from "./styles.module.css";
 
 export default function FreelancePage() {
   return (
-    <div className={`${styles.spaceG} px-6 pt-10 flex flex-col gap-16 mb-40`}>
+    <div
+      className={`${styles.spaceG} px-6 pt-10 flex flex-col gap-16 mb-40 lg:px-40`}
+    >
       <Header />
       <Services />
       <ProjectsFree />
