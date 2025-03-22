@@ -24,7 +24,7 @@ export default function ServicesFree() {
           SEO et surtout simple à utiliser.
         </p>
       </div>
-      <div className="flex flex-col justify-center sm:flex-row flex-wrap gap-4 lg:gap-x-10 3xl:mx-48">
+      <div className="flex flex-col justify-center items-center sm:flex-row flex-wrap gap-4 lg:gap-x-10 3xl:mx-48">
         <CardServices
           title_1="Des site optimisés"
           title_2="et performants"
