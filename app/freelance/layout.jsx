@@ -33,11 +33,11 @@ export const metadata = {
   creator: "Marion Baston",
   authors: {
     name: "Marion Baston",
-    url: "https://marionbaston.fr",
+    url: "https://marionbaston.fr/freelance",
   },
   alternates: {
-    metadataBase: new URL("https://marionbaston.fr"),
-    canonical: "https://marionbaston.fr",
+    metadataBase: new URL("https://marionbaston.fr/freelance"),
+    canonical: "https://marionbaston.fr/freelance",
   },
   icons: {
     icon: "../../mbfreeLogo.png",
@@ -46,11 +46,11 @@ export const metadata = {
     title: "Marion Baston | Développeuse Web Freelance",
     description:
       "Spécialisée en React.js et Next.js, je crée des sites web performants et optimisés SEO. Besoin d’un site moderne et rapide ? Contactez-moi !",
-    url: "https://marionbaston.fr",
+    url: "https://marionbaston.fr/freelance",
     type: "website",
     images: [
       {
-        url: "https://marionbaston.fr/og-image.jpg",
+        url: "https://marionbaston.fr/freelance/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Marion Baston - Développeuse Web Freelance",
@@ -62,7 +62,7 @@ export const metadata = {
     title: "Marion Baston | Développeuse Web Freelance",
     description:
       "Création de sites web modernes, rapides et optimisés SEO. Spécialisée en React.js et Next.js.",
-    images: ["https://marionbaston.fr/og-image.jpg"],
+    images: ["https://marionbaston.fr/freelance/og-image.jpg"],
   },
 };
 

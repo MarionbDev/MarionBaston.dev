@@ -33,7 +33,7 @@ export default function ContactPage() {
   };
   return (
     <div className="flex justify-center">
-      <Card className="border-none shadow-none  text-purple dark:text-[#ffffff] ">
+      <Card className="border-0 rounded-none pt-20 border-t-2 border-purple/50 shadow-none  text-purple dark:text-[#ffffff] ">
         <motion.section
           initial="hide"
           whileInView="show"
@@ -46,7 +46,7 @@ export default function ContactPage() {
             transition={{ duration: 0.5 }}
           >
             <CardHeader>
-              <CardTitle className=" text-[2rem] md:text-[2.5rem] mb-6 text-center">
+              <CardTitle className=" text-[2rem] md:text-[2.5rem] mb-6 text-center name-form-gradient ">
                 Envie de collaborer ?
               </CardTitle>
               <span className="wave-form relative flex justify-center "></span>
@@ -69,11 +69,11 @@ export default function ContactPage() {
               <div className="font-poppins text-txt_black dark:text-white pt-2 md:pt-8 mb-12 md:mb-16 text-[1rem] md:text-[1.2rem] xl:px-10   flex flex-col items-center   gap-4 ">
                 <p className="text-center text-pretty">
                   Je suis à la recherche d'une{" "}
-                  <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple dark:text-[#d29aec]">
+                  <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple bg-free_yellow px-2 dark:text-[#d29aec] dark:bg-opacity-0">
                     opportunité{" "}
                   </span>
                   en CDD, CDI en tant que{" "}
-                  <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple dark:text-[#d29aec]">
+                  <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple dark:text-[#d29aec] bg-free_yellow dark:bg-opacity-0 px-2">
                     Développeuse Web.
                   </span>
                 </p>

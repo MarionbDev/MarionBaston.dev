@@ -58,17 +58,11 @@ export default function BestProjectsPage() {
               <p className="font-poppins   md:px-0 text-[1rem]">
                 Découvrez la diversité de mes expériences en développement web !
               </p>
-              <div className=" flex ">
-                <Link
-                  href={"/portfolio"}
-                  className="  text-purple md:dark:text-purple_dark md:ml-2 "
-                >
+              <div className=" flex gap-1 ">
+                <Link href={"/portfolio"} className="  text-purple  md:ml-2 ">
                   Voir plus
                 </Link>
-                <ArrowRight
-                  size={20}
-                  className=" text-purple -rotate-45 mb-1"
-                />
+                <ArrowRight size={26} className=" text-purple -rotate-45" />
               </div>
             </div>
           </motion.div>

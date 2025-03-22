@@ -21,7 +21,7 @@ export default function Navbar() {
         <ul className="font-lato flex gap-4 lg:gap-6 items-center font-medium  ">
           <li className="">
             <Link href="/#home" aria-label="Accueil" className="nav-link">
-              Bienvenue<span className="underline-nav"></span>
+              Accueil<span className="underline-nav"></span>
             </Link>
           </li>
           <li className="">
@@ -49,7 +49,7 @@ export default function Navbar() {
               aria-label="mes compétences"
               className="nav-link"
             >
-              Mes compétences<span className="underline-nav"></span>
+              Compétences<span className="underline-nav"></span>
             </Link>
           </li>
           <li className="">

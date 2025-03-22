@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import MySkills from "./MySkills";
+import SoftSkills from "./SoftSkills";
 
 export default function SkillsAndTech() {
   const sectionText = {
@@ -83,6 +84,7 @@ export default function SkillsAndTech() {
           transition={{ duration: 0.5 }}
         >
           <MySkills />
+          <SoftSkills />
         </motion.div>
       </motion.section>
     </div>

@@ -85,7 +85,7 @@ export default function ContactForm() {
 
   return (
     <div className=" text-txt_black dark:text-white  ">
-      <Card className="w-[23rem] md:w-[30rem]   border-2 border-purple/50 shadow-md dark:shadow-md dark:shadow-purple tracking-wide ">
+      <Card className="w-[23rem] md:w-[30rem] shadow-md shadow-purple  border-none  dark:shadow-purple tracking-wide ">
         <form onSubmit={handleSubmitFormContact}>
           <CardHeader>
             <CardDescription className=" text-[0.9rem] font-medium ">
@@ -199,7 +199,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="bg-purple hover:bg-purple/70 dark:bg-purple  dark:hover:bg-purple_dark dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] ml-auto gap-2"
+              className="bg-purple hover:bg-purple/70 dark:hover:bg-purple_dark dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] ml-auto gap-2"
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />

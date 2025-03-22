@@ -36,10 +36,10 @@ export default function BestProjects() {
   if (error) return <p>{error}</p>;
 
   return (
-    <>
+    <div className="flex gap-6 3xl:gap-20 flex-wrap justify-center">
       {projects.map((project, index) => (
         <ProjectCard key={`${project.id}-${index}`} project={project} />
       ))}
-    </>
+    </div>
   );
 }
