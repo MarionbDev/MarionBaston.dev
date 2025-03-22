@@ -127,7 +127,7 @@ export default function Stacks() {
                   width={150}
                   height={150}
                   alt="illustration de le section outils"
-                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 bg-free_grey "
+                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 "
                 />
               </div>
               <ul className=" text-[1rem] text-center leading-7 ">

@@ -1,7 +1,6 @@
 "use client";
 
 import myPhoto from "@/public/images/myPhoto.png";
-import splash from "@/public/images/splash.png";
 import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +16,7 @@ export default function AboutMe() {
 
   return (
     <div className="  mx-6 md:mx-20 xl:mx-0">
-      <div className=" lg:h-[100vh] text-font mb:pb-8   ">
+      <div className=" xl:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
             <div className="flex flex-col items-start gap-2">
@@ -133,25 +132,18 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6  relative bottom-6 lg:bottom-32 xl:bottom-10 ">
-            <div className=" p-[0.4rem]  rotate-12 border-gradient absolute sm:top-[6rem]   ">
+          <div className="flex justify-center items-center -rotate-6  ">
+            <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={900}
                 height={400}
-                className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]   "
+                className=" w-[14rem] sm:w-[22rem] rounded-b-[6rem] -translate-x-3 -rotate-12 absolute z-10 bottom-6 sm:bottom-10 rounded-r-[5.3rem] rounded-l-[5.8rem] "
               />
-              <div className="border-two-gradient border-2  p-28 sm:p-44 relative rotate-12 "></div>
+              <div className="border-two-gradient border-2 z-20 p-28 sm:p-44 relative rotate-12 "></div>
+              <span className="absolute z-0 inset-0 m-auto bg-free_yellow    rounded-bl-[12.2rem] rounded-tr-[12rem] rounded-tl-[24rem] rounded-br-[18rem] w-[88%] rotate-12 mt-5 mb-4 "></span>
             </div>
-
-            <Image
-              src={splash}
-              alt=""
-              width={450}
-              height={450}
-              className=" w-[16rem] sm:w-[28rem] mt-0 sm:mt-16 "
-            />
           </div>
         </div>
       </div>

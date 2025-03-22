@@ -136,7 +136,7 @@ html {
 
 .border-gradient {
   border: 2px solid transparent; /* Bordure transparente */
-  border-image: linear-gradient(to right, #ffe355, #8e55ff) 1;
+  border-image: linear-gradient(to right, #8e55ff, #c565f1) 1;
 }
 
 .border-two-gradient {
