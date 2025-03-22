@@ -80,7 +80,7 @@ export default function Stacks() {
                   src={splash}
                   width={150}
                   alt="ilustration de la section frontend"
-                  className=" rounded-full dark:h-24 dark:w-24 dark:sm:w-36 dark:sm:h-36 dark:brightness-75 mt-6 sm:mt-0"
+                  className=" rounded-full h-24 w-24 sm:w-36 sm:h-36 dark:brightness-75 mt-6 sm:mt-0"
                 />
               </div>
               <ul className="text-[1rem] text-center mt-6 sm:mt-4 leading-7 ">

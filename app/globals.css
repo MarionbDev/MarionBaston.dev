@@ -65,7 +65,7 @@ html {
 
 .nav-link:hover .underline-nav {
   width: 100%;
-  background-color: #c80ec8;
+  background-color: #ffe355;
 }
 
 /*PSEUDO-ELEMENT Wave*/
@@ -74,7 +74,7 @@ html {
   display: block;
   margin-left: auto;
   width: 20%;
-  border-top: solid 3px #c80ec8;
+  border-top: solid 3px #ffe355;
   border-radius: 50%;
   height: 8px;
   rotate: -10deg;
@@ -84,7 +84,7 @@ html {
   content: "";
   position: absolute;
   width: 20%;
-  border-top: solid 3px #c80ec8;
+  border-top: solid 3px #ffe355;
   bottom: 10px;
   border-radius: 50%;
   height: 8px;
@@ -94,7 +94,7 @@ html {
   content: "";
   position: absolute;
   width: 40%;
-  border-top: solid 3px #c80ec8;
+  border-top: solid 3px #ffe355;
   top: 2px;
   border-radius: 50%;
   height: 8px;
@@ -119,29 +119,34 @@ html {
 }
 
 .name-gradient {
-  background: linear-gradient(to right, #6015c9 0%, #d29aec 100%);
+  background: linear-gradient(to right, #8e55ff 0%, #d29aec 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
-
+/* 
 .bg-gradient-card-img {
-  background: linear-gradient(to right, #6015c9de 0%, #d29aec 100%);
-}
+  background: linear-gradient(to right, #ffe355 0%, #d29aec 100%);
+} */
 
 .border-gradient {
   border: 2px solid transparent; /* Bordure transparente */
-  border-image: linear-gradient(to right, #6015c9de, #d29aec) 1;
+  border-image: linear-gradient(to right, #ffe355, #8e55ff) 1;
 }
 
 .border-two-gradient {
   border: 2px solid transparent; /* Bordure transparente */
-  border-image: linear-gradient(to left, #c80ec8, #c565f1) 1;
+  border-image: linear-gradient(to left, #ffe355, #c565f1) 1;
+}
+
+.border-gradient-form {
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #ffe355, #c565f1) 1;
 }
 
 .bg-gradient-card {
-  background-color: #f1e5fe;
+  background-color: #fefefe;
 }
 
 .dark .bg-gradient-card {

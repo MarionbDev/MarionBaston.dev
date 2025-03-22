@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
                 </ul>{" "}
                 <ScrollBar
                   orientation="horizontal"
-                  className="   bg-[#661c9b] border-none h-3"
+                  className="   bg-[#ffe355] border-none h-2"
                 />{" "}
               </ScrollArea>
               <ChevronRight
@@ -53,13 +53,12 @@ export default function ProjectCard({ project }) {
           <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple md:dark:text-purple_dark font-semibold pt-3 mx-4 md:mx-0 ">
             <Link
               href={`/portfolio/${createSlug(project.title)}`}
-              className="name-gradient flex gap-2 items-center "
+              className="dark:name-gradient flex gap-2 items-center "
             >
               {project.title}
               <CircleArrowOutUpRight
-                size={18}
-                color="#8300e9 "
-                className="mb-2"
+                size={19}
+                className=" text-purple dark:text-free_yellow"
               />
             </Link>
           </CardTitle>
