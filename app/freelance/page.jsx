@@ -13,7 +13,9 @@ export default function FreelancePage() {
       className={`${styles.spaceG} px-6 pt-10 flex flex-col gap-24 mb-40 p sm:px-24 lg:px-28 text-[#322e37]`}
     >
       <Header />
-      <Services />
+      <div id="services" className="pt-24 md:pt-28">
+        <Services />
+      </div>
       <ProjectsFree />
       <ProjectStep />
       <Support />

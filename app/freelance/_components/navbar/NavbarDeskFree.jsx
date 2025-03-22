@@ -16,18 +16,17 @@ export default function NavbarDeskFree() {
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className=" flex gap-4 lg:gap-6 items-center font-medium  ">
           <li className="">
-            <Link href="/#home" aria-label="Accueil" className="nav-link">
-              Bienvenue<span className="underline-nav"></span>
-            </Link>
-          </li>
-          <li className="">
-            <Link href="/home" aria-label="accueil" className="nav-link">
+            <Link href="/freelance" aria-label="accueil" className="nav-link">
               Accueil<span className="underline-nav"></span>
             </Link>
           </li>
 
           <li className="">
-            <Link href="/services" aria-label="serices" className="nav-link">
+            <Link
+              href="/freelance/#services"
+              aria-label="serices"
+              className="nav-link"
+            >
               Services<span className="underline-nav"></span>
             </Link>
           </li>

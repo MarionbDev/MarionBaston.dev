@@ -29,15 +29,14 @@ export default function NavbarMobFree() {
               sideOffset={2}
               className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8"
             >
-              <Link href="/#home" aria-label="Home">
-                <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
-                <span className="wave-free relative mt-3 flex justify-center "></span>
-              </Link>
-              <Link href="//home" aria-label="accueil" className="nav-link">
+              <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
+              <span className="wave-free relative mt-3 flex justify-center "></span>
+
+              <Link href="/freelance" aria-label="accueil" className="nav-link">
                 <MenubarItem className="text-[1.2rem] ">Accueil</MenubarItem>
               </Link>
 
-              <Link href="/#services" aria-label="services">
+              <Link href="/freelance/#services" aria-label="services">
                 <MenubarItem className="text-[1.2rem] ">Services</MenubarItem>
               </Link>
               <Link href="/#me-contacter" aria-label="me contacter">
