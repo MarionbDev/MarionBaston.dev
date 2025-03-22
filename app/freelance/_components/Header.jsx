@@ -14,7 +14,7 @@ export default function HeaderFree() {
           </span>{" "}
           votre présence en ligne avec un site performant et moderne !
         </h1>
-        <div className="relative w-full mt-10 lg:hidden ">
+        <div className="relative w-full mt-10 lg:hidden translate-x-4">
           <div>
             {/* <p className=" text-[#eade34] font-medium ">Ils l'ont fait !</p> */}
             <Image
