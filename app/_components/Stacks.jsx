@@ -83,7 +83,7 @@ export default function Stacks() {
                   className=" rounded-full h-24 w-24 sm:w-[8.3rem] sm:h-[8.3rem] dark:brightness-75 mt-6 sm:mt-0  bg-free_grey"
                 />
               </div>
-              <ul className="text-[1rem] text-center mt-6 sm:mt-4 leading-7 ">
+              <ul className="text-[1rem] md:text-[1.07rem] text-center mt-6 sm:mt-4 leading-7 ">
                 <li>JavaScript, TypeScript</li>
                 <li>React, Next</li>
                 <li>Shadcn/ui</li>
@@ -108,10 +108,11 @@ export default function Stacks() {
                 />
               </div>
 
-              <ul className="text-[1rem] text-center leading-7">
+              <ul className="text-[1rem] md:text-[1.07rem] text-center leading-7">
                 <li>Node.js, Express.js</li>
                 <li>MySql, Supabase</li>
                 <li>Vitest, Jest</li>
+                <li> React Testing Library</li>
                 <li>Zod, Joi</li>
               </ul>
             </div>
@@ -127,10 +128,10 @@ export default function Stacks() {
                   width={150}
                   height={150}
                   alt="illustration de le section outils"
-                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 bg-free_grey "
+                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 "
                 />
               </div>
-              <ul className=" text-[1rem] text-center leading-7 ">
+              <ul className=" text-[1rem] md:text-[1.07rem] text-center leading-7 ">
                 <li>Git, GitHub</li>
                 <li>Resend</li>
                 <li>Vercel</li>
@@ -154,7 +155,7 @@ export default function Stacks() {
                   className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 bg-free_grey "
                 />
               </div>
-              <ul className="text-[1rem] text-center leading-7">
+              <ul className="text-[1rem] md:text-[1.07rem] text-center leading-7">
                 <li>Agile</li>
                 <li>Scrum</li>
                 <li>Gestion de projet</li>

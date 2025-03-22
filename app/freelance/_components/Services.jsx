@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card } from "../../../components/ui/card";
 import refonte from "../images/maintenance.png";
 import update from "../images/miseAjour.png";
@@ -5,24 +6,25 @@ import perf from "../images/performance.png";
 import responsive from "../images/responsive.png";
 import suivi from "../images/suivi.png";
 import surMesure from "../images/sur-mesure.png";
+import discussion from "./../images/discussion.png";
 import CardServices from "./CardServices";
 import CustomLink from "./CustomLink";
 
 export default function ServicesFree() {
   return (
     <div className="flex flex-col justify-center gap-8 md:gap-10">
-      <div className="flex flex-col gap-2">
-        <h1 className="bg-free_yellow w-fit text-lg font-semibold px-1">
+      <div className="flex flex-col gap-6">
+        <h1 className=" bg-free_yellow w-fit text-xl md:text-[2rem] font-semibold px-1">
           Services
         </h1>
-        <p className="">
+        <p className="text-[1rem] md:text-[1.07rem] ">
           Vous offir un site clé en main, conçu sur-mesure pour mettre en valeur
           votre activité, améliorer votre visibilité en ligne et attirer plus de
           clients. Chaque projet est pensé pour être rapide, optimisé pour le
           SEO et surtout simple à utiliser.
         </p>
       </div>
-      <div className="flex flex-col justify-center sm:flex-row flex-wrap gap-4">
+      <div className="flex flex-col justify-center sm:flex-row flex-wrap gap-4 lg:gap-x-10 3xl:mx-48">
         <CardServices
           title_1="Des site optimisés"
           title_2="et performants"
@@ -34,7 +36,7 @@ export default function ServicesFree() {
         <CardServices
           title_1="Un site responsive"
           title_2="& SEO friendly"
-          classNameImage="w-[11rem]"
+          classNameImage="w-[11rem] sm:w-[12rem]"
           bgColor=" bg-free_yellow"
           bgText="bg-free_grey"
           image={responsive}
@@ -59,7 +61,7 @@ export default function ServicesFree() {
         <CardServices
           title_1="Maintenance"
           title_2="& Mise à jour"
-          classNameImage="w-[11rem] "
+          classNameImage="w-[11rem] sm:w-[13rem] md:translate-x-4 "
           bgColor=" bg-free_yellow"
           bgText="bg-free_grey"
           image={update}
@@ -67,25 +69,34 @@ export default function ServicesFree() {
         <CardServices
           title_1="Analyse & suivi"
           title_2="des performances"
-          classNameImage="w-[10rem] "
+          classNameImage="w-[10rem] sm:w-[11rem] "
           bgColor=" bg-free_purple"
           bgText="bg-free_grey"
           colorText="text-free_grey"
           image={suivi}
         />
       </div>
-      <div>
-        <Card className="flex flex-col justify-between gap-4 py-6 px-4 border-none bg-free_grey">
-          <h3>Discutons de votre projet !</h3>
-          <p>
+      <Card className="relative flex flex-col-reverse items-center  lg:flex-row xl:justify-around xl:gap-20 px-6 md:px-16 xl:px-36 py-12 md:py-8 xl:py-4 2xl:py-0 border-none bg-free_grey text-[1rem] md:text-[1.07rem] shadow-md ">
+        <div className=" flex flex-col justify-center gap-6 md:pr-28 lg:pr-20 xl:pr-16 2xl:pr-36 ">
+          <h3 className="text-xl font-medium">Discutons de votre projet !</h3>
+
+          <p className="text-pretty mt-6 md:mt-0">
             Besoin d’un site performant ou d’un accompagnement digital ?
             Parlons-en ! Je vous propose des solutions adaptées à vos besoins.
           </p>
-          <CustomLink href="#me-contacter">
+
+          <CustomLink href="#me-contacter" className="w-fit border-2 ">
             Obtenez votre proposition gratuitement
           </CustomLink>
-        </Card>
-      </div>
+        </div>
+        <Image
+          src={discussion}
+          width={300}
+          height={300}
+          alt="illustration discussion"
+          className="absolute lg:relative right-2 sm:right-6 top-4 lg:top-0 xl:right-0 w-1/5 lg:w-2/6"
+        />
+      </Card>
     </div>
   );
 }

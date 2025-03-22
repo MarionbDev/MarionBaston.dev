@@ -41,7 +41,7 @@ export default function MyBackground() {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center text-[1rem] md:text-[1.07rem]">
       <div className=" font-poppins text-txt_black dark:text-white mt-24 mx-6 sm:mx-20 lg:mx-32 max-w-[70rem]  ">
         <div className=" flex items-end gap-1 h-16 mb-10 ">
           <h1 className="font-poppins text-3xl pb-1 font-semibold md:text-[4rem] ">
@@ -50,7 +50,7 @@ export default function MyBackground() {
           <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
         </div>
 
-        <p className="text-[1rem] text-pretty leading-7">
+        <p className=" text-pretty leading-7">
           Mon parcours a commencé dans un tout autre domaine. Avec un Bac en
           comptabilité et un BTS en gestion, j’ai évolué pendant plusieurs
           années dans la grande distribution, où j’ai développé des compétences
@@ -71,7 +71,7 @@ export default function MyBackground() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="mt-28 text-[1.2rem] md:text-[1.3rem] text-balance  mb-[1rem]">
+              <h2 className="mt-20 text-[1.3rem] md:text-[1.5rem] mb-[1rem]">
                 ✨ Une reconversion motivée par la passion
               </h2>
             </motion.div>
@@ -90,11 +90,15 @@ export default function MyBackground() {
               <div className="flex flex-col gap-4">
                 <p className="text-pretty leading-7">
                   En 2023, j’ai décidé de franchir le cap et de me former
-                  sérieusement en intégrant la Wild Code School. Cette formation
-                  diplômante - au Titre professionnel RNCP "Développeur Web et
-                  web mobile" de niveau 5 - m’a permis d’acquérir des bases
-                  solides en développement frontend et backend. Depuis, je n’ai
-                  cessé d’expérimenter, apprendre et relever de nouveaux défis à
+                  sérieusement en intégrant la
+                  <span className="font-semibold"> Wild Code School</span>.
+                  Cette formation diplômante - au{" "}
+                  <span className="font-semibold">
+                    Titre professionnel RNCP "Développeur Web et web mobile"
+                  </span>{" "}
+                  de niveau 5 - m’a permis d’acquérir des bases solides en
+                  développement frontend et backend. Depuis, je n’ai cessé
+                  d’expérimenter, apprendre et relever de nouveaux défis à
                   travers des projets personnels, du freelancing et des
                   hackathons.
                 </p>
@@ -107,9 +111,13 @@ export default function MyBackground() {
                 <div className="flex flex-col gap-1">
                   <p>Pourquoi le web ?</p>
                   <p className="text-pretty leading-7">
-                    Ce qui m’anime dans ce métier, c’est la créativité,
-                    l’innovation et la possibilité de toujours apprendre.
-                    J’adore transformer des idées en applications concrètes et
+                    Ce qui m’anime dans ce métier, c’est la{" "}
+                    <span className="font-semibold"> créativité</span>, l’
+                    <span className="font-semibold">innovation</span> et la{" "}
+                    <span className="font-semibold">
+                      possibilité de toujours apprendre
+                    </span>
+                    . J’adore transformer des idées en applications concrètes et
                     optimiser des solutions pour offrir la meilleure expérience
                     utilisateur.
                   </p>
@@ -130,7 +138,7 @@ export default function MyBackground() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-balance  mb-4">
+                <h2 className="mt-6 text-[1.3rem] md:text-[1.5rem] mb-4">
                   🔁 De la grande distribution au développement web : un
                   parcours complémentaire
                 </h2>
@@ -204,7 +212,7 @@ export default function MyBackground() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem] text-balance  mb-4">
+                <h2 className="mt-6 text-[1.3rem] md:text-[1.5rem] mb-4">
                   🚀 Développement Web : un nouvel horizon, mais des valeurs
                   inchangées
                 </h2>
@@ -226,7 +234,7 @@ export default function MyBackground() {
                   changement de carrière, mais une évolution naturelle qui me
                   permet de combiner :
                 </p>
-                <ul className="text-pretty leading-7">
+                <ul className="text-pretty leading-7 flex flex-col gap-2 py-2">
                   <li>
                     <span className="text-purple">✔</span> Rigueur et
                     organisation
@@ -256,12 +264,16 @@ export default function MyBackground() {
                     <Link
                       href={"https:/www.le-plessis-aux-lys.fr"}
                       target="_blank"
+                      className="italic "
                     >
                       "Le Plessis aux Lys"
                     </Link>
-                    , site de Gîtes et Chambres d'Hôtes, ce qui m’a permis
-                    d’appliquer mes compétences dans un cadre professionnel et
-                    de mieux comprendre les besoins réels d’un projet digital.
+                    , site de Gîtes et Chambres d'Hôtes,{" "}
+                    <span className=" underline-offset-2 underline">
+                      ce qui m’a permis d’appliquer mes compétences dans un
+                      cadre professionnel
+                    </span>{" "}
+                    et de mieux comprendre les bsoins réels d’un projet digital.
                   </p>
                   <p className="text-pretty leading-7">
                     💡Mon objectif ? Apporter mes compétences en développement
@@ -285,7 +297,7 @@ export default function MyBackground() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="mt-6 text-[1.2rem] md:text-[1.3rem]  mb-4">
+                <h2 className="mt-6 text-[1.3rem] md:text-[1.5rem] mb-4">
                   💫 Mes autres passions
                 </h2>
               </motion.div>
@@ -307,25 +319,28 @@ export default function MyBackground() {
                     activités qui me stimulent tout autant.
                   </p>
                   <p>
-                    🎨 Je suis passionnée par le dessin de portraits au crayon
-                    graphite, un art qui me permet d'exprimer ma créativité, mon
-                    souci du détail et ma patience. Retrouvez mes dessins dans
-                    mon projet "Drawing And Co".
+                    🎨 Je suis passionnée par le{" "}
+                    <span className="font-semibold">dessin</span> de portraits
+                    au crayon graphite, un art qui me permet d'exprimer ma
+                    créativité, mon souci du détail et ma patience. Retrouvez
+                    mes dessins dans mon projet "Drawing And Co".
                   </p>
                   <p>
-                    🎶 La musique fait partie de mon quotidien et m’accompagne
-                    dans tous les moments de la vie. Je suis une véritable
-                    autodidacte ! Piano, guitare.... J’aime aussi découvrir de
-                    nouveaux styles musicaux et assister à des concerts. La
-                    musique, sous toutes ses formes, est une source d’émotions
-                    et d’inspiration au quotidien.
+                    🎶 La <span className="font-semibold">musique</span> fait
+                    partie de mon quotidien et m’accompagne dans tous les
+                    moments de la vie. Je suis une véritable autodidacte !
+                    Piano, guitare.... J’aime aussi découvrir de nouveaux styles
+                    musicaux et assister à des concerts. La musique, sous toutes
+                    ses formes, est une source d’émotions et d’inspiration au
+                    quotidien.
                   </p>
                   <p>
-                    🏃 Le sport fait partie de mon équilibre : il m'apporte à la
-                    fois énergie, discipline et bien-être. J'aime la sensation
-                    de liberté et de dépassement de soi dans la course à pied et
-                    le CrossFit. Que ce soit pour me défouler, relever de
-                    nouveaux défis ou simplement prendre un bol d'air frais.
+                    🏃 Le <span className="font-semibold">sport</span> fait
+                    partie de mon équilibre : il m'apporte à la fois énergie,
+                    discipline et bien-être. J'aime la sensation de liberté et
+                    de dépassement de soi dans la course à pied et le CrossFit.
+                    Que ce soit pour me défouler, relever de nouveaux défis ou
+                    simplement prendre un bol d'air frais.
                   </p>
                   <p>
                     ✨ Entre le sport, la musique ou le dessin, ces passions me
@@ -348,11 +363,11 @@ export default function MyBackground() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex flex-col items-center md:flex-row md:justify-center my-32 gap-10">
+            <div className="flex flex-col items-center md:flex-row md:justify-center my-32 gap-10 text-[1rem] md:text-[1.07rem]">
               <Link
                 href={"/#me-contacter"}
                 aria-label="M'envoyer un email"
-                className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/60  dark:hover:bg-purple_dark dark:hover:text-white shadow-md rounded-xl text-[#ffffff] text-[0.9rem] text-center p-2   w-full sm:w-[16rem]"
+                className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/60 shadow-free_grey  shadow-inner dark:hover:bg-purple_dark dark:hover:text-white  rounded-xl text-[#ffffff]  text-center p-2   w-full sm:w-[16rem]"
               >
                 <MessagesSquare
                   size="22"

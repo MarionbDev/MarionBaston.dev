@@ -118,12 +118,16 @@ html {
   color: transparent;
 }
 
-.name-gradient {
+/* .name-gradient {
   background: linear-gradient(to right, #8e55ff 0%, #d29aec 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+} */
+
+.photo-gradient {
+  background: radial-gradient(circle, #eeeeee 0%, #ffe355 60%);
 }
 
 .dark .name-form-gradient {
@@ -136,7 +140,7 @@ html {
 
 .border-gradient {
   border: 2px solid transparent; /* Bordure transparente */
-  border-image: linear-gradient(to right, #ffe355, #8e55ff) 1;
+  border-image: linear-gradient(to right, #8e55ff, #c565f1) 1;
 }
 
 .border-two-gradient {

@@ -23,7 +23,7 @@ export default function NavbarMobile() {
       <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#181616]  ">
         <ModeToggle />
 
-        <Menubar className=" border-none p-0 m-0">
+        <Menubar className=" border-none p-0 m-0 ">
           <MenubarMenu>
             <MenubarTrigger
               tabIndex={0}
@@ -34,7 +34,7 @@ export default function NavbarMobile() {
             </MenubarTrigger>
             <MenubarContent
               sideOffset={2}
-              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8"
+              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8 text-[#181616] dark:text-free_grey"
             >
               <Link href="/#home" aria-label="Home" className="nav-link">
                 <MenubarItem className="text-[1.2rem] ">Accueil</MenubarItem>
@@ -61,7 +61,7 @@ export default function NavbarMobile() {
               </Link>
 
               <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className="text-[1.2rem] bg-free_yellow text-txt_black border-2 rounded-full px-6">
+                <MenubarItem className="text-[1.2rem] bg-free_yellow shadow-inner shadow-free_grey  rounded-full px-6">
                   Contactez-moi
                 </MenubarItem>
               </Link>
@@ -73,7 +73,7 @@ export default function NavbarMobile() {
                   target="_blank"
                   aria-label="me contacter"
                 >
-                  <MenubarItem className="text-[1.2rem] bg-purple rounded-full p-2 ">
+                  <MenubarItem className="text-[1.2rem] bg-purple rounded-full shadow-inner shadow-free_grey p-2 ">
                     <Linkedin size={28} color="white " />
                   </MenubarItem>
                 </Link>
@@ -82,7 +82,7 @@ export default function NavbarMobile() {
                   target="_blank"
                   aria-label="me contacter"
                 >
-                  <MenubarItem className="text-[1.2rem]  bg-purple rounded-full p-2">
+                  <MenubarItem className="text-[1.2rem] shadow-inner shadow-free_grey  bg-purple rounded-full p-2">
                     <Github size={28} color="white" />
                   </MenubarItem>
                 </Link>

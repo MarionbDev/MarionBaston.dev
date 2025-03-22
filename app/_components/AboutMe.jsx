@@ -1,7 +1,6 @@
 "use client";
 
 import myPhoto from "@/public/images/myPhoto.png";
-import splash from "@/public/images/splash.png";
 import { Download, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +16,7 @@ export default function AboutMe() {
 
   return (
     <div className="  mx-6 md:mx-20 xl:mx-0">
-      <div className=" lg:h-[100vh] text-font mb:pb-8   ">
+      <div className=" xl:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
             <div className="flex flex-col items-start gap-2">
@@ -36,7 +35,7 @@ export default function AboutMe() {
               </div>
             </div>
             <div className="flex flex-col gap-2 text-pretty">
-              <p className=" text-[1rem] leading-7   ">
+              <p className=" text-[1rem] md:text-[1.07rem] leading-7   ">
                 <span className="font-bold text-[1.1rem] text-purple dark:text-[#d29aec]">
                   Curieuse et passionnée{" "}
                 </span>{" "}
@@ -73,7 +72,7 @@ export default function AboutMe() {
                 <Link
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/60  dark:hover:bg-purple_dark dark:hover:text-white shadow-md rounded-xl text-[#ffffff] text-[0.9rem] text-center p-2   w-full sm:w-[16rem]"
+                  className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/80 duration-300  dark:hover:bg-purple_dark dark:hover:text-white shadow-inner shadow-free_grey rounded-xl text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
                 >
                   <MessagesSquare
                     size="22"
@@ -88,18 +87,18 @@ export default function AboutMe() {
                     onClick={downloadCV}
                     role="button"
                     aria-label="Télécharger mon CV"
-                    className=" border-2 dark:border-purple md:border-purple/40 hover:border-purple md:dark:border-purple/60 shadow-md  dark:hover:border-purple_dark dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
+                    className=" border-2 md:border-purple/40 hover:border-purple  dark:hover:border-purple_dark rounded-xl p-2 gap-2 px-4 text-[1rem] md:text-[1.07rem]  text-purple dark:text-white"
                   >
                     <Download
                       id="download-cv"
                       alt="icône de téléchargement  "
                     />
                     <p className="flex gap-1">
-                      <span className="hidden md:flex">Téléchargez mon</span> CV
+                      <span className="hidden lg:flex">Téléchargez mon</span> CV
                     </p>
                   </Button>
                   <ul className="flex items-center gap-4 md:gap-2">
-                    <li className=" border-2 border-purple/40 duration-200  hover:border-purple_dark rounded-full p-2 ">
+                    <li className=" border-2 border-purple/40 duration-200  hover:border-purple_dark dark:shadow-inner dark:shadow-free_grey rounded-full p-2 ">
                       <Link
                         href="https://www.linkedin.com/in/marion-baston/"
                         target="_blank"
@@ -113,7 +112,7 @@ export default function AboutMe() {
                         />
                       </Link>
                     </li>
-                    <li className=" border-2 border-purple/40 duration-200   hover:border-purple rounded-full p-2 ">
+                    <li className=" border-2 border-purple/40 duration-200   hover:border-purple dark:shadow-inner dark:shadow-free_grey rounded-full p-2 ">
                       {" "}
                       <Link
                         href="https://github.com/MarionbDev"
@@ -133,25 +132,18 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6  relative bottom-6 lg:bottom-32 xl:bottom-10 ">
-            <div className=" p-[0.4rem]  rotate-12 border-gradient absolute sm:top-[6rem]   ">
+          <div className="flex justify-center items-center -rotate-6  ">
+            <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">
               <Image
                 src={myPhoto}
                 alt="ma photo de profil"
                 width={900}
                 height={400}
-                className=" w-[14rem] sm:w-[21rem] rounded-b-xl  -rotate-12 absolute bottom-6 sm:bottom-10 rounded-r-[5rem] rounded-l-[5rem]   "
+                className=" w-[14.5rem] sm:w-[21rem] rounded-b-[6rem]   -translate-x-3 -rotate-12 absolute z-10 bottom-5 sm:bottom-10 rounded-r-[5.3rem] rounded-l-[5.8rem] "
               />
-              <div className="border-two-gradient border-2  p-28 sm:p-44 relative rotate-12 "></div>
+              <div className="border-two-gradient border-2 z-20 p-28 sm:p-44 relative rotate-12 "></div>
+              <span className="absolute z-0 inset-0 m-auto photo-gradient    rounded-bl-[12.2rem] rounded-tr-[12rem] rounded-tl-[24rem] rounded-br-[18rem] w-[88%] rotate-12 mt-5 mb-3 md:mb-4 "></span>
             </div>
-
-            <Image
-              src={splash}
-              alt=""
-              width={450}
-              height={450}
-              className=" w-[16rem] sm:w-[28rem] mt-0 sm:mt-16 "
-            />
           </div>
         </div>
       </div>

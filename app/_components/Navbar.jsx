@@ -1,6 +1,5 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "./ModeToggle";
@@ -57,19 +56,15 @@ export default function Navbar() {
               Stacks<span className="underline-nav"></span>
             </Link>
           </li>
-
-          <li>
-            <Link
-              href={"/#me-contacter"}
-              aria-label="me contacter"
-              className="nav-link"
-            >
-              <MessageCircle size={24} />{" "}
-              <span className="underline-nav"></span>
-            </Link>
-          </li>
         </ul>
       </nav>
+      <Link
+        href={"/#me-contacter"}
+        aria-label="me contacter"
+        className="border-purple border-2 bg-purple text-white rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/75 duration-300 "
+      >
+        Contactez-moi
+      </Link>
     </div>
   );
 }
