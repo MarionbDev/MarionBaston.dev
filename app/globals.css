@@ -125,10 +125,14 @@ html {
   background-clip: text;
   color: transparent;
 }
-/* 
-.bg-gradient-card-img {
-  background: linear-gradient(to right, #ffe355 0%, #d29aec 100%);
-} */
+
+.dark .name-form-gradient {
+  background: linear-gradient(to right, #eeeeee 0%, #9045f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 
 .border-gradient {
   border: 2px solid transparent; /* Bordure transparente */
@@ -138,11 +142,6 @@ html {
 .border-two-gradient {
   border: 2px solid transparent; /* Bordure transparente */
   border-image: linear-gradient(to left, #ffe355, #c565f1) 1;
-}
-
-.border-gradient-form {
-  border: 2px solid transparent;
-  border-image: linear-gradient(45deg, #ffe355, #c565f1) 1;
 }
 
 .bg-gradient-card {

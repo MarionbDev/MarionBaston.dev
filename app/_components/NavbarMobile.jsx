@@ -37,7 +37,7 @@ export default function NavbarMobile() {
               className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8"
             >
               <Link href="/#home" aria-label="Home" className="nav-link">
-                <MenubarItem className="text-[1.2rem] ">Bienvenue</MenubarItem>
+                <MenubarItem className="text-[1.2rem] ">Accueil</MenubarItem>
               </Link>
               <Link
                 href="/parcours"
@@ -53,7 +53,7 @@ export default function NavbarMobile() {
               </Link>
               <Link href="/#skills" aria-label="mes compétences">
                 <MenubarItem className="text-[1.2rem] ">
-                  Mes Compétences
+                  Compétences
                 </MenubarItem>
               </Link>
               <Link href="/#stacks" aria-label="Stacks">

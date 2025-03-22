@@ -13,7 +13,7 @@ export default function Home() {
       </div>{" "}
       <div
         id="portfolio"
-        className=" px-6 sm:px-14 md:px-28 md:pb-[6rem] pt-20 lg:mt-16 xl:mt-0  "
+        className=" px-6 sm:px-14 md:px-24 md:pb-[6rem] pt-20 lg:mt-16 xl:mt-0  "
       >
         <BestProjectsPage />
       </div>

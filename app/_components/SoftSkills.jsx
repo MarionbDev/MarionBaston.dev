@@ -1,11 +1,8 @@
-import backend from "@/public/images/backend.png";
-import frontend from "@/public/images/frontend.png";
 import softSkills from "@/public/images/softSkills.png";
-import tools from "@/public/images/tools.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function Stacks() {
+export default function SoftSkills() {
   const sectionText = {
     hide: {
       opacity: 0,
@@ -48,12 +45,12 @@ export default function Stacks() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className=" flex items-end gap-1 h-16 mb-6 md:mb-20 ">
-            <h2 className="font-poppins text-3xl pb-1 font-semibold md:text-[4rem] ">
-              Stack
+          <div className=" flex flex-col  mb-20 mt-24 ">
+            <h2 className="text-txt_black dark:text-white font-semibold text-lg lg:text-[2.4rem] text-center">
+              Mes Points Forts
             </h2>
-            <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
-          </div>{" "}
+            <span className="wave-skills relative after:w-[15%] flex justify-center mt-2 "></span>
+          </div>
         </motion.div>
       </motion.section>
       <motion.section
@@ -68,81 +65,11 @@ export default function Stacks() {
           transition={{ duration: 0.5 }}
         >
           <div className="  flex flex-col justify-center items-center  md:items-stretch    md:flex-row  md:flex-wrap xl:flex-nowrap gap-6 md:gap-10   ">
-            <div className="bg-gradient-card  font-poppins  shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 lg:gap-x-8 flex flex-col  ">
-              <div className="flex flex-col items-center  gap-6  ">
-                <div className="flex flex-col">
-                  <h2 className="text-lg text-center  font-semibold">
-                    FRONTEND
-                  </h2>
-                  <span className="wave-skills relative flex justify-center "></span>
-                </div>
-                <Image
-                  src={frontend}
-                  width={150}
-                  alt="ilustration de la section frontend"
-                  className=" rounded-full h-24 w-24 sm:w-[8.3rem] sm:h-[8.3rem] dark:brightness-75 mt-6 sm:mt-0  bg-free_grey"
-                />
-              </div>
-              <ul className="text-[1rem] text-center mt-6 sm:mt-4 leading-7 ">
-                <li>JavaScript, TypeScript</li>
-                <li>React, Next</li>
-                <li>Shadcn/ui</li>
-                <li>TailwindCss</li>
-                <li>Responsive design</li>
-              </ul>
-            </div>
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem]  px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
-              <div className="flex flex-col items-center  gap-6">
-                <div className="flex flex-col">
-                  <h2 className="text-lg text-center  font-semibold">
-                    BACKEND
-                  </h2>
-                  <span className="wave-skills relative flex justify-center "></span>
-                </div>
-                <Image
-                  src={backend}
-                  width={150}
-                  height={150}
-                  alt="illustration de la section backend"
-                  className=" rounded-full dark:h-24 dark:w-24 bg-free_grey  dark:sm:w-36 dark:sm:h-36 dark:brightness-75"
-                />
-              </div>
-
-              <ul className="text-[1rem] text-center leading-7">
-                <li>Node.js, Express.js</li>
-                <li>MySql, Supabase</li>
-                <li>Vitest, Jest</li>
-                <li>Zod, Joi</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
-              <div className="flex flex-col items-center gap-6">
-                <div className="flex flex-col">
-                  <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
-                  <span className="wave-skills relative flex justify-center "></span>
-                </div>
-                <Image
-                  src={tools}
-                  width={150}
-                  height={150}
-                  alt="illustration de le section outils"
-                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 bg-free_grey "
-                />
-              </div>
-              <ul className=" text-[1rem] text-center leading-7 ">
-                <li>Git, GitHub</li>
-                <li>Resend</li>
-                <li>Vercel</li>
-                <li>VS Code</li>
-                <li>Figma</li>
-              </ul>
-            </div>
             <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-col">
                   <h2 className="text-lg text-center  font-semibold">
-                    METHODOLOGIES
+                    Adaptabilité
                   </h2>
                   <span className="wave-skills relative flex justify-center "></span>
                 </div>
@@ -151,14 +78,76 @@ export default function Stacks() {
                   width={150}
                   height={150}
                   alt="illustration de la section soft skills"
-                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-36 dark:sm:h-36 dark:brightness-75 bg-free_grey "
+                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
                 />
               </div>
-              <ul className="text-[1rem] text-center leading-7">
-                <li>Agile</li>
-                <li>Scrum</li>
-                <li>Gestion de projet</li>
-              </ul>
+              <p className="text-[1rem] text-center leading-7">
+                Capacité à m'adapter rapidement aux nouvelles technologies et
+                aux changements.{" "}
+              </p>
+            </div>{" "}
+            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+              <div className="flex flex-col items-center gap-6">
+                <div className="flex flex-col">
+                  <h2 className="text-lg text-center  font-semibold">
+                    Créativité
+                  </h2>
+                  <span className="wave-skills relative flex justify-center "></span>
+                </div>
+                <Image
+                  src={softSkills}
+                  width={150}
+                  height={150}
+                  alt="illustration de la section soft skills"
+                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
+                />
+              </div>
+              <p className="text-[1rem] text-center leading-7">
+                Aptitude à concevoir des solutions innovantes et à adopter une
+                approche créative pour résoudre les problèmes.
+              </p>
+            </div>
+            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+              <div className="flex flex-col items-center gap-6">
+                <div className="flex flex-col">
+                  <h2 className="text-lg text-center  font-semibold">
+                    Esprit d'équipe, Collaboration
+                  </h2>
+                  <span className="wave-skills relative flex justify-center "></span>
+                </div>
+                <Image
+                  src={softSkills}
+                  width={150}
+                  height={150}
+                  alt="illustration de la section soft skills"
+                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
+                />
+              </div>
+              <p className="text-[1rem] text-center leading-7">
+                Capacité à travailler efficacement en équipe et à favoriser une
+                collaboration harmonieuse.
+              </p>
+            </div>
+            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+              <div className="flex flex-col items-center gap-6">
+                <div className="flex flex-col">
+                  <h2 className="text-lg text-center  font-semibold">
+                    Motivation
+                  </h2>
+                  <span className="wave-skills relative flex justify-center "></span>
+                </div>
+                <Image
+                  src={softSkills}
+                  width={150}
+                  height={150}
+                  alt="illustration de la section soft skills"
+                  className=" rounded-full dark:h-24 dark:w-24  dark:sm:w-40 dark:sm:h-40 dark:brightness-75 "
+                />
+              </div>
+              <p className="text-[1rem] text-center leading-7">
+                Grande motivation à relever de nouveaux défis et à atteindre des
+                objectifs avec engagement et détermination.{" "}
+              </p>
             </div>
           </div>
         </motion.div>
