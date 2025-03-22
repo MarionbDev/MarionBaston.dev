@@ -14,6 +14,25 @@ export default function HeaderFree() {
           </span>{" "}
           votre présence en ligne avec un site performant et moderne !
         </h1>
+        <div className="relative w-full mt-10 lg:hidden translate-x-8">
+          <div>
+            {/* <p className=" text-[#eade34] font-medium ">Ils l'ont fait !</p> */}
+            <Image
+              src={arrow}
+              width={600}
+              height={600}
+              alt="illustration flèche"
+              className="absolute z-10 -top-10  lg:-top-10 -left-2 md:-left-10 lg:left-4 xl:-left-5 2xl:-left-9 w-1/6 sm:2/3 md:w-1/5 lg:w-1/6 scale-y-[-1] rotate-90"
+            />
+          </div>
+          <Image
+            src={imageHeader}
+            width={1600}
+            height={900}
+            alt="Photo de présentation du site"
+            className="w-4/5 md:w-[700px] lg:w-[80%] xl:w-[1000px]  mx-auto lg h-auto md:translate-x-10"
+          />
+        </div>
         <h2 className="text-[1.1rem] md:text-[1.5rem] text-pretty leading-7">
           Artisans, commerçants, entrepreneurs : je vous aide à gagner en
           visibilité et à attirer plus de clients grâce au marketing digital.
@@ -22,7 +41,7 @@ export default function HeaderFree() {
           Discutons de votre projet !
         </CustomLink>
       </section>
-      <div className="relative w-full">
+      <div className="relative w-full hidden lg:flex">
         <div>
           {/* <p className=" text-[#eade34] font-medium ">Ils l'ont fait !</p> */}
           <Image
