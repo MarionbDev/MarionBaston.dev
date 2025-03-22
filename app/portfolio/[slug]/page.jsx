@@ -66,13 +66,17 @@ export default async function ProjectPage({ params }) {
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-semibold">🚀 Contexte & Objectif</h3>
-            <p className=" text-base leading-7">{project.context}</p>{" "}
+            <p className=" text-[1rem] md:text-[1.07rem] leading-7">
+              {project.context}
+            </p>{" "}
           </div>
           <div className="flex flex-col gap-2 text-pretty">
             <h3 className=" text-lg font-semibold">🔑 Fonctionnalités Clés </h3>
-            <p className="text-base">✅ Côté utilisateur :</p>
+            <p className="text-[1rem] md:text-[1.07rem]">
+              ✅ Côté utilisateur :
+            </p>
 
-            <ul className=" flex flex-col  text-base leading-7 list-disc ml-5">
+            <ul className=" flex flex-col  text-[1rem] md:text-[1.07rem] leading-7 list-disc ml-5">
               {project.project_steps?.[0]?.functionalities?.[0]?.user?.map(
                 (item, index) => (
                   <li key={`${index}-${item.title}`}>{item.title}</li>
@@ -83,8 +87,10 @@ export default async function ProjectPage({ params }) {
             {project.project_steps?.[0]?.functionalities?.[0]?.admin?.length >
               0 && (
               <div className="flex flex-col gap-2">
-                <p className="mt-4 text-base ">✅ Côté administrateur :</p>
-                <ul className=" flex flex-col gap-2 text-base leading-7 list-disc ml-5">
+                <p className="mt-4 text-[1rem] md:text-[1.07rem] ">
+                  ✅ Côté administrateur :
+                </p>
+                <ul className=" flex flex-col gap-2 text-[1rem] md:text-[1.07rem] leading-7 list-disc ml-5">
                   {project.project_steps?.[0]?.functionalities?.[0]?.admin?.map(
                     (item, index) => (
                       <li key={`${index}-${item.title}`}>{item.title}</li>
@@ -96,7 +102,7 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-semibold">⚡Challenges & Solutions</h3>
-            <ul className=" flex flex-col gap-3 text-base leading-7 text-pretty">
+            <ul className=" flex flex-col gap-3 text-[1rem] md:text-[1.07rem] leading-7 text-pretty">
               {project.project_steps?.[1]?.challenges?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
               ))}
@@ -104,7 +110,7 @@ export default async function ProjectPage({ params }) {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-semibold">📈 Résultats & Impact</h3>
-            <ul className=" flex flex-col gap-3 text-base leading-7 text-pretty">
+            <ul className=" flex flex-col gap-3 text-[1rem] md:text-[1.07rem] leading-7 text-pretty">
               {project.project_steps?.[2]?.result?.map((item, index) => (
                 <li key={`${index}-${item.title}`}>{item.title}</li>
               ))}
@@ -114,7 +120,7 @@ export default async function ProjectPage({ params }) {
             {project.technos.map((techno, index) => (
               <li
                 key={`${index}-${techno.title}}`}
-                className=" border-2 border-purple text-purple dark:text-white text-base  px-4 py-1 rounded-3xl"
+                className=" border-2 border-purple text-purple dark:text-white text-[1rem] md:text-[1.07rem]  px-4 py-1 rounded-3xl"
               >
                 {techno.title.charAt(0).toUpperCase() +
                   techno.title.slice(1).toLowerCase()}
@@ -122,8 +128,8 @@ export default async function ProjectPage({ params }) {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center">
-          <ScrollArea className="bg-gradient-card  flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl shadow-md dark:shadow-purple sm:mb-5">
+        <div className="flex justify-center ">
+          <ScrollArea className="bg-gradient-card flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl shadow-sm shadow-purple sm:mb-5">
             <ul className=" h-[12.5rem] sm:h-[18rem]  md:h-[22rem] lg:h-[25rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (
@@ -151,12 +157,12 @@ export default async function ProjectPage({ params }) {
             </ul>{" "}
             <ScrollBar
               orientation="horizontal"
-              className="  dark:bg-purple/30  bg-purple/80 border-none h-3"
+              className="   bg-free_yellow border-none h-2"
             />{" "}
           </ScrollArea>
         </div>
 
-        <div className="text-base flex flex-col gap-2">
+        <div className="text-[1rem] md:text-[1.07rem] flex flex-col gap-2">
           {project.client ? (
             <p className="  font-medium">
               <span className=" font-semibold pr-2 "> Client : </span>

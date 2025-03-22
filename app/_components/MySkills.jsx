@@ -12,7 +12,7 @@ export default function MySkills() {
             <span className="wave-skills relative flex justify-center "></span>
           </div>
 
-          <div className="  text-[1rem] leading-7 text-pretty">
+          <div className="  text-[1rem] md:text-[1.07rem]  leading-7 text-pretty">
             <p className="  mt-8 text-pretty">
               Je développe l'interface visible d'un site web à partir d'une
               maquette, en garantissant une expérience utilisateur fluide et
@@ -81,7 +81,7 @@ export default function MySkills() {
             </h2>
             <span className="wave-skills relative flex justify-center "></span>
           </div>
-          <div className="   text-[1rem] leading-7 text-pretty">
+          <div className="   text-[1rem] md:text-[1.07rem] leading-7 text-pretty">
             <p className=" mt-8">
               Je conçois et mets en place l'architecture backend d'un projet
               afin d'assurer sa fiabilité, sa sécurité et sa scalabilité.

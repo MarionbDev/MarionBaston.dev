@@ -84,7 +84,7 @@ export default function SoftSkills() {
                   className=" rounded-full dark:brightness-75 h-32 w-32 md:w-28 md:h-28"
                 />
               </div>
-              <p className="py-6 text-[1rem] text-center leading-7">
+              <p className="py-6 text-[1rem] md:text-[1.07rem] text-center leading-7">
                 Capacité à m'adapter rapidement aux nouvelles technologies et
                 aux changements.{" "}
               </p>
@@ -105,7 +105,7 @@ export default function SoftSkills() {
                   className=" rounded-full dark:brightness-75 h-32 w-32 md:w-28 md:h-28"
                 />
               </div>
-              <p className="py-6 text-[1rem] text-center leading-7">
+              <p className="py-6 text-[1rem] md:text-[1.07rem] text-center leading-7">
                 Aptitude à concevoir des solutions innovantes et à adopter une
                 approche créative pour résoudre les problèmes.
               </p>
@@ -126,7 +126,7 @@ export default function SoftSkills() {
                   className=" rounded-full dark:brightness-75 h-32 w-32 md:w-28 md:h-28"
                 />
               </div>
-              <p className="py-6 text-[1rem] text-center leading-7">
+              <p className="py-6 text-[1rem] md:text-[1.07rem] text-center leading-7">
                 Capacité à travailler efficacement en équipe et à favoriser une
                 collaboration harmonieuse.
               </p>
@@ -147,7 +147,7 @@ export default function SoftSkills() {
                   className=" rounded-full dark:brightness-75 h-32 w-32 md:w-28 md:h-28 "
                 />
               </div>
-              <p className="py-6 text-[1rem] text-center leading-7">
+              <p className="py-6 text-[1rem] md:text-[1.07rem] text-center leading-7">
                 Grande motivation à relever de nouveaux défis et à atteindre des
                 objectifs avec engagement et détermination.{" "}
               </p>

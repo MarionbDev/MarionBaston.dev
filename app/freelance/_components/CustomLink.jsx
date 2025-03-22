@@ -4,7 +4,7 @@ export default function CustomLink({ href, children, className = "" }) {
   return (
     <Link
       href={href}
-      className={`text-white bg-free_purple text-center px-2 py-3 rounded-2xl ${className}`}
+      className={`text-white bg-free_purple shadow-inner shadow-free_grey  text-center px-3 py-3 rounded-2xl hover:bg-free_grey hover:text-free_purple duration-300 hover:border-free_purple/70 ${className}`}
     >
       {children}
     </Link>

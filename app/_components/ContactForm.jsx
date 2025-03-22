@@ -88,7 +88,7 @@ export default function ContactForm() {
       <Card className="w-[23rem] md:w-[30rem] shadow-md shadow-purple  border-none  dark:shadow-purple tracking-wide ">
         <form onSubmit={handleSubmitFormContact}>
           <CardHeader>
-            <CardDescription className=" text-[0.9rem] font-medium ">
+            <CardDescription className=" text-[1rem] md:text-[1.07rem] font-medium ">
               Remplissez le formulaire ci-dessous et je vous répondrai dans les
               plus brefs délais.{" "}
               <span className=" text-[0.7rem]">(Mentions obligatoires *)</span>
@@ -99,7 +99,7 @@ export default function ContactForm() {
               <div className="space-y-2 ">
                 <Label
                   htmlFor="first-name"
-                  className="text-text_color text-[0.9rem]"
+                  className="text-text_color text-[1rem] md:text-[1.07rem]"
                 >
                   Nom*
                 </Label>
@@ -117,7 +117,7 @@ export default function ContactForm() {
               <div className="space-y-2">
                 <Label
                   htmlFor="last-name"
-                  className="text-text_color text-[0.9rem]"
+                  className="text-text_color text-[1rem] md:text-[1.07rem]"
                 >
                   Prénom*
                 </Label>
@@ -137,7 +137,7 @@ export default function ContactForm() {
               <div className="space-y-2">
                 <Label
                   htmlFor="email"
-                  className="text-text_color text-[0.9rem]"
+                  className="text-text_color text-[1rem] md:text-[1.07rem]"
                 >
                   E-mail*
                 </Label>
@@ -155,7 +155,7 @@ export default function ContactForm() {
             <div className="space-y-2">
               <Label
                 htmlFor="message"
-                className="text-text_color text-[0.9rem]"
+                className="text-text_color text-[1rem] md:text-[1.07rem]"
               >
                 Message*
               </Label>
@@ -171,7 +171,7 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <Label className=" flex items-center ">
+              <Label className=" flex items-start ">
                 <Input
                   type="checkbox"
                   id="acceptedPrivacyPolicy"
@@ -179,7 +179,7 @@ export default function ContactForm() {
                   onChange={(e) => setAcceptedPrivacyPolicy(e.target.checked)}
                   className=" w-12 "
                 />
-                <span className=" text-[0.7rem] ml-2">
+                <span className=" text-[0.87rem] ml-2">
                   * En soumettant ce formulaire, j'accepte que mes données
                   personnelles soient utilisées pour me recontacter. Aucun autre
                   traitement ne sera effectué avec mes informations.
@@ -199,7 +199,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="bg-purple hover:bg-purple/70 dark:hover:bg-purple_dark dark:hover:text-white dark:shadow-purple/80 dark:shadow-inner rounded-xl text-[#ffffff] text-[0.9rem] ml-auto gap-2"
+              className="bg-purple hover:bg-purple/70 dark:hover:bg-purple_dark dark:hover:text-white shadow-inner shadow-free_grey rounded-xl text-[#ffffff] text-[1rem] md:text-[1.07rem] ml-auto gap-2"
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />
