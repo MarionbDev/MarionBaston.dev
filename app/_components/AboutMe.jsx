@@ -20,7 +20,7 @@ export default function AboutMe() {
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[50rem] flex flex-col gap-6 dark:text-white">
             <div className="flex flex-col items-start gap-2">
-              <h1 className="  mt-14 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
+              <h1 className="  mt-8 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
                 Bonjour, je suis&nbsp;
                 <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold slide-name dark:text-[#c59ff7] ">
                   Marion
@@ -28,13 +28,13 @@ export default function AboutMe() {
                 <span className="text-[1.5rem] md:text-[2.2rem] ">👋</span>
               </h1>
               <div className=" ">
-                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[2rem] lg:text-[3rem] mb-2">
+                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
                   Développeuse Frontend
                 </h2>
                 <span className=" wave-about  "></span>
               </div>
             </div>
-            <div className="flex flex-col gap-2 text-pretty">
+            <div className="flex flex-col gap-2 text-pretty  xl:pr-[10rem]">
               <p className=" text-[1rem] md:text-[1.07rem] leading-7   ">
                 <span className="font-bold text-[1.1rem] text-purple dark:text-[#d29aec]">
                   Curieuse et passionnée{" "}

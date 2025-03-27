@@ -265,10 +265,13 @@ html {
 }
 
 @media only screen and (max-width: 465px) {
-  .wave-about {
+  .title-point {
     display: none;
   }
-  .title-point {
+}
+
+@media only screen and (max-width: 520px) {
+  .wave-about {
     display: none;
   }
 }

@@ -70,12 +70,12 @@ export default function ContactPage() {
                 <p className="text-center text-pretty">
                   Je suis à la recherche d'une{" "}
                   <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
-                    <span className="absolute inset-0 h-[105%] top-1/2 -translate-y-1/2  -rotate-3 bg-free_yellow -z-10 "></span>
+                    <span className="absolute inset-0 h-[82%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
                     opportunité
                   </span>{" "}
                   en CDI en tant que{" "}
                   <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
-                    <span className="absolute inset-0 h-[105%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
+                    <span className="absolute inset-0 h-[82%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
                     Développeuse Frontend
                   </span>{" "}
                 </p>

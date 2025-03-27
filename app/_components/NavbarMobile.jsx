@@ -61,7 +61,7 @@ export default function NavbarMobile() {
               </Link>
 
               <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className="text-[1.2rem] bg-free_yellow shadow-inner shadow-free_grey  rounded-full px-6">
+                <MenubarItem className="text-[1.2rem] bg-free_yellow shadow-inner shadow-free_grey  dark:text-txt_black dark:font-semibold  rounded-full px-6">
                   Contactez-moi
                 </MenubarItem>
               </Link>
