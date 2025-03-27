@@ -18,18 +18,18 @@ export default function AboutMe() {
     <div className="  mx-6 md:mx-20 xl:mx-0">
       <div className=" xl:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
-          <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[40rem] flex flex-col gap-6 dark:text-white">
+          <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[50rem] flex flex-col gap-6 dark:text-white">
             <div className="flex flex-col items-start gap-2">
               <h1 className="  mt-14 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
                 Bonjour, je suis&nbsp;
-                <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold text-purple dark:text-[#c59ff7] ">
+                <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold slide-name dark:text-[#c59ff7] ">
                   Marion
                 </span>
                 <span className="text-[1.5rem] md:text-[2.2rem] ">👋</span>
               </h1>
               <div className=" ">
-                <h2 className=" text-[#8300E9] font-extrabold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
-                  Développeuse Web
+                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[2rem] lg:text-[3rem] mb-2">
+                  Développeuse Frontend
                 </h2>
                 <span className=" wave-about  "></span>
               </div>
@@ -87,7 +87,7 @@ export default function AboutMe() {
                     onClick={downloadCV}
                     role="button"
                     aria-label="Télécharger mon CV"
-                    className=" border-2 md:border-purple/40 hover:border-purple  dark:hover:border-purple_dark rounded-xl p-2 gap-2 px-4 text-[1rem] md:text-[1.07rem]  text-purple dark:text-white"
+                    className=" border-2 border-purple/40 hover:border-purple  dark:hover:border-purple_dark rounded-xl p-2 gap-2 px-4 text-[1rem] md:text-[1.07rem]  text-purple dark:text-white dark:shadow-inner dark:shadow-free_grey"
                   >
                     <Download
                       id="download-cv"
@@ -132,7 +132,7 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6  ">
+          <div className="flex justify-center items-center -rotate-6 scale-90 ">
             <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">
               <Image
                 src={myPhoto}
