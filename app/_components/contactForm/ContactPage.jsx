@@ -69,13 +69,15 @@ export default function ContactPage() {
               <div className="font-poppins text-txt_black dark:text-white pt-2 md:pt-8 mb-12 md:mb-16 text-[1rem] md:text-[1.2rem] xl:px-10   flex flex-col items-center   gap-4 ">
                 <p className="text-center text-pretty">
                   Je suis à la recherche d'une{" "}
-                  <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple bg-free_yellow px-2 dark:text-[#d29aec] dark:bg-opacity-0">
-                    opportunité{" "}
-                  </span>
-                  en CDD, CDI en tant que{" "}
-                  <span className="font-bold text-[1.1rem] md:text-[1.5rem] text-purple dark:text-[#d29aec] bg-free_yellow dark:bg-opacity-0 px-2">
-                    Développeuse Web.
-                  </span>
+                  <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
+                    <span className="absolute inset-0 h-[105%] top-1/2 -translate-y-1/2  -rotate-3 bg-free_yellow -z-10 "></span>
+                    opportunité
+                  </span>{" "}
+                  en CDI en tant que{" "}
+                  <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
+                    <span className="absolute inset-0 h-[105%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
+                    Développeuse Frontend
+                  </span>{" "}
                 </p>
                 <p>Envie d'en savoir plus sur mon profil ? Contactez-moi !</p>
               </div>

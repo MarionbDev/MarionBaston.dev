@@ -1,3 +1,4 @@
+import FooterFree from "./_components/Footer";
 import NavbarDeskFree from "./_components/navbar/NavbarDeskFree";
 import NavbarMobFree from "./_components/navbar/NavbarMobFree";
 
@@ -73,6 +74,7 @@ export default function FreelanceLayout({ children }) {
         <NavbarDeskFree />
         <NavbarMobFree />
         {children}
+        <FooterFree />
       </body>
     </html>
   );

@@ -1,9 +1,10 @@
 import ContactMe from "./_components/ContactMe";
+import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 import ProjectStep from "./_components/project-step/ProjectStep";
 import ProjectsFree from "./_components/ProjectsFree";
 import Services from "./_components/Services";
-import Support from "./_components/SupportFree";
+import Support from "./_components/support-free/SupportFree";
 import Testimonials from "./_components/Testimonials";
 import styles from "./styles.module.css";
 

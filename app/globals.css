@@ -156,9 +156,9 @@ html {
   background: linear-gradient(to right, #230930 0%, #5f04a466 100%);
 }
 
-.slide name-dev .dark .slide-name-dev {
+.dark .slide-name-dev {
   text-transform: uppercase;
-  background: linear-gradient(to right, #b478f8 0%, #dacaec 100%);
+  background: linear-gradient(to right, #b478f8 50%, #6015c9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -167,7 +167,23 @@ html {
 
 .slide-name-dev {
   text-transform: uppercase;
+  background: linear-gradient(to right, #6015c9 0%, #c36eeb 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.slide-name {
   background: linear-gradient(to right, #6015c9 0%, #c36eeb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .slide-name {
+  background: linear-gradient(to right, #b478f8 50%, #6015c9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import arrow from "../images/arrow.png";
-import imageHeader from "./../images/desk_mob.png";
+import arrow from "../images/arrow1.png";
+import desktop from "../images/mockup-desk.jpg";
+import mobile from "../images/mockup-mob.jpeg";
 import CustomLink from "./CustomLink";
 
 export default function HeaderFree() {
@@ -14,7 +15,7 @@ export default function HeaderFree() {
           </span>{" "}
           votre présence en ligne avec un site performant et moderne !
         </h1>
-        <div className="relative w-full mt-10 lg:hidden translate-x-4">
+        <div className="relative w-full mt-10 xl:hidden ">
           <div>
             {/* <p className=" text-[#eade34] font-medium ">Ils l'ont fait !</p> */}
             <Image
@@ -22,18 +23,25 @@ export default function HeaderFree() {
               width={600}
               height={600}
               alt="illustration flèche"
-              className="absolute z-10 -top-10  lg:-top-10 -left-2 md:-left-10 lg:left-4 xl:-left-5 2xl:-left-9 w-1/6 sm:2/3 md:w-1/5 lg:w-1/6 scale-y-[-1] rotate-90"
+              className="absolute z-10 -top-10  lg:-top-10 -right-2 md:-right-10  w-1/6 sm:2/3 md:w-1/5  rotate-90 "
             />
           </div>
           <Image
-            src={imageHeader}
+            src={desktop}
             width={1600}
             height={900}
             alt="Photo de présentation du site"
-            className="w-4/5 md:w-[700px] lg:w-[80%] xl:w-[1000px]  mx-auto lg h-auto md:translate-x-10"
+            className="w-[90%] md:w-[74%] lg:w-[75%] mx-auto h-auto rounded-md shadow-md"
+          />
+          <Image
+            src={mobile}
+            width={600}
+            height={300}
+            alt="Photo de présentation du site"
+            className="absolute -bottom-2  md:-bottom-10 right-2 md:right-0 w-[25%] lg h-auto rounded-md border-l-2 border-t-2 border-[#ffff] shadow-md"
           />
         </div>
-        <h2 className="text-[1.1rem] md:text-[1.5rem] text-pretty leading-7">
+        <h2 className="mt-6 md:mt-14 text-[1.1rem] md:text-[1.5rem] text-pretty leading-7">
           Artisans, commerçants, entrepreneurs : je vous aide à gagner en
           visibilité et à attirer plus de clients grâce au marketing digital.
         </h2>
@@ -41,23 +49,30 @@ export default function HeaderFree() {
           Discutons de votre projet !
         </CustomLink>
       </section>
-      <div className="relative w-full hidden lg:flex">
-        <div>
+      <div className="relative w-full hidden xl:flex">
+        <div className=" ">
           {/* <p className=" text-[#eade34] font-medium ">Ils l'ont fait !</p> */}
           <Image
             src={arrow}
             width={600}
             height={600}
             alt="illustration flèche"
-            className="absolute z-10 -top-10  lg:-top-10 -left-2 md:-left-10 lg:left-4 xl:-left-5 2xl:-left-9 w-1/6 sm:2/3 md:w-1/5 lg:w-1/6 scale-y-[-1] rotate-90"
+            className="absolute z-10  -top-14 xl:-left-8 2xl:-left-16 w-1/6  rotate-90 scale-y-[-1] "
           />
         </div>
         <Image
-          src={imageHeader}
+          src={desktop}
           width={1600}
           height={900}
           alt="Photo de présentation du site"
-          className="w-4/5 md:w-[700px] lg:w-[80%] xl:w-[1000px]  mx-auto lg h-auto md:translate-x-10"
+          className="w-4/5 md:w-[700px] lg:w-[80%] xl:w-[95%]  mx-auto lg h-auto rounded-md shadow-md"
+        />
+        <Image
+          src={mobile}
+          width={600}
+          height={300}
+          alt="Photo de présentation du site"
+          className="absolute -bottom-10 -right-12 w-[30%] lg h-auto rounded-md border-l-2 border-t-2 border-[#ffff] shadow-md"
         />
       </div>
     </div>

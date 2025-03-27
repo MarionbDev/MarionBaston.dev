@@ -1,3 +1,5 @@
+import ContactForm from "../../_components/ContactForm";
+
 export default function ProjectsFree() {
   return (
     <>
@@ -6,6 +8,7 @@ export default function ProjectsFree() {
           Contactez-moi
         </h1>
         <p>Contactez-moi : Discutons de vos besoins ! </p>
+        <ContactForm />
       </div>
     </>
   );
