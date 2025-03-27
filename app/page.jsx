@@ -8,7 +8,7 @@ import Stacks from "./_components/Stacks";
 export default function Home() {
   return (
     <div className=" text-txt_black dark:text-white ">
-      <div id="home" className=" mx-2 sm:mx-6 pt-40 sm:pt-20 lg:pt-40 xl:pt-0 ">
+      <div id="home" className=" mx-2 sm:mx-6 pt-28 sm:pt-20 lg:pt-40 xl:pt-0 ">
         <AboutMe />
       </div>{" "}
       <div
