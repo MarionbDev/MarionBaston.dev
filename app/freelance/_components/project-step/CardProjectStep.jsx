@@ -24,7 +24,7 @@ export default function CardProjectStep({
         onChange={handleChangeCheckBox}
       />
       <label
-        for={numberChk}
+        htmlFor={numberChk}
         className="cursor-pointer block peer-checked:bg-free_yellow p-4 rounded-t-3xl"
       >
         <div className="flex justify-between items-center ">

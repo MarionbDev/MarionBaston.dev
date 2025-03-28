@@ -15,7 +15,7 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="  mx-6 md:mx-20 xl:mx-0">
+    <div className="  mx-6 md:mx-20 xl:mx-20">
       <div className=" xl:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[50rem] flex flex-col gap-6 dark:text-white">
@@ -28,13 +28,13 @@ export default function AboutMe() {
                 <span className="text-[1.5rem] md:text-[2.2rem] ">👋</span>
               </h1>
               <div className=" ">
-                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[2rem] lg:text-[3.2rem] mb-2">
+                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[1.9rem] lg:text-[2.5rem] mb-2">
                   Développeuse Frontend
                 </h2>
                 <span className=" wave-about  "></span>
               </div>
             </div>
-            <div className="flex flex-col gap-2 text-pretty  xl:pr-[10rem]">
+            <div className="flex flex-col gap-2 text-pretty  xl:pr-[7rem]">
               <p className=" text-[1rem] md:text-[1.07rem] leading-7   ">
                 <span className="font-bold text-[1.1rem] text-purple dark:text-[#d29aec]">
                   Curieuse et passionnée{" "}
@@ -72,7 +72,7 @@ export default function AboutMe() {
                 <Link
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/80 duration-300  dark:hover:bg-purple_dark dark:hover:text-white shadow-inner shadow-free_grey rounded-xl text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
+                  className="flex  items-center justify-center border-purple border-2 bg-purple rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:text-free_grey duration-300  text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
                 >
                   <MessagesSquare
                     size="22"
@@ -87,7 +87,7 @@ export default function AboutMe() {
                     onClick={downloadCV}
                     role="button"
                     aria-label="Télécharger mon CV"
-                    className=" border-2 border-purple/40 hover:border-purple  dark:hover:border-purple_dark rounded-xl p-2 gap-2 px-4 text-[1rem] md:text-[1.07rem]  text-purple dark:text-white dark:shadow-inner dark:shadow-free_grey"
+                    className="  border-purple/40 hover:border-purple  dark:hover:border-purple_dark p-2 gap-2 text-[1rem] md:text-[1.07rem]  text-purple dark:hover:text-free_grey border-purple border-2   rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 duration-300 "
                   >
                     <Download
                       id="download-cv"
@@ -98,7 +98,7 @@ export default function AboutMe() {
                     </p>
                   </Button>
                   <ul className="flex items-center gap-4 md:gap-2">
-                    <li className=" border-2 border-purple/40 duration-200  hover:border-purple_dark dark:shadow-inner dark:shadow-free_grey rounded-full p-2 ">
+                    <li className=" border-2 border-purple/40 duration-200  hover:border-purple dark:shadow-inner dark:shadow-free_grey rounded-full p-2 ">
                       <Link
                         href="https://www.linkedin.com/in/marion-baston/"
                         target="_blank"

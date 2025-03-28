@@ -111,7 +111,7 @@ html {
 }
 
 .dark .name-gradient {
-  background: linear-gradient(to right, #eeeeee 0%, #9045f9 100%);
+  background: linear-gradient(to right, #eeeeee 0%, #5e00b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -131,7 +131,7 @@ html {
 }
 
 .dark .name-form-gradient {
-  background: linear-gradient(to right, #eeeeee 0%, #9045f9 100%);
+  background: linear-gradient(to right, #eeeeee 0%, #5e00b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -140,7 +140,7 @@ html {
 
 .border-gradient {
   border: 2px solid transparent; /* Bordure transparente */
-  border-image: linear-gradient(to right, #8e55ff, #c565f1) 1;
+  border-image: linear-gradient(to right, #5e00b8, #c565f1) 1;
 }
 
 .border-two-gradient {
@@ -149,7 +149,7 @@ html {
 }
 
 .bg-gradient-card {
-  background-color: #fefefe;
+  background-color: #fcfafa;
 }
 
 .dark .bg-gradient-card {
@@ -158,7 +158,7 @@ html {
 
 .dark .slide-name-dev {
   text-transform: uppercase;
-  background: linear-gradient(to right, #b478f8 50%, #6015c9 100%);
+  background: linear-gradient(to right, #b478f8 50%, #5e00b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -167,7 +167,7 @@ html {
 
 .slide-name-dev {
   text-transform: uppercase;
-  background: linear-gradient(to right, #6015c9 0%, #c36eeb 90%);
+  background: linear-gradient(to right, #5e00b8 0%, #c36eeb 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -175,7 +175,7 @@ html {
 }
 
 .slide-name {
-  background: linear-gradient(to right, #6015c9 0%, #c36eeb 100%);
+  background: linear-gradient(to right, #5e00b8 0%, #c36eeb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -183,7 +183,7 @@ html {
 }
 
 .dark .slide-name {
-  background: linear-gradient(to right, #b478f8 50%, #6015c9 100%);
+  background: linear-gradient(to right, #b478f8 50%, #5e00b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

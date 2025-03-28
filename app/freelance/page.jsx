@@ -1,5 +1,4 @@
 import ContactMe from "./_components/ContactMe";
-import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 import ProjectStep from "./_components/project-step/ProjectStep";
 import ProjectsFree from "./_components/ProjectsFree";
@@ -18,11 +17,21 @@ export default function FreelancePage() {
         <div id="services" className="pt-24 md:pt-28">
           <Services />
         </div>
-        <ProjectsFree />
-        <ProjectStep />
-        <Support />
-        <Testimonials />
-        <ContactMe />
+        <div id="free-project" className="">
+          <ProjectsFree />
+        </div>
+        <div id="step-project" className="">
+          <ProjectStep />
+        </div>
+        <div id="support" className="">
+          <Support />
+        </div>
+        <div id="testimonial" className="">
+          <Testimonials />
+        </div>
+        <div id="contact-me" className="my-20">
+          <ContactMe />
+        </div>
       </div>
     </div>
   );

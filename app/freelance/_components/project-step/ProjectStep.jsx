@@ -14,7 +14,7 @@ export default function ProjectStepFree() {
           ligne, pour vous assurer un site web efficace et optimisé.
         </p>
       </div>
-      <section className="flex flex-col gap-6 items-center">
+      <section className="flex flex-col gap-6 items-center mt-8">
         <ProjectCardStep
           numberChk={1}
           numberStep="01"

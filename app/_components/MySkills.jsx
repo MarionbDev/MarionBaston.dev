@@ -112,7 +112,7 @@ export default function MySkills() {
                 Création et gestion d'API pour la communication frontend-backend
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check size={20} color="#8300e9" classname="mt-1 " />
+                <Check size={20} color="#8300e9" className="mt-1 " />
                 Authentification et gestion des utilisateurs{" "}
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">

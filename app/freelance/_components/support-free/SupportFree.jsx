@@ -11,7 +11,7 @@ export default function SupportFree() {
           Un suivi complet, même si vous n’êtes pas à l’aise avec le digital.
         </p>
       </section>
-      <section className="flex justify-around flex-col flex-wrap md:flex-row gap-10 mx-auto">
+      <section className="flex justify-around flex-col flex-wrap md:flex-row gap-10 mx-auto mt-8">
         <CardSupport
           title="Echange réguliers"
           description="Suivi par maiol, visio, téléphone, selon vos préférence."

@@ -85,10 +85,10 @@ export default function ContactForm() {
 
   return (
     <div className=" text-txt_black dark:text-white  ">
-      <Card className="w-[23rem] md:w-[30rem] shadow-md shadow-purple  border-none  dark:shadow-purple tracking-wide ">
+      <Card className="w-[23rem] md:w-[31rem] shadow-md shadow-purple  border-none  dark:shadow-purple tracking-wide ">
         <form onSubmit={handleSubmitFormContact}>
           <CardHeader>
-            <CardDescription className=" text-[1rem] md:text-[1.07rem] font-medium ">
+            <CardDescription className=" text-[1rem] font-medium ">
               Remplissez le formulaire ci-dessous et je vous répondrai dans les
               plus brefs délais.{" "}
               <span className=" text-[0.7rem]">(Mentions obligatoires *)</span>
@@ -99,7 +99,7 @@ export default function ContactForm() {
               <div className="space-y-2 ">
                 <Label
                   htmlFor="first-name"
-                  className="text-text_color text-[1rem] md:text-[1.07rem]"
+                  className="text-text_color text-[1rem] "
                 >
                   Nom*
                 </Label>
@@ -117,7 +117,7 @@ export default function ContactForm() {
               <div className="space-y-2">
                 <Label
                   htmlFor="last-name"
-                  className="text-text_color text-[1rem] md:text-[1.07rem]"
+                  className="text-text_color text-[1rem] "
                 >
                   Prénom*
                 </Label>
@@ -135,10 +135,7 @@ export default function ContactForm() {
             </div>
             <div className=" ">
               <div className="space-y-2">
-                <Label
-                  htmlFor="email"
-                  className="text-text_color text-[1rem] md:text-[1.07rem]"
-                >
+                <Label htmlFor="email" className="text-text_color text-[1rem] ">
                   E-mail*
                 </Label>
                 <Input
@@ -153,10 +150,7 @@ export default function ContactForm() {
               </div>
             </div>
             <div className="space-y-2">
-              <Label
-                htmlFor="message"
-                className="text-text_color text-[1rem] md:text-[1.07rem]"
-              >
+              <Label htmlFor="message" className="text-text_color text-[1rem] ">
                 Message*
               </Label>
               <Textarea
@@ -199,7 +193,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="bg-purple hover:bg-purple/70 dark:hover:bg-purple_dark dark:hover:text-white shadow-inner shadow-free_grey rounded-xl text-[#ffffff] text-[1rem] md:text-[1.07rem] ml-auto gap-2"
+              className="border-purple border-2 bg-purple text-white rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:text-free_purple dark:text-free_grey hover:bg-purple/10 duration-300  text-[1rem] ml-auto gap-2"
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />

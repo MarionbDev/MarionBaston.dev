@@ -50,7 +50,7 @@ export default function ProjectCard({ project }) {
               />
             </div>
           ) : null}{" "}
-          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple md:dark:text-purple_dark font-semibold pt-3 mx-4 md:mx-0 ">
+          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple md:dark:text-purple_dark font-semibold pt-3 mx-4  ">
             <Link
               href={`/portfolio/${createSlug(project.title)}`}
               className="name-gradient flex gap-2 items-center "
@@ -62,13 +62,13 @@ export default function ProjectCard({ project }) {
               />
             </Link>
           </CardTitle>
-          <p className="mx-4 md:mx-0 text-[1rem] md:text-[1.07rem]">
+          <p className="mx-4  text-[1rem] md:text-[1.07rem]">
             {project.project_type}
           </p>
-          <p className="mx-4 md:mx-0 text-[1rem] md:text-[1.07rem]">
+          <p className="mx-4  text-[1rem] md:text-[1.07rem]">
             {project.description}
           </p>
-          <p className="mx-4 md:mx-0  max-w-screen-xl leading-7 text-[1rem] md:text-[1.07rem] text-pretty line-clamp-3 ">
+          <p className="mx-4   max-w-screen-xl leading-7 text-[1rem] md:text-[1.07rem] text-pretty line-clamp-3 ">
             {project.context}
           </p>
         </CardHeader>
