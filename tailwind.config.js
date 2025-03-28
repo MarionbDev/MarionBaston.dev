@@ -19,9 +19,9 @@ module.exports = {
 
     colors: {
       free_grey: "#F3F3F3",
-      free_purple: "#8E55FF",
+      free_purple: "#5e00b8",
       free_yellow: "#FFE355",
-      purple: "#8E55FF",
+      purple: "#5e00b8",
       purple_dark: "#8d3dd8",
       txt_black: "#4E525A",
       white: "#f3f1f1",

@@ -1,6 +1,7 @@
 "use client";
 
 import { Github, Linkedin, Menu } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -10,6 +11,7 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "../../components/ui/menubar";
+import logo from "../../public/m_logo.png";
 import { ModeToggle } from "./ModeToggle";
 
 export default function NavbarMobile() {
@@ -34,8 +36,15 @@ export default function NavbarMobile() {
             </MenubarTrigger>
             <MenubarContent
               sideOffset={2}
-              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8 text-[#181616] dark:text-free_grey"
+              className="w-[100vw]  h-screen flex flex-col gap-6 items-center   dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8 text-[#181616] dark:text-free_grey"
             >
+              <Image
+                src={logo}
+                width={512}
+                height={512}
+                alt="logo du site"
+                className="w-[15%] mb-8"
+              />
               <Link href="/#home" aria-label="Home" className="nav-link">
                 <MenubarItem className="text-[1.2rem] ">Accueil</MenubarItem>
               </Link>

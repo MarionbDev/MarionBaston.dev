@@ -45,7 +45,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <CardHeader>
+            <CardHeader className="">
               <CardTitle className=" text-[2rem] md:text-[2.5rem] mb-6 text-center name-form-gradient ">
                 Envie de collaborer ?
               </CardTitle>
@@ -53,7 +53,7 @@ export default function ContactPage() {
             </CardHeader>
           </motion.div>
         </motion.section>
-        <CardContent className=" flex flex-col items-center justify-center ">
+        <CardContent className=" flex flex-col items-center justify-center m-0  ">
           <motion.section
             initial="hide"
             whileInView="show"
@@ -79,7 +79,12 @@ export default function ContactPage() {
                     Développeuse Frontend
                   </span>{" "}
                 </p>
-                <p>Envie d'en savoir plus sur mon profil ? Contactez-moi !</p>
+                <div className="md:flex md:gap-2">
+                  <p className="text-center">
+                    Envie d'en savoir plus sur mon profil ?
+                  </p>
+                  <p className="text-center">Contactez-moi !</p>
+                </div>
               </div>
             </motion.div>
           </motion.section>
@@ -94,7 +99,9 @@ export default function ContactPage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <ContactForm />
+              <div className="scale-90">
+                <ContactForm />
+              </div>
             </motion.div>
           </motion.section>
         </CardContent>

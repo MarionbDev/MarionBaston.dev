@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from "../../../../public/m_logo.png";
 
 export default function NavbarDeskFree() {
   const pathname = usePathname();
@@ -11,8 +13,17 @@ export default function NavbarDeskFree() {
   if (hideNavbarOn.includes(pathname)) return null;
 
   return (
-    <div className="navbar flex text-base justify-between items-center  w-full pr-3 lg:pr-6  h-14 fixed top-0 z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
-      <div className="  ml-4">{/* <ModeToggle /> */}</div>
+    <div className="navbar flex text-base justify-between items-center  w-full pr-3  h-14 fixed top-0 z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
+      <div className="  ml-4">
+        {/* <ModeToggle /> */}
+        <Image
+          src={logo}
+          width={512}
+          height={512}
+          alt="logo du site"
+          className="w-9 h-9"
+        />
+      </div>
       <nav aria-labelledby="navigation-menu" className=" flex justify-between">
         <ul className=" flex gap-4 lg:gap-6 items-center font-medium  ">
           <li className="">

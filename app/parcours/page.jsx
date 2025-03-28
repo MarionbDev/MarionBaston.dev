@@ -367,7 +367,7 @@ export default function MyBackground() {
               <Link
                 href={"/#me-contacter"}
                 aria-label="M'envoyer un email"
-                className="flex  items-center justify-center bg-purple dark:bg-purple/80 hover:bg-purple/60 shadow-free_grey  shadow-inner dark:hover:bg-purple_dark dark:hover:text-white  rounded-xl text-[#ffffff]  text-center p-2   w-full sm:w-[16rem]"
+                className="flex  items-center justify-center border-purple border-2 bg-purple rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:text-free_grey duration-300  text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
               >
                 <MessagesSquare
                   size="22"
@@ -381,7 +381,7 @@ export default function MyBackground() {
                 onClick={downloadCV}
                 role="button"
                 aria-label="Télécharger mon CV"
-                className=" border-2 dark:border-purple md:border-purple/40 hover:border-purple md:dark:border-purple/60 shadow-md  dark:hover:border-purple_dark dark:shadow-purple/80 dark:shadow-inner rounded-xl p-2 gap-2 px-4  text-purple dark:text-white"
+                className="  border-purple/40 hover:border-purple  dark:hover:border-purple_dark p-2 gap-2 text-[1rem] md:text-[1.07rem]  text-purple dark:hover:text-free_grey border-purple border-2   rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 duration-300 dark:text-free_grey"
               >
                 <Download id="download-cv" alt="icône de téléchargement  " />
                 <p className="flex gap-1">

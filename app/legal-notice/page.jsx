@@ -8,7 +8,7 @@ export default function LegalNoticePage() {
       <div className="container font-poppins text-txt_black dark:text-white mx-auto mt-20 py-8 flex flex-col gap-8 mb-8 leading-7 text-pretty">
         <h1 className="text-4xl font-bold">Mentions légales</h1>
         <Button
-          className="gap-2 w-fit shadow-purple/60 shadow-sm hover:bg-purple hover:text-white"
+          className="gap-2 w-fit border-2 rounded-full border-purple shadow-inner shadow-free_grey hover:bg-purple hover:text-white"
           asChild
         >
           <Link href="/">

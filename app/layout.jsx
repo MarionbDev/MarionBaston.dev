@@ -44,7 +44,7 @@ export const metadata = {
     canonical: "https://marionbaston.fr",
   },
   icons: {
-    icon: "../mbLogo.png",
+    icon: "../m_logo.png",
   },
   openGraph: {
     title: "Développeuse Web | React & Next.js - Marion Baston",

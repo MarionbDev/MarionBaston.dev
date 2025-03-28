@@ -41,7 +41,7 @@ export const metadata = {
     canonical: "https://marionbaston.fr/freelance",
   },
   icons: {
-    icon: "../../mbfreeLogo.png",
+    icon: "../../m_logo.png",
   },
   openGraph: {
     title: "Marion Baston | Développeuse Web Freelance",
@@ -69,13 +69,11 @@ export const metadata = {
 
 export default function FreelanceLayout({ children }) {
   return (
-    <html lang="fr">
-      <body>
-        <NavbarDeskFree />
-        <NavbarMobFree />
-        {children}
-        <FooterFree />
-      </body>
-    </html>
+    <>
+      <NavbarDeskFree />
+      <NavbarMobFree />
+      {children}
+      <FooterFree />
+    </>
   );
 }

@@ -28,9 +28,10 @@ export default function ServicesFree() {
         <CardServices
           title_1="Des site optimisés"
           title_2="et performants"
-          classNameImage="w-[9rem]"
-          bgColor=" bg-free_grey "
-          bgText="bg-free_yellow"
+          classNameImage="w-[9rem] "
+          bgColor=" bg-free_grey xl:bg-free_purple "
+          bgText="bg-free_yellow xl:bg-free_grey"
+          colorText="xl:text-free_grey "
           image={perf}
         />
         <CardServices
@@ -45,25 +46,25 @@ export default function ServicesFree() {
           title_1="Un site sur mesure"
           title_2="Adapté à vos besoins"
           classNameImage="w-[10rem] "
-          bgColor=" bg-free_purple"
-          bgText="bg-free_grey"
-          colorText="text-free_grey"
+          bgColor=" bg-free_purple xl:bg-free_grey"
+          bgText="bg-free_grey xl:bg-free_yellow"
+          colorText="text-free_grey xl:text-txt_black "
           image={surMesure}
         />
         <CardServices
           title_1="Refonte de"
           title_2="Site Web"
           classNameImage="w-[10rem] "
-          bgColor=" bg-free_grey "
-          bgText="bg-free_yellow"
+          bgColor=" bg-free_grey xl:bg-free_yellow "
+          bgText="bg-free_yellow xl:bg-free_grey"
           image={refonte}
         />
         <CardServices
           title_1="Maintenance"
           title_2="& Mise à jour"
           classNameImage="w-[11rem] sm:w-[13rem] md:translate-x-4 "
-          bgColor=" bg-free_yellow"
-          bgText="bg-free_grey"
+          bgColor=" bg-free_yellow xl:bg-free_grey"
+          bgText="bg-free_grey xl:bg-free_yellow"
           image={update}
         />
         <CardServices

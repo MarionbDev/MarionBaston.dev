@@ -53,18 +53,11 @@ export default function SkillsAndTech() {
               </h2>
               <span className=" mb-[0.48rem] sm:mb-[0.1rem] w-3 h-3 rounded-full bg-purple "></span>
             </div>
-            <p className=" font-poppins pt-2 md:pt-8 mb-12 md:mb-24 text-[1rem] md:text-[1.1rem] text-pretty">
-              J'ai acquis des compétences en développement{" "}
-              <span className=" font-bold text-[1.2rem] text-purple dark:text-[#d29aec]">
-                frontend
-              </span>{" "}
-              et{" "}
-              <span className=" font-bold text-[1.2rem] text-purple dark:text-[#d29aec]">
-                backend
-              </span>
-              , me permettant de concevoir des applications modernes,
-              performantes et adaptées aux besoins des utilisateurs. Toujours en
-              quête d'amélioration, j'aime explorer de nouvelles technologies et
+            <p className=" font-poppins pt-2 md:pt-8 mb-12 md:mb-24 text-[1rem] md:text-[1.1rem] text-pretty leading-7">
+              J'ai acquis des compétences en développement frontend et backend ,
+              me permettant de concevoir des applications modernes, performantes
+              et adaptées aux besoins des utilisateurs. Toujours en quête
+              d'amélioration, j'aime explorer de nouvelles technologies et
               bonnes pratiques pour optimiser mes projets. <br /> Je continue de
               développer mes compétences en travaillant sur des projets variés,
               incluant des collaborations en freelance.

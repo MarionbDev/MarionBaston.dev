@@ -20,13 +20,9 @@ export default async function ProjectPage({ params }) {
 
   return (
     <div className="font-poppins text-txt_black dark:text-white mt-32 mx-4 lg:mx-20 flex flex-col gap-8 pb-32">
-      <div className="flex justify-center">
+      <div className="flex ">
         <Link href={"/portfolio"} className="w-8">
-          <ArrowLeftCircleIcon
-            size={33}
-            color="#8300e9"
-            className=" opacity-70 dark:opacity-60"
-          />
+          <ArrowLeftCircleIcon size={33} color="#5e00b8" className="" />
         </Link>
       </div>
       <div className="flex flex-col gap-8 md:gap-12 mx-4 sm:mx-14 md:mx-20 lg:mx-32">
