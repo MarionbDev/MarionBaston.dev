@@ -46,9 +46,9 @@
 /* Conteneur des éléments défilants */
 .scroller_inner {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   min-width: 100%;
-  animation: scroll 15s linear infinite;
+  animation: scroll 10s linear infinite;
   white-space: nowrap;
   will-change: transform;
 }
@@ -71,6 +71,7 @@
 
 @media only screen and (min-width: 1200px) {
   .scroller_inner {
+    gap: 40px;
     animation: scroll 25s linear infinite;
   }
 }
