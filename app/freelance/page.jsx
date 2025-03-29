@@ -14,22 +14,22 @@ export default function FreelancePage() {
     >
       <Header />
       <div className="flex flex-col gap-24">
-        <div id="services" className="pt-24 md:pt-28">
+        <div id="/freelance/services" className="pt-16 md:pt-28">
           <Services />
         </div>
-        <div id="free-project" className="">
+        <div id="/freelance/free-project" className="">
           <ProjectsFree />
         </div>
-        <div id="step-project" className="">
+        <div id="/freelance/step-project" className="">
           <ProjectStep />
         </div>
-        <div id="support" className="">
+        <div id="/freelance/support" className="">
           <Support />
         </div>
-        <div id="testimonial" className="">
+        <div id="/freelance/testimonial" className="">
           <Testimonials />
         </div>
-        <div id="contact-me" className="my-20">
+        <div id="/freelance/contact-me" className="my-20">
           <ContactMe />
         </div>
       </div>

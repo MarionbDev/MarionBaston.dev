@@ -5,7 +5,7 @@ import not_found from "../public/404_not-found.jpg";
 export default function Custom404() {
   return (
     <div className=" flex flex-col justify-center items-center h-screen">
-      <Image src={not_found} width={640} height={320} />
+      <Image src={not_found} width={640} height={320} alt="Page non trouvée" />
       <h1 className=" text-[20px] mb-4 text-center">
         Oops!! La page que vous cherchez n'existe plus ou a été déplacée.
         <br /> Mais on en a plein d'autres à vous montrer !{" "}

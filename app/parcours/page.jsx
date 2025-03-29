@@ -49,7 +49,6 @@ export default function MyBackground() {
           </h1>
           <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
         </div>
-
         <p className=" text-pretty leading-7">
           Mon parcours a commencé dans un tout autre domaine. Avec un Bac en
           comptabilité et un BTS en gestion, j’ai évolué pendant plusieurs
@@ -58,7 +57,6 @@ export default function MyBackground() {
           pour la création et la technologie m’a naturellement conduite vers le
           développement web.
         </p>
-
         <div className="lg:mx-20 mt-6">
           <motion.section
             initial="hide"
@@ -103,10 +101,11 @@ export default function MyBackground() {
                   hackathons.
                 </p>
 
-                <p className="text-pretty leading-7">
+                <p className="text-pretty leading-7 font-semibold">
                   💡 Actuellement, je suis toujours en poste dans la grande
                   distribution, je développe également des projets web en
-                  freelance, tout en recherchant une opportunité en entreprise.
+                  freelance, tout en recherchant une opportunité en entreprise
+                  en CDI.
                 </p>
                 <div className="flex flex-col gap-1">
                   <p>Pourquoi le web ?</p>
@@ -351,6 +350,23 @@ export default function MyBackground() {
               </motion.div>
             </motion.section>
           </div>
+          <motion.section
+            initial="hide"
+            whileInView="show"
+            exit="hide"
+            variants={sectionTitle}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <p className="mt-20 text-center text-[1.2rem] ">
+                Toujours en quête de nouveaux défis, je serais ravie d’échanger
+                avec vous sur de belles opportunités en développement web !
+              </p>
+            </motion.div>
+          </motion.section>
         </div>
         <motion.section
           initial="hide"
@@ -363,7 +379,7 @@ export default function MyBackground() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex flex-col items-center md:flex-row md:justify-center my-32 gap-10 text-[1rem] md:text-[1.07rem]">
+            <div className="flex flex-col items-center md:flex-row md:justify-center mt-16 mb-32 gap-10 text-[1rem] md:text-[1.07rem]">
               <Link
                 href={"/#me-contacter"}
                 aria-label="M'envoyer un email"

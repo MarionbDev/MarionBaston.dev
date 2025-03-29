@@ -46,7 +46,7 @@ export default function NavbarMobFree() {
                 <MenubarItem className="text-[1.2rem] ">Services</MenubarItem>
               </Link>
               <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className="text-[1.2rem] shadow-inner shadow-free_grey border-2 border-free_yellow bg-free_yellow text-free_purple rounded-full px-6">
+                <MenubarItem className=" text-[1.2rem] shadow-inner shadow-free_grey border-2 border-free_yellow bg-free_yellow text-free_purple rounded-full px-6">
                   Demandez un devis
                 </MenubarItem>
               </Link>
