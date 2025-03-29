@@ -6,3 +6,71 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* HEADER */
+
+.scroller {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: hsla(271, 100%, 36%, 0.05);
+  /* border-top: solid 2px hsla(0, 0%, 0%, 0.285);
+  border-bottom: solid 2px hsla(0, 0%, 0%, 0.285); */
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+/* Effet de fondu pour une meilleure intégration visuelle */
+.scroller::before,
+.scroller::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scroller::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
+}
+
+.scroller::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent);
+}
+
+/* Conteneur des éléments défilants */
+.scroller_inner {
+  display: flex;
+  gap: 40px;
+  min-width: 100%;
+  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* Animation fluide pour un défilement continu */
+@keyframes scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Style des éléments du slider */
+.banner-slide {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 1200px) {
+  .scroller_inner {
+    animation: scroll 25s linear infinite;
+  }
+}

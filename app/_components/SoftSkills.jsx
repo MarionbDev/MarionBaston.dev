@@ -93,7 +93,7 @@ export default function SoftSkills() {
               <div className="flex flex-col items-center gap-8">
                 <div className="flex flex-col">
                   <h2 className="text-xl text-center  font-semibold">
-                    Créativité
+                    Curiosité
                   </h2>
                   <span className="wave-skills relative flex justify-center "></span>
                 </div>
@@ -106,8 +106,9 @@ export default function SoftSkills() {
                 />
               </div>
               <p className="py-6 text-[1rem] md:text-[1.07rem] text-center leading-7">
-                Aptitude à concevoir des solutions innovantes et à adopter une
-                approche créative pour résoudre les problèmes.
+                {" "}
+                Envie d'apprendre et d'explorer de nouveaux concepts en
+                permanence.
               </p>
             </div>
             <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
