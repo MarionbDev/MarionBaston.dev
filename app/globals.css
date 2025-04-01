@@ -206,12 +206,12 @@ html {
 
 /* RESPONSIVE */
 
-@media only screen and (min-width: 447px) {
+/* @media only screen and (min-width: 447px) {
   .wave-home::after {
     left: 330px;
     top: 40px;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -270,7 +270,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 591px) {
   .wave-about {
     display: none;
   }

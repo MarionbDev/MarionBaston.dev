@@ -15,12 +15,12 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="  mx-6 md:mx-20 xl:mx-20">
+    <div className="  mx-6 md:mx-10 lg:mx-20 ">
       <div className=" xl:h-[100vh] text-font mb:pb-8   ">
-        <div className="flex flex-col-reverse xl:flex-row justify-around items-center h-full  ">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-16 justify-around  items-center h-full  ">
           <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[50rem] flex flex-col gap-6 dark:text-white">
             <div className="flex flex-col items-start gap-2">
-              <h1 className="  mt-8 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
+              <h1 className="  mt-2 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
                 Bonjour, je suis&nbsp;
                 <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold slide-name dark:text-[#c59ff7] ">
                   Marion
@@ -28,13 +28,13 @@ export default function AboutMe() {
                 <span className="text-[1.5rem] md:text-[2.2rem] ">👋</span>
               </h1>
               <div className=" ">
-                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[1.9rem] lg:text-[2.5rem] mb-2">
-                  Développeuse Frontend
+                <h2 className=" text-[#8300E9] font-bold  slide-name-dev leading-none text-[1.9rem] lg:text-[1.8rem] xl:text-[2.3rem] mb-2">
+                  Développeuse Web Fullstack
                 </h2>
                 <span className=" wave-about  "></span>
               </div>
             </div>
-            <div className="flex flex-col gap-2 text-pretty  xl:pr-[7rem]">
+            <div className="flex flex-col gap-2 text-pretty ">
               <p className=" text-[1rem] md:text-[1.07rem] leading-7   ">
                 <span className="font-bold text-[1.1rem] text-purple dark:text-[#d29aec]">
                   Curieuse et passionnée{" "}
@@ -94,7 +94,7 @@ export default function AboutMe() {
                       alt="icône de téléchargement  "
                     />
                     <p className="flex gap-1">
-                      <span className="hidden lg:flex">Téléchargez mon</span> CV
+                      <span className="hidden xl:flex">Téléchargez mon</span> CV
                     </p>
                   </Button>
                   <ul className="flex items-center gap-4 md:gap-2">
@@ -132,7 +132,7 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6 scale-90 ">
+          <div className="flex justify-center items-center -rotate-6 scale-75 ">
             <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">
               <Image
                 src={myPhoto}
