@@ -1,7 +1,3 @@
-import gitPng from "@/public/assets/logos/git.png";
-import javascriptPng from "@/public/assets/logos/javascript.png";
-import nextPng from "@/public/assets/logos/next.png";
-import tailwindPng from "@/public/assets/logos/tailwind.png";
 // import drawing_and_co
 import auth from "@/public/assets/drawing_and_co/auth.png";
 import auth_admin_admin from "@/public/assets/drawing_and_co/auth_admin_admin.png";
@@ -21,11 +17,11 @@ import mobile_1 from "@/public/assets/drawing_and_co/responsive/mobile.png";
 import mobile_2 from "@/public/assets/drawing_and_co/responsive/mobile_1.png";
 import tablette from "@/public/assets/drawing_and_co/responsive/tablette.png";
 //import portfolio
-import portfolioEmail from "@/public/assets/portfolio_email.png";
-import portfolioLogin from "@/public/assets/portfolio_login.png";
-import portfolio from "@/public/assets/portfolio_marion.png";
-import portfolioPassword from "@/public/assets/portfolio_password.png";
-import portfolioProfile from "@/public/assets/portfolio_profile.png";
+// import portfolioEmail from "@/public/assets/portfolio_email.png";
+// import portfolioLogin from "@/public/assets/portfolio_login.png";
+// import portfolio from "@/public/assets/portfolio_marion.png";
+// import portfolioPassword from "@/public/assets/portfolio_password.png";
+// import portfolioProfile from "@/public/assets/portfolio_profile.png";
 
 const sideProjects = [
   {
@@ -209,79 +205,79 @@ const sideProjects = [
       },
     ],
   },
-  {
-    id: 2,
-    type: "side",
-    date: "2023-10-01",
-    title: "Marion Baston",
-    description: "",
-    time: "3 semaines, évolutif",
-    soloTeam: null,
-    client: "projet perso ",
-    project_steps: [
-      {
-        step_description: "Mes premiers pas avec Next.js",
-      },
-      {
-        step_description:
-          "Conception et maquettage d’une interface utilisateur web dynamique, responsive",
-      },
-      {
-        step_description: "Création d'une interface d'administration",
-      },
-      {
-        step_description:
-          "Intégration de Supabase pour développer l'interface d'administration avec connexion utilisateur ",
-      },
-      {
-        step_description:
-          "Fonctionnalités : Connexion, gestion du mot de passe (modification du mot de passe et modification des informations de l'utilisateur)",
-      },
-    ],
-    technos: [
-      {
-        title: "javascript",
-        photo_url: javascriptPng,
-      },
-      {
-        title: "next",
-        photo_url: nextPng,
-      },
-      {
-        title: "tailwind",
-        photo_url: tailwindPng,
-      },
-      {
-        title: "git",
-        photo_url: gitPng,
-      },
-    ],
-    github_url: "https://github.com/MarionbDev/Portfolio",
-    website_url: null,
-    video_url: null,
-    picture_website: [
-      {
-        title: null,
-        image: portfolio,
-      },
-      {
-        title: "Interface de connexion administrateur",
-        image: portfolioLogin,
-      },
-      {
-        title: "Profil administrateur",
-        image: portfolioProfile,
-      },
-      {
-        title: "Changement de l'email administrateur",
-        image: portfolioEmail,
-      },
-      {
-        title: "Changement du mot de passe administrateur",
-        image: portfolioPassword,
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   type: "side",
+  //   date: "2023-10-01",
+  //   title: "Marion Baston",
+  //   description: "",
+  //   time: "3 semaines, évolutif",
+  //   soloTeam: null,
+  //   client: "projet perso ",
+  //   project_steps: [
+  //     {
+  //       step_description: "Mes premiers pas avec Next.js",
+  //     },
+  //     {
+  //       step_description:
+  //         "Conception et maquettage d’une interface utilisateur web dynamique, responsive",
+  //     },
+  //     {
+  //       step_description: "Création d'une interface d'administration",
+  //     },
+  //     {
+  //       step_description:
+  //         "Intégration de Supabase pour développer l'interface d'administration avec connexion utilisateur ",
+  //     },
+  //     {
+  //       step_description:
+  //         "Fonctionnalités : Connexion, gestion du mot de passe (modification du mot de passe et modification des informations de l'utilisateur)",
+  //     },
+  //   ],
+  //   technos: [
+  //     {
+  //       title: "javascript",
+  //       photo_url: javascriptPng,
+  //     },
+  //     {
+  //       title: "next",
+  //       photo_url: nextPng,
+  //     },
+  //     {
+  //       title: "tailwind",
+  //       photo_url: tailwindPng,
+  //     },
+  //     {
+  //       title: "git",
+  //       photo_url: gitPng,
+  //     },
+  //   ],
+  //   github_url: "https://github.com/MarionbDev/Portfolio",
+  //   website_url: null,
+  //   video_url: null,
+  //   picture_website: [
+  //     {
+  //       title: null,
+  //       image: portfolio,
+  //     },
+  //     {
+  //       title: "Interface de connexion administrateur",
+  //       image: portfolioLogin,
+  //     },
+  //     {
+  //       title: "Profil administrateur",
+  //       image: portfolioProfile,
+  //     },
+  //     {
+  //       title: "Changement de l'email administrateur",
+  //       image: portfolioEmail,
+  //     },
+  //     {
+  //       title: "Changement du mot de passe administrateur",
+  //       image: portfolioPassword,
+  //     },
+  //   ],
+  // },
 ];
 
 export default sideProjects;
