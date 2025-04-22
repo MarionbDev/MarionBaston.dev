@@ -76,7 +76,7 @@ export default function ContactPage() {
                   en CDI en tant que{" "}
                   <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
                     <span className="absolute inset-0 h-[82%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
-                    Développeuse Frontend
+                    Développeuse Fullstack
                   </span>{" "}
                 </p>
                 <div className="md:flex md:gap-2">
