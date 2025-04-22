@@ -76,7 +76,7 @@ export default function HeaderFree() {
             width={600}
             height={300}
             alt="Photo de présentation du site"
-            className="absolute -bottom-10 -right-12 w-[30%] lg h-auto rounded-md border-l-2 border-t-2 border-[#ffff] shadow-md"
+            className="absolute -bottom-10 -right-12 w-[30%] lg h-auto rounded-md border-l-2 border-t-2 border-[#ffff] shadow-md "
           />
         </div>
       </div>
