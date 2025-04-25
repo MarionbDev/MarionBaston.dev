@@ -18,9 +18,9 @@ export default function AboutMe() {
     <div className="  mx-6 md:mx-10 lg:mx-20 ">
       <div className=" xl:h-[100vh] text-font mb:pb-8   ">
         <div className="flex flex-col-reverse lg:flex-row lg:gap-16 justify-around  items-center h-full  ">
-          <div className="font-poppins font-normal -tracking-tight text-txt_black xl:w-[50rem] flex flex-col gap-6 dark:text-white">
+          <div className="font-poppins font-normal -tracking-tight text-txt_black lg:w-[50rem] flex flex-col gap-6 dark:text-white">
             <div className="flex flex-col items-start gap-2">
-              <h1 className="  mt-2 sm:mt-20 lg:mt-0 text-[1.5rem]  dark:text-white">
+              <h1 className="  mt-8 sm:mt-16 lg:mt-0 text-[1.5rem]  dark:text-white">
                 Bonjour, je suis&nbsp;
                 <span className=" text-[1.5rem] md:text-[2.2rem]  font-semibold slide-name dark:text-[#c59ff7] ">
                   Marion
@@ -132,18 +132,18 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center -rotate-6 scale-75 ">
-            <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">
-              <Image
-                src={myPhoto}
-                alt="ma photo de profil"
-                width={900}
-                height={400}
-                className=" w-[14.5rem] sm:w-[21rem] rounded-b-[6rem]   -translate-x-3 -rotate-12 absolute z-10 bottom-5 sm:bottom-10 rounded-r-[5.3rem] rounded-l-[5.8rem] "
-              />
-              <div className="border-two-gradient border-2 z-20 p-28 sm:p-44 relative rotate-12 "></div>
+          <div className="flex justify-center items-center  border-2 border-free_purple rounded-full p-1 ">
+            {/* <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">*/}
+            <Image
+              src={myPhoto}
+              alt="ma photo de profil"
+              width={900}
+              height={400}
+              className=" w-[10rem] md:w-[15rem] lg:w-[17rem] rounded-full bg-free_yellow "
+            />
+            {/* <div className="border-two-gradient border-2 z-20 p-28 sm:p-44 relative rotate-12 "></div>
               <span className="absolute z-0 inset-0 m-auto photo-gradient    rounded-bl-[12.2rem] rounded-tr-[12rem] rounded-tl-[24rem] rounded-br-[18rem] w-[88%] rotate-12 mt-5 mb-3 md:mb-4 "></span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
