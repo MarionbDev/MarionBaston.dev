@@ -8,7 +8,7 @@ export const POST = async (request) => {
     const body = await request.json();
     const { firstname, lastname, email, message } = body;
 
-    const EMAIL_TO = "marionbaston84@gmail.com";
+    const EMAIL_TO = "contact@marionbaston.fr";
 
     if (!EMAIL_TO) {
       throw new Error(

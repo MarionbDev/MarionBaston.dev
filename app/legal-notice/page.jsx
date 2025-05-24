@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
+export const metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
 export default function LegalNoticePage() {
   return (
     <>
@@ -41,19 +48,19 @@ export default function LegalNoticePage() {
             </p>
             <p>
               <span className="font-semibold">Propriétaire du site:</span>{" "}
-              Marion Baston - Contact : marionbaston84@gmail.com
+              Marion Baston - Contact : contact@marionbaston.fr
             </p>
             <p>
               <span className="font-semibold">
                 Directeur de la publication:
               </span>{" "}
-              Marion Baston - Contact : marionbaston84@gmail.com
+              Marion Baston - Contact : contact@marionbaston.fr
             </p>
             <p>
               <span className="font-semibold">
                 Délégué à la protection des données:
               </span>{" "}
-              Marion Baston - Contact : marionbaston84@gmail.com
+              Marion Baston - Contact : contact@marionbaston.fr
             </p>
             <p>
               <span className="font-semibold">Hébergeur:</span> Vercel Inc. 440
