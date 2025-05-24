@@ -50,11 +50,11 @@ export const metadata = {
     title: "Développeuse Web | React & Next.js - Marion Baston",
     description:
       "Développeuse web spécialisée en React.js et Next.js, je suis en recherche active d’un CDD ou CDI. Découvrez mon portfolio et mes réalisations.",
-    url: "https://marionbaston.fr",
+    url: "https://www.marionbaston.fr",
     type: "profile",
     images: [
       {
-        url: "https://marionbaston.fr/portfolio.png",
+        url: "https://www.marionbaston.fr/portfolio.png",
         width: 1200,
         height: 630,
         alt: "Marion Baston - Développeuse Web Frontend",
@@ -66,7 +66,7 @@ export const metadata = {
     title: "Développeuse Web | React & Next.js - Marion Baston",
     description:
       "Développeuse web spécialisée en React.js et Next.js, je suis en recherche active d’un CDD ou CDI. Découvrez mon portfolio et mes réalisations.",
-    images: ["https://marionbaston.fr/portfolio.png"],
+    images: ["https://www.marionbaston.fr/portfolio.png"],
   },
 };
 
