@@ -21,6 +21,7 @@ export default function ContactForm() {
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
 
@@ -31,6 +32,8 @@ export default function ContactForm() {
       setIsLoading(true);
       if (!acceptedPrivacyPolicy) {
         toast.warning("Veuillez accepter la politique de confidentialté.");
+        setIsLoading(false);
+        return;
       } else {
         const response = await fetch(
           `${process.env.NEXT_PUBLIC_API_URL}/api/email/`,
@@ -39,7 +42,13 @@ export default function ContactForm() {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ lastname, firstname, email, message }),
+            body: JSON.stringify({
+              lastname,
+              firstname,
+              email,
+              message,
+              company,
+            }),
           }
         );
 
@@ -189,6 +198,28 @@ export default function ContactForm() {
               </Label>
             </div>
           </CardContent>
+          <div
+            style={{
+              position: "absolute",
+              left: "-9999px",
+              top: "auto",
+              width: "1px",
+              height: "1px",
+              overflow: "hidden",
+            }}
+          >
+            <label htmlFor="company">Company</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              autoComplete="off"
+              aria-hidden="true"
+              tabIndex={-1}
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
+            />
+          </div>
           <CardFooter>
             <Button
               type="submit"

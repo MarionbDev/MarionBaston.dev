@@ -6,7 +6,7 @@ export const POST = async (request) => {
   try {
     // Parse les données du formulaire
     const body = await request.json();
-    const { firstname, lastname, email, message } = body;
+    const { firstname, lastname, email, message, company } = body;
 
     const EMAIL_TO = "contact@marionbaston.fr";
 
@@ -17,6 +17,16 @@ export const POST = async (request) => {
     }
 
     // console.log("Envoi de l'email vers:", EMAIL_TO);
+
+    // 🛡️ Anti-spam : honeypot
+    if (company && company.trim() !== "") {
+      return NextResponse.json({ error: "Spam détecté" }, { status: 403 });
+    }
+
+    // 🛠️ Validation simple de l'email
+    if (!email || !email.includes("@")) {
+      return NextResponse.json({ error: "Email invalide" }, { status: 400 });
+    }
 
     // Envoi de l'email via Resend
     const { error } = await resend.emails.send({
