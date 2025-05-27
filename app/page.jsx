@@ -26,7 +26,7 @@ export default function Home() {
       <div id="stacks" className="px-6 sm:px-14 md:px-28 md:pb-[6rem] pt-20 ">
         <Stacks />
       </div>
-      <div id="me-contacter" className=" pb-20 pt-20">
+      <div className=" pb-20 pt-20">
         <ContactPage />
       </div>
     </div>
