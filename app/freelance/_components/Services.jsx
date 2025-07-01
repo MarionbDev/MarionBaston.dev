@@ -24,7 +24,7 @@ export default function ServicesFree() {
           SEO et surtout simple à utiliser.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center sm:flex-row flex-wrap gap-4 xl:gap-x-10 3xl:mx-48">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto xl:gap-10 3xl:mx-48">
         <CardServices
           title_1="Des site optimisés"
           title_2="et performants"
@@ -37,7 +37,7 @@ export default function ServicesFree() {
         <CardServices
           title_1="Un site responsive"
           title_2="& SEO friendly"
-          classNameImage="w-[11rem] sm:w-[12rem]"
+          classNameImage="w-[11rem]"
           bgColor=" bg-free_yellow xl:bg-free_grey"
           bgText="bg-free_grey xl:bg-free_yellow"
           image={responsive}
@@ -46,18 +46,16 @@ export default function ServicesFree() {
           title_1="Un site sur mesure"
           title_2="Adapté à vos besoins"
           classNameImage="w-[10rem] "
-          bgColor=" bg-free_purple xl:bg-free_purple"
+          bgColor=" bg-pale_yellow"
           bgText="bg-free_grey xl:bg-free_grey"
-          colorText="text-free_grey xl:text-free_grey "
           image={surMesure}
         />
         <CardServices
           title_1="Refonte de"
           title_2="Site Web"
           classNameImage="w-[10rem] "
-          bgColor=" bg-free_grey xl:bg-free_purple "
+          bgColor=" bg-free_grey xl:bg-pale_yellow "
           bgText="bg-free_yellow xl:bg-free_grey"
-          colorText=" xl:text-free_grey "
           image={refonte}
         />
         <CardServices
@@ -72,9 +70,8 @@ export default function ServicesFree() {
           title_1="Analyse & suivi"
           title_2="des performances"
           classNameImage="w-[10rem] sm:w-[11rem] "
-          bgColor=" bg-free_purple xl:bg-free_grey"
+          bgColor=" bg-pale_yellow xl:bg-free_grey"
           bgText="bg-free_grey xl:bg-free_yellow"
-          colorText="text-free_grey"
           image={suivi}
         />
       </div>
@@ -87,7 +84,7 @@ export default function ServicesFree() {
             Parlons-en ! Je vous propose des solutions adaptées à vos besoins.
           </p>
 
-          <CustomLink href="#me-contacter" className="w-fit border-2 ">
+          <CustomLink href="#me-contacter" className="w-fit mx-auto md:mx-0 ">
             Obtenez votre proposition gratuitement
           </CustomLink>
         </div>

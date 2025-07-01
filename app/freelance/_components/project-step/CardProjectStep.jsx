@@ -11,11 +11,11 @@ export default function CardProjectStep({
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChangeCheckBox = () => {
-    setIsChecked(isChecked);
+    setIsChecked(!isChecked);
   };
 
   return (
-    <div className="border-t-[2px] border-x-[2px] border-t-[#442c74]  border-x-[#442c74]  border-b-4 rounded-3xl max-w-[800px] w-full ">
+    <div className="border-[1px]  rounded-3xl max-w-[800px] w-full ">
       <input
         type="checkbox"
         name="menu"
@@ -25,7 +25,7 @@ export default function CardProjectStep({
       />
       <label
         htmlFor={numberChk}
-        className="cursor-pointer block peer-checked:bg-free_yellow p-4 rounded-t-3xl"
+        className="cursor-pointer block peer-checked:bg-pale_yellow p-4 rounded-t-3xl"
       >
         <div className="flex justify-between items-center ">
           <div className="flex gap-3 items-center ">
@@ -34,14 +34,11 @@ export default function CardProjectStep({
           {!isChecked && (
             <Plus size={22} className="mr-4 peer-checked:hidden " />
           )}
-          {isChecked && <Minus size={22} className="" />}{" "}
+          {isChecked && <Minus size={22} className="mr-4" />}{" "}
         </div>
       </label>
-      <div
-        // class="partie-1"
-        className="hidden peer-checked:block p-4 bg-free_yellow rounded-b-3xl "
-      >
-        <span className="flex w-full border-t-2 border-black pb-4"></span>
+      <div className="hidden peer-checked:block p-4 bg-pale_yellow rounded-b-3xl ">
+        <span className="flex w-full border-t-[1px] border-black pb-4"></span>
         <p>{description}</p>
       </div>
     </div>

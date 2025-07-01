@@ -45,9 +45,9 @@ export default function NavbarDeskFree() {
       </nav>
 
       <Link
-        href={"/#me-contacter"}
+        href={"/freelance/#me-contacter"}
         aria-label="me contacter"
-        className=" font-medium bg-free_yellow rounded-full px-3 py-1 shadow-inner shadow-free_grey border-2 border-free_yellow hover:bg-free_grey duration-300 "
+        className=" font-medium bg-custom-radial rounded-full px-3 py-1 text-white shadow-inner shadow-free_grey border-[1px] border-free_purple/70 hover:text-free_purple hover:bg-custom-grey duration-300 "
       >
         Demandez un devis
       </Link>

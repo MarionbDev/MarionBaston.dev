@@ -45,7 +45,7 @@ export default function ProjectStepFree() {
           title="Mise en ligne"
           description="Livraison et accompagnement pour la prise en main"
         />
-        <div className=" border-t-[2px] border-x-[2px] border-t-[#442c74]  border-x-[#442c74]  border-b-4 rounded-3xl p-4  gap-2 max-w-[800px] w-full">
+        <div className=" border-t-[1px] border-x-[1px]  border-b-[3px] rounded-3xl p-4  gap-2 max-w-[800px] w-full">
           <Image
             src={Search}
             width={40}
