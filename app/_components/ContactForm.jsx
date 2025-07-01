@@ -94,7 +94,7 @@ export default function ContactForm() {
 
   return (
     <div className=" text-txt_black dark:text-white  ">
-      <Card className="w-[23rem] md:w-[31rem]  border-purple tracking-wide ">
+      <Card className="w-[23rem] md:w-[31rem]  border tracking-wide ">
         <form onSubmit={handleSubmitFormContact}>
           <CardHeader>
             <CardDescription className=" text-[1rem] font-medium ">
