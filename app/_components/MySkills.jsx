@@ -4,7 +4,7 @@ export default function MySkills() {
   return (
     <div className="">
       <div className="  font-poppins flex flex-wrap justify-center sm:justify-start gap-14 lg:gap-22">
-        <div className="bg-gradient-card rounded-md shadow-sm shadow-purple px-4 py-8 gap-6 mx-auto max-w-[36rem]">
+        <div className="bg-gradient-card rounded-md  px-4 py-8 gap-6 mx-auto max-w-[36rem]">
           <div className="flex flex-col ">
             <h2 className=" text-txt_black dark:text-white font-semibold text-lg lg:text-xl text-center">
               DEVELOPPEMENT WEB FRONTEND
@@ -74,7 +74,7 @@ export default function MySkills() {
             </ul>
           </div>
         </div>
-        <div className="bg-gradient-card rounded-md shadow-sm shadow-purple px-4 py-8 gap-6 mx-auto max-w-[36rem] ">
+        <div className="bg-gradient-card rounded-md px-4 py-8 gap-6 mx-auto max-w-[36rem] ">
           <div className=" flex flex-col ">
             <h2 className=" text-txt_black dark:text-white font-semibold text-lg lg:text-xl text-center">
               DEVELOPPEMENT WEB BACKEND

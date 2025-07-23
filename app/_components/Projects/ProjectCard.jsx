@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className=" bg-gradient-card shadow-sm shadow-purple font-poppins text-txt_black dark:text-white flex flex-col items-center max-w-[25rem] border-none   ">
+      <Card className=" bg-gradient-card font-poppins text-txt_black dark:text-white flex flex-col items-center max-w-[25rem] border-none   ">
         <CardHeader className="p-3">
           {project.picture_website ? (
             <div className=" mx-auto flex items-center">
@@ -50,15 +50,15 @@ export default function ProjectCard({ project }) {
               />
             </div>
           ) : null}{" "}
-          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl text-purple md:dark:text-purple_dark font-semibold pt-3 mx-4  ">
+          <CardTitle className="flex items-center text-xl text-center sm:text-left lg:text-2xl font-semibold pt-3 mx-4  ">
             <Link
               href={`/portfolio/${createSlug(project.title)}`}
-              className="name-gradient flex gap-2 items-center "
+              className="flex gap-2 items-center "
             >
               {project.title}
               <CircleArrowOutUpRight
                 size={19}
-                className=" text-purple dark:text-free_yellow"
+                className="  dark:text-free_yellow"
               />
             </Link>
           </CardTitle>

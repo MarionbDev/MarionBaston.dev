@@ -383,7 +383,7 @@ export default function MyBackground() {
               <Link
                 href={"/#me-contacter"}
                 aria-label="M'envoyer un email"
-                className="flex  items-center justify-center border-purple border-2 bg-purple rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:text-free_grey duration-300  text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
+                className="flex  items-center justify-center  bg-purple rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:text-free_grey duration-300  text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
               >
                 <MessagesSquare
                   size="22"

@@ -224,7 +224,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="border-purple border-2 bg-purple text-white rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:text-free_purple dark:text-free_grey hover:bg-purple/10 duration-300  text-[1rem] ml-auto gap-2"
+              className=" bg-purple text-white rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:text-free_purple dark:text-free_grey hover:bg-purple/10 duration-300  text-[1rem] ml-auto gap-2"
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />

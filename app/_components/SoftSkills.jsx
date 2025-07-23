@@ -68,7 +68,7 @@ export default function SoftSkills() {
           transition={{ duration: 0.5 }}
         >
           <div className="  flex flex-col justify-center items-center  md:items-stretch    md:flex-row  md:flex-wrap xl:flex-nowrap gap-6 md:gap-10   ">
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6  gap-4 sm:gap-6 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6  gap-4 sm:gap-6 flex flex-col ">
               <div className="flex flex-col items-center gap-8">
                 <div className="flex flex-col">
                   <h2 className="text-xl text-center  font-semibold">
@@ -89,7 +89,7 @@ export default function SoftSkills() {
                 aux changements.{" "}
               </p>
             </div>{" "}
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
               <div className="flex flex-col items-center gap-8">
                 <div className="flex flex-col">
                   <h2 className="text-xl text-center  font-semibold">
@@ -111,7 +111,7 @@ export default function SoftSkills() {
                 permanence.
               </p>
             </div>
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
               <div className="flex flex-col items-center gap-8">
                 <div className="flex flex-col">
                   <h2 className="text-xl text-center  font-semibold">
@@ -132,7 +132,7 @@ export default function SoftSkills() {
                 collaboration harmonieuse.
               </p>
             </div>
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-6 py-6 gap-4 sm:gap-6 flex flex-col ">
               <div className="flex flex-col items-center gap-8">
                 <div className="flex flex-col">
                   <h2 className="text-xl text-center  font-semibold">

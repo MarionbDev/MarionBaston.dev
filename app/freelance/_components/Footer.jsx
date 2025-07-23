@@ -1,7 +1,7 @@
 export default function FooterFree() {
   return (
-    <div className=" bg-custom-radial p-10">
-      <ul className=" text-white">
+    <div className=" bg-bg_greyLight p-10">
+      <ul className=" text-txt_black">
         <li>Accueil</li>
         <li>Services</li>
         <li>Contact</li>
