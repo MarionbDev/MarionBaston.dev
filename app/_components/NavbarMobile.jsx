@@ -1,8 +1,9 @@
 "use client";
 
-import { Github, Linkedin, Menu } from "lucide-react";
+import { Github, Linkedin, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import {
   Menubar,
   MenubarContent,
@@ -14,10 +15,17 @@ import { ModeToggle } from "./ModeToggle";
 
 export default function NavbarMobile() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const hideNavbarOn = ["/developpeuse-web-freelance"];
 
   if (hideNavbarOn.includes(pathname)) return null;
+
   return (
     <div className=" flex navSupp justify-center  ">
       <div className=" flex justify-between items-center  w-full px-8 md:px-12 pt-6 pb-2 fixed z-50  bg-bg_white dark:bg-[#181616]  ">
@@ -28,9 +36,18 @@ export default function NavbarMobile() {
             <MenubarTrigger
               tabIndex={0}
               aria-label="barre de navigation "
+              onClick={() => setIsOpen(!isOpen)}
               className="p-0 m-0"
             >
-              <Menu className="w-9 h-9  text-purple  " />
+              {hasMounted ? (
+                isOpen ? (
+                  <X className="w-9 h-9 text-free_purple" />
+                ) : (
+                  <Menu className="w-9 h-9 text-free_purple" />
+                )
+              ) : (
+                <Menu className="w-9 h-9 text-free_purple" />
+              )}
             </MenubarTrigger>
             <MenubarContent
               sideOffset={2}

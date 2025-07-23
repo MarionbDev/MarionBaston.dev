@@ -74,7 +74,7 @@ export default function Navbar() {
       <Link
         href={"/#me-contacter"}
         aria-label="me contacter"
-        className="border-purple border-2 bg-purple text-white rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:hover:text-free_grey duration-300  "
+        className=" bg-purple text-white rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:hover:text-free_grey duration-300  "
       >
         Contactez-moi
       </Link>

@@ -68,7 +68,7 @@ export default function Stacks() {
           transition={{ duration: 0.5 }}
         >
           <div className="  flex flex-col justify-center items-center  md:items-stretch    md:flex-row  md:flex-wrap xl:flex-nowrap gap-6 md:gap-10   ">
-            <div className="bg-gradient-card  font-poppins  shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 lg:gap-x-8 flex flex-col  ">
+            <div className="bg-gradient-card  font-poppins    rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] px-2 sm:px-6 py-2 sm:py-4 gap-1 sm:gap-4 lg:gap-x-8 flex flex-col  ">
               <div className="flex flex-col items-center  gap-6  ">
                 <div className="flex flex-col">
                   <h2 className="text-lg text-center  font-semibold">
@@ -86,12 +86,13 @@ export default function Stacks() {
               <ul className="text-[1rem] md:text-[1.07rem] text-center mt-6 sm:mt-4 leading-7 ">
                 <li>JavaScript, TypeScript</li>
                 <li>React, Next</li>
+                <li>React Native / Expo</li>
                 <li>Shadcn/ui</li>
                 <li>TailwindCss</li>
                 <li>Responsive design</li>
               </ul>
             </div>
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem]  px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins   rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem]  px-2 sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
               <div className="flex flex-col items-center  gap-6">
                 <div className="flex flex-col">
                   <h2 className="text-lg text-center  font-semibold">
@@ -117,7 +118,7 @@ export default function Stacks() {
               </ul>
             </div>
 
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins   rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-col">
                   <h2 className="text-lg text-center  font-semibold">OUTILS</h2>
@@ -139,7 +140,7 @@ export default function Stacks() {
                 <li>Figma</li>
               </ul>
             </div>
-            <div className="bg-gradient-card  font-poppins shadow-sm shadow-purple  rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
+            <div className="bg-gradient-card  font-poppins   rounded-xl w-[22rem] md:w-[24rem] lg:w-[22rem] xl:w-[18rem] sm:px-6 sm:py-4 py-2 gap-1 sm:gap-4 flex flex-col ">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-col">
                   <h2 className="text-lg text-center  font-semibold">

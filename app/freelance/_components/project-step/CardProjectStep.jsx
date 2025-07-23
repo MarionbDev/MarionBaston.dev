@@ -25,7 +25,7 @@ export default function CardProjectStep({
       />
       <label
         htmlFor={numberChk}
-        className="cursor-pointer block peer-checked:bg-pale_yellow p-4 rounded-t-3xl"
+        className="cursor-pointer block peer-checked:bg-bg_greyLight  p-4 rounded-t-3xl"
       >
         <div className="flex justify-between items-center ">
           <div className="flex gap-3 items-center ">
@@ -37,7 +37,7 @@ export default function CardProjectStep({
           {isChecked && <Minus size={22} className="mr-4" />}{" "}
         </div>
       </label>
-      <div className="hidden peer-checked:block p-4 bg-pale_yellow rounded-b-3xl ">
+      <div className="hidden peer-checked:block p-4 bg-bg_greyLight rounded-b-3xl ">
         <span className="flex w-full border-t-[1px] border-black pb-4"></span>
         <p>{description}</p>
       </div>

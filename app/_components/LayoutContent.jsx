@@ -10,13 +10,13 @@ export default function LayoutContent({ children }) {
   const isFreelancePage = pathname.startsWith("/freelance");
 
   return (
-    <>
+    <div className="">
       {!isFreelancePage && <Navbar className="navbar" />}
       {!isFreelancePage && <NavbarMobile className="navbar-mobile" />}
 
       {children}
 
       {!isFreelancePage && <Footer />}
-    </>
+    </div>
   );
 }

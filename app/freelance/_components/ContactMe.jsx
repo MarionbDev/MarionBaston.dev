@@ -8,7 +8,7 @@ export default function ProjectsFree() {
           Contactez-moi
         </h1>
         <div className="flex flex-col items-center">
-          <p className="mb-8">Contactez-moi : Discutons de vos besoins ! </p>
+          <p className="mb-8 text-xl ">Discutons ensemble de vos besoins ! </p>
           <ContactForm />
         </div>
       </div>

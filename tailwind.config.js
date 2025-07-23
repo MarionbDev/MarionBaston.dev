@@ -40,6 +40,7 @@ module.exports = {
       pale_purple: "#400e41c0",
       // dark_black: "#070c21",
       purple_text: "#4f4956",
+      bg_greyLight: "#fcfafa",
     },
   },
   plugins: [require("tailwindcss-animate")],

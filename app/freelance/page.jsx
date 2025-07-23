@@ -1,3 +1,4 @@
+import AboutMeFree from "./_components/AboutMeFree";
 import ContactMe from "./_components/ContactMe";
 import Header from "./_components/Header";
 import ProjectStep from "./_components/project-step/ProjectStep";
@@ -14,6 +15,9 @@ export default function FreelancePage() {
     >
       <Header />
       <div className="flex flex-col gap-24">
+        <div id="/freelance/services" className="pt-16 md:pt-28">
+          <AboutMeFree />
+        </div>
         <div id="/freelance/services" className="pt-16 md:pt-28">
           <Services />
         </div>

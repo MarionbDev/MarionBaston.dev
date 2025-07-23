@@ -23,7 +23,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className=" py-2 px-6 bg-gradient-to-r from-[#5e00b8] to-[#d29aec] dark:border-t-[1px] dark:border-purple dark:bg-none  text-[#f3f1f1] ">
+      <div className=" py-2 px-6 bg-bg_greyLight dark:border-t-[1px] dark:border-purple dark:bg-[#181616] text-txt_black dark:text-white ">
         <div className="">
           <nav
             aria-labelledby="footer-navigation-link "

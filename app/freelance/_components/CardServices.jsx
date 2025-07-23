@@ -13,18 +13,14 @@ export default function CardServicesFree({
 }) {
   return (
     <Card
-      className={`relative flex justify-between  border-t-[1px] border-x-[1px]  border-b-[3px]  rounded-3xl p-6 w-full h-[200px] max-w-[400px] md:h-[210px] ${bgColor}`}
+      className={`relative flex justify-between   rounded-3xl p-6 w-full h-[200px] max-w-[400px] md:h-[210px] `}
     >
-      <div className={`flex flex-col justify-between h-full ${className}`}>
+      <div className={`flex flex-col justify-between h-full  `}>
         <div className="">
-          <h2
-            className={`w-fit rounded-md px-2 font-semibold ${bgText} ${className}`}
-          >
+          <h2 className={`w-fit rounded-md px-2 font-semibold  bg-free_grey `}>
             {title_1}
           </h2>
-          <h2
-            className={`w-fit rounded-md px-2 font-semibold ${bgText} ${className}`}
-          >
+          <h2 className={`w-fit rounded-md px-2 font-semibold  bg-free_grey `}>
             {title_2}
           </h2>
         </div>

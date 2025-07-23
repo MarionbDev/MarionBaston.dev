@@ -69,11 +69,12 @@ export const metadata = {
 
 export default function FreelanceLayout({ children }) {
   return (
-    <>
+    <div className="">
       <NavbarDeskFree />
+
       <NavbarMobFree />
       {children}
       <FooterFree />
-    </>
+    </div>
   );
 }
