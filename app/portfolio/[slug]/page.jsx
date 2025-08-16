@@ -120,7 +120,7 @@ export default async function ProjectPage({ params }) {
             {project.technos.map((techno, index) => (
               <li
                 key={`${index}-${techno.title}}`}
-                className=" border-2 border-white text-purple dark:text-white text-[1rem] md:text-[1.07rem]  px-4 py-1 rounded-3xl"
+                className=" border-2 border-txt_black dark:border-white text-txt_black dark:text-white text-[1rem] md:text-[1.07rem]  px-4 py-1 rounded-3xl"
               >
                 {techno.title.charAt(0).toUpperCase() +
                   techno.title.slice(1).toLowerCase()}
@@ -129,7 +129,7 @@ export default async function ProjectPage({ params }) {
           </ul>
         </div>
         <div className="flex justify-center ">
-          <ScrollArea className="bg-gradient-card flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl shadow-sm shadow-purple sm:mb-5">
+          <ScrollArea className="bg-gradient-card flex flex-col w-[30rem] h-[13rem]  md:px-3 sm:w-[34rem] sm:h-[19rem]  md:w-[50rem]  md:h-[23rem] lg:[55rem] lg:h-[26rem]  rounded-lg md:rounded-t-xl shadow-sm shadow-white sm:mb-5">
             <ul className=" h-[12.5rem] sm:h-[18rem]  md:h-[22rem] lg:h-[25rem] flex w-max m-1 md:pt-4 md:pl-4 gap-6  md:space-x-4   ">
               {project.picture_website
                 ? project.picture_website.map((picture, index) => (
