@@ -23,7 +23,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className=" py-2 px-6 bg-bg_greyLight dark:border-t-[1px] dark:border-purple dark:bg-[#181616] text-txt_black dark:text-white ">
+      <div className=" py-2 px-6 bg-bg_greyLight dark:border-t-[1px] dark:border-white dark:bg-[#181616] text-txt_black dark:text-white ">
         <div className="">
           <nav
             aria-labelledby="footer-navigation-link "
@@ -96,7 +96,7 @@ export default function Footer() {
             </div>
           </nav>
           <div className="">
-            <span className=" flex justify-center  mx-4 border-t-[1px]  border-free_grey dark:border-free_purple my-8"></span>
+            <span className=" flex justify-center  mx-4 border-t-[1px]  border-free_grey dark:border-white my-8"></span>
             <Link href="/" aria-labelledby="marion-baston" className="block">
               <div className=" flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mb-8">
                 <p className=" ">© {currentYear}</p>

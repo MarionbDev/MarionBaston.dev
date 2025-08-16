@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function ProjectCard({ project }) {
   return (
     <>
-      <Card className=" bg-gradient-card font-poppins text-txt_black dark:text-white flex flex-col items-center max-w-[25rem] border-none   ">
+      <Card className="bg-gradient-card font-poppins text-txt_black dark:text-white flex flex-col items-center max-w-[25rem] border-none   ">
         <CardHeader className="p-3">
           {project.picture_website ? (
             <div className=" mx-auto flex items-center">
@@ -62,13 +62,13 @@ export default function ProjectCard({ project }) {
               />
             </Link>
           </CardTitle>
-          <p className="mx-4  text-[1rem] md:text-[1.07rem]">
+          <p className="mx-4  text-[1rem] md:text-[1.03rem]">
             {project.project_type}
           </p>
-          <p className="mx-4  text-[1rem] md:text-[1.07rem]">
+          <p className="mx-4  text-[1rem] md:text-[1.03rem]">
             {project.description}
           </p>
-          <p className="mx-4   max-w-screen-xl leading-7 text-[1rem] md:text-[1.07rem] text-pretty line-clamp-3 ">
+          <p className="mx-4   max-w-screen-xl leading-7 text-[1rem] md:text-[1.03rem] text-pretty line-clamp-3 ">
             {project.context}
           </p>
         </CardHeader>

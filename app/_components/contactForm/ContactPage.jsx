@@ -33,7 +33,7 @@ export default function ContactPage() {
   };
   return (
     <div id="me-contacter" className="flex justify-center">
-      <Card className="border-0 rounded-none pt-20 border-t-2 border-purple/50 shadow-none  text-purple dark:text-[#ffffff] ">
+      <Card className="border-0 rounded-none pt-20 border-t-2 border-txt_black dark:border-white/50 shadow-none  text-txt_black dark:text-[#ffffff] ">
         <motion.section
           initial="hide"
           whileInView="show"
@@ -46,7 +46,7 @@ export default function ContactPage() {
             transition={{ duration: 0.5 }}
           >
             <CardHeader className="">
-              <CardTitle className=" text-[2rem] md:text-[2.5rem] mb-6 text-center name-form-gradient ">
+              <CardTitle className=" text-[2rem] md:text-[2.5rem] mb-6 text-center  ">
                 Envie de collaborer ?
               </CardTitle>
               <span className="wave-form relative flex justify-center "></span>
@@ -69,12 +69,12 @@ export default function ContactPage() {
               <div className="font-poppins text-txt_black dark:text-white pt-2 md:pt-8 mb-12 md:mb-16 text-[1rem] md:text-[1.2rem] xl:px-10   flex flex-col items-center   gap-4 ">
                 <p className="text-center text-pretty">
                   Je suis à la recherche d'une{" "}
-                  <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
+                  <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-black/80">
                     <span className="absolute inset-0 h-[82%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
                     opportunité
                   </span>{" "}
                   en CDI en tant que{" "}
-                  <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-purple">
+                  <span className="relative inline-block px-2 font-bold text-[1.1rem] md:text-[1.5rem] text-black/80">
                     <span className="absolute inset-0 h-[82%] top-1/2 -translate-y-1/2  -rotate-2 bg-free_yellow -z-10 "></span>
                     Développeuse Fullstack
                   </span>{" "}

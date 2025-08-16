@@ -16,7 +16,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { toast } from "sonner";
 
-export default function ContactForm() {
+export default function ContactForm({ className }) {
   const [lastname, setLatsName] = useState("");
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
@@ -120,7 +120,7 @@ export default function ContactForm() {
                   onChange={(e) =>
                     setLatsName(capitalizeFirstLetter(e.target.value))
                   }
-                  className="custom-placeholder border-purple/40"
+                  className="custom-placeholder border-black/40"
                 />
               </div>
               <div className="space-y-2">
@@ -138,7 +138,7 @@ export default function ContactForm() {
                   onChange={(e) =>
                     setFirstname(capitalizeFirstLetter(e.target.value))
                   }
-                  className="custom-placeholder border-purple/40"
+                  className="custom-placeholder border-black/40"
                 />
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function ContactForm() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="custom-placeholder border-purple/40 "
+                  className="custom-placeholder border-black/40 "
                 />
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function ContactForm() {
               <Textarea
                 id="message"
                 placeholder="Votre message"
-                className="custom-placeholder border-purple/40 min-h-[120px] "
+                className="custom-placeholder border-black/40 min-h-[120px] "
                 required
                 value={message}
                 onChange={(e) =>
@@ -224,7 +224,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className=" bg-purple text-white rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:text-free_purple dark:text-free_grey hover:bg-purple/10 duration-300  text-[1rem] ml-auto gap-2"
+              className={` bg-black text-white rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:text-txt_black  hover:bg-free_grey dark:bg-bg_white  dark:hover:bg-black dark:text-txt_black dark:hover:text-white dark:font-bold duration-300  text-[1rem] ml-auto gap-2 ${className}`}
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />

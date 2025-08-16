@@ -31,7 +31,7 @@ export default function Portfolio() {
     return (
       <div className="flex flex-col items-center gap-10 justify-center h-screen">
         <p className=" mt-32 text-center">Chargement des projets en cours...</p>{" "}
-        <LoaderCircle size={56} color="#8300e9" className=" animate-spin" />
+        <LoaderCircle size={56} color="#ffe355 " className=" animate-spin" />
       </div>
     );
   if (error) return <p>{error}</p>;
@@ -43,7 +43,7 @@ export default function Portfolio() {
           <h2 className="font-poppins text-3xl pb-1 font-semibold md:text-[4rem] ">
             Portfolio
           </h2>
-          <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
+          <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-free_yellow "></span>
         </div>
         <div className="text-[1rem] md:text-[1.07rem]">
           <p className=" pt-0 sm:px-0 md:pt-4 leading-7 ">
@@ -58,10 +58,13 @@ export default function Portfolio() {
             <Link
               href={"https://github.com/MarionbDev"}
               target="_blank"
-              className="flex text-purple font-semibold"
+              className="flex hover:font-extrabold font-semibold"
             >
               GitHub
-              <ArrowRight size={20} className=" -rotate-45 text-purple " />
+              <ArrowRight
+                size={20}
+                className=" -rotate-45 hover:font-extrabold "
+              />
             </Link>
           </div>
         </div>

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Search from "../../images/search.svg";
+import { Search } from "lucide-react";
 import ProjectCardStep from "./CardProjectStep";
 
 export default function ProjectStepFree() {
@@ -46,13 +45,7 @@ export default function ProjectStepFree() {
           description="Livraison et accompagnement pour la prise en main"
         />
         <div className=" border-t-[1px] border-x-[1px]  border-b-[3px] rounded-3xl p-4  gap-2 max-w-[800px] w-full">
-          <Image
-            src={Search}
-            width={40}
-            height={40}
-            alt="icone de recherche"
-            className="float-left mr-4"
-          />
+          <Search width={35} height={35} className="float-left mr-4 mt-1 " />
           <p className="text-pretty pl-2">
             Vous suivez l’évolution de votre site en temps réel grâce à un accès
             à une version temporaire et des points réguliers tout au long du

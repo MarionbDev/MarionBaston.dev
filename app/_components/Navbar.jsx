@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import logo from "../../public/m_logo.png";
+import logo from "../../public/logo-bw.png";
 import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
   if (hideNavbarOn.includes(pathname)) return null;
 
   return (
-    <div className="navbar flex text-base justify-between items-center  w-full pr-4   h-14 fixed top-0 z-50  shadow-purple/10 shadow-md text-txt_black dark:text-white ">
+    <div className="navbar flex text-base justify-between items-center  w-full pr-4   h-14 fixed top-0 z-50 shadow-white dark:shadow-white/10 shadow-md text-txt_black dark:text-white ">
       <div className=" flex gap-2 ml-4">
         <ModeToggle />
       </div>
@@ -27,7 +27,7 @@ export default function Navbar() {
           width={512}
           height={512}
           alt="logo du site"
-          className="h-9 w-9"
+          className="h-9 w-9 dark:bg-white rounded-full p-[1px]"
         />
         <ul className="font-lato flex gap-4 lg:gap-6 items-center font-medium  ">
           <li className="">
@@ -74,7 +74,7 @@ export default function Navbar() {
       <Link
         href={"/#me-contacter"}
         aria-label="me contacter"
-        className=" bg-purple text-white rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:hover:text-free_grey duration-300  "
+        className="text-white  bg-black shadow-inner shadow-free_grey text-center px-4 py-2 rounded-full hover:bg-free_grey hover:text-txt_black border-[1px] border-white hover:border-txt_black transition-colors duration-300 ease-in-out  dark:text-white dark:bg-white/30 dark:hover:text-black dark:font-semibold dark:hover:bg-free_grey "
       >
         Contactez-moi
       </Link>

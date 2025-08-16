@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Download, MessagesSquare } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../../components/ui/button";
+import CustomLink from "../freelance/_components/CustomLink";
 
 export default function MyBackground() {
   const downloadCV = () => {
@@ -47,7 +48,7 @@ export default function MyBackground() {
           <h1 className="font-poppins text-3xl pb-1 font-semibold md:text-[4rem] ">
             Parcours
           </h1>
-          <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
+          <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-free_yellow "></span>
         </div>
         <p className=" text-pretty leading-7">
           Mon parcours a commencé dans un tout autre domaine. Avec un Bac en
@@ -235,20 +236,18 @@ export default function MyBackground() {
                 </p>
                 <ul className="text-pretty leading-7 flex flex-col gap-2 py-2">
                   <li>
-                    <span className="text-purple">✔</span> Rigueur et
-                    organisation
+                    <span>✔</span> Rigueur et organisation
                   </li>
                   <li>
                     <span className="text-purple ">✔</span> Esprit d’équipe et
                     communication
                   </li>
                   <li>
-                    <span className="text-purple">✔</span> Résolution de
-                    problèmes et créativité
+                    <span>✔</span> Résolution de problèmes et créativité
                   </li>
                   <li>
-                    <span className="text-purple">✔</span> Recherche constante
-                    d’optimisation et d’amélioration
+                    <span>✔</span> Recherche constante d’optimisation et
+                    d’amélioration
                   </li>
                 </ul>
                 <div className="flex flex-col gap-4 mt-2">
@@ -380,10 +379,10 @@ export default function MyBackground() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex flex-col items-center md:flex-row md:justify-center mt-16 mb-32 gap-10 text-[1rem] md:text-[1.07rem]">
-              <Link
+              <CustomLink
                 href={"/#me-contacter"}
                 aria-label="M'envoyer un email"
-                className="flex  items-center justify-center  bg-purple rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:text-free_grey duration-300  text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
+                className="flex items-center justify-center md:gap-2  dark:hover:text-txt_black dark:hover:bg-white dark:text-white dark:bg-white/30 text-[1rem] md:text-[1.07rem] "
               >
                 <MessagesSquare
                   size="22"
@@ -391,13 +390,13 @@ export default function MyBackground() {
                   className=" w-16 md:w-8  "
                 />
                 Discutons ensemble !
-              </Link>
+              </CustomLink>
 
               <Button
                 onClick={downloadCV}
                 role="button"
                 aria-label="Télécharger mon CV"
-                className="  border-purple/40 hover:border-purple  dark:hover:border-purple_dark p-2 gap-2 text-[1rem] md:text-[1.07rem]  text-purple dark:hover:text-free_grey border-purple border-2   rounded-full py-1 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 duration-300 dark:text-free_grey"
+                className="px-4 gap-2 h-[50px]  text-[1rem] md:text-[1.07rem]   text-txt_black dark:text-white text-center  rounded-full hover:bg-free_grey dark:hover:bg-white/10  hover:text-txt_black border-[1px] dark:border-white hover:border-txt_black transition-colors duration-300 ease-in-out dark:bg-black "
               >
                 <Download id="download-cv" alt="icône de téléchargement  " />
                 <p className="flex gap-1">

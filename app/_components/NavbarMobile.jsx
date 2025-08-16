@@ -41,12 +41,12 @@ export default function NavbarMobile() {
             >
               {hasMounted ? (
                 isOpen ? (
-                  <X className="w-9 h-9 text-free_purple" />
+                  <X className="w-9 h-9 text-black dark:text-white" />
                 ) : (
-                  <Menu className="w-9 h-9 text-free_purple" />
+                  <Menu className="w-9 h-9 text-black dark:text-white" />
                 )
               ) : (
-                <Menu className="w-9 h-9 text-free_purple" />
+                <Menu className="w-9 h-9 text-black dark:text-white" />
               )}
             </MenubarTrigger>
             <MenubarContent
@@ -97,8 +97,8 @@ export default function NavbarMobile() {
                   target="_blank"
                   aria-label="me contacter"
                 >
-                  <MenubarItem className="text-[1.2rem] bg-purple rounded-full shadow-inner shadow-free_grey p-2 ">
-                    <Linkedin size={28} color="white " />
+                  <MenubarItem className="text-[1.2rem] bg-white rounded-full shadow-inner shadow-free_grey p-2 ">
+                    <Linkedin size={28} color="black " />
                   </MenubarItem>
                 </Link>
                 <Link
@@ -106,8 +106,8 @@ export default function NavbarMobile() {
                   target="_blank"
                   aria-label="me contacter"
                 >
-                  <MenubarItem className="text-[1.2rem] shadow-inner shadow-free_grey  bg-purple rounded-full p-2">
-                    <Github size={28} color="white" />
+                  <MenubarItem className="text-[1.2rem] shadow-inner shadow-free_grey  bg-white rounded-full p-2">
+                    <Github size={28} color="black" />
                   </MenubarItem>
                 </Link>
               </div>

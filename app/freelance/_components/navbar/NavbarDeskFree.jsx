@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import logo from "../../../../public/m_logo.png";
+// import logo from "../../../../public/m_logo.png";
+import logo from "./logo-bw.png";
 
 export default function NavbarDeskFree() {
   const pathname = usePathname();
@@ -30,10 +31,7 @@ export default function NavbarDeskFree() {
             className="w-9 h-9"
           />
         </div>
-        <nav
-          aria-labelledby="navigation-menu"
-          className=" flex justify-between"
-        >
+        <nav aria-labelledby="navigation-menu" className="flex justify-between">
           <ul className=" flex gap-4 lg:gap-6 items-center font-medium  ">
             <li className="">
               <Link
@@ -61,7 +59,7 @@ export default function NavbarDeskFree() {
         <Link
           href={"/freelance/#me-contacter"}
           aria-label="me contacter"
-          className=" font-medium bg-custom-radial rounded-full px-3 py-2 text-white shadow-inner shadow-free_grey  hover:text-free_purple hover:bg-custom-grey duration-300 "
+          className=" font-bold rounded-lg px-4 py-2 bg-black text-free_grey shadow-inner shadow-free_grey hover:bg-free_grey duration-300 border-[1px] border-white hover:text-txt_black hover:border-txt_black  ease-in-out"
         >
           Demandez un devis
         </Link>
