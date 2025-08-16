@@ -11,7 +11,8 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "../../../../components/ui/menubar";
-import logo from "../../../../public/m_logo.png";
+// import logo from "../../../../public/m_logo.png";
+import logo from "./logo-bw.png";
 
 export default function NavbarMobFree() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function NavbarMobFree() {
           className="w-9 h-9"
         />
 
-        <Menubar className=" border-none p-0 m-0">
+        <Menubar className="border-none p-0 m-0">
           <MenubarMenu>
             <MenubarTrigger
               tabIndex={0}
@@ -43,12 +44,12 @@ export default function NavbarMobFree() {
             >
               {hasMounted ? (
                 isOpen ? (
-                  <X className="w-9 h-9 text-free_purple" />
+                  <X className="w-9 h-9 text-black" />
                 ) : (
-                  <Menu className="w-9 h-9 text-free_purple" />
+                  <Menu className="w-9 h-9 text-black" />
                 )
               ) : (
-                <Menu className="w-9 h-9 text-free_purple" />
+                <Menu className="w-9 h-9 text-black" />
               )}
             </MenubarTrigger>
             <MenubarContent
@@ -70,7 +71,7 @@ export default function NavbarMobFree() {
                 </MenubarItem>
               </Link>
               <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className=" text-[1.2rem] shadow-inner shadow-free_grey border-2 border-free_yellow bg-free_yellow text-free_purple rounded-full px-6">
+                <MenubarItem className=" text-[1.2rem] shadow-inner shadow-free_grey border-2  bg-black text-white rounded-full px-6">
                   Demandez un devis
                 </MenubarItem>
               </Link>

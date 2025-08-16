@@ -22,16 +22,20 @@ export default async function ProjectPage({ params }) {
     <div className="font-poppins text-txt_black dark:text-white mt-32 mx-4 lg:mx-20 flex flex-col gap-8 pb-32">
       <div className="flex ">
         <Link href={"/portfolio"} className="w-8">
-          <ArrowLeftCircleIcon size={33} color="#5e00b8" className="" />
+          <ArrowLeftCircleIcon
+            size={33}
+            color="#4e525a "
+            className="dark:bg-white rounded-full hover:scale-110"
+          />
         </Link>
       </div>
       <div className="flex flex-col gap-8 md:gap-12 mx-4 sm:mx-14 md:mx-20 lg:mx-32">
         <div>
           <div className="flex  items-end gap-1 h-16 mb-6  ">
-            <h1 className=" name-gradient text-txt_black dark:text-white text-3xl pb-1 font-semibold sm:text-[2rem] md:text-[2.3rem] lg:text-[3rem]  ">
+            <h1 className="  text-txt_black dark:text-white text-3xl pb-1 font-semibold sm:text-[2rem] md:text-[2.3rem] lg:text-[3rem]  ">
               {project.title}
             </h1>
-            <span className="title-point mb-[0.62rem] md:mb-[0.25rem]  w-3 h-3  md:w-4 md:h-4 rounded-full bg-purple "></span>
+            <span className="title-point mb-[0.62rem] md:mb-[0.25rem]  w-3 h-3  md:w-4 md:h-4 rounded-full bg-free_yellow "></span>
           </div>
           <h2 className="md:text-lg text-pretty leading-7 ">
             {project.description}
@@ -116,7 +120,7 @@ export default async function ProjectPage({ params }) {
             {project.technos.map((techno, index) => (
               <li
                 key={`${index}-${techno.title}}`}
-                className=" border-2 border-purple text-purple dark:text-white text-[1rem] md:text-[1.07rem]  px-4 py-1 rounded-3xl"
+                className=" border-2 border-white text-purple dark:text-white text-[1rem] md:text-[1.07rem]  px-4 py-1 rounded-3xl"
               >
                 {techno.title.charAt(0).toUpperCase() +
                   techno.title.slice(1).toLowerCase()}

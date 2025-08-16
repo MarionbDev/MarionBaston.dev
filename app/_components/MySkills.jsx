@@ -20,54 +20,34 @@ export default function MySkills() {
             </p>
             <ul className="  mt-4 gap-2 flex flex-col">
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Conception d'interfaces utilisateur interactives et intuitives
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Accessibilité et amélioration de l'expérience utilisateur (UX)
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
                 {" "}
                 <Check
                   size={20}
-                  color="#8300e9"
+                  color="#ffff"
                   className="mt-1 flex-shrink-0"
                 />{" "}
                 Optimisation SEO pour un meilleur référencement
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Développement responsive pour une compatibilité optimale sur
                 tous les écrans
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />{" "}
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />{" "}
                 Optimisation des performances (chargement rapide, animations
                 fluides, lazy loading...)
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Intégration d'API et gestion des états (React, Context API,
                 etc...)
               </li>
@@ -88,57 +68,33 @@ export default function MySkills() {
             </p>
             <ul className="mt-4 gap-2 flex flex-col">
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Développement de fonctionnalités robustes et sécurisées
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />{" "}
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />{" "}
                 Gestion et structuration des bases de données
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />{" "}
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />{" "}
                 Création et gestion d'API pour la communication frontend-backend
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check size={20} color="#8300e9" className="mt-1 " />
+                <Check size={20} color="#ffff" className="mt-1 " />
                 Authentification et gestion des utilisateurs{" "}
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Mise en place de mesures de sécurité pour protéger les données
                 (CORS, Hashing, Validation des entrées...)
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />{" "}
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />{" "}
                 Optimisation des performances backend (mise en cache, requêtes
                 optimisées, gestion de la charge...)
               </li>
               <li className="flex gap-1 items-start md:ml-4 ">
-                <Check
-                  size={20}
-                  color="#8300e9"
-                  className="mt-1 flex-shrink-0"
-                />
+                <Check size={20} color="#ffff" className="mt-1 flex-shrink-0" />
                 Déploiement et maintenance des applications avec CI/CD
               </li>
             </ul>

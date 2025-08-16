@@ -24,7 +24,7 @@ export default function HeaderFree() {
 
         <CustomLink
           href="#me-contacter"
-          className="mt-10   border-txt_black text-[1.05rem] font-medium"
+          className="mt-10    text-[1.05rem] font-medium"
         >
           Discutons de votre projet
         </CustomLink>

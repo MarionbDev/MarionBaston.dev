@@ -1,12 +1,16 @@
 "use client";
 
 import myPhoto from "@/public/images/myPhoto.png";
-import { Download, MessagesSquare } from "lucide-react";
+import {
+  Download,
+  GithubIcon,
+  LinkedinIcon,
+  MessagesSquare,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../../components/ui/button";
-import Github from "../../public/images/github-about.svg";
-import Linkedin from "../../public/images/linkedin-about.svg";
+import CustomLink from "../freelance/_components/CustomLink";
 
 export default function AboutMe() {
   const downloadCV = () => {
@@ -28,7 +32,7 @@ export default function AboutMe() {
                 {/* <span className="text-[1.5rem] md:text-[2.2rem] ">👋</span> */}
               </h1>
               <div className=" ">
-                <h2 className=" font-bold  leading-none  text-purple text-[1.9rem] lg:text-[1.8rem] xl:text-[2.3rem] mb-2">
+                <h2 className=" font-bold  leading-none  text-txt_black dark:text-white text-[1.9rem] lg:text-[1.8rem] xl:text-[2.3rem] mb-2">
                   Développeuse Web Fullstack
                 </h2>
                 <span className=" wave-about  "></span>
@@ -36,31 +40,31 @@ export default function AboutMe() {
             </div>
             <div className="flex flex-col gap-2 text-pretty ">
               <p className=" text-[1rem] md:text-[1.07rem] leading-7   ">
-                <span className="font-bold text-[1.1rem]  dark:text-[#d29aec]">
+                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
                   Curieuse et passionnée{" "}
                 </span>{" "}
                 par le web, j’adore expérimenter, tester et relever des défis
                 techniques. Mon objectif ? Explorer de nouvelles idées,
-                <span className="font-bold text-[1.1rem]  dark:text-[#d29aec]">
+                <span className="font-bold text-[1.1rem] dark:text-free_yellow/80 ">
                   {" "}
                   repousser les limites{" "}
                 </span>
                 du code et donner vie à des projets innovants avec{" "}
-                <span className="font-bold text-[1.1rem]  dark:text-[#d29aec]">
+                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
                   créativité
                 </span>{" "}
                 et efficacité !
               </p>
               <p className="text-[1rem] leading-7 ">
                 A la{" "}
-                <span className="font-bold text-[1.1rem]  dark:text-[#d29aec]">
+                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
                   recherche d'opportunité
                 </span>{" "}
                 en CDD ou CDI, où je pourrai mettre mes compétences à profit
                 dans un environnement dynamique et stimulant. En parallèle, je
                 travaille sur des projets variés, ainsi qu'en freelance, ce qui
                 me permet d'explorer de nouvelles technologies et de{" "}
-                <span className="font-bold text-[1.1rem]  dark:text-[#d29aec]">
+                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
                   {" "}
                   relever des défis
                 </span>{" "}
@@ -69,10 +73,10 @@ export default function AboutMe() {
             </div>
             <div className=" flex flex-col  md:flex-row lg:mt-8 md:gap-8  ">
               <div className=" flex flex-col sm:flex-row sm:items-center gap-6 md:gap-4">
-                <Link
+                <CustomLink
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex  items-center justify-center  bg-purple rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:bg-purple/10 hover:text-free_purple dark:text-free_grey duration-300  text-[#ffffff] text-[1rem] md:text-[1.07rem] text-center p-2   w-full sm:w-[16rem]"
+                  className="flex items-center justify-center md:gap-2 dark:bg-white/30 dark:hover:bg-white  dark:hover:text-black text-[1rem] md:text-[1.07rem] "
                 >
                   <MessagesSquare
                     size="22"
@@ -80,14 +84,14 @@ export default function AboutMe() {
                     className=" w-16 md:w-8  "
                   />
                   Discutons ensemble !
-                </Link>
+                </CustomLink>
 
                 <div className="flex justify-center items-center gap-4 md:gap-2 ">
                   <Button
                     onClick={downloadCV}
                     role="button"
                     aria-label="Télécharger mon CV"
-                    className="  border-purple/40 hover:border-purple  dark:hover:border-purple_dark px-4 gap-2 text-[1rem] md:text-[1.07rem]  text-purple dark:hover:text-free_grey border-purple border-2   rounded-full shadow-inner shadow-free_grey hover:bg-purple/10 duration-300 "
+                    className="px-4 gap-2 h-[50px]  text-[1rem] md:text-[1.07rem]   text-txt_black dark:text-white text-center  rounded-full hover:bg-free_grey dark:hover:bg-white/10  hover:text-txt_black border-[1px] dark:border-white hover:border-txt_black transition-colors duration-300 ease-in-out dark:bg-black "
                   >
                     <Download
                       id="download-cv"
@@ -98,32 +102,28 @@ export default function AboutMe() {
                     </p>
                   </Button>
                   <ul className="flex items-center gap-4 md:gap-2">
-                    <li className=" border-2 border-purple/40 duration-200  hover:border-purple dark:shadow-inner dark:shadow-free_grey rounded-full p-2 ">
+                    <li className=" border-2 border-black/40 duration-200   hover:border-black/60 dark:shadow-inner dark:shadow-free_grey  dark:hover:bg-white/10 rounded-full p-3 ">
+                      {" "}
                       <Link
                         href="https://www.linkedin.com/in/marion-baston/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Image
-                          src={Linkedin}
-                          alt="lien vers ma page linkedin"
-                          width={26}
-                          height={26}
+                        <LinkedinIcon
+                          size={26}
+                          className="text-txt_black dark:text-white"
                         />
                       </Link>
                     </li>
-                    <li className=" border-2 border-purple/40 duration-200   hover:border-purple dark:shadow-inner dark:shadow-free_grey rounded-full p-2 ">
-                      {" "}
+                    <li className=" border-2 border-black/40 duration-200   hover:border-black/60 dark:shadow-inner dark:shadow-free_grey  dark:hover:bg-white/10 rounded-full p-3 ">
                       <Link
                         href="https://github.com/MarionbDev"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Image
-                          src={Github}
-                          alt="lien vers ma page github"
-                          width={26}
-                          height={26}
+                        <GithubIcon
+                          size={26}
+                          className="text-txt_black dark:text-white"
                         />
                       </Link>
                     </li>
@@ -132,7 +132,7 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center  border-2 border-free_purple rounded-full p-1 ">
+          <div className="flex justify-center items-center  p-1 ">
             {/* <div className=" p-[0.4rem]  rotate-12 border-gradient border-2 z-20 relative -top-4 sm:top-8 lg:-top-0 lg:mb-24 xl:mb-0 ">*/}
             <Image
               src={myPhoto}

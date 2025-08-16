@@ -12,7 +12,7 @@ export default function Custom404() {
       </h1>
 
       <Link href="/">
-        <p className=" underline text-[20px] text-purple">
+        <p className=" underline text-[20px] dark:text-free_yellow">
           Retour sur la page d'accueil
         </p>
       </Link>

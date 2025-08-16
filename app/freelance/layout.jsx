@@ -41,7 +41,7 @@ export const metadata = {
     canonical: "https://marionbaston.fr/freelance",
   },
   icons: {
-    icon: "../../m_logo.png",
+    icon: "../../logo-bw.png",
   },
   openGraph: {
     title: "Marion Baston | Développeuse Web Freelance",

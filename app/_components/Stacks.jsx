@@ -52,7 +52,7 @@ export default function Stacks() {
             <h2 className="font-poppins text-3xl pb-1 font-semibold md:text-[4rem] ">
               Stack
             </h2>
-            <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-purple "></span>
+            <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-free_yellow "></span>
           </div>{" "}
         </motion.div>
       </motion.section>
