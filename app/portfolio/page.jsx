@@ -31,7 +31,7 @@ export default function Portfolio() {
     return (
       <div className="flex flex-col items-center gap-10 justify-center h-screen">
         <p className=" mt-32 text-center">Chargement des projets en cours...</p>{" "}
-        <LoaderCircle size={56} color="#ffe355 " className=" animate-spin" />
+        <LoaderCircle size={56} className=" animate-spin text-free_yellow" />
       </div>
     );
   if (error) return <p>{error}</p>;

@@ -33,7 +33,7 @@ export default function ContactPage() {
   };
   return (
     <div id="me-contacter" className="flex justify-center">
-      <Card className="border-0 rounded-none pt-20 border-t-2 border-txt_black dark:border-white/50 shadow-none  text-txt_black dark:text-[#ffffff] ">
+      <Card className="border-0 rounded-none pt-20 border-t-2 border-txt_black/60 dark:border-white/50 shadow-none  text-txt_black dark:text-[#ffffff] ">
         <motion.section
           initial="hide"
           whileInView="show"

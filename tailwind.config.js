@@ -26,7 +26,8 @@ module.exports = {
     colors: {
       free_grey: "#F3F3F3",
       free_purple: "#5e00b8",
-      free_yellow: "#FFE355",
+      // free_yellow: "#FFE355",
+      free_yellow: "#d4b68a",
       pale_yellow: "#FFF9CC",
       purple: "#5e00b8",
       purple_dark: "#8d3dd8",

@@ -28,10 +28,10 @@ export default function NavbarDeskFree() {
             width={512}
             height={512}
             alt="logo du site"
-            className="w-9 h-9"
+            className="w-10 h-10"
           />
         </div>
-        <nav aria-labelledby="navigation-menu" className="flex justify-between">
+        <nav aria-labelledby="navigation-menu" className="">
           <ul className=" flex gap-4 lg:gap-6 items-center font-medium  ">
             <li className="">
               <Link
@@ -53,16 +53,25 @@ export default function NavbarDeskFree() {
                 Services<span className="underline-nav"></span>
               </Link>
             </li>
+            <li className="">
+              <Link
+                href="/freelance/#offres"
+                aria-label="offres"
+                className="nav-link"
+              >
+                Offres<span className="underline-nav"></span>
+              </Link>
+            </li>
+
+            <Link
+              href={"/freelance/contact"}
+              aria-label="me contacter"
+              className=" font-bold rounded-lg px-4 py-2 bg-free_yellow text-txt_black shadow-inner shadow-free_grey hover:bg-free_grey duration-300 border-[1px] border-white hover:text-txt_black hover:border-txt_black  ease-in-out"
+            >
+              Demandez un devis
+            </Link>
           </ul>
         </nav>
-
-        <Link
-          href={"/freelance/#me-contacter"}
-          aria-label="me contacter"
-          className=" font-bold rounded-lg px-4 py-2 bg-black text-free_grey shadow-inner shadow-free_grey hover:bg-free_grey duration-300 border-[1px] border-white hover:text-txt_black hover:border-txt_black  ease-in-out"
-        >
-          Demandez un devis
-        </Link>
       </div>
     </div>
   );

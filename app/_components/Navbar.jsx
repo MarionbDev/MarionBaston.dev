@@ -20,14 +20,14 @@ export default function Navbar() {
       </div>
       <nav
         aria-labelledby="navigation-menu"
-        className=" flex justify-between gap-6"
+        className=" flex justify-between gap-8"
       >
         <Image
           src={logo}
           width={512}
           height={512}
           alt="logo du site"
-          className="h-9 w-9 dark:bg-white rounded-full p-[1px]"
+          className="h-10 w-10 dark:bg-free_yellow rounded-full p-[1px]"
         />
         <ul className="font-lato flex gap-4 lg:gap-6 items-center font-medium  ">
           <li className="">
@@ -74,7 +74,7 @@ export default function Navbar() {
       <Link
         href={"/#me-contacter"}
         aria-label="me contacter"
-        className="text-white  bg-black shadow-inner shadow-free_grey text-center px-4 py-2 rounded-full hover:bg-free_grey hover:text-txt_black border-[1px] border-white hover:border-txt_black transition-colors duration-300 ease-in-out  dark:text-white dark:bg-white/30 dark:hover:text-black dark:font-semibold dark:hover:bg-free_grey "
+        className="text-black  bg-free_yellow shadow-inner shadow-free_grey text-center px-4 py-2 rounded-full hover:bg-free_grey hover:text-txt_black border-[1px] border-white hover:border-txt_black transition-colors duration-300 ease-in-out  dark:hover:bg-free_grey "
       >
         Contactez-moi
       </Link>

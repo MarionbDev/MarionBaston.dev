@@ -24,7 +24,7 @@ export function ModeToggle() {
         size="icon"
         aria-label={`Toggle ${theme === "light" ? "Dark" : "Light"} theme`}
         onClick={toggleTheme}
-        className=" border-2 rounded-full border-black/30 md:border-black/50 dark:shadow-inner dark:shadow-white hover:border-white w-9 h-9 "
+        className=" border-[1px] rounded-full border-black/20  dark:shadow-inner dark:shadow-free_yellow hover:bg-free_yellow/30 w-9 h-9 duration-300 ease-in-out "
       >
         {theme === "dark" ? (
           <Sun color="#f3f3f3 " className="h-[1.1rem] w-[1.1rem] " />

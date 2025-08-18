@@ -34,7 +34,11 @@ export default function Footer() {
                 Informations Légales
               </p>
 
-              <Link href="/legal-notice" id="legal-notice">
+              <Link
+                href="/legal-notice"
+                id="legal-notice"
+                className="hover:text-free_yellow duration-300 ease-in-out"
+              >
                 Mentions légales
               </Link>
             </div>
@@ -44,23 +48,39 @@ export default function Footer() {
               </p>
               <ul className="flex flex-col gap-2 ">
                 <li>
-                  <Link href="#home" id="footer-about-me">
+                  <Link
+                    href="#home"
+                    id="footer-about-me"
+                    className="hover:text-free_yellow duration-300 ease-in-out"
+                  >
                     Bienvenue
                   </Link>
                 </li>
                 <li>
-                  <Link href="/parcours" id="footer-services">
+                  <Link
+                    href="/parcours"
+                    id="footer-services"
+                    className="hover:text-free_yellow duration-300 ease-in-out"
+                  >
                     Mon parcours
                   </Link>
                 </li>
                 <li>
-                  <Link href="#portfolio" id="footer-projects">
+                  <Link
+                    href="#portfolio"
+                    id="footer-projects"
+                    className="hover:text-free_yellow duration-300 ease-in-out"
+                  >
                     Portfolio
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#skills" id="footer-skills">
+                  <Link
+                    href="#skills"
+                    id="footer-skills"
+                    className="hover:text-free_yellow duration-300 ease-in-out"
+                  >
                     Mes Compétences
                   </Link>
                 </li>
@@ -70,15 +90,24 @@ export default function Footer() {
               <p className=" font-bold text-[1.2rem] dark:text-free_grey underline">
                 Contact
               </p>
-              <ul className=" flex flex-col gap-2">
-                <li className=" w-full ">
-                  <Link href={"/#me-contacter"}>Email</Link>
+              <ul
+                className=" flex flex-col gap-2 
+"
+              >
+                <li className=" w-full  ">
+                  <Link
+                    href={"/#me-contacter"}
+                    className="hover:text-free_yellow duration-300 ease-in-out"
+                  >
+                    Email
+                  </Link>
                 </li>
                 <li className=" w-full ">
                   <Link
                     href="https://www.linkedin.com/in/marion-baston/"
                     target="_blank"
                     id="footer-linkedin"
+                    className="hover:text-free_yellow duration-300 ease-in-out "
                   >
                     LinkedIn
                   </Link>
@@ -88,6 +117,7 @@ export default function Footer() {
                     href="https://github.com/MarionbDev"
                     target="_blank"
                     id="footer-github"
+                    className="hover:text-free_yellow duration-300 ease-in-out "
                   >
                     GitHub
                   </Link>

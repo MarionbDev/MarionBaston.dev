@@ -40,31 +40,31 @@ export default function AboutMe() {
             </div>
             <div className="flex flex-col gap-2 text-pretty ">
               <p className=" text-[1rem] md:text-[1.07rem] leading-7   ">
-                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
+                <span className="font-bold text-[1.1rem] text-free_yellow">
                   Curieuse et passionnée{" "}
                 </span>{" "}
                 par le web, j’adore expérimenter, tester et relever des défis
                 techniques. Mon objectif ? Explorer de nouvelles idées,
-                <span className="font-bold text-[1.1rem] dark:text-free_yellow/80 ">
+                <span className="font-bold text-[1.1rem]text-free_yellow ">
                   {" "}
                   repousser les limites{" "}
                 </span>
                 du code et donner vie à des projets innovants avec{" "}
-                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
+                <span className="font-bold text-[1.1rem]  text-free_yellow">
                   créativité
                 </span>{" "}
                 et efficacité !
               </p>
               <p className="text-[1rem] leading-7 ">
                 A la{" "}
-                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
+                <span className="font-bold text-[1.1rem] text-free_yellow">
                   recherche d'opportunité
                 </span>{" "}
                 en CDD ou CDI, où je pourrai mettre mes compétences à profit
                 dans un environnement dynamique et stimulant. En parallèle, je
                 travaille sur des projets variés, ainsi qu'en freelance, ce qui
                 me permet d'explorer de nouvelles technologies et de{" "}
-                <span className="font-bold text-[1.1rem]  dark:text-free_yellow/80">
+                <span className="font-bold text-[1.1rem] text-free_yellow">
                   {" "}
                   relever des défis
                 </span>{" "}
@@ -76,7 +76,7 @@ export default function AboutMe() {
                 <CustomLink
                   href={"/#me-contacter"}
                   aria-label="M'envoyer un email"
-                  className="flex items-center justify-center md:gap-2 dark:bg-white/30 dark:hover:bg-white  dark:hover:text-black text-[1rem] md:text-[1.07rem] "
+                  className="flex items-center justify-center md:gap-2 text-[1rem] md:text-[1.07rem] "
                 >
                   <MessagesSquare
                     size="22"

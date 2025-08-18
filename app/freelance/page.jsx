@@ -1,6 +1,6 @@
 import AboutMeFree from "./_components/AboutMeFree";
-import ContactMe from "./_components/ContactMe";
 import Header from "./_components/Header";
+import OffresFree from "./_components/offres/OffresFree";
 import ProjectStep from "./_components/project-step/ProjectStep";
 import ProjectsFree from "./_components/ProjectsFree";
 import Services from "./_components/Services";
@@ -15,26 +15,26 @@ export default function FreelancePage() {
     >
       <Header />
       <div className="flex flex-col gap-24">
-        <div id="/freelance/services" className="pt-16 md:pt-28">
-          <AboutMeFree />
-        </div>
-        <div id="/freelance/services" className="pt-16 md:pt-28">
+        <div id="services" className="pt-16 md:pt-28">
           <Services />
         </div>
-        <div id="/freelance/free-project" className="">
+        <div id="free-project" className="">
           <ProjectsFree />
         </div>
-        <div id="/freelance/step-project" className="">
+        <div id="step-project" className="">
           <ProjectStep />
         </div>
-        <div id="/freelance/support" className="">
+        <div id="support" className="">
           <Support />
         </div>
-        <div id="/freelance/testimonial" className="">
+        <div id="testimonial" className="">
           <Testimonials />
         </div>
-        <div id="/freelance/contact-me" className="my-20">
-          <ContactMe />
+        <div id="offres" className="pt-16 md:pt-28 mb-28">
+          <OffresFree />
+        </div>
+        <div id="a-propos" className="pt-16 md:pt-28 mb-28">
+          <AboutMeFree />
         </div>
       </div>
     </div>
