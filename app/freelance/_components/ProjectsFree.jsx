@@ -6,15 +6,19 @@ export default function ProjectsFree() {
   return (
     <>
       <div className="flex flex-col gap-6 text-[1rem] md:text-[1.07rem] ">
-        <h1 className="bg-free_yellow w-fit text-xl md:text-[2rem] font-semibold px-1">
-          Ils m'ont fait confiance
-        </h1>
-        <p>
+        <div className=" flex items-end gap-1 h-16 mb-10 ">
+          <h1 className="  text-xl md:text-[2rem]  text-txt_black font-semibold px-1">
+            Ils m'ont fait confiance
+          </h1>{" "}
+          <span className="mb-[0.72rem] md:mb-0 w-3 h-3 md:h-4 md:w-4  rounded-full bg-free_yellow "></span>
+        </div>
+
+        <p className=" text-pretty leading-7">
           Un projet, une réussite ! Découvrez mon travail et les résultats
           obtenus.
         </p>
       </div>
-      <Card className="flex flex-col lg:flex-row-reverse  bg-bg_greyLight border-none  shadow-md mt-8 py-6 px-4 lg:px-8 ">
+      <Card className="flex flex-col lg:flex-row-reverse mx-auto max-w-[80rem] bg-bg_greyLight border-none  shadow-md mt-8 py-6 px-4 lg:px-8 ">
         <CardHeader className="relative mx-auto w-fit md:w-4/8 xl:w-2/5 ">
           <div className="m-auto">
             {/* <span className="absolute z-0 inset-0 m-auto bg-free_yellow w-5/6 2xl:w-[470px]   h-4/6  rounded-bl-[8rem] rounded-br-[5rem] rounded-tl-[4rem] rounded-tr-[10rem]  -rotate-12"></span> */}
@@ -28,6 +32,7 @@ export default function ProjectsFree() {
           </div>
         </CardHeader>
         <CardContent className="text-pretty md:px-10 md:w-3/4 xl:w-2/4 sm:m-auto leading-7">
+          <h2 className=" font-semibold">Le Plessis Aux Lys</h2>
           Création d’un site web intuitif permettant aux visiteurs de découvrir
           facilement les hébergements, leurs tarifs et disponibilités, ainsi que
           les activités de la région. L’objectif : une présentation claire et

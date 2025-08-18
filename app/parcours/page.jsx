@@ -239,8 +239,7 @@ export default function MyBackground() {
                     <span>✔</span> Rigueur et organisation
                   </li>
                   <li>
-                    <span className="text-purple ">✔</span> Esprit d’équipe et
-                    communication
+                    <span>✔</span> Esprit d’équipe et communication
                   </li>
                   <li>
                     <span>✔</span> Résolution de problèmes et créativité
@@ -382,7 +381,7 @@ export default function MyBackground() {
               <CustomLink
                 href={"/#me-contacter"}
                 aria-label="M'envoyer un email"
-                className="flex items-center justify-center md:gap-2  dark:hover:text-txt_black dark:hover:bg-white dark:text-white dark:bg-white/30 text-[1rem] md:text-[1.07rem] "
+                className="flex items-center justify-center md:gap-2   text-[1rem] md:text-[1.07rem] "
               >
                 <MessagesSquare
                   size="22"

@@ -16,7 +16,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { toast } from "sonner";
 
-export default function ContactForm({ className }) {
+export default function ContactForm() {
   const [lastname, setLatsName] = useState("");
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
@@ -224,7 +224,7 @@ export default function ContactForm({ className }) {
             <Button
               type="submit"
               disabled={isLoading}
-              className={` bg-black text-white rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:text-txt_black  hover:bg-free_grey dark:bg-bg_white  dark:hover:bg-black dark:text-txt_black dark:hover:text-white dark:font-bold duration-300  text-[1rem] ml-auto gap-2 ${className}`}
+              className=" bg-free_yellow text-black rounded-full py-2 px-4 shadow-inner shadow-free_grey hover:text-txt_black  hover:bg-free_grey dark:bg-free_yellow  dark:hover:bg-white  duration-300  text-[1rem] ml-auto gap-2 "
             >
               {isLoading ? (
                 <Loader className="animate-spin" size="16" />

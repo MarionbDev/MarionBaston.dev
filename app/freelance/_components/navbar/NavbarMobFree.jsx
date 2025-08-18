@@ -54,24 +54,45 @@ export default function NavbarMobFree() {
             </MenubarTrigger>
             <MenubarContent
               sideOffset={2}
-              className="w-[100vw]  h-screen flex flex-col gap-6 items-center  dark:bg-[#181616] bg-bg_white border-none shadow-md  pt-8"
+              className="w-[100vw]  h-screen flex flex-col gap-6 items-center text-txt_black bg-bg_white border-none shadow-md  pt-8"
             >
-              <Link href="/freelance" aria-label="accueil" className="nav-link">
+              <Link
+                href="/freelance"
+                aria-label="accueil"
+                className="nav-link"
+                onClick={() => setIsOpen(false)}
+              >
                 <MenubarItem className="text-[1.2rem] gap-2 ">
                   <House size={18} />
                   Accueil
                 </MenubarItem>
               </Link>
 
-              <Link href="/freelance/#services" aria-label="services">
+              <Link
+                href="/freelance/#services"
+                aria-label="services"
+                onClick={() => setIsOpen(false)}
+              >
                 {" "}
                 <MenubarItem className="text-[1.2rem] gap-2 ">
                   <Handshake size={18} />
                   Services
                 </MenubarItem>
               </Link>
-              <Link href="/#me-contacter" aria-label="me contacter">
-                <MenubarItem className=" text-[1.2rem] shadow-inner shadow-free_grey border-2  bg-black text-white rounded-full px-6">
+              <Link
+                href="/freelance/#offres"
+                aria-label="offres"
+                onClick={() => setIsOpen(false)}
+              >
+                {" "}
+                <MenubarItem className="text-[1.2rem] gap-2 ">
+                  <Handshake size={18} />
+                  Offres
+                </MenubarItem>
+              </Link>
+
+              <Link href="/freelance/contact" aria-label="me contacter">
+                <MenubarItem className=" text-[1.2rem] shadow-inner shadow-white   bg-free_yellow  rounded-full px-6">
                   Demandez un devis
                 </MenubarItem>
               </Link>

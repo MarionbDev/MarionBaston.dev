@@ -5,10 +5,10 @@ import CustomLink from "./CustomLink";
 export default function HeaderFree() {
   return (
     <div>
-      <header className=" mt-20  md:mt-36 lg:mt-20  lg:h-[100vh] flex flex-col justify-center items-center text-center px-4">
+      <header className=" mt-20  md:mt-36 lg:mt-20 xl:mt-12 lg:h-[100vh] flex flex-col justify-center items-center text-center px-4">
         <h1 className="text-[2.2rem] md:text-[3.5rem]  font-bold leading-tight max-w-4xl">
-          <span className="relative inline-block px-3">
-            <span className="absolute inset-0 h-[110%] top-1/2 -translate-y-1/2 -rotate-2 bg-free_yellow -z-10 rounded-sm"></span>
+          <span className=" px-3 text-free_yellow text-[3.2rem] md:text-[4.6rem] ">
+            {/* <span className="absolute inset-0 h-[110%] top-1/2 -translate-y-1/2 -rotate-2 bg-free_yellow -z-10 rounded-sm"></span> */}
             Boostez
           </span>{" "}
           votre présence en ligne avec un site performant et moderne !{" "}
@@ -23,7 +23,7 @@ export default function HeaderFree() {
         </p>
 
         <CustomLink
-          href="#me-contacter"
+          href="/freelance/contact"
           className="mt-10    text-[1.05rem] font-medium"
         >
           Discutons de votre projet

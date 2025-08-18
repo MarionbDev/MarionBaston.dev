@@ -65,7 +65,7 @@ html {
 
 .nav-link:hover .underline-nav {
   width: 100%;
-  background-color: #ffe355;
+  background-color: #d4b68a;
 }
 
 /*PSEUDO-ELEMENT Wave*/
@@ -74,7 +74,7 @@ html {
   display: block;
   margin-left: auto;
   width: 20%;
-  border-top: solid 3px #ffe355;
+  border-top: solid 3px #d4b68a;
   border-radius: 50%;
   height: 8px;
   rotate: -10deg;
@@ -84,7 +84,7 @@ html {
   content: "";
   position: absolute;
   width: 20%;
-  border-top: solid 3px #ffe355;
+  border-top: solid 3px #d4b68a;
   bottom: 10px;
   border-radius: 50%;
   height: 8px;
@@ -94,7 +94,7 @@ html {
   content: "";
   position: absolute;
   width: 40%;
-  border-top: solid 3px #ffe355;
+  border-top: solid 3px #d4b68a;
   top: 2px;
   border-radius: 50%;
   height: 8px;
@@ -104,7 +104,7 @@ html {
   content: "";
   position: absolute;
   width: 70%;
-  border-top: solid 5px #ffe355;
+  border-top: solid 5px #d4b68a;
   bottom: 2px;
   border-radius: 50%;
   height: 15px;
