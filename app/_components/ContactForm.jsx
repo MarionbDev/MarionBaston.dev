@@ -17,7 +17,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 export default function ContactForm() {
-  const [lastname, setLatsName] = useState("");
+  const [lastname, setLastname] = useState("");
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -25,64 +25,59 @@ export default function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
 
+  // 🛡️ Anti-spam
+  const [startTime, setStartTime] = useState(() => Date.now());
+
+  const resetForm = () => {
+    setLastname("");
+    setFirstname("");
+    setEmail("");
+    setMessage("");
+    setCompany("");
+    setAcceptedPrivacyPolicy(false);
+    setStartTime(Date.now());
+  };
+
   const handleSubmitFormContact = async (e) => {
     e.preventDefault();
 
+    if (!acceptedPrivacyPolicy) {
+      toast.warning("Veuillez accepter la politique de confidentialité.");
+      return;
+    }
+
+    setIsLoading(true);
+
     try {
-      setIsLoading(true);
-      if (!acceptedPrivacyPolicy) {
-        toast.warning("Veuillez accepter la politique de confidentialté.");
-        setIsLoading(false);
-        return;
-      } else {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/email/`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              lastname,
-              firstname,
-              email,
-              message,
-              company,
-            }),
-          }
-        );
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/email/`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            lastname,
+            firstname,
+            email,
+            message,
+            company,
+            elapsed: Date.now() - startTime,
+          }),
+        },
+      );
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
-        if (data && data.message) {
-          const promise = () =>
-            new Promise((resolve) =>
-              setTimeout(() => {
-                resolve({ name: "Sonner" });
-              }, 400)
-            );
-
-          toast.promise(promise, {
-            success: (data) => {
-              return `Votre message à bien été envoyé !`;
-            },
-            error: "Error",
-          });
-
-          setLatsName("");
-          setFirstname("");
-          setEmail("");
-          setMessage("");
-          setAcceptedPrivacyPolicy(false);
-        } else {
-          toast.error("Une erreur s'est produite ! Veuillez réessayer !");
-        }
+      if (!response.ok) {
+        throw new Error(data.message || `Erreur ${response.status}`);
       }
+
+      toast.success("Votre message a bien été envoyé !");
+      resetForm();
     } catch (error) {
-      console.error("Error :", error);
+      console.error("Erreur :", error);
+      toast.error(
+        error.message || "Une erreur s'est produite ! Veuillez réessayer.",
+      );
     } finally {
       setIsLoading(false);
     }
@@ -107,31 +102,31 @@ export default function ContactForm() {
             <div className="grid grid-cols-2 gap-4 ">
               <div className="space-y-2 ">
                 <Label
-                  htmlFor="first-name"
+                  htmlFor="last-name"
                   className="text-text_color text-[1rem] "
                 >
                   Nom*
                 </Label>
                 <Input
-                  id="first-name"
+                  id="last-name"
                   placeholder="Votre nom"
                   required
                   value={lastname}
                   onChange={(e) =>
-                    setLatsName(capitalizeFirstLetter(e.target.value))
+                    setLastname(capitalizeFirstLetter(e.target.value))
                   }
                   className="custom-placeholder border-black/40"
                 />
               </div>
               <div className="space-y-2">
                 <Label
-                  htmlFor="last-name"
+                  htmlFor="first-name"
                   className="text-text_color text-[1rem] "
                 >
                   Prénom*
                 </Label>
                 <Input
-                  id="last-name"
+                  id="first-name"
                   placeholder="Votre prénom"
                   required
                   value={firstname}
@@ -142,21 +137,19 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <div className=" ">
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-text_color text-[1rem] ">
-                  E-mail*
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Votre e-mail"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="custom-placeholder border-black/40 "
-                />
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-text_color text-[1rem] ">
+                E-mail*
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="Votre e-mail"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="custom-placeholder border-black/40 "
+              />
             </div>
             <div className="space-y-2">
               <Label htmlFor="message" className="text-text_color text-[1rem] ">
@@ -198,6 +191,8 @@ export default function ContactForm() {
               </Label>
             </div>
           </CardContent>
+
+          {/* 🛡️ Honeypot (invisible pour les humains) */}
           <div
             style={{
               position: "absolute",
